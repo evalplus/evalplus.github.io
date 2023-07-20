@@ -40,13 +40,13 @@
 
 
     th {
-      text-align: center;
-      padding-bottom: 1.5em;
+      text-align: left;
+      padding: 1.5em;
     }
 
     td {
-      text-align: center;
-      padding-bottom: 1em;
+      text-align: left;
+      padding: 1em;
     }
 
     .container {
@@ -88,12 +88,12 @@
     .toggle select {
       max-width: 30em;
       width: 10em;
-      margin-left: 5px;
-      font-size: 15px;
+      margin-left: 0.2em;
+      font-size: 1em;
     }
 
     .table {
-      border: 2px solid black;
+      border: 0.1em solid black;
       max-width: 50em;
       align-items: center;
       font-size: 1em;
@@ -104,7 +104,7 @@
 </head>
 
 <body>
-  <div class="container" align="center">
+  <div class="container">
     <div id="heading">
       <h1>🏆 EvalPlus Leaderboard 🏆</h1>
       <h2><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
@@ -145,6 +145,20 @@
       'humaneval+': './humanevalplus.csv',
       'humaneval': './humaneval.csv',
     }
+    const models = {
+      'GPT-4': 'https://openai.com/research/gpt-4',
+      'ChatGPT': 'https://chat.openai.com/',
+      'StarCoder': 'https://arxiv.org/abs/2305.06161',
+      'CodeGen': 'https://arxiv.org/abs/2203.13474',
+      'CodeGen2': 'https://arxiv.org/abs/2305.02309',
+      'Vicuna': 'https://lmsys.org/blog/2023-03-30-vicuna/',
+      'SantaCoder': 'https://arxiv.org/abs/2301.03988',
+      'InCoder': 'https://arxiv.org/abs/2204.05999',
+      'GPT-J': 'https://www.eleuther.ai/artifacts/gpt-j',
+      'GPT-Neo': 'https://www.eleuther.ai/artifacts/gpt-neo',
+      'PolyCoder': 'https://github.com/VHellendoorn/Code-LMs',
+      'StableLM': 'https://stablelm.com/',
+    }
     const columns = [
       'pass@1*',
       'pass@1',
@@ -183,6 +197,10 @@
     function displayTable(data) {
       var thead = document.createElement('thead');
       var headerRow = document.createElement('tr');
+      // add rank
+      var th = document.createElement('th');
+      th.textContent = 'Rank';
+      headerRow.appendChild(th);
       Object.keys(data[0]).forEach(function (key) {
         var th = document.createElement('th');
         th.textContent = key;
@@ -192,9 +210,32 @@
       leaderboard.appendChild(thead);
 
       var tbody = document.createElement('tbody');
+      // add rank
+      var rank = 1;
       data.forEach(function (row) {
         var dataRow = document.createElement('tr');
-        Object.values(row).forEach(function (value) {
+        var rankCell = document.createElement('td');
+        rankCell.textContent = rank;
+        dataRow.appendChild(rankCell);
+        var modelCell = document.createElement('td');
+        // before link, if rank1/2/3, add a medal infront of the model name
+        if (rank == 1) {
+          modelCell.textContent = '🥇 ';
+        } else if (rank == 2) {
+          modelCell.textContent = '🥈 ';
+        } else if (rank == 3) {
+          modelCell.textContent = '🥉 ';
+        } else {
+          // to align with the medal
+          modelCell.textContent = '';
+        }
+        rank++;
+        var modelLink = document.createElement('a');
+        modelLink.href = models[row['Model']];
+        modelLink.textContent = row['Model'];
+        modelCell.appendChild(modelLink);
+        dataRow.appendChild(modelCell);
+        Object.values(row).slice(1).forEach(value => {
           var td = document.createElement('td');
           td.textContent = value;
           dataRow.appendChild(td);
