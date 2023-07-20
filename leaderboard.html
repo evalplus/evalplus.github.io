@@ -4,6 +4,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <head>
   <meta charset="UTF-8">
@@ -15,47 +17,43 @@
       display: flex;
       font-family: JetBrains Mono, monospace;
       margin: 0px;
-      padding: 50px 30px;
+      padding: 3em 2em;
       background-color: #FFFFFF;
       color: #000000;
     }
 
     #heading {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 2em;
     }
 
     #heading h1 {
-      margin: 10px;
+      margin: 1em;
       font-size: 2em;
     }
 
-    h2 {
-      margin: 10px;
-      font-size: 1.6em;
+    #heading h2 {
+      margin-bottom: 1em;
+      font-size: 1.2em;
+      color: #777;
     }
+
 
     th {
       text-align: center;
-      padding-bottom: 15px;
+      padding-bottom: 1.5em;
     }
 
     td {
       text-align: center;
-      padding-bottom: 10px;
-    }
-
-    #warning {
-      margin: 0;
-      font-size: 1.2em;
-      color: #777;
+      padding-bottom: 1em;
     }
 
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 700px;
+      max-width: 50em;
       margin: auto;
     }
 
@@ -65,9 +63,9 @@
       justify-content: space-between;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 20px;
-      font-size: 15px;
-      column-gap: 15px;
+      margin-bottom: 1.5em;
+      font-size: 1em;
+      column-gap: 3em;
     }
 
     .benchmark {
@@ -88,23 +86,20 @@
     }
 
     .toggle select {
-      max-width: 300px;
-      width: 150px;
+      max-width: 30em;
+      width: 10em;
       margin-left: 5px;
       font-size: 15px;
     }
 
     .table {
       border: 2px solid black;
-      max-width: 700px;
+      max-width: 50em;
       align-items: center;
       font-size: 1em;
       margin: 0 auto;
     }
 
-    #leaderboard {
-      margin: 0 auto;
-    }
   </style>
 </head>
 
@@ -112,8 +107,7 @@
   <div class="container" align="center">
     <div id="heading">
       <h1>🏆 EvalPlus Leaderboard 🏆</h1>
-      <small id="warning">EvalPlus evaluates AI Coders with rigorous tests.</small>
-      <br>
+      <h2><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
       <a href="https://github.com/evalplus/evalplus"><img
           src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
       <a href="https://arxiv.org/abs/2305.01210"><img
