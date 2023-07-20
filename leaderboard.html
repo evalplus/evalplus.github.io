@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
   <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     body {
       font-family: "JetBrains Mono", monospace;
       padding: 1em;
@@ -26,28 +32,29 @@
     }
 
     #heading h1 {
-      margin: 1em;
+      white-space: nowrap;
       font-size: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
     }
 
     #heading h2 {
       font-size: 1.2em;
       color: #777;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
     }
 
-    .container {
+    #heading h3 {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      max-width: 70%;
+      font-size: 1em;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
     }
 
     .select-line {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
       margin-bottom: 1em;
       font-size: 1em;
     }
@@ -55,18 +62,12 @@
     .toggle {
       display: flex;
       margin: 1em;
-      margin-bottom: 1em;
       font-size: 1em;
     }
 
     .toggle label {
       margin: 1em;
-      text-align: right;
       white-space: nowrap;
-    }
-
-    .toggle select {
-      text-align: left;
     }
 
     .table {
@@ -92,10 +93,12 @@
     <div id="heading">
       <h1>🏆 EvalPlus Leaderboard 🏆</h1>
       <h2><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
-      <a href="https://github.com/evalplus/evalplus"><img
-          src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
-      <a href="https://arxiv.org/abs/2305.01210"><img
-          src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge"></a>
+      <h3>
+        <a href="https://github.com/evalplus/evalplus"><img
+            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" class="img-fluid"></a>
+        <a href="https://arxiv.org/abs/2305.01210"><img
+            src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv" class="img-fluid"></a>
+      </h3>
     </div>
     <div class="select-line">
       <div class="toggle benchmark">
@@ -116,7 +119,7 @@
         </select>
       </div>
     </div>
-    <table id="leaderboard" class="table table-striped"></table>
+    <table id="leaderboard" class="table table-striped table-bordered"></table>
   </div>
 
 
