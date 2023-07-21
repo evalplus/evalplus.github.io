@@ -249,7 +249,7 @@
       var headerRow = document.createElement('tr');
       // add rank
       var th = document.createElement('th');
-      th.textContent = 'Rank';
+      th.textContent = '#';
       headerRow.appendChild(th);
       Object.keys(data[0]).forEach(function (key) {
         var th = document.createElement('th');
@@ -265,7 +265,7 @@
       data.forEach(function (row) {
         var dataRow = document.createElement('tr');
         var rankCell = document.createElement('td');
-        rankCell.textContent = '#' + rank;
+        rankCell.textContent = rank;
         dataRow.appendChild(rankCell);
         var modelCell = document.createElement('td');
         if (rank == 1) {
@@ -294,7 +294,6 @@
             td.style.color = '#777';
             td.style.fontWeight = 200;
           } else {
-            td.style.fontWeight = 300;
           }
           dataRow.appendChild(td);
         });
