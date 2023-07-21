@@ -281,6 +281,8 @@
         var modelLink = document.createElement('a');
         modelLink.href = models[row['Model']];
         modelLink.textContent = row['Model'];
+        modelLink.style.color = '#0000FF';
+        modelLink.style.textDecoration = 'underline';
         modelCell.appendChild(modelLink);
         dataRow.appendChild(modelCell);
         Object.entries(row).slice(1).forEach(([key, value]) => {
