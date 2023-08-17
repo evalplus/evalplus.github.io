@@ -2,6 +2,9 @@ Model,Size,pass@1*,pass@1,pass@10,pass@100
 GPT-4,N/A,88.4,,,
 ChatGPT,N/A,73.2,69.4,88.6,94
 StarCoder,15B,34.1,32.2,56.7,84.2
+CodeT5+,2B,25,,,
+CodeT5+,6B,29.3,,,
+CodeT5+,16B,31.7,,,
 CodeGen,2B,24.4,18.4,39.8,66.8
 CodeGen,6B,29.3,27.7,46.9,72.7
 CodeGen,16B,32.9,32.2,56,81.5
