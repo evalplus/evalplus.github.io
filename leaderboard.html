@@ -83,7 +83,8 @@
       border-collapse: collapse;
     }
 
-    th, td {
+    th,
+    td {
       text-align: left;
       padding: 0.8em;
       border-bottom: 1px solid #ccc;
@@ -91,6 +92,10 @@
 
     th {
       background-color: #f2f2f2;
+    }
+
+    .inline-block {
+      display: inline-block;
     }
 
     @media screen and (max-width: 768px) {
@@ -121,7 +126,7 @@
 
       .select-line {
         font-size: 0.8em;
-        flex-direction: column; 
+        flex-direction: column;
       }
 
       .toggle {
@@ -143,7 +148,8 @@
         align-self: flex-start;
       }
 
-      th, td {
+      th,
+      td {
         white-space: nowrap;
       }
     }
@@ -157,9 +163,11 @@
       <h2><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
       <h3>
         <a href="https://github.com/evalplus/evalplus"><img
-            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" class="img-fluid"></a>
+            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+            alt="github" class="img-fluid"></a>
         <a href="https://arxiv.org/abs/2305.01210"><img
-            src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv" class="img-fluid"></a>
+            src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv"
+            class="img-fluid"></a>
       </h3>
     </div>
     <div class="select-line">
@@ -180,8 +188,8 @@
         </select>
       </div>
       <div class="toggle form-check form-switch">
-          <label class="form-check-label" for="plus">✨Plus</label>
-          <input class="form-check-input" type="checkbox" role="switch" id="plus" checked>
+        <label class="form-check-label" for="plus">✨Plus</label>
+        <input class="form-check-input" type="checkbox" role="switch" id="plus" checked>
       </div>
     </div>
     <table id="leaderboard" class="table table-striped table-bordered"></table>
@@ -334,6 +342,20 @@
       updateTable(currentUrl);
     });
   </script>
+
+  <div class="container">
+    <h3>📝 Notes</h3>
+    <p class="inline-block">
+    <ol>
+      <li>All code outputs are post-processed by a script <a
+          href="https://github.com/evalplus/evalplus/tree/master/tools">here</a> to resolve trivial syntactical errors
+        (e.g., Python indents).</li>
+      <li>The code to parse chat model outputs can be found <a
+          href="https://github.com/evalplus/evalplus/blob/fc10dc72addb508dcd0084133ad425972887d709/codegen/model.py#L280">here</a>.
+      </li>
+    </ol>
+    </p>
+  </div>
 </body>
 
 </html>
