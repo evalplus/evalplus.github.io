@@ -226,6 +226,7 @@
           <li>Please open an issue <a href="https://github.com/evalplus/evalplus/issues/new">here</a> if you want us to
             evaluate a model to put it in the leaderboard.</li>
           <li>Models are ranked by pass@1 with greedy decoding</li>
+          <li>🛠: Mdels with this are evaluated with special prompts</li>
         </ol>
       </p>
     </div>
@@ -333,6 +334,15 @@
         modelLink.style.color = '#0000FF';
         modelLink.style.textDecoration = 'underline';
         modelCell.appendChild(modelLink);
+        var promted = row['prompted'];
+        if (promted == 'TRUE') {
+          // add a symbol to indicate the model is prompted
+          var promptedSymbol = document.createElement('span');
+          promptedSymbol.textContent = '🛠';
+          promptedSymbol.style.fontSize = '0.8em';
+          promptedSymbol.style.marginLeft = '0.5em';
+          modelCell.appendChild(promptedSymbol);
+        }
         dataRow.appendChild(modelCell);
         var sizeCell = document.createElement('td');
         sizeCell.textContent = row['Size'];
