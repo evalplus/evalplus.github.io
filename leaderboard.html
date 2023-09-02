@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
   <style>
+    * {
+      text-decoration-skip-ink: none;
+    }
+
     .container {
       width: 70%;
       display: flex;
@@ -226,7 +230,7 @@
           <li>Please open an issue <a href="https://github.com/evalplus/evalplus/issues/new">here</a> if you want us to
             evaluate a model to put it in the leaderboard.</li>
           <li>Models are ranked by pass@1 with greedy decoding</li>
-          <li>🛠: Mdels with this are evaluated with special prompts</li>
+          <li>🛠: Models with this are evaluated with special prompts</li>
         </ol>
       </p>
     </div>
@@ -334,12 +338,12 @@
         modelLink.style.color = '#0000FF';
         modelLink.style.textDecoration = 'underline';
         modelCell.appendChild(modelLink);
-        var promted = row['prompted'];
-        if (promted == 'TRUE') {
+        var prompted = row['prompted'];
+        if (prompted == 'TRUE') {
           // add a symbol to indicate the model is prompted
           var promptedSymbol = document.createElement('span');
           promptedSymbol.textContent = '🛠';
-          promptedSymbol.style.fontSize = '0.8em';
+          promptedSymbol.style.fontSize = '0.9em';
           promptedSymbol.style.marginLeft = '0.5em';
           modelCell.appendChild(promptedSymbol);
         }
