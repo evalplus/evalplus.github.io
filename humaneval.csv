@@ -2,6 +2,8 @@ Model,Size,pass@1*,pass@1,pass@10,pass@100,prompted
 GPT-4 (May 2023),N/A,88.4,,,,TRUE
 WizardCoder-Llama,34B,73.2,,,,TRUE
 ChatGPT (May 2023),N/A,73.2,69.4,88.6,94,TRUE
+Phind-CodeLlama,34B,71.3,,,,FALSE
+Mistral,7B,28,,,,FALSE
 StarCoder,15B,34.1,32.2,56.7,84.2,FALSE
 CodeLlama,7B,37.8,,,,FALSE
 CodeLlama,13B,42.7,,,,FALSE
