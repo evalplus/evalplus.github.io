@@ -18,17 +18,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
   <style>
-    * {
-      text-decoration-skip-ink: none;
-    }
-
-    .container {
-      width: 70%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
     body {
       font-family: "JetBrains Mono", monospace;
       padding: 2em;
@@ -36,72 +25,9 @@
       color: #000000;
     }
 
-    #heading {
-      text-align: center;
-      margin-bottom: 0.5em;
-    }
-
-    #heading h1 {
-      white-space: nowrap;
-      font-size: 2em;
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-
-    #heading h2 {
-      font-size: 1.2em;
-      color: #777;
-      margin-bottom: 1em;
-    }
-
-    #heading h3 {
-      display: flex;
-      font-size: 1em;
-      justify-content: space-evenly;
-      flex-wrap: nowrap;
-    }
-
-    .select-line {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      margin-bottom: 0.5em;
-      font-size: 1em;
-    }
-
-    .toggle {
-      display: flex;
-      margin: 0.5em;
-      align-items: center;
-    }
-
-    .toggle label {
-      margin: 1em;
-      white-space: nowrap;
-      text-align: right;
-    }
-
-    .toggle select {
-      text-align: left;
-    }
-
-    .toggle .form-check-input {
-      height: 2em;
-      width: 4em;
-      margin: 0.1em;
-    }
-
-    .table {
-      table-layout: auto;
-      border: 0.2em solid black;
-      border-collapse: collapse;
-    }
-
     th,
     td {
       text-align: left;
-      padding: 0.8em;
-      border-bottom: 0.8em solid #ccc;
     }
 
     th {
@@ -120,106 +46,41 @@
       margin: 1em;
     }
 
-    @media screen and (max-width: 768px) {
-      body {
-        padding: 0;
-      }
-
-      .container {
-        width: 100%;
-        font-size: 0.8em;
-      }
-
-      #heading h1 {
-        font-size: 1.6em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-
-      #heading h2 {
-        white-space: nowrap;
-        font-size: 1em;
-        margin-bottom: 1em;
-      }
-
-      #heading h3 {
-        font-size: 0.8em;
-        margin-bottom: 1em;
-      }
-
-      #heading h3 img {
-        height: 80%;
-      }
-
-      .select-line {
-        font-size: 0.8em;
-      }
-
-      .toggle label {
-        margin-right: 1em;
-      }
-
-      .toggle select {
-        font-size: 1em;
-      }
-
-      .table {
-        font-size: 0.9em;
-      }
-
-      th,
-      td {
-        white-space: nowrap;
-      }
-
-      #notes {
-        margin: 0;
-        width: 100%;
-      }
-
-      #notes h3 {
-        font-size: 1.5em;
-      }
-
-      #notes li {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-      }
-    }
   </style>
 </head>
 
-<body>
-  <div class="container">
-    <div id="heading">
-      <h1>🏆 EvalPlus Leaderboard 🏆</h1>
-      <h2><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
-      <h3>
-        <a href="https://github.com/evalplus/evalplus"><img
-            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-            alt="github" class="img-fluid"></a>
-        <a href="https://arxiv.org/abs/2305.01210"><img
-            src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv"
-            class="img-fluid"></a>
-      </h3>
+<body class="max-vw-75 d-flex">
+  <div class="d-flex flex-column align-items-center gap-3">
+    <h1 class="text-nowrap">🏆 EvalPlus Leaderboard 🏆</h1>
+    <h3 class="fw-light text-nowrap"><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
+    <div class="max-vw-100 d-flex flex-row justify-content-center gap-3">
+      <a href="https://github.com/evalplus/evalplus"><img
+          src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+          alt="github" class="img-fluid"></a>
+      <a href="https://arxiv.org/abs/2305.01210"><img
+          src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv"
+          class="img-fluid"></a>
     </div>
-    <div class="select-line">
-      <div class="toggle">
-        <label for="benchmark">Benchmark</label>
-        <select id="benchmark" class="form-select" aria-label="benchmark select">
-          <option value="HumanEval">HumanEval</option>
-          <option value="MBPP">MBPP</option>
-        </select>
+    <div class="d-flex flex-row align-items-center p-3 gap-2 justify-content-center">
+      <label for="benchmark">Benchmark</label>
+      <select id="benchmark" class="form-select" aria-label="benchmark select">
+        <option value="HumanEval">HumanEval</option>
+        <option value="MBPP">MBPP</option>
+      </select>
+    </div>
+    <div class="container-fluid d-flex flex-row flex-nowrap justify-content-between">
+      <div class="container-fluid d-flex flex-column align-items-center gap-3">
+        <label for="plused" class="text-success">⚡With EvalPlus⚡</label>
+        <table id="plused" class="table table-striped table-bordered flex-shrink-1 border border-success border-3"></table>
       </div>
-      <div class="toggle form-check form-switch">
-        <label class="form-check-label" for="plus">✨Plus</label>
-        <input class="form-check-input" type="checkbox" role="switch" id="plus" checked>
+      <div class="container-fluid d-flex flex-column align-items-center gap-3">
+        <label for="origin" class="text-danger">Original</label>
+        <table id="origin" class="table table-striped table-bordered flex-shrink-1 border border-danger border-3"></table>
       </div>
     </div>
-    <table id="leaderboard" class="table table-striped table-bordered"></table>
     <div id = "notes">
       <h3>📝 Notes</h3>
-      <p class="inline-block">
+      <p class="inline-block mt-3">
         <ol>
           <li>All code outputs are post-processed by a script <a
               href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">here</a> to resolve trivial syntactical errors
@@ -238,9 +99,9 @@
 
 
   <script>
-    const table = document.getElementById('leaderboard');
+    const originTable = document.getElementById('origin');
+    const plusedTable = document.getElementById('plused');
     const benchmarkSelect = document.getElementById('benchmark');
-    const plusSwitch = document.getElementById('plus');
 
     const models = {
       'GPT-4 (May 2023)': 'https://openai.com/research/gpt-4',
@@ -269,23 +130,20 @@
     ]
 
     var data = [];
-    var currentUrl;
+    var currentOriginUrl = benchmarkSelect.value.toLowerCase() + '.csv';
+    var currentPlusedUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
     var sortby = 'pass@1*';
 
-    if (plus) {
-      currentUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
-    } else {
-      currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
-    }
-
-    updateTable(currentUrl);
+    updateTable(originTable, currentOriginUrl);
+    updateTable(plusedTable, currentPlusedUrl);
 
     function clearTable() {
-      table.innerHTML = '';
+      originTable.innerHTML = '';
+      plusedTable.innerHTML = '';
     }
 
 
-    function updateTable(url) {
+    function updateTable(table, url) {
       clearTable();
       Papa.parse(url, {
         download: true,
@@ -295,12 +153,12 @@
           results.data.sort(function (a, b) {
             return parseFloat(b[sortby]) - parseFloat(a[sortby]);
           });
-          displayTable(results.data);
+          displayTable(table, results.data);
         }
       });
     }
 
-    function displayTable(data) {
+    function displayTable(table, data) {
       var thead = document.createElement('thead');
       var headerRow = document.createElement('tr');
       // add rank
@@ -314,7 +172,7 @@
         headerRow.appendChild(th);
       });
       thead.appendChild(headerRow);
-      leaderboard.appendChild(thead);
+      table.appendChild(thead);
 
       var tbody = document.createElement('tbody');
       // add rank
@@ -338,9 +196,11 @@
         var modelLink = document.createElement('a');
         modelLink.href = models[row['Model']];
         modelLink.textContent = row['Model'];
-        modelLink.style.color = '#0000FF';
-        modelLink.style.textDecoration = 'underline';
+        modelLink.classList.add('link-underline-primary');
+        modelLink.classList.add('text-nowrap');
         modelCell.appendChild(modelLink);
+        modelCell.classList.add('d-flex');
+        modelCell.classList.add('flex-nowrap');
         var prompted = row['prompted'];
         if (prompted == 'TRUE') {
           // add a symbol to indicate the model is prompted
@@ -355,7 +215,13 @@
         sizeCell.textContent = row['Size'];
         dataRow.appendChild(sizeCell);
         var passCell = document.createElement('td');
-        passCell.textContent = row['pass@1*'];
+        if (table == originTable) {
+          passCell.classList.add('text-danger');
+        } else if (table == plusedTable) {
+          passCell.textContent = "⚡";
+          passCell.classList.add('text-success');
+        }
+        passCell.textContent += row['pass@1*'];
         dataRow.appendChild(passCell);
         tbody.appendChild(dataRow);
       });
@@ -365,24 +231,13 @@
 
     benchmarkSelect.addEventListener('change', function () {
       // if plus is true, then add plus to the benchmark name
-      if (plus) {
-        currentUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
-      } else {
-        currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
-      }
-      updateTable(currentUrl);
+      currentOriginUrl = benchmarkSelect.value.toLowerCase() + '.csv';
+      currentPlusedUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
+      updateTable(originTable, currentOriginUrl);
+      updateTable(plusedTable, currentPlusedUrl);
     });
 
 
-    plusSwitch.addEventListener('change', function () {
-      plus = plusSwitch.checked;
-      if (plus) {
-        currentUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
-      } else {
-        currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
-      }
-      updateTable(currentUrl);
-    });
   </script>
 
 </body>
