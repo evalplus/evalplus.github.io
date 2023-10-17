@@ -19,9 +19,12 @@
   <style>
     body {
       font-family: "JetBrains Mono", monospace;
-      padding: 2em;
       background-color: #FFFFFF;
       color: #000000;
+    }
+
+    #content {
+      width: 75%;
     }
 
     th,
@@ -31,6 +34,10 @@
 
     th {
       background-color: #f2f2f2;
+    }
+
+    #notes {
+      font-size: 1em;
     }
 
     #notes h3 {
@@ -45,14 +52,43 @@
       margin: 1em;
     }
 
+    .form-select {
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: 1400px) {
+      body {
+        font-size: 1.6vw;
+      }
+
+      #content {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      h3 {
+        font-size: 1.2em;
+      }
+
+      
+    }
+
+
   </style>
 </head>
 
 <body>
-  <div class="container-fluid d-flex flex-column align-items-center gap-3">
-    <h1 class="text-nowrap">🏆 EvalPlus Leaderboard 🏆</h1>
+  <div id="content" class="container-fluid d-flex flex-column align-items-center gap-3">
+    <h1 class="text-nowrap mt-5">🏆 EvalPlus Leaderboard 🏆</h1>
     <h3 class="fw-light text-nowrap"><small id="warning">EvalPlus evaluates AI Coders with rigorous tests.<br></small></h2>
-    <div class="max-vw-100 d-flex flex-row justify-content-center gap-3">
+    <div class="d-flex flex-row justify-content-center gap-3">
       <a href="https://github.com/evalplus/evalplus"><img
           src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
           alt="github" class="img-fluid"></a>
@@ -60,21 +96,21 @@
           src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv"
           class="img-fluid"></a>
     </div>
-    <div class="d-flex flex-row align-items-center p-3 gap-2 justify-content-center">
+    <div class="d-flex flex-row align-items-center p-3 gap-2">
       <label for="benchmark">Benchmark</label>
       <select id="benchmark" class="form-select" aria-label="benchmark select">
         <option value="HumanEval">HumanEval</option>
         <option value="MBPP">MBPP</option>
       </select>
     </div>
-    <div class="container-fluid d-flex flex-row flex-nowrap justify-content-between">
-      <div class="container-fluid d-flex flex-column align-items-center gap-3">
-        <label for="plused" class="text-success">⚡With EvalPlus⚡</label>
-        <table id="plused" class="table table-striped table-bordered flex-shrink-1 border border-success border-3"></table>
+    <div class="container-fluid d-flex flex-row flex-nowrap">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <label for="plused" class="text-success mb-3">⚡With EvalPlus⚡</label>
+        <table id="plused" class="table table-responsive table-striped table-bordered flex-shrink-1 border border-success border-3"></table>
       </div>
-      <div class="container-fluid d-flex flex-column align-items-center gap-3">
-        <label for="origin" class="text-danger">Original</label>
-        <table id="origin" class="table table-striped table-bordered flex-shrink-1 border border-danger border-3"></table>
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <label for="origin" class="text-danger mb-3">Original</label>
+        <table id="origin" class="table table-responsive table-striped table-bordered flex-shrink-1 border border-danger border-3"></table>
       </div>
     </div>
     <div id = "notes">
@@ -98,6 +134,15 @@
 
 
   <script>
+    // adjust font size
+    function fontSize() {
+      var deviceWidth = document.documentElement.clientWidth > 768 ? 768 : document.documentElement.clientWidth;
+      var fontSize = deviceWidth / 60;
+      document.getElementsByTagName('html')[0].style.fontSize = fontSize + 'px';
+    }
+
+
+
     const originTable = document.getElementById('origin');
     const plusedTable = document.getElementById('plused');
     const benchmarkSelect = document.getElementById('benchmark');
@@ -205,8 +250,6 @@
           // add a symbol to indicate the model is prompted
           var promptedSymbol = document.createElement('span');
           promptedSymbol.textContent = '🛠';
-          promptedSymbol.style.fontSize = '0.9em';
-          promptedSymbol.style.marginLeft = '0.5em';
           modelCell.appendChild(promptedSymbol);
         }
         dataRow.appendChild(modelCell);
