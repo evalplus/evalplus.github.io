@@ -4,6 +4,7 @@ WizardCoder-Python-34B-V1.0,34B,73.2,,,,TRUE
 ChatGPT (May 2023),N/A,73.2,69.4,88.6,94,TRUE
 Phind-CodeLlama-34B-v2,34B,71.3,,,,FALSE
 Mistral,7B,28,,,,FALSE
+Mistral-codealpaca,7B,48.2,,,,FALSE
 StarCoder,15B,34.1,32.2,56.7,84.2,FALSE
 StarCoder,1B,14.6,,,,FALSE
 StarCoder,3B,17.7,,,,FALSE
