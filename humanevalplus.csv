@@ -5,7 +5,7 @@ ChatGPT (May 2023),N/A,64,61.7,81.2,89.8,TRUE
 Phind-CodeLlama-34B-v2,34B,67.1,,,,FALSE
 Mistral,7B,23.2,,,,FALSE
 Mistral-codealpaca,7B,40.9,,,,FALSE
-Zephyr β,7B,23.2,,,,TRUE
+Zephyr β,7B,23.2,,,,FALSE
 StarCoder,15B,29.3,27.8,50.3,75.4,FALSE
 StarCoder,1B,11,,,,FALSE
 StarCoder,3B,14.6,,,,FALSE
