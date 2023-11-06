@@ -6,7 +6,7 @@ Phind-CodeLlama-34B-v2,34B,67.1,FALSE
 DeepSeek-Coder,33B,43.3,FALSE
 DeepSeek-Coder-instruct,33B,72.6,TRUE
 DeepSeek-Coder,6.7B,39.6,FALSE
-DeepSeek-Coder,6.7B,70.1,TRUE
+DeepSeek-Coder-instruct,6.7B,70.1,TRUE
 Mistral,7B,23.2,FALSE
 Mistral-codealpaca,7B,40.9,FALSE
 Zephyr β,7B,23.2,FALSE
