@@ -7,6 +7,7 @@ DeepSeek-Coder,33B,51.2,FALSE
 DeepSeek-Coder-instruct,33B,78.7,TRUE
 DeepSeek-Coder,6.7B,47.6,FALSE
 DeepSeek-Coder-instruct,6.7B,73.8,TRUE
+DeepSeek-Coder-instruct,1.3B,64.6,TRUE
 Mistral,7B,28.7,FALSE
 Mistral-codealpaca,7B,48.2,FALSE
 Zephyr β,7B,30,FALSE

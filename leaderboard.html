@@ -130,6 +130,7 @@
               href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">script</a> and inspected by syntactical checkers to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
           <li>By default, models are ranked according to pass@1 using greedy decoding. More details can be found in <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">the code generation code</a></li>
           <li>Models labelled with 🗒️ are evaluated with additional prompts (e.g., conversational prompt or instructions), while other models are evaluated by using the default prompt (function signature and description as prompts).</li>
+          <li>It is the model providers' responsibility to avoid data contamination as much as possible. However, so far we cannot guarantee if the evaluated models are contaminated or not.</li>
         </ol>
       </p>
     </div>
