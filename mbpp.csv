@@ -3,11 +3,12 @@ WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE
 DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE
 DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE
 DeepSeek-Coder-6.7B-instruct,72.7,63.4,TRUE
-DeepSeek-Coder-1.3B-instruct,64.6,58.5,TRUE
+DeepSeek-Coder-1.3B-base,55.4,46.9,FALSE
+DeepSeek-Coder-1.3B-instruct,63.7,53.1,TRUE
 Mistral-7B,50.1,40.9,FALSE
 Zephyr β-7B,41.1,34.3,FALSE
 StarCoder-15B,55.1,46.1,FALSE
-CodeLlama-7B,37.8,34.1,FALSE
+CodeLlama-7B,57.6,45.4,FALSE
 CodeLlama-13B,61.2,50.9,FALSE
 CodeLlama-34B,67.2,52.9,FALSE
 CodeT5+-2B,46.4,36.6,FALSE
