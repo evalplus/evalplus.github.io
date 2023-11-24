@@ -172,12 +172,10 @@
     ]
 
     var data = [];
-    var currentOriginUrl = benchmarkSelect.value.toLowerCase() + '.csv';
-    var currentPlusedUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
-    var sortby = 'pass@1';
+    var currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
 
-    updateTable(originTable, currentOriginUrl);
-    updateTable(plusedTable, currentPlusedUrl);
+    updateTable(originTable, currentUrl, 'pass@1_base');
+    updateTable(plusedTable, currentUrl, 'pass@1_plus');
 
     function clearTable() {
       originTable.innerHTML = '';
@@ -185,7 +183,7 @@
     }
 
 
-    function updateTable(table, url) {
+    function updateTable(table, url, sortColumn) {
       clearTable();
       Papa.parse(url, {
         download: true,
@@ -193,14 +191,14 @@
         skipEmptyLines: true,
         complete: function (results) {
           results.data.sort(function (a, b) {
-            return parseFloat(b[sortby]) - parseFloat(a[sortby]);
+            return parseFloat(b[sortColumn]) - parseFloat(a[sortColumn]);
           });
-          displayTable(table, results.data);
+          displayTable(table, results.data, sortColumn);
         }
       });
     }
 
-    function displayTable(table, data) {
+    function displayTable(table, data, displayColumn){
       var thead = document.createElement('thead');
       var headerRow = document.createElement('tr');
       // add rank
@@ -258,7 +256,7 @@
           passCell.textContent = "⚡";
           passCell.classList.add('text-success');
         }
-        passCell.textContent += row['pass@1'];
+        passCell.textContent += row[displayColumn];
         dataRow.appendChild(passCell);
         tbody.appendChild(dataRow);
       });
@@ -267,11 +265,9 @@
 
 
     benchmarkSelect.addEventListener('change', function () {
-      // if plus is true, then add plus to the benchmark name
-      currentOriginUrl = benchmarkSelect.value.toLowerCase() + '.csv';
-      currentPlusedUrl = benchmarkSelect.value.toLowerCase() + 'plus.csv';
-      updateTable(originTable, currentOriginUrl);
-      updateTable(plusedTable, currentPlusedUrl);
+      var currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
+      updateTable(originTable, currentUrl, 'pass@1_base');
+      updateTable(plusedTable, currentUrl, 'pass@1_plus');
     });
 
 
