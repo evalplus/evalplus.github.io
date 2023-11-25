@@ -100,17 +100,16 @@
           src="https://img.shields.io/badge/arXiv-2305.01210-b31b1b.svg?style=for-the-badge" alt="arxiv"
           class="img-fluid"></a>
     </div>
-    <div class="d-flex flex-row justify-content-center gap-3">
+    <div class="d-flex flex-row justify-content-center gap-1 mt-3 mb-0">
       <p> &#129303; </p>
       <a href="https://github.com/evalplus/evalplus/issues/new?assignees=&labels=model+eval&projects=&template=model_eval_request.yml&title=%F0%9F%92%A1+%5BREQUEST%5D+-+%3CMODEL_NAME%3E">File a request</a>
       <p>to add your models on our leaderboard!</p>
     </div>
-    <div class="d-flex flex-row align-items-center p-3 gap-2">
-      <label for="benchmark">Benchmark</label>
-      <select id="benchmark" class="form-select" aria-label="benchmark select">
-        <option value="HumanEval">HumanEval</option>
-        <option value="MBPP">MBPP</option>
-      </select>
+    <div class="btn-group" role="group" id="Benchmark">
+      <input type="radio" class="btn-check" name="btnradio" id="HumanEval" checked>
+      <label class="btn btn-outline-primary" for="HumanEval">HumanEval</label>
+      <input type="radio" class="btn-check" name="btnradio" id="MBPP"> 
+      <label class="btn btn-outline-primary" for="MBPP">MBPP</label>
     </div>
     <div class="container-fluid d-flex flex-row flex-nowrap">
       <div class="container-fluid d-flex flex-column align-items-center">
@@ -140,7 +139,7 @@
   <script>
     const originTable = document.getElementById('origin');
     const plusedTable = document.getElementById('plused');
-    const benchmarkSelect = document.getElementById('benchmark');
+    const benchmarkRadio = document.getElementById('Benchmark');
 
     const models = {
       'GPT-4 (May 2023)': 'https://openai.com/research/gpt-4',
@@ -172,7 +171,9 @@
     ]
 
     var data = [];
-    var currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
+
+    var currentUrl = 'humaneval.csv';
+
 
     updateTable(originTable, currentUrl, 'pass@1_base');
     updateTable(plusedTable, currentUrl, 'pass@1_plus');
@@ -263,14 +264,19 @@
       table.appendChild(tbody);
     }
 
+    const humanEvalRadio = document.getElementById('HumanEval');
+    const mbppRadio = document.getElementById('MBPP');
 
-    benchmarkSelect.addEventListener('change', function () {
-      var currentUrl = benchmarkSelect.value.toLowerCase() + '.csv';
+    mbppRadio.addEventListener('click', function () {
+      currentUrl = 'mbpp.csv';
       updateTable(originTable, currentUrl, 'pass@1_base');
       updateTable(plusedTable, currentUrl, 'pass@1_plus');
     });
-
-
+    humanEvalRadio.addEventListener('click', function () {
+      currentUrl = 'humaneval.csv';
+      updateTable(originTable, currentUrl, 'pass@1_base');
+      updateTable(plusedTable, currentUrl, 'pass@1_plus');
+    });
   </script>
 
 </body>
