@@ -125,11 +125,11 @@
       <h3>📝 Notes</h3>
       <p class="inline-block mt-3">
         <ol>
-          <li>All code outputs are post-processed by a <a
-              href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">script</a> and inspected by syntactical checkers to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
-          <li>By default, models are ranked according to pass@1 using greedy decoding. More details can be found in <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">the code generation code</a></li>
-          <li>Models labelled with 🗒️ are evaluated with additional prompts (e.g., conversational prompt or instructions), while other models are evaluated by using the default prompt (function signature and description as prompts).</li>
-          <li>It is the model providers' responsibility to avoid data contamination as much as possible. However, so far we cannot guarantee if the evaluated models are contaminated or not.</li>
+          <li>All samples are generated from scratch and are uniformly post-processed by <a href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">our sanitizer script</a>. Syntactical checkers are used to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
+          <li>By default, models are ranked according to pass@1 using greedy decoding. Model setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a></li>.
+          <li>Models labelled with 🗒️ are evaluated using an instruction/chat setting, while others perform direct code generation given the prompt.</li>
+          <li>We only use a subset of well-formed problems (399 tasks) from MBPP-sanitized (427 tasks) for MBPP/MBPP+.</li>
+          <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
         </ol>
       </p>
     </div>
