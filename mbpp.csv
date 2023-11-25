@@ -1,5 +1,6 @@
 Model,pass@1_base,pass@1_plus,prompted
 GPT-4-Turbo (Nov 2023),83,70.7,TRUE
+GPT-3.5-Turbo (Nov 2023),81.7,69.4,TRUE
 WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE
 DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE
 DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE
