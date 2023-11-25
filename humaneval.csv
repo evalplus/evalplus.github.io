@@ -1,4 +1,5 @@
 Model,pass@1_base,pass@1_plus,prompted
+GPT-4-Turbo (Nov 2023),85.4,81.7,TRUE
 GPT-4 (May 2023),88.4,76.8,TRUE
 WizardCoder-Python-34B-V1.0,73.2,64.6,TRUE
 ChatGPT (May 2023),73.2,64,TRUE
