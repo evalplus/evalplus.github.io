@@ -145,7 +145,9 @@
       'GPT-4 (May 2023)': 'https://openai.com/research/gpt-4',
       'GPT-4-Turbo (Nov 2023)': 'https://openai.com/blog/new-models-and-developer-products-announced-at-devday',
       'GPT-3.5-Turbo (Nov 2023)': 'https://openai.com/blog/new-models-and-developer-products-announced-at-devday',
-      'WizardCoder-Python-V1.0': 'https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0',
+      'WizardCoder-Python-34B-V1.0': 'https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0',
+      'WizardCoder-Python-7B-V1.0': 'https://huggingface.co/WizardLM/WizardCoder-Python-7B-V1.0',
+      'WizardCoder-15B-V1.0': 'https://huggingface.co/WizardLM/WizardCoder-15B-V1.0',
       'ChatGPT (May 2023)': 'https://chat.openai.com/',
       'Phind-CodeLlama-v2': 'https://huggingface.co/Phind/Phind-CodeLlama-34B-v2',
       'Mistral': 'https://mistral.ai/news/announcing-mistral-7b/',
@@ -237,7 +239,7 @@
         }
         rank++;
         var modelLink = document.createElement('a');
-        modelLink.href = models[row['Model'].replace(/-?\d+(\.\d+)?B/g, "")];
+        modelLink.href = models[row['Model']] || models[row['Model'].replace(/-?\d+(\.\d+)?B/g, "")];
         modelLink.textContent = row['Model'];
         modelLink.classList.add('link-underline-primary');
         modelLink.classList.add('text-nowrap');
