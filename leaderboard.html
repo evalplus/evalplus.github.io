@@ -126,10 +126,21 @@
       <p class="inline-block mt-3">
         <ol>
           <li>All samples are generated from scratch and are uniformly post-processed by <a href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">our sanitizer script</a>. Syntactical checkers are used to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
-          <li>By default, models are ranked according to pass@1 using greedy decoding. Model setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a></li>.
+          <li>By default, models are ranked according to pass@1 using greedy decoding. Model setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a>.</li>
           <li>Models labelled with 🗒️ are evaluated using an instruction/chat setting, while others perform direct code generation given the prompt.</li>
           <li>We only use a subset of well-formed problems (399 tasks) from MBPP-sanitized (427 tasks) for MBPP/MBPP+.</li>
           <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
+        </ol>
+      </p>
+    </div>
+    <div id = "notes">
+      <h3>🤗 Other Benchmarks</h3>
+      In addition to EvalPlus leaderboards, it is recommended to comprehensively understand LLM coding ability through a diverse set of benchmarks and leaderboards, such as:
+      <p class="inline-block mt-3">
+        <ol>
+          <li><a href="https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard"></a>Big Code Models Leaderboard</li>
+          <li><a href="https://infi-coder.github.io/inficoder-eval/"></a>InfiCoder-Eval</li>
+          <li><a href="https://leaderboard.tabbyml.com/"></a>TabbyML Leaderboard</li>
         </ol>
       </p>
     </div>
