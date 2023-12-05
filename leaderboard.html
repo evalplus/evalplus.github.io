@@ -128,7 +128,7 @@
           <li>All samples are generated from scratch and are uniformly post-processed by <a href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">our sanitizer script</a>. Syntactical checkers are used to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
           <li>By default, models are ranked according to pass@1 using greedy decoding. Model setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a>.</li>
           <li>Models labelled with 🗒️ are evaluated using an instruction/chat setting, while others perform direct code generation given the prompt.</li>
-          <li>Both MBPP and MBPP+ referred in our leaderboard use a subset (399 tasks) of hand-verified problems from MBPP-sanitized (427 tasks), to make sure the programming task is well-formed and not unambiguous.</li>
+          <li>Both MBPP and MBPP+ referred in our leaderboard use a subset (399 tasks) of hand-verified problems from MBPP-sanitized (427 tasks), to make sure the programming task is well-formed and unambiguous.</li>
           <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
         </ol>
       </p>
