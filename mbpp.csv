@@ -22,3 +22,5 @@ CodeGen-6B,49.9,42.1,FALSE
 CodeGen-16B,52.6,43.6,FALSE
 WizardCoder-Python-7B-V1.0,56.6,47.1,TRUE
 WizardCoder-15B-V1.0,61.9,50.6,TRUE
+MagicoderS-CL-7B,68.4,56.6,FALSE
+MagicoderS-DS-6.7B,75.4,64.4,FALSE
