@@ -1,26 +1,26 @@
-Model,pass@1_base,pass@1_plus,prompted
-GPT-4-Turbo (Nov 2023),83,70.7,TRUE
-GPT-3.5-Turbo (Nov 2023),81.7,69.4,TRUE
-WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE
-DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE
-DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE
-DeepSeek-Coder-6.7B-instruct,72.7,63.4,TRUE
-DeepSeek-Coder-1.3B-base,55.4,46.9,FALSE
-DeepSeek-Coder-1.3B-instruct,63.7,53.1,TRUE
-Mistral-7B,50.1,40.9,FALSE
-Zephyr β-7B,41.1,34.3,FALSE
-StarCoder-7B,33.1,28.8,FALSE
-StarCoder-15B,55.1,46.1,FALSE
-CodeLlama-7B,57.6,45.4,FALSE
-CodeLlama-13B,61.2,50.9,FALSE
-CodeLlama-34B,67.2,52.9,FALSE
-CodeT5+-2B,46.4,36.6,FALSE
-CodeT5+-6B,51.9,40.9,FALSE
-CodeT5+-16B,54.6,44.4,FALSE
-CodeGen-2B,44.9,35.1,FALSE
-CodeGen-6B,49.9,42.1,FALSE
-CodeGen-16B,52.6,43.6,FALSE
-WizardCoder-Python-7B-V1.0,56.6,47.1,TRUE
-WizardCoder-15B-V1.0,61.9,50.6,TRUE
-MagicoderS-CL-7B,68.4,56.6,FALSE
-MagicoderS-DS-6.7B,75.4,64.4,FALSE
+Model,pass@1_base,pass@1_plus,prompted,link
+GPT-4-Turbo (Nov 2023),83,70.7,TRUE,https://github.com/ise-uiuc/magicoder
+GPT-3.5-Turbo (Nov 2023),81.7,69.4,TRUE,https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
+DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE,https://deepseekcoder.github.io/
+DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE,https://deepseekcoder.github.io/
+DeepSeek-Coder-6.7B-instruct,72.7,63.4,TRUE,https://deepseekcoder.github.io/
+DeepSeek-Coder-1.3B-base,55.4,46.9,FALSE,https://deepseekcoder.github.io/
+DeepSeek-Coder-1.3B-instruct,63.7,53.1,TRUE,https://deepseekcoder.github.io/
+Mistral-7B,50.1,40.9,FALSE,https://mistral.ai/news/announcing-mistral-7b/
+Zephyr β-7B,41.1,34.3,FALSE,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
+StarCoder-7B,33.1,28.8,FALSE,https://arxiv.org/abs/2305.06161
+StarCoder-15B,55.1,46.1,FALSE,https://arxiv.org/abs/2305.06161
+CodeLlama-7B,57.6,45.4,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
+CodeLlama-13B,61.2,50.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
+CodeLlama-34B,67.2,52.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
+CodeT5+-2B,46.4,36.6,FALSE,https://blog.salesforceairesearch.com/codet5/
+CodeT5+-6B,51.9,40.9,FALSE,https://blog.salesforceairesearch.com/codet5/
+CodeT5+-16B,54.6,44.4,FALSEhttps://blog.salesforceairesearch.com/codet5/
+CodeGen-2B,44.9,35.1,FALSE,https://arxiv.org/abs/2203.13474
+CodeGen-6B,49.9,42.1,FALSE,https://arxiv.org/abs/2203.13474
+CodeGen-16B,52.6,43.6,FALSE,https://arxiv.org/abs/2203.13474
+WizardCoder-Python-7B-V1.0,56.6,47.1,TRUE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
+WizardCoder-15B-V1.0,61.9,50.6,TRUE,https://huggingface.co/WizardLM/WizardCoder-15B-V1.0
+MagicoderS-CL-7B,68.4,56.6,FALSE,https://github.com/ise-uiuc/magicoder
+MagicoderS-DS-6.7B,75.4,64.4,FALSE,https://github.com/ise-uiuc/magicoder
