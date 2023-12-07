@@ -41,5 +41,5 @@ GPT-J-6B,12.2,10.4,FALSE,https://www.eleuther.ai/artifacts/gpt-j
 GPT-Neo-2.7B,7.9,6.7,FALSE,https://www.eleuther.ai/artifacts/gpt-neo
 PolyCoder-2.7B,6.1,5.5,FALSE,https://github.com/VHellendoorn/Code-LMs
 StableLM-7B,2.4,2.4,FALSE,https://stablelm.com/
-MagicoderS-CL-7B,70.7,66.5,False,https://github.com/ise-uiuc/magicoder
-MagicoderS-DS-6.7B,76.8,70.7,False,https://github.com/ise-uiuc/magicoder
+Magicoder-S-CL-7B,70.7,66.5,TRUE,https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B
+Magicoder-S-DS-6.7B,76.8,70.7,TRUE,https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B
