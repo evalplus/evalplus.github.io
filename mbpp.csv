@@ -1,6 +1,7 @@
 Model,pass@1_base,pass@1_plus,prompted,link
 GPT-4-Turbo (Nov 2023),83,70.7,TRUE,https://github.com/ise-uiuc/magicoder
 GPT-3.5-Turbo (Nov 2023),81.7,69.4,TRUE,https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+Gemini Pro,72.9,57.9,TRUE,https://deepmind.google/technologies/gemini/
 WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
 DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE,https://deepseekcoder.github.io/
 DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE,https://deepseekcoder.github.io/
