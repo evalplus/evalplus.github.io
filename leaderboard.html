@@ -313,6 +313,10 @@
           for(var i = 0; i < results.data.length; i++){
             var sizeMatch = results.data[i]['Model'].match(/\d+(\.\d+)?B/g);
             sizeMatch = sizeMatch ? Math.round(parseFloat(sizeMatch[0].replace('B', ''))).toString() : 'N/A';
+            // special case for dolphin-2.6-mixtral-8x7b
+            if (results.data[i]['Model'] == 'dolphin-2.6-mixtral-8x7b'){
+              sizeMatch = '13';
+            }
             results.data[i]['Size'] = sizeMatch ;
           }
           results.data.sort(function (a, b) {
