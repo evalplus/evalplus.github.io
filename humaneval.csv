@@ -46,3 +46,4 @@ Magicoder-S-CL-7B,70.7,66.5,TRUE,https://huggingface.co/ise-uiuc/Magicoder-S-CL-
 Magicoder-S-DS-6.7B,76.8,70.7,TRUE,https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B
 dolphin-2.6-mixtral-8x7b,64,57.3,TRUE,https://huggingface.co/cognitivecomputations/dolphin-2.6-mixtral-8x7b
 MistralHermes-CodePro-7B-v1,47.6,39.6,TRUE,https://huggingface.co/beowolx/MistralHermes-CodePro-7B-v1
+phi-2-2.7B,48.2,43.3,FALSE,https://huggingface.co/microsoft/phi-2
