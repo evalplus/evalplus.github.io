@@ -29,3 +29,4 @@ dolphin-2.6-mixtral-8x7b,66.7,54.1,TRUE,https://huggingface.co/cognitivecomputat
 MistralHermes-CodePro-7B-v1,57.4,46.4,TRUE,https://huggingface.co/beowolx/MistralHermes-CodePro-7B-v1
 phi-2-2.7B,61.9,51.4,FALSE,https://huggingface.co/microsoft/phi-2
 SOLAR-10.7B-Instruct-v1.0,42.9,34.6,TRUE,https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0
+WizardCoder-33B-V1.1,78.9,66.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-33B-V1.1
