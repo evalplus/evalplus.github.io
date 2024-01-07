@@ -107,7 +107,9 @@
       <p>to add your models on our leaderboard!</p>
     </div>
     <div class="btn-group" role="group" id="Benchmark">
-      <input type="radio" class="btn-check" name="btnradio" id="HumanEval" checked>
+      <input type="radio" class="btn-check" name="btnradio" id="Average" checked> 
+      <label class="btn btn-outline-primary" for="Average">Average</label>
+      <input type="radio" class="btn-check" name="btnradio" id="HumanEval">
       <label class="btn btn-outline-primary" for="HumanEval">HumanEval</label>
       <input type="radio" class="btn-check" name="btnradio" id="MBPP"> 
       <label class="btn btn-outline-primary" for="MBPP">MBPP</label>
@@ -270,11 +272,11 @@
 
     var data = [];
 
-    var currentUrl = 'humaneval.csv';
+    var currentUrls = ['humaneval.csv', 'mbpp.csv'];
 
-    updateTable(originTable, currentUrl, 'pass@1_base');
-    updateTable(plusedTable, currentUrl, 'pass@1_plus');
-    updateChart(currentUrl);
+    updateTableWithAverageData(originTable, currentUrls, 'pass@1_base');
+    updateTableWithAverageData(plusedTable, currentUrls, 'pass@1_plus');
+    updateChartWithAverageData(currentUrls);
 
     function clearTable() {
       originTable.innerHTML = '';
@@ -304,6 +306,71 @@
       });
     }
 
+    function getAveragedData(urls, selected_column) {
+      return new Promise((resolve, reject) => {
+        var all_data = [];
+        var completed_requests = 0;
+
+        for (var i = 0; i < urls.length; i++) {
+          Papa.parse(urls[i], {
+            download: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+              all_data.push(results.data);
+              completed_requests++;
+
+              if (completed_requests === urls.length) {
+                var model_names = all_data[0].map(function (item) {
+                  return item['Model'];
+                });
+                // find the intersection of model names
+                for (var i = 1; i < all_data.length; i++) {
+                  var current_table = all_data[i];
+                  model_names = model_names.filter(function (model) {
+                    return current_table.some(function (item) {
+                      return item['Model'] === model;
+                    });
+                  });
+                }
+                // filter out models that are not in the intersection
+                averaged_models = all_data[0].filter(function (item) {
+                  return model_names.includes(item['Model']);
+                });
+                // calculate average of selected column
+                for (var i = 0; i < averaged_models.length; i++) {
+                  averaged_models[i][selected_column] = parseFloat(averaged_models[i][selected_column])
+                  for (var j = 1; j < all_data.length; j++) {
+                    var current_table = all_data[j];
+                    var current_model = current_table.find(function (item) {
+                      return item['Model'] === averaged_models[i]['Model'];
+                    });
+                    averaged_models[i][selected_column] += parseFloat(current_model[selected_column]);
+                  }
+                  averaged_models[i][selected_column] = Math.round(
+                      averaged_models[i][selected_column] / all_data.length * 10) / 10;
+                }
+                resolve(averaged_models);
+              }
+            },
+            error: function (error) {
+              reject(error);
+            }
+          });
+        }
+      });
+    }
+
+    function updateTableWithAverageData(table, urls, sortColumn) {
+      clearTable();
+      getAveragedData(urls, sortColumn).then(function(averagedData) {
+        averagedData.sort(function (a, b) {
+          return b[sortColumn] - a[sortColumn];
+        });
+        displayTable(table, averagedData, sortColumn);
+      });
+    }
+
     function updateChart(url) {
       clearChart();
       Papa.parse(url, {
@@ -325,6 +392,26 @@
           });
           displayChart(results.data, url);
         }
+      });
+    }
+
+    function updateChartWithAverageData(urls) {
+      clearChart();
+      // we only use 'plus' data for chart
+      getAveragedData(urls, "pass@1_plus").then(function(averagedData) {
+        for(var i = 0; i < averagedData.length; i++){
+          var sizeMatch = averagedData[i]['Model'].match(/\d+(\.\d+)?B/g);
+          sizeMatch = sizeMatch ? Math.round(parseFloat(sizeMatch[0].replace('B', ''))).toString() : 'N/A';
+          // special case for dolphin-2.6-mixtral-8x7b
+          if (averagedData[i]['Model'] == 'dolphin-2.6-mixtral-8x7b'){
+            sizeMatch = '13';
+          }
+          averagedData[i]['Size'] = sizeMatch ;
+        }
+        averagedData.sort(function (a, b) {
+          return parseFloat(a['Size']) - parseFloat(b['Size']);
+        });
+        displayChart(averagedData, urls);
       });
     }
 
@@ -393,9 +480,16 @@
       table.appendChild(tbody);
     }
 
+    const avergeRadio = document.getElementById('Average');
     const humanEvalRadio = document.getElementById('HumanEval');
     const mbppRadio = document.getElementById('MBPP');
 
+    avergeRadio.addEventListener('click', function () {
+      currentUrls = ['humaneval.csv', 'mbpp.csv'];
+      updateTableWithAverageData(originTable, currentUrls, 'pass@1_base');
+      updateTableWithAverageData(plusedTable, currentUrls, 'pass@1_plus');
+      updateChartWithAverageData(currentUrls);
+    });
     mbppRadio.addEventListener('click', function () {
       currentUrl = 'mbpp.csv';
       updateTable(originTable, currentUrl, 'pass@1_base');
