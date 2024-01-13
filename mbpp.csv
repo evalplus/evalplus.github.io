@@ -31,3 +31,5 @@ phi-2-2.7B,61.9,51.4,FALSE,https://huggingface.co/microsoft/phi-2
 SOLAR-10.7B-Instruct-v1.0,42.9,34.6,TRUE,https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0
 WizardCoder-33B-V1.1,78.9,66.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-33B-V1.1
 OpenChat-3.5-7B-0106,62.2,51.9,TRUE,https://huggingface.co/openchat/openchat-3.5-0106
+speechless-codellama-34b-v2.0,71.4,56.9,TRUE,https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0
+speechless-code-mistral-7b-v1.0,54.9,44.4,TRUE,https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0
