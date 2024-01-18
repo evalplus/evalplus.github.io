@@ -35,3 +35,4 @@ speechless-codellama-34B-v2.0,71.4,56.9,TRUE,https://huggingface.co/uukuguy/spee
 speechless-code-mistral-7B-v1.0,54.9,44.4,TRUE,https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0
 code-millenials-34B,72.9,59.9,TRUE,https://huggingface.co/budecosystem/code-millenials-34b
 xDAN-L1-Chat-RL-v1-7B,49.6,38.8,TRUE,https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1
+stable-code-3b,53.1,43.1,FALSE,https://huggingface.co/stabilityai/stable-code-3b
