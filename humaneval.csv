@@ -8,11 +8,12 @@ WizardCoder-Python-34B-V1.0,73.2,64.6,TRUE,https://huggingface.co/WizardLM/Wizar
 WizardCoder-15B-V1.0,51.9,45.1,TRUE,https://huggingface.co/WizardLM/WizardCoder-15B-V1.0
 WizardCoder-Python-7B-V1.0,48.2,40.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-Python-7B-V1.0
 Phind-CodeLlama-34B-v2,71.3,67.1,FALSE,https://huggingface.co/Phind/Phind-CodeLlama-34B-v2
-DeepSeek-Coder-33B-base,51.2,43.3,FALSE,https://deepseekcoder.github.io/
-DeepSeek-Coder-33B-instruct,78.7,72.6,TRUE,https://deepseekcoder.github.io/
-DeepSeek-Coder-6.7B-base,47.6,39.6,FALSE,https://deepseekcoder.github.io/
-DeepSeek-Coder-6.7B-instruct,73.8,70.1,TRUE,https://deepseekcoder.github.io/
-DeepSeek-Coder-1.3B-instruct,64.6,58.5,TRUE,https://deepseekcoder.github.io/
+DeepSeek-Coder-33B-base,51.2,43.3,FALSE,https://huggingface.co/deepseek-ai/deepseek-coder-33b-base
+DeepSeek-Coder-33B-instruct,78.7,72.6,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
+DeepSeek-Coder-6.7B-base,47.6,39.6,FALSE,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
+DeepSeek-Coder-6.7B-instruct,73.8,70.1,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
+DeepSeek-Coder-1.3B-base,28.7,23.8,FALSE,https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+DeepSeek-Coder-1.3B-instruct,64.6,58.5,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
 Mistral-7B,28.7,23.2,FALSE,https://mistral.ai/news/announcing-mistral-7b/
 Mistral-codealpaca-7B,48.2,40.9,FALSE,https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora
 Zephyr β-7B,30,23.2,FALSE,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
