@@ -56,3 +56,4 @@ speechless-code-mistral-7B-v1.0,44.5,38.4,TRUE,https://huggingface.co/uukuguy/sp
 code-millenials-34B,71.3,67.7,TRUE,https://huggingface.co/budecosystem/code-millenials-34b
 xDAN-L1-Chat-RL-v1-7B,40.2,32.3,TRUE,https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1
 stable-code-3B,28.7,24.4,FALSE,https://huggingface.co/stabilityai/stable-code-3b
+zyte-1B,2.4,1.8,TRUE,https://huggingface.co/aihub-app/zyte-1B

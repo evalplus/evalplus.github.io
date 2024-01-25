@@ -17,7 +17,7 @@ CodeLlama-13B,61.2,50.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-fo
 CodeLlama-34B,67.2,52.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeT5+-2B,46.4,36.6,FALSE,https://blog.salesforceairesearch.com/codet5/
 CodeT5+-6B,51.9,40.9,FALSE,https://blog.salesforceairesearch.com/codet5/
-CodeT5+-16B,54.6,44.4,FALSEhttps://blog.salesforceairesearch.com/codet5/
+CodeT5+-16B,54.6,44.4,FALSE,https://blog.salesforceairesearch.com/codet5/
 CodeGen-2B,44.9,35.1,FALSE,https://arxiv.org/abs/2203.13474
 CodeGen-6B,49.9,42.1,FALSE,https://arxiv.org/abs/2203.13474
 CodeGen-16B,52.6,43.6,FALSE,https://arxiv.org/abs/2203.13474
@@ -36,3 +36,4 @@ speechless-code-mistral-7B-v1.0,54.9,44.4,TRUE,https://huggingface.co/uukuguy/sp
 code-millenials-34B,72.9,59.9,TRUE,https://huggingface.co/budecosystem/code-millenials-34b
 xDAN-L1-Chat-RL-v1-7B,49.6,38.8,TRUE,https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1
 stable-code-3B,53.1,43.1,FALSE,https://huggingface.co/stabilityai/stable-code-3b
+zyte-1B,9.8,7.5,TRUE,https://huggingface.co/aihub-app/zyte-1B
