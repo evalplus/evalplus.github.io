@@ -15,6 +15,8 @@ StarCoder-15B,55.1,46.1,FALSE,https://arxiv.org/abs/2305.06161
 CodeLlama-7B,57.6,45.4,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-13B,61.2,50.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-34B,67.2,52.9,FALSE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
+CodeLlama-70B-Instruct,65.2,58.5,TRUE,https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf
+CodeLlama-70B,55.5,50.0,FALSE,https://huggingface.co/codellama/CodeLlama-70b-Python-hf
 CodeT5+-2B,46.4,36.6,FALSE,https://blog.salesforceairesearch.com/codet5/
 CodeT5+-6B,51.9,40.9,FALSE,https://blog.salesforceairesearch.com/codet5/
 CodeT5+-16B,54.6,44.4,FALSE,https://blog.salesforceairesearch.com/codet5/
