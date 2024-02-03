@@ -59,3 +59,4 @@ code-millenials-34B,74.4,70.1,TRUE,https://huggingface.co/budecosystem/code-mill
 xDAN-L1-Chat-RL-v1-7B,40.2,33.5,TRUE,https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1
 stable-code-3B,28.7,25.6,FALSE,https://huggingface.co/stabilityai/stable-code-3b
 zyte-1B,2.4,1.8,TRUE,https://huggingface.co/aihub-app/zyte-1B
+WhiteRabbitNeo-33B-v1,72.0,62.5,TRUE,https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1
