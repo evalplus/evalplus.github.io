@@ -6,7 +6,7 @@ WizardCoder-Python-34B-V1.0,73.2,59.9,TRUE,https://huggingface.co/WizardLM/Wizar
 DeepSeek-Coder-33B-instruct,78.7,66.7,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
 DeepSeek-Coder-6.7B-base,70.2,56.6,FALSE,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 DeepSeek-Coder-6.7B-instruct,73.2,63.4,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
-DeepSeek-Coder-7B-instruct-v1.5,75.2,62.2,True,https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5
+DeepSeek-Coder-7B-instruct-v1.5,75.2,62.2,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5
 DeepSeek-Coder-1.3B-base,55.6,46.9,FALSE,https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
 DeepSeek-Coder-1.3B-instruct,63.9,53.1,TRUE,https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
 Mistral-7B,50.1,40.9,FALSE,https://mistral.ai/news/announcing-mistral-7b/
@@ -36,8 +36,8 @@ WizardCoder-33B-V1.1,78.9,66.9,TRUE,https://huggingface.co/WizardLM/WizardCoder-
 OpenChat-3.5-7B-0106,62.7,52.9,TRUE,https://huggingface.co/openchat/openchat-3.5-0106
 speechless-codellama-34B-v2.0,72.4,59.1,TRUE,https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0
 speechless-code-mistral-7B-v1.0,55.6,45.4,TRUE,https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0
-speechless-coder-ds-6.7b,75.9,64.4,True,https://huggingface.co/uukuguy/speechless-coder-ds-6.7b
-speechless-coding-7b-16k-tora,64.2,50.6,True,https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora
+speechless-coder-ds-6.7b,75.9,64.4,TRUE,https://huggingface.co/uukuguy/speechless-coder-ds-6.7b
+speechless-coding-7b-16k-tora,64.2,50.6,TRUE,https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora
 code-millenials-34B,74.2,61.7,TRUE,https://huggingface.co/budecosystem/code-millenials-34b
 Code-13B,52.9,42.6,TRUE,https://huggingface.co/ajibawa-2023/Code-13B
 Code-33B,51.1,42.4,TRUE,https://huggingface.co/ajibawa-2023/Code-33B
