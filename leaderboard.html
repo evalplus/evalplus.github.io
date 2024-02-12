@@ -129,11 +129,12 @@
       <h3>📝 Notes</h3>
       <p class="inline-block mt-3">
         <ol>
-          <li>All samples are generated from scratch and are uniformly post-processed by <a href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">our sanitizer script</a>. Syntactical checkers are used to make sure that trivial syntactical errors (e.g., Python indents) do not contribute to failing tests.</li>
-          <li>By default, models are ranked according to pass@1 using greedy decoding. Model setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a>.</li>
-          <li>Models labelled with 🗒️ are evaluated using an instruction/chat setting, while others perform direct code generation given the prompt.</li>
+          <li>Samples are generated from scratch and are post-processed by <a href="https://github.com/evalplus/evalplus/tree/master/tools/sanitize.py">our sanitizer script</a>. We also run syntax checkers to avoid trivial syntactical errors.</li>
+          <li>Models are ranked according to pass@1 using greedy decoding. Setup details can be found <a href="https://github.com/evalplus/evalplus/blob/master/codegen/model.py">here</a>.</li>
+          <li>Models labelled with ✨ are evaluated using an instruction/chat setting, while others perform direct code generation given the prompt.</li>
           <li>Both MBPP and MBPP+ referred in our leaderboard use a subset (399 tasks) of hand-verified problems from MBPP-sanitized (427 tasks), to make sure the programming task is well-formed and unambiguous.</li>
-          <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
+          <li>It is the model providers' responsibility to avoid data contamination and clarify the training data, and we cannot guarantee if evaluated models are contaminated.</li>
+          <li>💚 means the model is fully open-sourced with weights and training data. 💙 means, while the weights & fine-tuning data is known, the base model is trained on unknown data. What does this mean? Because we know how 💚 models are trained (or partially trained for 💙 models) so we can somehow reason and measure its contamination.</li>
           <li>The "size" of Mixtral 8x7B models is regarded to be 13B, aka the actual required compute per inference.</li>
         </ol>
       </p>
@@ -462,10 +463,23 @@
         modelCell.classList.add('d-flex');
         modelCell.classList.add('flex-nowrap');
         var prompted = row['prompted'];
-        if (prompted == 'TRUE') {
+        var opendata = row['OD'];
+        if (prompted == 'True') {
           // add a symbol to indicate the model is prompted
           var promptedSymbol = document.createElement('span');
-          promptedSymbol.textContent = '🗒️';
+          promptedSymbol.textContent = '✨';
+          modelCell.appendChild(promptedSymbol);
+        }
+        if (opendata.toUpperCase() == "FULL") {
+          // add a symbol to indicate the model is fully open-sourced
+          var promptedSymbol = document.createElement('span');
+          promptedSymbol.textContent = '💚'
+          modelCell.appendChild(promptedSymbol);
+        } else if (opendata.toUpperCase() == "PARTIAL") {
+          // add a symbol to indicate the model is partially open-sourced
+          // i.e., a subset of the model implementation is close-sourced
+          var promptedSymbol = document.createElement('span');
+          promptedSymbol.textContent = '💙';
           modelCell.appendChild(promptedSymbol);
         }
         dataRow.appendChild(modelCell);
@@ -531,7 +545,7 @@
 
       data.forEach(function(row) {
         if (row['Size'] == 'N/A') {
-          if (row['prompted'] == 'TRUE') {
+          if (row['prompted'].toUpperCase() == 'TRUE') {
             option.series[1].markLine.data.push({
               name: row['Model'],
               yAxis: row['pass@1_plus']
@@ -543,7 +557,7 @@
             });
           }
         } else {
-          if (row['prompted'] == 'TRUE') {
+          if (row['prompted'].toUpperCase() == 'TRUE') {
             option.series[1].data.push({
               name: row['Model'],
               value: [row['Size'], row['pass@1_plus']],
@@ -572,7 +586,7 @@
 
         data.forEach(function(row) {
           if (row['Size'] == size) {
-            if(row['prompted'] == 'TRUE') {
+            if(row['prompted'].toUpperCase() == 'TRUE') {
               if (parseFloat(row['pass@1_plus']) > maxScoreIns) {
                 maxScoreIns = parseFloat(row['pass@1_plus']);
                 maxModelIns = row['Model'];
