@@ -56,8 +56,8 @@ WizardCoder-33B-V1.1,79.9,73.2,True,NONE,https://huggingface.co/WizardLM/WizardC
 OpenChat-3.5-7B-0106,72.0,67.1,True,Partial,https://huggingface.co/openchat/openchat-3.5-0106
 speechless-codellama-34B-v2.0,77.4,71.3,True,Partial,https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0
 speechless-code-mistral-7B-v1.0,48.2,40.9,True,Partial,https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0
-speechless-coder-ds-6.7b,71.3,64.6,True,Partial,https://huggingface.co/uukuguy/speechless-coder-ds-6.7b
-speechless-coding-7b-16k-tora,54.9,49.4,True,Partial,https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora
+speechless-coder-ds-6.7B,71.3,64.6,True,Partial,https://huggingface.co/uukuguy/speechless-coder-ds-6.7b
+speechless-coding-7B-16k-tora,54.9,49.4,True,Partial,https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora
 code-millenials-34B,74.4,70.1,True,NONE,https://huggingface.co/budecosystem/code-millenials-34b
 Code-13B,56.1,51.8,True,Partial,https://huggingface.co/ajibawa-2023/Code-13B
 Code-33B,54.9,49.4,True,Partial,https://huggingface.co/ajibawa-2023/Code-33B
