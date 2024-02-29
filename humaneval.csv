@@ -18,10 +18,13 @@ DeepSeek-Coder-1.3B-instruct,65.2,59.8,True,NONE,https://huggingface.co/deepseek
 Mistral-7B,28.7,23.8,False,NONE,https://mistral.ai/news/announcing-mistral-7b/
 Mistral-codealpaca-7B,48.2,42.1,False,Partial,https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora
 Zephyr β-7B,30.0,23.2,False,Partial,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
-StarCoder-15B,34.1,29.3,False,Full,https://arxiv.org/abs/2305.06161
-StarCoder-1B,14.6,12.2,False,Full,https://arxiv.org/abs/2305.06161
-StarCoder-3B,17.7,15.9,False,Full,https://arxiv.org/abs/2305.06161
-StarCoder-7B,24.4,21.3,False,Full,https://arxiv.org/abs/2305.06161
+StarCoder-15B,34.1,29.3,False,Full,https://huggingface.co/bigcode/starcoder
+StarCoderBase-1B,14.6,12.2,False,Full,https://huggingface.co/bigcode/starcoderbase-1b
+StarCoderBase-3B,17.7,15.9,False,Full,https://huggingface.co/bigcode/starcoderbase-3b
+StarCoderBase-7B,24.4,21.3,False,Full,https://huggingface.co/bigcode/starcoderbase-7b
+StarCoder2-15B,46.3,37.8,False,Full,https://huggingface.co/bigcode/starcoder2-15b
+StarCoder2-7B,35.4,29.9,False,Full,https://huggingface.co/bigcode/starcoder2-7b
+StarCoder2-3B,31.7,27.4,False,Full,https://huggingface.co/bigcode/starcoder2-3b
 CodeLlama-7B,37.8,35.4,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-13B,42.7,38.4,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-34B,51.8,43.9,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/

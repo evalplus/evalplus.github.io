@@ -11,8 +11,11 @@ DeepSeek-Coder-1.3B-base,55.6,46.9,False,NONE,https://huggingface.co/deepseek-ai
 DeepSeek-Coder-1.3B-instruct,63.9,53.1,True,NONE,https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
 Mistral-7B,50.1,40.9,False,NONE,https://mistral.ai/news/announcing-mistral-7b/
 Zephyr β-7B,41.1,34.3,False,Partial,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
-StarCoder-7B,33.1,28.8,False,NONE,https://arxiv.org/abs/2305.06161
-StarCoder-15B,55.1,46.1,False,NONE,https://arxiv.org/abs/2305.06161
+StarCoderBase-7B,33.1,28.8,False,Full,https://huggingface.co/bigcode/starcoderbase-7b
+StarCoder-15B,55.1,46.1,False,Full,https://arxiv.org/abs/2305.06161
+StarCoder2-15B,66.2,53.1,False,Full,https://huggingface.co/bigcode/starcoder2-15b
+StarCoder2-7B,54.4,45.6,False,Full,https://huggingface.co/bigcode/starcoder2-7b
+StarCoder2-3B,57.4,47.4,False,Full,https://huggingface.co/bigcode/starcoder2-3b
 CodeLlama-7B,57.9,46.1,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-13B,61.2,50.9,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
 CodeLlama-34B,67.2,52.9,False,NONE,https://about.fb.com/news/2023/08/code-llama-ai-for-coding/amp/
