@@ -5,6 +5,7 @@ GPT-3.5-Turbo (Nov 2023),76.8,70.7,True,NONE,https://openai.com/blog/new-models-
 GPT-3.5 (May 2023),73.2,66.5,True,NONE,https://openai.com/blog/chatgpt
 claude-instant-1 (Mar 2024),57.3,50.6,True,NONE,https://www.anthropic.com/news/releasing-claude-instant-1-2
 claude-2 (Mar 2024),69.5,61.6,True,NONE,https://www.anthropic.com/news/claude-2
+claude-3-sonnet (Mar 2024),70.7,62.2,True,NONE,https://www.anthropic.com/news/claude-3-family
 Gemini Pro,63.4,55.5,True,NONE,https://deepmind.google/technologies/gemini/
 WizardCoder-Python-34B-V1.0,73.2,64.6,True,NONE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
 WizardCoder-15B-V1.0,57.3,51.8,True,NONE,https://huggingface.co/WizardLM/WizardCoder-15B-V1.0
