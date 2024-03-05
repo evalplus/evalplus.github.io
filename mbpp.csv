@@ -4,6 +4,7 @@ GPT-3.5-Turbo (Nov 2023),82.5,69.7,True,NONE,https://openai.com/blog/new-models-
 claude-3-opus (Mar 2024),86.5,69.2,True,NONE,https://www.anthropic.com/news/claude-3-family
 claude-3-sonnet (Mar 2024),82.0,66.4,True,NONE,https://www.anthropic.com/news/claude-3-family
 Gemini Pro 1.0,72.9,57.9,True,NONE,https://deepmind.google/technologies/gemini/
+Mistral Large (Mar 2024),70.2,56.4,True,NONE,https://mistral.ai/news/mistral-large/
 WizardCoder-Python-34B-V1.0,73.2,59.9,True,NONE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
 DeepSeek-Coder-33B-instruct,78.7,66.7,True,NONE,https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
 DeepSeek-Coder-6.7B-base,70.2,56.6,False,NONE,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
