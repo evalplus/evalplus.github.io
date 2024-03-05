@@ -7,7 +7,7 @@ claude-instant-1 (Mar 2024),57.3,50.6,True,NONE,https://www.anthropic.com/news/r
 claude-2 (Mar 2024),69.5,61.6,True,NONE,https://www.anthropic.com/news/claude-2
 claude-3-opus (Mar 2024),82.9,76.8,True,NONE,https://www.anthropic.com/news/claude-3-family
 claude-3-sonnet (Mar 2024),70.7,62.8,True,NONE,https://www.anthropic.com/news/claude-3-family
-Gemini Pro,63.4,55.5,True,NONE,https://deepmind.google/technologies/gemini/
+Gemini Pro 1.0,63.4,55.5,True,NONE,https://deepmind.google/technologies/gemini/
 WizardCoder-Python-34B-V1.0,73.2,64.6,True,NONE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
 WizardCoder-15B-V1.0,57.3,51.8,True,NONE,https://huggingface.co/WizardLM/WizardCoder-15B-V1.0
 WizardCoder-Python-7B-V1.0,48.2,40.9,True,NONE,https://huggingface.co/WizardLM/WizardCoder-Python-7B-V1.0
