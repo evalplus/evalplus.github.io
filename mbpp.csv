@@ -1,6 +1,8 @@
 Model,pass@1_base,pass@1_plus,prompted,OD,link
 GPT-4-Turbo (Nov 2023),83.5,70.7,True,NONE,https://github.com/ise-uiuc/magicoder
 GPT-3.5-Turbo (Nov 2023),82.5,69.7,True,NONE,https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+claude-3-opus (Mar 2024),86.5,69.2,True,NONE,https://www.anthropic.com/news/claude-3-family
+claude-3-sonnet (Mar 2024),82.0,66.4,True,NONE,https://www.anthropic.com/news/claude-3-family
 Gemini Pro,72.9,57.9,True,NONE,https://deepmind.google/technologies/gemini/
 WizardCoder-Python-34B-V1.0,73.2,59.9,True,NONE,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
 DeepSeek-Coder-33B-instruct,78.7,66.7,True,NONE,https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
