@@ -52,3 +52,5 @@ XwinCoder-34B,76.2,62.4,True,NONE,https://huggingface.co/Xwin-LM/XwinCoder-34B
 stable-code-3B,53.6,44.1,False,Full,https://huggingface.co/stabilityai/stable-code-3b
 zyte-1B,9.8,7.5,True,Partial,https://huggingface.co/aihub-app/zyte-1B
 WhiteRabbitNeo-33B-v1,76.9,62.7,True,NONE,https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1
+OpenCodeInterpreter-DS-33B,79.2,67.7,True,Partial,https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-33B
+OpenCodeInterpreter-DS-6.7B,72.4,63.2,True,Partial,https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-6.7B
