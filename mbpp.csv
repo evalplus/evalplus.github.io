@@ -48,6 +48,7 @@ speechless-coding-7B-16k-tora,64.2,50.6,True,Partial,https://huggingface.co/uuku
 code-millenials-34B,74.2,61.7,True,NONE,https://huggingface.co/budecosystem/code-millenials-34b
 Code-13B,52.9,42.6,True,Partial,https://huggingface.co/ajibawa-2023/Code-13B
 Code-33B,51.1,42.4,True,Partial,https://huggingface.co/ajibawa-2023/Code-33B
+Code-290k-6.7B-Instruct,68.7,58.6,True,Partial,https://huggingface.co/ajibawa-2023/Code-290k-6.7B-Instruct
 Python-Code-13B,43.9,35.1,True,Partial,https://huggingface.co/ajibawa-2023/Python-Code-13B
 xDAN-L1-Chat-RL-v1-7B,49.6,39.6,True,Partial,https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1
 XwinCoder-34B,76.2,62.4,True,NONE,https://huggingface.co/Xwin-LM/XwinCoder-34B
