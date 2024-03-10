@@ -40,6 +40,7 @@ phi-2-2.7B,62.7,52.9,False,NONE,https://huggingface.co/microsoft/phi-2
 SOLAR-10.7B-Instruct-v1.0,43.1,35.1,True,Partial,https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0
 WizardCoder-33B-V1.1,78.9,66.9,True,NONE,https://huggingface.co/WizardLM/WizardCoder-33B-V1.1
 OpenChat-3.5-7B-0106,62.7,52.9,True,Partial,https://huggingface.co/openchat/openchat-3.5-0106
+OpenHermes-2.5-Code-290k-13B,50.9,43.6,True,Partial,https://huggingface.co/ajibawa-2023/OpenHermes-2.5-Code-290k-13B
 speechless-codellama-34B-v2.0,72.4,59.1,True,Partial,https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0
 speechless-code-mistral-7B-v1.0,55.6,45.4,True,Partial,https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0
 speechless-coder-ds-6.7B,75.9,64.4,True,Partial,https://huggingface.co/uukuguy/speechless-coder-ds-6.7b
