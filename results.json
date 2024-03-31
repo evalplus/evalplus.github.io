@@ -433,6 +433,20 @@
     "prompted": false,
     "size": 2.7
   },
+  "Gemini Pro 1.5": {
+    "link": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 68.3,
+      "mbpp": null
+    },
+    "pass@1_plus": {
+      "humaneval": 61.0,
+      "mbpp": null
+    },
+    "prompted": true,
+    "size": null
+  },
   "Gemini Pro 1.0": {
     "link": "https://deepmind.google/technologies/gemini/",
     "open-data": "NONE",
