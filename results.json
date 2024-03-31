@@ -951,6 +951,20 @@
     "prompted": true,
     "size": null
   },
+  "claude-3-haiku (Mar 2024)": {
+    "link": "https://www.anthropic.com/news/claude-3-family",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 76.8,
+      "mbpp": 77.4
+    },
+    "pass@1_plus": {
+      "humaneval": 68.3,
+      "mbpp": 64.4
+    },
+    "prompted": true,
+    "size": null
+  },
   "claude-3-opus (Mar 2024)": {
     "link": "https://www.anthropic.com/news/claude-3-family",
     "open-data": "NONE",
