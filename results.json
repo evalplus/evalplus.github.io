@@ -433,20 +433,6 @@
     "prompted": false,
     "size": 2.7
   },
-  "Gemini Pro 1.5": {
-    "link": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
-    "open-data": "NONE",
-    "pass@1_base": {
-      "humaneval": 68.3,
-      "mbpp": null
-    },
-    "pass@1_plus": {
-      "humaneval": 61.0,
-      "mbpp": null
-    },
-    "prompted": true,
-    "size": null
-  },
   "Gemini Pro 1.0": {
     "link": "https://deepmind.google/technologies/gemini/",
     "open-data": "NONE",
@@ -457,6 +443,20 @@
     "pass@1_plus": {
       "humaneval": 55.5,
       "mbpp": 57.9
+    },
+    "prompted": true,
+    "size": null
+  },
+  "Gemini Pro 1.5": {
+    "link": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 68.3,
+      "mbpp": null
+    },
+    "pass@1_plus": {
+      "humaneval": 61.0,
+      "mbpp": null
     },
     "prompted": true,
     "size": null
@@ -1034,6 +1034,62 @@
     },
     "prompted": true,
     "size": 13
+  },
+  "gemma-2b": {
+    "link": "https://huggingface.co/google/gemma-2b",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 25.0,
+      "mbpp": 40.9
+    },
+    "pass@1_plus": {
+      "humaneval": 20.1,
+      "mbpp": 32.8
+    },
+    "prompted": false,
+    "size": 2.0
+  },
+  "gemma-2b-it": {
+    "link": "https://huggingface.co/google/gemma-2b-it",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 17.7,
+      "mbpp": 27.1
+    },
+    "pass@1_plus": {
+      "humaneval": 15.2,
+      "mbpp": 22.3
+    },
+    "prompted": false,
+    "size": 2.0
+  },
+  "gemma-7b": {
+    "link": "https://huggingface.co/google/gemma-7b",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 26.8,
+      "mbpp": 50.6
+    },
+    "pass@1_plus": {
+      "humaneval": 20.1,
+      "mbpp": 40.6
+    },
+    "prompted": true,
+    "size": 7.0
+  },
+  "gemma-7b-it": {
+    "link": "https://huggingface.co/google/gemma-7b-it",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 28.7,
+      "mbpp": 47.1
+    },
+    "pass@1_plus": {
+      "humaneval": 24.4,
+      "mbpp": 36.8
+    },
+    "prompted": true,
+    "size": 7.0
   },
   "phi-2-2.7B": {
     "link": "https://huggingface.co/microsoft/phi-2",
