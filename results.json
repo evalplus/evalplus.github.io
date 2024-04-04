@@ -1161,6 +1161,34 @@
     "prompted": true,
     "size": 7.0
   },
+  "speechless-starcoder2-15b": {
+    "link": "https://huggingface.co/uukuguy/speechless-starcoder2-15b",
+    "open-data": "Full",
+    "pass@1_base": {
+      "humaneval": 67.1,
+      "mbpp": 71.4
+    },
+    "pass@1_plus": {
+      "humaneval": 61.6,
+      "mbpp": 58.6
+    },
+    "prompted": true,
+    "size": 15.0
+  },
+  "speechless-starcoder2-7b": {
+    "link": "https://huggingface.co/uukuguy/speechless-starcoder2-7b",
+    "open-data": "Full",
+    "pass@1_base": {
+      "humaneval": 56.1,
+      "mbpp": 65.2
+    },
+    "pass@1_plus": {
+      "humaneval": 51.2,
+      "mbpp": 53.4
+    },
+    "prompted": true,
+    "size": 7.0
+  },
   "stable-code-3B": {
     "link": "https://huggingface.co/stabilityai/stable-code-3b",
     "open-data": "Full",
