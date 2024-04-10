@@ -405,6 +405,20 @@
     "prompted": true,
     "size": null
   },
+  "GPT-4-Turbo (April 2024)": {
+    "link": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 90.2,
+      "mbpp": null
+    },
+    "pass@1_plus": {
+      "humaneval": 86.6,
+      "mbpp": null
+    },
+    "prompted": true,
+    "size": null
+  },
   "GPT-J-6B": {
     "link": "https://www.eleuther.ai/artifacts/gpt-j",
     "open-data": "Full",
