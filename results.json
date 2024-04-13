@@ -391,20 +391,6 @@
     "prompted": true,
     "size": null
   },
-  "GPT-4-Turbo (Nov 2023)": {
-    "link": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
-    "open-data": "NONE",
-    "pass@1_base": {
-      "humaneval": 85.4,
-      "mbpp": 83.5
-    },
-    "pass@1_plus": {
-      "humaneval": 81.7,
-      "mbpp": 70.7
-    },
-    "prompted": true,
-    "size": null
-  },
   "GPT-4-Turbo (April 2024)": {
     "link": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
     "open-data": "NONE",
@@ -415,6 +401,20 @@
     "pass@1_plus": {
       "humaneval": 86.6,
       "mbpp": null
+    },
+    "prompted": true,
+    "size": null
+  },
+  "GPT-4-Turbo (Nov 2023)": {
+    "link": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 85.4,
+      "mbpp": 83.5
+    },
+    "pass@1_plus": {
+      "humaneval": 81.7,
+      "mbpp": 70.7
     },
     "prompted": true,
     "size": null
@@ -586,6 +586,20 @@
     },
     "prompted": true,
     "size": 7.0
+  },
+  "Mixtral-8x7B-Instruct-v0.1": {
+    "link": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 45.1,
+      "mbpp": 58.6
+    },
+    "pass@1_plus": {
+      "humaneval": 39.6,
+      "mbpp": 49.7
+    },
+    "prompted": true,
+    "size": 13
   },
   "OpenChat-3.5-7B-0106": {
     "link": "https://huggingface.co/openchat/openchat-3.5-0106",
@@ -1035,19 +1049,47 @@
     "prompted": true,
     "size": 34.0
   },
-  "Mixtral-8x7B-Instruct-v0.1": {
-    "link": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "codegemma-2b": {
+    "link": "https://huggingface.co/google/codegemma-2b",
     "open-data": "NONE",
     "pass@1_base": {
-      "humaneval": 45.1,
-      "mbpp": 58.6
+      "humaneval": 26.8,
+      "mbpp": 53.4
     },
     "pass@1_plus": {
-      "humaneval": 39.6,
-      "mbpp": 49.7
+      "humaneval": 20.7,
+      "mbpp": 44.1
+    },
+    "prompted": false,
+    "size": 2.0
+  },
+  "codegemma-7b": {
+    "link": "https://huggingface.co/google/codegemma-7b",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 40.2,
+      "mbpp": 62.9
+    },
+    "pass@1_plus": {
+      "humaneval": 29.9,
+      "mbpp": 49.1
+    },
+    "prompted": false,
+    "size": 7.0
+  },
+  "codegemma-7b-it": {
+    "link": "https://huggingface.co/google/codegemma-7b-it",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 60.4,
+      "mbpp": 68.7
+    },
+    "pass@1_plus": {
+      "humaneval": 51.2,
+      "mbpp": 54.4
     },
     "prompted": true,
-    "size": 13
+    "size": 7.0
   },
   "dolphin-2.6-mixtral-8x7b": {
     "link": "https://huggingface.co/cognitivecomputations/dolphin-2.6-mixtral-8x7b",
@@ -1088,7 +1130,7 @@
       "humaneval": 15.2,
       "mbpp": 22.3
     },
-    "prompted": false,
+    "prompted": true,
     "size": 2.0
   },
   "gemma-7b": {
@@ -1102,7 +1144,7 @@
       "humaneval": 20.1,
       "mbpp": 40.6
     },
-    "prompted": true,
+    "prompted": false,
     "size": 7.0
   },
   "gemma-7b-it": {
