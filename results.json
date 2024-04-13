@@ -46,7 +46,7 @@
     "open-data": "Full",
     "pass@1_base": {
       "humaneval": 32.9,
-      "mbpp": 53.1
+      "mbpp": 53.9
     },
     "pass@1_plus": {
       "humaneval": 28.0,
@@ -298,7 +298,7 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 81.1,
-      "mbpp": 78.7
+      "mbpp": 78.4
     },
     "pass@1_plus": {
       "humaneval": 75.0,
@@ -508,11 +508,11 @@
     "open-data": "Partial",
     "pass@1_base": {
       "humaneval": 70.7,
-      "mbpp": 68.4
+      "mbpp": 69.2
     },
     "pass@1_plus": {
       "humaneval": 66.5,
-      "mbpp": 56.6
+      "mbpp": 57.1
     },
     "prompted": true,
     "size": 7.0
@@ -521,12 +521,12 @@
     "link": "https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B",
     "open-data": "Partial",
     "pass@1_base": {
-      "humaneval": 76.8,
+      "humaneval": 76.9,
       "mbpp": 75.4
     },
     "pass@1_plus": {
       "humaneval": 70.7,
-      "mbpp": 64.4
+      "mbpp": 65.4
     },
     "prompted": true,
     "size": 6.7
@@ -536,11 +536,11 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 70.1,
-      "mbpp": 70.2
+      "mbpp": 70.4
     },
     "pass@1_plus": {
       "humaneval": 62.8,
-      "mbpp": 56.4
+      "mbpp": 56.6
     },
     "prompted": true,
     "size": null
@@ -970,11 +970,11 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 76.8,
-      "mbpp": 77.4
+      "mbpp": 78.2
     },
     "pass@1_plus": {
       "humaneval": 68.3,
-      "mbpp": 64.4
+      "mbpp": 64.9
     },
     "prompted": true,
     "size": null
@@ -988,7 +988,7 @@
     },
     "pass@1_plus": {
       "humaneval": 76.8,
-      "mbpp": 69.2
+      "mbpp": 69.4
     },
     "prompted": true,
     "size": null
@@ -998,11 +998,11 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 70.7,
-      "mbpp": 82.0
+      "mbpp": 82.2
     },
     "pass@1_plus": {
       "humaneval": 62.8,
-      "mbpp": 66.4
+      "mbpp": 66.7
     },
     "prompted": true,
     "size": null
@@ -1034,6 +1034,20 @@
     },
     "prompted": true,
     "size": 34.0
+  },
+  "Mixtral-8x7B-Instruct-v0.1": {
+    "link": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 45.1,
+      "mbpp": 58.6
+    },
+    "pass@1_plus": {
+      "humaneval": 39.6,
+      "mbpp": 49.7
+    },
+    "prompted": true,
+    "size": 13
   },
   "dolphin-2.6-mixtral-8x7b": {
     "link": "https://huggingface.co/cognitivecomputations/dolphin-2.6-mixtral-8x7b",
@@ -1110,11 +1124,11 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 48.8,
-      "mbpp": 62.7
+      "mbpp": 62.9
     },
     "pass@1_plus": {
       "humaneval": 45.1,
-      "mbpp": 52.9
+      "mbpp": 52.4
     },
     "prompted": false,
     "size": 2.7
@@ -1138,11 +1152,11 @@
     "open-data": "Partial",
     "pass@1_base": {
       "humaneval": 77.4,
-      "mbpp": 72.4
+      "mbpp": 72.7
     },
     "pass@1_plus": {
       "humaneval": 71.3,
-      "mbpp": 59.1
+      "mbpp": 58.6
     },
     "prompted": true,
     "size": 34.0
@@ -1180,11 +1194,11 @@
     "open-data": "Full",
     "pass@1_base": {
       "humaneval": 67.1,
-      "mbpp": 71.4
+      "mbpp": 72.2
     },
     "pass@1_plus": {
       "humaneval": 61.6,
-      "mbpp": 58.6
+      "mbpp": 59.1
     },
     "prompted": true,
     "size": 15.0
@@ -1208,7 +1222,7 @@
     "open-data": "Full",
     "pass@1_base": {
       "humaneval": 28.7,
-      "mbpp": 53.6
+      "mbpp": 54.4
     },
     "pass@1_plus": {
       "humaneval": 25.6,
