@@ -1105,6 +1105,34 @@
     "prompted": true,
     "size": 13
   },
+  "gemma-1.1-2b-it": {
+    "link": "https://huggingface.co/google/gemma-1.1-2b-it",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 22.6,
+      "mbpp": 29.8
+    },
+    "pass@1_plus": {
+      "humaneval": 17.7,
+      "mbpp": 23.3
+    },
+    "prompted": true,
+    "size": 7.0
+  },
+  "gemma-1.1-7b-it": {
+    "link": "https://huggingface.co/google/gemma-1.1-7b-it",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 42.7,
+      "mbpp": 55.9
+    },
+    "pass@1_plus": {
+      "humaneval": 34.8,
+      "mbpp": 43.1
+    },
+    "prompted": true,
+    "size": 7.0
+  },
   "gemma-2b": {
     "link": "https://huggingface.co/google/gemma-2b",
     "open-data": "NONE",
