@@ -284,11 +284,11 @@
     "open-data": "NONE",
     "pass@1_base": {
       "humaneval": 51.2,
-      "mbpp": null
+      "mbpp": 73.2
     },
     "pass@1_plus": {
       "humaneval": 44.5,
-      "mbpp": null
+      "mbpp": 59.1
     },
     "prompted": false,
     "size": 33.0
