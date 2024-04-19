@@ -1,4 +1,32 @@
 {
+  "CodeQwen1.5": {
+    "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 51.8,
+      "mbpp": 72.7
+    },
+    "pass@1_plus": {
+      "humaneval": 45.7,
+      "mbpp": 60.2
+    },
+    "prompted": false,
+    "size": 7
+  },
+  "CodeQwen1.5-Chat": {
+    "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 83.5,
+      "mbpp": 77.7
+    },
+    "pass@1_plus": {
+      "humaneval": 78.7,
+      "mbpp": 67.2
+    },
+    "prompted": true,
+    "size": 7
+  },
   "Artigenz-Coder-DS-6.7B": {
     "link": "https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B",
     "open-data": "NONE",
@@ -10,7 +38,7 @@
       "humaneval": 72.6,
       "mbpp": 67.9
     },
-    "prompted": false,
+    "prompted": true,
     "size": 6.7
   },
   "Llama3-8B-base": {
@@ -38,7 +66,7 @@
       "humaneval": 56.7,
       "mbpp": 57.4
     },
-    "prompted": false,
+    "prompted": true,
     "size": 8.0
   },
   "Code-13B": {
