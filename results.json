@@ -1,4 +1,18 @@
 {
+  "Artigenz-Coder-DS-6.7B": {
+    "link": "https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 75.6,
+      "mbpp": 79.2
+    },
+    "pass@1_plus": {
+      "humaneval": 72.6,
+      "mbpp": 67.9
+    },
+    "prompted": false,
+    "size": 6.7
+  },
   "Llama3-8B-base": {
     "link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
     "open-data": "NONE",
