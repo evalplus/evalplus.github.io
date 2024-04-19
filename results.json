@@ -1,4 +1,32 @@
 {
+  "Llama3-8B-base": {
+    "link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 33.5,
+      "mbpp": 53.9
+    },
+    "pass@1_plus": {
+      "humaneval": 29.3,
+      "mbpp": 44.4
+    },
+    "prompted": false,
+    "size": 8.0
+  },
+  "Llama3-8B-instruct": {
+    "link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 61.6,
+      "mbpp": 67.9
+    },
+    "pass@1_plus": {
+      "humaneval": 29.3,
+      "mbpp": 57.4
+    },
+    "prompted": false,
+    "size": 8.0
+  },
   "Code-13B": {
     "link": "https://huggingface.co/ajibawa-2023/Code-13B",
     "open-data": "Partial",
