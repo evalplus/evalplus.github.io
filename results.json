@@ -1,4 +1,18 @@
 {
+  "Command-R+": {
+    "link": "https://huggingface.co/CohereForAI/c4ai-command-r-plus",
+    "open-data": "NONE",
+    "pass@1_base": {
+      "humaneval": 64,
+      "mbpp": 70.9
+    },
+    "pass@1_plus": {
+      "humaneval": 56.7,
+      "mbpp": 58.6
+    },
+    "prompted": true,
+    "size": 104
+  },
   "CodeQwen1.5-7B": {
     "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B",
     "open-data": "NONE",
