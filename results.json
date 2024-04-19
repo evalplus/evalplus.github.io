@@ -1,5 +1,5 @@
 {
-  "CodeQwen1.5": {
+  "CodeQwen1.5-7B": {
     "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B",
     "open-data": "NONE",
     "pass@1_base": {
@@ -13,7 +13,7 @@
     "prompted": false,
     "size": 7
   },
-  "CodeQwen1.5-Chat": {
+  "CodeQwen1.5-7B-Chat": {
     "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat",
     "open-data": "NONE",
     "pass@1_base": {
