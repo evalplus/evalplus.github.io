@@ -1,0 +1,38 @@
+{
+    "deepseek-ai/deepseek-coder-6.7b-instruct": {
+        "train_size": 16384,
+        "eval_size": 16384,
+        "results": {
+            "python": [
+                {
+                    "name": "xxx",
+                    "repo": "xxx",
+                    "is_best_similar": true,
+                    "best_similar_score": 0.7,
+                    "position": {
+                        "token_start": 233,
+                        "token_end": 666,
+                        "char_start": 777,
+                        "char_end": 889
+                    }
+                },
+                {
+                    "name": "xxx",
+                    "repo": "xxx",
+                    "is_best_similar": false,
+                    "best_similar_score": null,
+                    "position": {
+                        "token_start": 233,
+                        "token_end": 666,
+                        "char_start": 777,
+                        "char_end": 889
+                    }
+                }
+            ],
+            "typescript": [],
+            "java": [],
+            "cpp": [],
+            "rust": []
+        }
+    }
+}
