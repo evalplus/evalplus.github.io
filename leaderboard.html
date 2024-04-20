@@ -196,11 +196,22 @@
     }
 
     var data
+    /*
+      After calculating the average, the data should be like this:
+      data[Model]["pass@1"] = {
+        "humaneval": ...,
+        "mbpp": ...,
+        "humaneval+": ...,
+        "mbpp+": ...,
+        "average": ...,
+        "average+": ...,
+      } 
+    */
     if (xhr.status === 200) {
       data = JSON.parse(xhr.responseText);
       Object.keys(data).forEach((key) => {
-        data[key]['pass@1_base']['average'] = calcAverage(data[key]['pass@1_base']['humaneval'], data[key]['pass@1_base']['mbpp']);
-        data[key]['pass@1_plus']['average'] = calcAverage(data[key]['pass@1_plus']['humaneval'], data[key]['pass@1_plus']['mbpp']);
+        data[key]['pass@1']['average'] = calcAverage(data[key]['pass@1']['humaneval'], data[key]['pass@1']['mbpp']);
+        data[key]['pass@1']['average+'] = calcAverage(data[key]['pass@1']['humaneval+'], data[key]['pass@1']['mbpp+']);
       });
       data = Object.keys(data).map((key) => {
         return {
@@ -338,15 +349,13 @@
     ]
 
 
-    // plus: true for plusedTable, false for originTable
-    // score: 'average', 'humaneval', 'mbpp'
-    const displayTable = (table, plus, score) => {
-      const displayKey = 'pass@1' + (plus ? '_plus' : '_base');
+    // score: 'average', 'humaneval', 'mbpp', 'humaneval+', 'mbpp+'
+    const displayTable = (table, score) => {
       // filter out Null
       data = data.filter((row) => {
-        return row[displayKey][score] != null;
+        return row["pass@1"][score] != null;
       }).sort((a, b) => {
-        return b[displayKey][score] - a[displayKey][score];
+        return b["pass@1"][score] - a["pass@1"][score];
       });
       var thead = document.createElement('thead');
       var headerRow = document.createElement('tr');
@@ -418,7 +427,7 @@
           passCell.textContent = "⚡";
           passCell.classList.add('text-success');
         }
-        passCell.textContent += row[displayKey][score];
+        passCell.textContent += row["pass@1"][score];
         dataRow.appendChild(passCell);
         tbody.appendChild(dataRow);
       });
@@ -428,10 +437,9 @@
     const displayChart = (score) => {
       // sort first
       const data = globalData.filter(model => {
-        // ! Assuming pass@1_base is always available if pass@1_plus is available
-        return model['pass@1_plus'][score] != null;
+        return model['pass@1'][score] != null;
       }).sort((a, b) => {
-        return b['pass@1_plus'][score] - a['pass@1_plus'][score];
+        return b['pass@1'][score] - a['pass@1'][score];
       });
 
       const sizeList = [... new Set(
@@ -441,7 +449,7 @@
       });
 
       chartOption.xAxis.data = sizeList;
-      chartOption.yAxis.max = 1 + Math.max(...data.map(model => model['pass@1_plus'][score]));
+      chartOption.yAxis.max = 1 + Math.max(...data.map(model => model['pass@1'][score]));
 
       const nonPromptedModels = data.filter(model => model['prompted'] == false);
       const promptedModels = data.filter(model => model['prompted'] == true);
@@ -451,12 +459,12 @@
           if (model['size'] == null) {
             chartOption.series[idx].markLine.data.push({
               name: model['Model'],
-              yAxis: model['pass@1_plus'][score]
+              yAxis: model['pass@1'][score]
             });
           } else {
             chartOption.series[idx].data.push({
               name: model['Model'],
-              value: [`${Math.round(model['size'])}`, model['pass@1_plus'][score]],
+              value: [`${Math.round(model['size'])}`, model['pass@1'][score]],
             });
           }
         });
@@ -465,10 +473,10 @@
       const offsets = [[50, 0]].concat(Array.from({ length: sizeList.length - 2 }, () => [0, 0])).concat([[-50, 0]]);
       sizeList.forEach((size, idx) => {
         const bestNonPromptedModel = nonPromptedModels.filter(model => Math.round(model['size']) == size).sort((a, b) => {
-          return b['pass@1_plus'][score] - a['pass@1_plus'][score];
+          return b['pass@1'][score] - a['pass@1'][score];
         })[0];
         const bestPromptedModel = promptedModels.filter(model => Math.round(model['size']) == size).sort((a, b) => {
-          return b['pass@1_plus'][score] - a['pass@1_plus'][score];
+          return b['pass@1'][score] - a['pass@1'][score];
         })[0];
         const hightLightBest = (series, model) => {
           const point = chartOption.series[series].data.find(point => point.name == model['Model'])
@@ -503,24 +511,24 @@
 
     humanEvalRadio.addEventListener('click', function () {
       clearTable();
-      displayTable(originTable, false, 'humaneval');
-      displayTable(plusedTable, true, 'humaneval');
+      displayTable(originTable, 'humaneval');
+      displayTable(plusedTable, 'humaneval+');
       clearChart()
-      displayChart('humaneval')
+      displayChart('humaneval+')
     });
 
     mbppRadio.addEventListener('click', function () {
       clearTable();
-      displayTable(originTable, false, 'mbpp');
-      displayTable(plusedTable, true, 'mbpp');
+      displayTable(originTable, 'mbpp');
+      displayTable(plusedTable, 'mbpp+');
       clearChart()
-      displayChart('mbpp');
+      displayChart('mbpp+');
     });
 
     avergeRadio.addEventListener('click', function () {
       clearTable();
-      displayTable(originTable, false, 'average');
-      displayTable(plusedTable, true, 'average');
+      displayTable(originTable, 'average');
+      displayTable(plusedTable, 'average+');
       clearChart();
       displayChart('average');
     });
