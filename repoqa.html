@@ -107,6 +107,244 @@
     </div>
   </div>
 
+  <script>
+    const contextTable = document.getElementById('16k');
+
+    const dataUrl = "results/repoqa/16k.json";
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', dataUrl, false);  // false makes the request synchronous
+    xhr.send();
+    if (xhr.status === 200) {
+      data = JSON.parse(xhr.responseText);
+      data = Object.keys(data).map((key) => {
+        return {
+          'Model': key.split("/").pop(),
+          ...data[key]
+        };
+      });
+      console.log(data);
+    } else {
+      // pop up error window
+      alert('Failed to load data');
+    }
+    const globalData = data;
+    const clearTable = () => {
+      contextTable.innerHTML = '';
+    }
+
+    const theaders = [
+      'Model',
+      'Context (16K)',
+    ]
+
+    const lang_map = {
+      'python': '.py',
+      'cpp': '.cpp',
+      'rust': '.rs',
+      'java': '.java',
+      'typescript': '.ts',
+      'All': 'All'
+    }
+
+    // TODO: Clean exisiting code in this function
+    const displayTable = (table) => {
+      // filter out Null
+      // data = data.filter((row) => {
+      //   return row["pass@1"][score] != null;
+      // }).sort((a, b) => {
+      //   return b["pass@1"][score] - a["pass@1"][score];
+      // });
+      var thead = document.createElement('thead');
+      var headerRow = document.createElement('tr');
+      // add rank
+      var th = document.createElement('th');
+      th.textContent = '#';
+      headerRow.appendChild(th);
+      // headers
+      theaders.forEach(function (header) {
+        var th = document.createElement('th');
+        if (header == "Context (16K)") {
+          th.colSpan = 2;
+        }
+        th.textContent = header;
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+
+      var tbody = document.createElement('tbody');
+      // add rank
+      var rank = 1;
+      data.forEach((row) => {
+        rowspan = Object.keys(row['results']).length + 1;
+        eval_size = row["eval_size"];
+        var dataRow = document.createElement('tr');
+        var rankCell = document.createElement('td');
+        rankCell.rowSpan = rowspan;
+        rankCell.textContent = rank;
+        dataRow.appendChild(rankCell);
+        var modelCell = document.createElement('td');
+        modelCell.rowSpan = rowspan;
+        if (rank == 1) {
+          modelCell.textContent = '🥇 ';
+        } else if (rank == 2) {
+          modelCell.textContent = '🥈 ';
+        } else if (rank == 3) {
+          modelCell.textContent = '🥉 ';
+        } else {
+          modelCell.textContent = '';
+        }
+        rank++;
+        var modelLink = document.createElement('a');
+        // modelLink.href = row['link'];
+        modelLink.textContent = row['Model'];
+        modelLink.classList.add('link-underline-primary');
+        modelLink.classList.add('text-nowrap');
+        modelCell.appendChild(modelLink);
+        // modelCell.classList.add('d-flex');
+        // modelCell.classList.add('flex-nowrap');
+        // var prompted = row['prompted'];
+        // var opendata = row['open-data'];
+        // if (prompted) {
+        //   // add a symbol to indicate the model is prompted
+        //   var promptedSymbol = document.createElement('span');
+        //   promptedSymbol.textContent = '✨';
+        //   modelCell.appendChild(promptedSymbol);
+        // }
+        // if (opendata.toUpperCase() == "FULL") {
+        //   // add a symbol to indicate the model is fully open-sourced
+        //   var promptedSymbol = document.createElement('span');
+        //   promptedSymbol.textContent = '💚'
+        //   modelCell.appendChild(promptedSymbol);
+        // } else if (opendata.toUpperCase() == "PARTIAL") {
+        //   // add a symbol to indicate the model is partially open-sourced
+        //   // i.e., a subset of the model implementation is close-sourced
+        //   var promptedSymbol = document.createElement('span');
+        //   promptedSymbol.textContent = '💙';
+        //   modelCell.appendChild(promptedSymbol);
+        // }
+        dataRow.appendChild(modelCell);
+        for (var i=0; i<rowspan; i++) {
+          lang = "";
+          if (i==0) {
+            lang="All";
+          }
+          else {
+            lang=Object.keys(row['results'])[i-1];
+            var dataRow = document.createElement('tr');
+          }
+          var passCell = document.createElement('td');
+          passCell.textContent = lang_map[lang];
+          dataRow.appendChild(passCell);
+          var chartCell = document.createElement('td');
+          chartCell.setAttribute('id', row['Model']+lang);
+          // TODO: Improve format stuff
+          chartCell.width = "60%";
+          chartCell.height = "80px";
+          dataRow.appendChild(chartCell);
+          tbody.appendChild(dataRow);
+        }
+      });
+      table.appendChild(tbody);
+    };
+
+    clearTable();
+    displayTable(contextTable);
+
+    var chartOption = {
+      grid: {
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        containLabel: true
+      },
+      xAxis: {
+        type: 'value',
+        boundaryGap: true,
+        min: 0,
+        max: eval_size,
+        interval: 2000,
+        splitLine: {
+          show: false
+        }
+      },
+      yAxis: {
+        type: 'value',
+        max: 1,
+        show: false
+      },
+      series: [{
+        type: 'custom',
+        renderItem: function (params, api) {
+          var yValue = api.value(2);
+          var start = api.coord([api.value(0), yValue]);
+          var size = api.size([api.value(1), yValue]);
+          var style = api.style();
+          return {
+            type: 'rect',
+            shape: {
+              x: start[0],
+              y: start[1],
+              width: size[0],
+              height: size[1]
+            },
+            style: style
+          };
+        },
+        data: []
+      }],
+    };
+    
+    var global_data = [];
+
+    data.forEach((row) => {
+      eval_size = row["eval_size"];
+      rowspan = Object.keys(row['results']).length + 1;
+      for (var i=0; i<rowspan; i++) {
+        lang = "";
+        if (i==rowspan-1) {
+          lang="All";
+          var chart = echarts.init(document.getElementById(row['Model']+lang));
+          var chartOption_current = chartOption;
+          chartOption_current.series[0].data = global_data
+          chart.setOption(chartOption_current);
+        }
+        else {
+          lang=Object.keys(row['results'])[i];
+          var chart = echarts.init(document.getElementById(row['Model']+lang));
+          var data = [];
+          row['results'][lang].forEach((neddle) => {
+            data.push([neddle["position"]["token_start"], neddle["position"]["token_end"]-neddle["position"]["token_start"], 1, neddle["is_best_similar"]]);
+          });
+          // TODO: Customize criteria of "success" (blue) or "failure" (red)
+          data = data.map(function (item, index) {
+            if (item[item.length-1]) {
+              return {
+                value: item,
+                itemStyle: {
+                  color: '#4f81bd'
+                }
+              };
+            }
+            else {
+              return {
+                value: item,
+                itemStyle: {
+                  color: '#c0504d'
+                }
+              };
+            }
+          });
+          global_data = global_data.concat(data);
+          var chartOption_current = chartOption;
+          chartOption_current.series[0].data = data
+          chart.setOption(chartOption_current);
+        }
+      }
+    });
+  </script>
+
 </body>
 
 </html>
