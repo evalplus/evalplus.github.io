@@ -220,7 +220,6 @@
           ...data[key]
         };
       });
-      console.log(data);
     } else {
       // pop up error window
       alert('Failed to load data from results.json');
@@ -353,7 +352,7 @@
     // score: 'average', 'humaneval', 'mbpp', 'humaneval+', 'mbpp+'
     const displayTable = (table, score) => {
       // filter out Null
-      data = data.filter((row) => {
+      data = globalData.filter((row) => {
         return row["pass@1"][score] != null;
       }).sort((a, b) => {
         return b["pass@1"][score] - a["pass@1"][score];
