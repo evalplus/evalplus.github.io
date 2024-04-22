@@ -5,8 +5,8 @@
     "pass@1": {
       "humaneval": 75.6,
       "humaneval+": 72.6,
-      "mbpp": 79.2,
-      "mbpp+": 67.9
+      "mbpp": 80.7,
+      "mbpp+": 69.6
     },
     "prompted": true,
     "size": 6.7
@@ -17,8 +17,8 @@
     "pass@1": {
       "humaneval": 56.1,
       "humaneval+": 52.4,
-      "mbpp": 52.9,
-      "mbpp+": 42.6
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 13.0
@@ -29,8 +29,8 @@
     "pass@1": {
       "humaneval": 64.6,
       "humaneval+": 59.7,
-      "mbpp": 68.7,
-      "mbpp+": 58.6
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 6.7
@@ -41,8 +41,8 @@
     "pass@1": {
       "humaneval": 54.9,
       "humaneval+": 49.4,
-      "mbpp": 51.1,
-      "mbpp+": 42.4
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 33.0
@@ -65,8 +65,8 @@
     "pass@1": {
       "humaneval": 24.4,
       "humaneval+": 22.6,
-      "mbpp": 44.9,
-      "mbpp+": 35.1
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 2.0
@@ -77,8 +77,8 @@
     "pass@1": {
       "humaneval": 29.3,
       "humaneval+": 25.6,
-      "mbpp": 50.4,
-      "mbpp+": 42.6
+      "mbpp": 50.8,
+      "mbpp+": 42.9
     },
     "prompted": false,
     "size": 6.0
@@ -161,8 +161,8 @@
     "pass@1": {
       "humaneval": 55.5,
       "humaneval+": 50.6,
-      "mbpp": 65.4,
-      "mbpp+": 53.4
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 70.0
@@ -173,8 +173,8 @@
     "pass@1": {
       "humaneval": 72.0,
       "humaneval+": 65.9,
-      "mbpp": 75.4,
-      "mbpp+": 61.7
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 70.0
@@ -185,8 +185,8 @@
     "pass@1": {
       "humaneval": 37.8,
       "humaneval+": 35.4,
-      "mbpp": 57.9,
-      "mbpp+": 46.1
+      "mbpp": 59.5,
+      "mbpp+": 46.8
     },
     "prompted": false,
     "size": 7.0
@@ -197,8 +197,8 @@
     "pass@1": {
       "humaneval": 51.8,
       "humaneval+": 45.7,
-      "mbpp": 72.7,
-      "mbpp+": 60.2
+      "mbpp": 73.5,
+      "mbpp+": 60.8
     },
     "prompted": false,
     "size": 7
@@ -209,8 +209,8 @@
     "pass@1": {
       "humaneval": 83.5,
       "humaneval+": 78.7,
-      "mbpp": 77.7,
-      "mbpp+": 67.2
+      "mbpp": 79.4,
+      "mbpp+": 69.0
     },
     "prompted": true,
     "size": 7
@@ -221,8 +221,8 @@
     "pass@1": {
       "humaneval": 31.7,
       "humaneval+": 26.8,
-      "mbpp": 56.9,
-      "mbpp+": 47.4
+      "mbpp": 56.6,
+      "mbpp+": 47.1
     },
     "prompted": false,
     "size": 16.0
@@ -233,8 +233,8 @@
     "pass@1": {
       "humaneval": 25.0,
       "humaneval+": 22.0,
-      "mbpp": 52.9,
-      "mbpp+": 42.1
+      "mbpp": 48.1,
+      "mbpp+": 37.8
     },
     "prompted": false,
     "size": 2.0
@@ -245,8 +245,8 @@
     "pass@1": {
       "humaneval": 29.3,
       "humaneval+": 24.4,
-      "mbpp": 52.1,
-      "mbpp+": 41.6
+      "mbpp": 52.9,
+      "mbpp+": 41.5
     },
     "prompted": false,
     "size": 6.0
@@ -257,8 +257,8 @@
     "pass@1": {
       "humaneval": 64,
       "humaneval+": 56.7,
-      "mbpp": 70.9,
-      "mbpp+": 58.6
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 104
@@ -269,8 +269,8 @@
     "pass@1": {
       "humaneval": 28.7,
       "humaneval+": 25.6,
-      "mbpp": 55.6,
-      "mbpp+": 46.9
+      "mbpp": 56.9,
+      "mbpp+": 47.9
     },
     "prompted": false,
     "size": 1.3
@@ -281,8 +281,8 @@
     "pass@1": {
       "humaneval": 65.2,
       "humaneval+": 59.8,
-      "mbpp": 63.9,
-      "mbpp+": 53.1
+      "mbpp": 65.3,
+      "mbpp+": 54.8
     },
     "prompted": true,
     "size": 1.3
@@ -317,8 +317,8 @@
     "pass@1": {
       "humaneval": 47.6,
       "humaneval+": 39.6,
-      "mbpp": 70.2,
-      "mbpp+": 56.6
+      "mbpp": 72.0,
+      "mbpp+": 58.7
     },
     "prompted": false,
     "size": 6.7
@@ -329,8 +329,8 @@
     "pass@1": {
       "humaneval": 73.8,
       "humaneval+": 70.7,
-      "mbpp": 73.2,
-      "mbpp+": 63.4
+      "mbpp": 74.9,
+      "mbpp+": 65.6
     },
     "prompted": true,
     "size": 6.7
@@ -401,8 +401,8 @@
     "pass@1": {
       "humaneval": 85.4,
       "humaneval+": 81.7,
-      "mbpp": 83.5,
-      "mbpp+": 70.7
+      "mbpp": 85.7,
+      "mbpp+": 73.3
     },
     "prompted": true,
     "size": null
@@ -437,8 +437,8 @@
     "pass@1": {
       "humaneval": 63.4,
       "humaneval+": 55.5,
-      "mbpp": 72.9,
-      "mbpp+": 57.9
+      "mbpp": 75.4,
+      "mbpp+": 61.4
     },
     "prompted": true,
     "size": null
@@ -485,8 +485,8 @@
     "pass@1": {
       "humaneval": 33.5,
       "humaneval+": 29.3,
-      "mbpp": 53.9,
-      "mbpp+": 44.4
+      "mbpp": 61.4,
+      "mbpp+": 51.6
     },
     "prompted": false,
     "size": 8.0
@@ -497,8 +497,8 @@
     "pass@1": {
       "humaneval": 61.6,
       "humaneval+": 56.7,
-      "mbpp": 67.9,
-      "mbpp+": 57.4
+      "mbpp": 70.1,
+      "mbpp+": 59.3
     },
     "prompted": true,
     "size": 8.0
@@ -508,9 +508,9 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 70.7,
-      "humaneval+": 66.5,
-      "mbpp": 69.2,
-      "mbpp+": 57.1
+      "humaneval+": 67.1,
+      "mbpp": 70.6,
+      "mbpp+": 60.1
     },
     "prompted": true,
     "size": 7.0
@@ -519,10 +519,10 @@
     "link": "https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B",
     "open-data": "Partial",
     "pass@1": {
-      "humaneval": 76.9,
-      "humaneval+": 70.7,
-      "mbpp": 75.4,
-      "mbpp+": 65.4
+      "humaneval": 76.8,
+      "humaneval+": 71.3,
+      "mbpp": 79.4,
+      "mbpp+": 69.0
     },
     "prompted": true,
     "size": 6.7
@@ -545,8 +545,8 @@
     "pass@1": {
       "humaneval": 28.7,
       "humaneval+": 23.8,
-      "mbpp": 50.1,
-      "mbpp+": 40.9
+      "mbpp": 51.9,
+      "mbpp+": 42.1
     },
     "prompted": false,
     "size": 7.0
@@ -665,8 +665,8 @@
     "pass@1": {
       "humaneval": 32.9,
       "humaneval+": 30.5,
-      "mbpp": 43.9,
-      "mbpp+": 35.1
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 13.0
@@ -725,8 +725,8 @@
     "pass@1": {
       "humaneval": 46.3,
       "humaneval+": 37.8,
-      "mbpp": 66.2,
-      "mbpp+": 53.1
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 15.0
@@ -737,8 +737,8 @@
     "pass@1": {
       "humaneval": 31.7,
       "humaneval+": 27.4,
-      "mbpp": 57.4,
-      "mbpp+": 47.4
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 3.0
@@ -749,8 +749,8 @@
     "pass@1": {
       "humaneval": 35.4,
       "humaneval+": 29.9,
-      "mbpp": 54.4,
-      "mbpp+": 45.6
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 7.0
@@ -785,8 +785,8 @@
     "pass@1": {
       "humaneval": 24.4,
       "humaneval+": 21.3,
-      "mbpp": 33.1,
-      "mbpp+": 28.8
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 7.0
@@ -821,8 +821,8 @@
     "pass@1": {
       "humaneval": 72.0,
       "humaneval+": 65.9,
-      "mbpp": 76.9,
-      "mbpp+": 62.7
+      "mbpp": 79.4,
+      "mbpp+": 66.9
     },
     "prompted": true,
     "size": 33.0
@@ -845,8 +845,8 @@
     "pass@1": {
       "humaneval": 79.9,
       "humaneval+": 73.2,
-      "mbpp": 78.9,
-      "mbpp+": 66.9
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 33.0
@@ -881,8 +881,8 @@
     "pass@1": {
       "humaneval": 75.6,
       "humaneval+": 68.9,
-      "mbpp": 76.2,
-      "mbpp+": 62.4
+      "mbpp": 77.0,
+      "mbpp+": 64.8
     },
     "prompted": true,
     "size": 34.0
@@ -893,8 +893,8 @@
     "pass@1": {
       "humaneval": 30.0,
       "humaneval+": 23.2,
-      "mbpp": 41.1,
-      "mbpp+": 34.3
+      "mbpp": 42.1,
+      "mbpp+": 34.7
     },
     "prompted": false,
     "size": 7.0
@@ -977,8 +977,8 @@
     "pass@1": {
       "humaneval": 26.8,
       "humaneval+": 20.7,
-      "mbpp": 53.4,
-      "mbpp+": 44.1
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 2.0
@@ -989,8 +989,8 @@
     "pass@1": {
       "humaneval": 40.2,
       "humaneval+": 29.9,
-      "mbpp": 62.9,
-      "mbpp+": 49.1
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": false,
     "size": 7.0
@@ -1001,8 +1001,8 @@
     "pass@1": {
       "humaneval": 60.4,
       "humaneval+": 51.2,
-      "mbpp": 68.7,
-      "mbpp+": 54.4
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 7.0
@@ -1061,8 +1061,8 @@
     "pass@1": {
       "humaneval": 17.7,
       "humaneval+": 15.2,
-      "mbpp": 27.1,
-      "mbpp+": 22.3
+      "mbpp": null,
+      "mbpp+": null
     },
     "prompted": true,
     "size": 2.0
