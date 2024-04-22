@@ -507,7 +507,7 @@
     "link": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
     "open-data": "NONE",
     "prompted": true,
-    "size": 8.0,
+    "size": 70.0,
     "pass@1": {
       "humaneval": 76.2,
       "humaneval+": 70.7,
@@ -519,7 +519,7 @@
     "link": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
     "open-data": "NONE",
     "prompted": true,
-    "size": 13,
+    "size": 44,
     "pass@1": {
       "humaneval": 75.0,
       "humaneval+": 70.1,
