@@ -503,6 +503,30 @@
     "prompted": true,
     "size": 8.0
   },
+  "Llama3-70B-instruct": {
+    "link": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+    "open-data": "NONE",
+    "prompted": true,
+    "size": 8.0,
+    "pass@1": {
+      "humaneval": 76.2,
+      "humaneval+": 70.7,
+      "mbpp": 82.3,
+      "mbpp+": 69.0
+    }
+  },
+  "Mixtral-8x22B-Instruct-v0.1": {
+    "link": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "open-data": "NONE",
+    "prompted": true,
+    "size": 13,
+    "pass@1": {
+      "humaneval": 75.0,
+      "humaneval+": 70.1,
+      "mbpp": 73.8,
+      "mbpp+": 64.3
+    }
+  },
   "Magicoder-S-CL-7B": {
     "link": "https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B",
     "open-data": "Partial",
