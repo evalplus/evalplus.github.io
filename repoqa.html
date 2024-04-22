@@ -22,12 +22,13 @@
     }
 
     #content {
-      width: 75%;
+      width: 60%;
     }
 
     th,
     td {
       text-align: left;
+      width: max-content;
     }
 
     th {
@@ -78,8 +79,6 @@
       table {
         font-size: small;
       }
-
-
     }
   </style>
 </head>
@@ -143,7 +142,7 @@
       'rust': '.rs',
       'java': '.java',
       'typescript': '.ts',
-      'All': 'All'
+      'all': 'all'
     }
 
     // TODO: Clean exisiting code in this function
@@ -196,38 +195,15 @@
         }
         rank++;
         var modelLink = document.createElement('a');
-        // modelLink.href = row['link'];
         modelLink.textContent = row['Model'];
         modelLink.classList.add('link-underline-primary');
         modelLink.classList.add('text-nowrap');
         modelCell.appendChild(modelLink);
-        // modelCell.classList.add('d-flex');
-        // modelCell.classList.add('flex-nowrap');
-        // var prompted = row['prompted'];
-        // var opendata = row['open-data'];
-        // if (prompted) {
-        //   // add a symbol to indicate the model is prompted
-        //   var promptedSymbol = document.createElement('span');
-        //   promptedSymbol.textContent = '✨';
-        //   modelCell.appendChild(promptedSymbol);
-        // }
-        // if (opendata.toUpperCase() == "FULL") {
-        //   // add a symbol to indicate the model is fully open-sourced
-        //   var promptedSymbol = document.createElement('span');
-        //   promptedSymbol.textContent = '💚'
-        //   modelCell.appendChild(promptedSymbol);
-        // } else if (opendata.toUpperCase() == "PARTIAL") {
-        //   // add a symbol to indicate the model is partially open-sourced
-        //   // i.e., a subset of the model implementation is close-sourced
-        //   var promptedSymbol = document.createElement('span');
-        //   promptedSymbol.textContent = '💙';
-        //   modelCell.appendChild(promptedSymbol);
-        // }
         dataRow.appendChild(modelCell);
         for (var i=0; i<rowspan; i++) {
           lang = "";
           if (i==0) {
-            lang="All";
+            lang="all";
           }
           else {
             lang=Object.keys(row['results'])[i-1];
@@ -239,7 +215,7 @@
           var chartCell = document.createElement('td');
           chartCell.setAttribute('id', row['Model']+lang);
           // TODO: Improve format stuff
-          chartCell.width = "60%";
+          chartCell.width = "90%";
           chartCell.height = "80px";
           dataRow.appendChild(chartCell);
           tbody.appendChild(dataRow);
@@ -254,8 +230,8 @@
     var chartOption = {
       grid: {
         top: 0,
-        left: 0,
-        right: 0,
+        left: -10,
+        right: 10,
         bottom: 0,
         containLabel: true
       },
@@ -264,9 +240,17 @@
         boundaryGap: true,
         min: 0,
         max: eval_size,
-        interval: 2000,
+        interval: 1024,
         splitLine: {
           show: false
+        },
+        axisLabel: {
+          formatter: function (value) {
+            if (value == 0) {
+              return '0';
+            }
+            return value / 1024 + 'k';
+          }
         }
       },
       yAxis: {
@@ -301,10 +285,11 @@
     data.forEach((row) => {
       eval_size = row["eval_size"];
       rowspan = Object.keys(row['results']).length + 1;
+      // TODO: fix the alignment
       for (var i=0; i<rowspan; i++) {
         lang = "";
         if (i==rowspan-1) {
-          lang="All";
+          lang="all";
           var chart = echarts.init(document.getElementById(row['Model']+lang));
           var chartOption_current = chartOption;
           chartOption_current.series[0].data = global_data
@@ -314,8 +299,8 @@
           lang=Object.keys(row['results'])[i];
           var chart = echarts.init(document.getElementById(row['Model']+lang));
           var data = [];
-          row['results'][lang].forEach((neddle) => {
-            data.push([neddle["position"]["token_start"], neddle["position"]["token_end"]-neddle["position"]["token_start"], 1, neddle["is_best_similar"]]);
+          row['results'][lang].forEach((needle) => {
+            data.push([needle["position"]["token_start"], needle["position"]["token_end"]-needle["position"]["token_start"], 1, needle["is_best_similar"]]);
           });
           // TODO: Customize criteria of "success" (blue) or "failure" (red)
           data = data.map(function (item, index) {
