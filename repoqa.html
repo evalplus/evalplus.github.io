@@ -108,8 +108,10 @@
 
   <script>
     const contextTable = document.getElementById('16k');
+    const dataUrl = "results/repoqa/ntoken_16384/codellama_slash_CodeLlama-13b-Instruct-hf-SCORES.json";
+    const scoreThrasold = 0.8;
 
-    const dataUrl = "results/repoqa/16k.json";
+    // Load data
     var xhr = new XMLHttpRequest();
     xhr.open('GET', dataUrl, false);  // false makes the request synchronous
     xhr.send();
@@ -121,19 +123,20 @@
           ...data[key]
         };
       });
+      console.log("data");
       console.log(data);
     } else {
-      // pop up error window
       alert('Failed to load data');
     }
     const globalData = data;
-    const clearTable = () => {
-      contextTable.innerHTML = '';
-    }
 
+    // each row represents a model
     const theaders = [
-      'Model',
-      'Context (16K)',
+      '#',              // rank
+      'Model',          // model name
+      'Context (16K)',  // context chart
+      'score',          // score of each language
+      'totol',          // score of all languages
     ]
 
     const lang_map = {
@@ -145,20 +148,10 @@
       'all': 'all'
     }
 
-    // TODO: Clean exisiting code in this function
     const displayTable = (table) => {
-      // filter out Null
-      // data = data.filter((row) => {
-      //   return row["pass@1"][score] != null;
-      // }).sort((a, b) => {
-      //   return b["pass@1"][score] - a["pass@1"][score];
-      // });
       var thead = document.createElement('thead');
       var headerRow = document.createElement('tr');
-      // add rank
-      var th = document.createElement('th');
-      th.textContent = '#';
-      headerRow.appendChild(th);
+
       // headers
       theaders.forEach(function (header) {
         var th = document.createElement('th');
@@ -173,15 +166,18 @@
 
       var tbody = document.createElement('tbody');
       // add rank
-      var rank = 1;
+      var rank = 0;
       data.forEach((row) => {
         rowspan = Object.keys(row['results']).length + 1;
         eval_size = row["eval_size"];
         var dataRow = document.createElement('tr');
+        // rank
         var rankCell = document.createElement('td');
         rankCell.rowSpan = rowspan;
-        rankCell.textContent = rank;
+        rankCell.textContent = ++rank;
         dataRow.appendChild(rankCell);
+
+        // model name
         var modelCell = document.createElement('td');
         modelCell.rowSpan = rowspan;
         if (rank == 1) {
@@ -193,36 +189,67 @@
         } else {
           modelCell.textContent = '';
         }
-        rank++;
         var modelLink = document.createElement('a');
         modelLink.textContent = row['Model'];
         modelLink.classList.add('link-underline-primary');
         modelLink.classList.add('text-nowrap');
         modelCell.appendChild(modelLink);
         dataRow.appendChild(modelCell);
-        for (var i=0; i<rowspan; i++) {
-          lang = "";
-          if (i==0) {
+
+        // context chart
+        langs = Object.keys(row['results']);
+        for (var i = 0; i < rowspan; i++) {
+          // lang
+          if (i == 0) {
             lang="all";
           }
           else {
-            lang=Object.keys(row['results'])[i-1];
+            lang=langs[i-1];
             var dataRow = document.createElement('tr');
           }
           var passCell = document.createElement('td');
           passCell.textContent = lang_map[lang];
           dataRow.appendChild(passCell);
+
+          // chart
           var chartCell = document.createElement('td');
-          chartCell.setAttribute('id', row['Model']+lang);
           // TODO: Improve format stuff
-          chartCell.width = "90%";
-          chartCell.height = "80px";
+          chartCell.style.width = '100%';
+          chartCell.style.height = '80px';
+          chartDiv = document.createElement('div');
+          chartDiv.setAttribute('id', row['Model']+lang);
+          chartDiv.style.width = '100%';
+          chartDiv.style.height = '100%';
+          chartCell.appendChild(chartDiv);
           dataRow.appendChild(chartCell);
+
+          // score
+          var scoreCell = document.createElement('td');
+          scoreCell.textContent = row['scores'][lang][scoreThrasold]['pass@1'].toFixed(2);
+          dataRow.appendChild(scoreCell);
+
+          // total: average of all languages
+          if (i == 0) {
+            var totalScore = 0
+            for (var j = 0; j < langs.length; j++) {
+              totalScore += row['scores'][langs[j]][scoreThrasold]['pass@1'];
+            }
+            var totalCell = document.createElement('td');
+            totalCell.textContent = (totalScore / langs.length).toFixed(2);
+            totalCell.rowSpan = rowspan;
+            dataRow.appendChild(totalCell);
+          }
+          console.log(dataRow);
+
           tbody.appendChild(dataRow);
         }
       });
       table.appendChild(tbody);
     };
+
+    const clearTable = () => {
+      contextTable.innerHTML = '';
+    }
 
     clearTable();
     displayTable(contextTable);
@@ -283,32 +310,38 @@
     var global_data = [];
 
     data.forEach((row) => {
-      eval_size = row["eval_size"];
-      rowspan = Object.keys(row['results']).length + 1;
-      // TODO: fix the alignment
-      for (var i=0; i<rowspan; i++) {
-        lang = "";
-        if (i==rowspan-1) {
+      var eval_size = row["eval_size"];
+      var rowspan = Object.keys(row['results']).length + 1;
+      var chartOption_current = chartOption;
+
+      for (var i = 0; i < rowspan; i++) {
+        if (i==rowspan - 1) {
           lang="all";
-          var chart = echarts.init(document.getElementById(row['Model']+lang));
-          var chartOption_current = chartOption;
           chartOption_current.series[0].data = global_data
-          chart.setOption(chartOption_current);
         }
         else {
           lang=Object.keys(row['results'])[i];
-          var chart = echarts.init(document.getElementById(row['Model']+lang));
+
+          // prepare data of the chart
           var data = [];
           row['results'][lang].forEach((needle) => {
-            data.push([needle["position"]["token_start"], needle["position"]["token_end"]-needle["position"]["token_start"], 1, needle["is_best_similar"]]);
+            data.push(
+              [
+                needle["position"]["token_start"], 
+                needle["position"]["token_end"] - needle["position"]["token_start"], 
+                1, 
+                needle["is_best_similar"]
+              ]
+            );
           });
-          // TODO: Customize criteria of "success" (blue) or "failure" (red)
+
+          // set color
           data = data.map(function (item, index) {
-            if (item[item.length-1]) {
+            if (item[item.length - 1]) { // is_best_similar
               return {
                 value: item,
                 itemStyle: {
-                  color: '#4f81bd'
+                  color: '#4f81bd'      // blue
                 }
               };
             }
@@ -321,11 +354,13 @@
               };
             }
           });
+
+          // update global data
           global_data = global_data.concat(data);
-          var chartOption_current = chartOption;
           chartOption_current.series[0].data = data
-          chart.setOption(chartOption_current);
         }
+        var chart = echarts.init(document.getElementById(row['Model']+lang));
+        chart.setOption(chartOption_current);
       }
     });
   </script>
