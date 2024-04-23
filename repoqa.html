@@ -31,10 +31,6 @@
       width: max-content;
     }
 
-    th {
-      background-color: #f2f2f2;
-    }
-
     #notes {
       font-size: 1em;
     }
@@ -152,21 +148,6 @@
             ...dataRow[key]
           };
         });
-        
-        // calculate the total score
-        dataRow.forEach((row) => {
-          var langs = Object.keys(row['scores']);
-          var thrasolds = Object.keys(row['scores'][langs[0]]);
-          row['scores']['total'] = {};
-
-          for (var j = 0; j < thrasolds.length; j++) {
-            totalScore = 0;
-            for (var k = 0; k < langs.length; k++) {
-              totalScore += row['scores'][langs[k]][thrasolds[j]]['pass@1'];
-            }
-            row['scores']['total'][thrasolds[j]] = totalScore / langs.length;
-          }
-        });
 
         data = data.concat(dataRow);
       } else {
@@ -271,6 +252,7 @@
           // score
           var scoreCell = document.createElement('td');
           scoreCell.textContent = (100 * row['scores'][lang][scoreThresh]['pass@1']).toFixed(1);
+          scoreCell.style.textAlign = 'right';
           dataRow.appendChild(scoreCell);
 
           tbody.appendChild(dataRow);
@@ -420,7 +402,7 @@
 
     const main = () => {
       data.sort((a, b) => {
-        return b['scores']['total'][scoreThresh] - a['scores']['total'][scoreThresh];
+        return b['scores']['all'][scoreThresh]['pass@1'] - a['scores']['all'][scoreThresh]['pass@1'];
       });
       clearTable();
       displayTable(contextTable);
