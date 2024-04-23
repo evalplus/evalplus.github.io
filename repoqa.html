@@ -131,7 +131,7 @@
       "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
     ];
     const dataUrlPrefix = "results/repoqa/ntoken_16384/";
-    const correctColor = 'rgba(72, 159, 120', incorrectColor = 'rgba(142, 53, 50'
+    const correctColor = 'rgba(72, 200, 120', incorrectColor = 'rgba(142, 53, 50'
 
     // Load data
     var data = [];
@@ -269,6 +269,14 @@
       xAxis: {
         type: 'value',
         boundaryGap: false,
+        min: 0,
+        max: 16384,
+        splitLine: {
+          lineStyle: {
+            color: 'black',
+            type: 'dashed'
+          }
+        }
       },
       yAxis: {
         type: 'value',
