@@ -101,9 +101,9 @@
         <h2 class="text-nowrap mt-5"><b>🔎 Searching Needle Function</b></h2>
         <h3 class="text-nowrap mt-5">🏆 Leaderboard for 16K Code Context</h3>
         <div class="slider-container d-flex flex-row justify-content-center gap-3">
-          <div class="slider-title">Select the Threshold</div>
-          <input type="range" id="fixedPointSlider" min="0" max="10" step="1" value="0", width="100%">
-          <div class="slider-value" id="sliderValue">0.0</div>
+          <div class="slider-title">Select the threshold for match similarity</div>
+          <input type="range" id="fixedPointSlider" min="0" max="10" step="1" value="8", width="100%">
+          <div class="slider-value" id="sliderValue">0.8</div>
         </div>
         <table id="16k" class="table table-responsive table-striped table-bordered flex-shrink-1 border border-3">
         </table>
@@ -135,7 +135,7 @@
       "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
     ];
     const dataUrlPrefix = "results/repoqa/ntoken_16384/";
-    const correctColor = 'rgba(52, 92, 139', incorrectColor = 'rgba(142, 53, 50'
+    const correctColor = 'rgba(72, 159, 120', incorrectColor = 'rgba(142, 53, 50'
 
     // Load data
     var data = [];
@@ -175,15 +175,14 @@
     }
 
     const globalData = data;
-    var scoreThrasold = 0.8;
+    var scoreThresh = 0.8;
 
     // each row represents a model
     const theaders = [
       '#',              // rank
       'Model',          // model name
       'Context (16K)',  // context chart
-      'score',          // score of each language
-      'totol',          // score of all languages
+      'Score (%)',          // score of each language
     ]
 
     const lang_map = {
@@ -249,8 +248,7 @@
           // lang
           if (i == 0) {
             lang="all";
-          }
-          else {
+          } else {
             lang=langs[i-1];
             var dataRow = document.createElement('tr');
           }
@@ -272,20 +270,8 @@
 
           // score
           var scoreCell = document.createElement('td');
-          scoreCell.textContent = row['scores'][lang][scoreThrasold]['pass@1'].toFixed(2);
+          scoreCell.textContent = (100 * row['scores'][lang][scoreThresh]['pass@1']).toFixed(1);
           dataRow.appendChild(scoreCell);
-
-          // total: average of all languages
-          if (i == 0) {
-            var totalScore = 0
-            for (var j = 0; j < langs.length; j++) {
-              totalScore += row['scores'][langs[j]][scoreThrasold]['pass@1'];
-            }
-            var totalCell = document.createElement('td');
-            totalCell.textContent = (totalScore / langs.length).toFixed(2);
-            totalCell.rowSpan = rowspan;
-            dataRow.appendChild(totalCell);
-          }
 
           tbody.appendChild(dataRow);
         }
@@ -417,7 +403,7 @@
       chart = echarts.init(document.getElementById(chartId));
 
       // filter results based on 'best_similar_score' > scoreThrasold
-      results = results.filter((result) => result['best_similar_score'] >= scoreThrasold);
+      results = results.filter((result) => result['best_similar_score'] >= scoreThresh);
 
       correctResults = results.filter((result) => result['is_best_similar']);
       incorrectResults = results.filter((result) => !result['is_best_similar']);
@@ -434,7 +420,7 @@
 
     const main = () => {
       data.sort((a, b) => {
-        return b['scores']['total'][scoreThrasold] - a['scores']['total'][scoreThrasold];
+        return b['scores']['total'][scoreThresh] - a['scores']['total'][scoreThresh];
       });
       clearTable();
       displayTable(contextTable);
@@ -458,7 +444,7 @@
       slider.addEventListener('input', function () {
         var sliderValue = this.value;
         output.textContent = (sliderValue / 10).toFixed(1);
-        scoreThrasold = (sliderValue / 10).toFixed(1);
+        scoreThresh = (sliderValue / 10).toFixed(1);
         main();
       });
     });
