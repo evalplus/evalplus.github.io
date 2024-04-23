@@ -108,26 +108,74 @@
 
   <script>
     const contextTable = document.getElementById('16k');
-    const dataUrl = "results/repoqa/ntoken_16384/codellama_slash_CodeLlama-13b-Instruct-hf-SCORES.json";
+    const files = [
+      "codellama_slash_CodeLlama-13b-Instruct-hf-SCORES.json",
+      "codellama_slash_CodeLlama-34b-Instruct-hf-SCORES.json",
+      "codellama_slash_CodeLlama-7b-Instruct-hf-SCORES.json",
+      "deepseek-ai_slash_deepseek-coder-33b-instruct-SCORES.json",
+      "deepseek-ai_slash_deepseek-coder-6.7b-instruct-SCORES.json",
+      "google_slash_codegemma-7b-it-SCORES.json",
+      "meta-llama_slash_Meta-Llama-3-70B-Instruct-SCORES.json",
+      "meta-llama_slash_Meta-Llama-3-8B-Instruct-SCORES.json",
+      "mistralai_slash_Mistral-7B-Instruct-v0.1-SCORES.json",
+      "mistralai_slash_Mistral-7B-Instruct-v0.2-SCORES.json",
+      "mistralai_slash_Mixtral-8x22B-Instruct-v0.1-SCORES.json",
+      "mistralai_slash_Mixtral-8x7B-Instruct-v0.1-SCORES.json",
+      "Qwen_slash_CodeQwen1.5-7B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-14B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-32B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-4B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-72B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
+      "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
+    ];
+    const dataUrlPrefix = "results/repoqa/ntoken_16384/";
     const scoreThrasold = 0.8;
 
     // Load data
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', dataUrl, false);  // false makes the request synchronous
-    xhr.send();
-    if (xhr.status === 200) {
-      data = JSON.parse(xhr.responseText);
-      data = Object.keys(data).map((key) => {
-        return {
-          'Model': key.split("/").pop(),
-          ...data[key]
-        };
-      });
-      console.log("data");
-      console.log(data);
-    } else {
-      alert('Failed to load data');
+    var data = [];
+    for (var i = 0; i < files.length; i++) {
+      var dataUrl = dataUrlPrefix + files[i];
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', dataUrl, false);  // false makes the request synchronous
+      xhr.send();
+      if (xhr.status === 200) {
+        dataRow = JSON.parse(xhr.responseText);
+        dataRow = Object.keys(dataRow).map((key) => {
+          return {
+            'Model': key.split("/").pop(),
+            ...dataRow[key]
+          };
+        });
+        
+        // calculate the total score
+        dataRow.forEach((row) => {
+          var langs = Object.keys(row['scores']);
+          var thrasolds = Object.keys(row['scores'][langs[0]]);
+          row['scores']['total'] = {};
+
+          for (var j = 0; j < thrasolds.length; j++) {
+            totalScore = 0;
+            for (var k = 0; k < langs.length; k++) {
+              totalScore += row['scores'][langs[k]][thrasolds[j]]['pass@1'];
+            }
+            row['scores']['total'][thrasolds[j]] = totalScore / langs.length;
+          }
+        });
+
+        data = data.concat(dataRow);
+      } else {
+        alert('Failed to load data from ' + dataUrl + '. Please try again later.');
+      }
     }
+
+    // sort by total score at [scoreThrasold]
+    data.sort((a, b) => {
+      return b['scores']['total'][scoreThrasold] - a['scores']['total'][scoreThrasold];
+    });
+
+    console.log("data");
+    console.log(data);
     const globalData = data;
 
     // each row represents a model
@@ -239,7 +287,6 @@
             totalCell.rowSpan = rowspan;
             dataRow.appendChild(totalCell);
           }
-          console.log(dataRow);
 
           tbody.appendChild(dataRow);
         }
@@ -307,13 +354,13 @@
       }],
     };
 
-    var global_data = [];
 
     data.forEach((row) => {
       var eval_size = row["eval_size"];
       var rowspan = Object.keys(row['results']).length + 1;
       var chartOption_current = chartOption;
 
+      var global_data = [];
       for (var i = 0; i < rowspan; i++) {
         if (i==rowspan - 1) {
           lang="all";
