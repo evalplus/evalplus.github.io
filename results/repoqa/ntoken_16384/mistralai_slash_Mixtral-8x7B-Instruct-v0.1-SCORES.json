@@ -1,0 +1,5330 @@
+{
+  "mistralai/Mixtral-8x7B-Instruct-v0.1": {
+    "eval_date": "2024-04-23 03:57:02.986342",
+    "results": {
+      "cpp": [
+        {
+          "best_similar_score": 1.0,
+          "best_target": "ConfiguratorWatchdog",
+          "is_best_similar": true,
+          "name": "ConfiguratorWatchdog",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 816,
+            "token_start": 767
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.06643815526201982,
+          "best_target": "TelnetAppenderPriv",
+          "is_best_similar": true,
+          "name": "TelnetAppenderPriv",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2330,
+            "token_start": 2241
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.01159702744044862,
+          "best_target": "ConfiguratorWatchdog",
+          "is_best_similar": false,
+          "name": "HierarchyPrivate",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3847,
+            "token_start": 3790
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.8584659618015095,
+          "best_target": "decodeUTF16",
+          "is_best_similar": true,
+          "name": "decodeUTF16",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5486,
+            "token_start": 5095
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.015482804718353073,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "catch",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 6938,
+            "token_start": 6881
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.025039578897008606,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "StrftimeDateFormatPrivate",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8356,
+            "token_start": 8334
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.010506616628326512,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "UTF8CharsetEncoder",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 9837,
+            "token_start": 9822
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.1188632346627175,
+          "best_target": "PropertiesPatternConverterPrivate",
+          "is_best_similar": true,
+          "name": "PropertiesPatternConverterPrivate",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11457,
+            "token_start": 11412
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.010382294776351782,
+          "best_target": "ConfiguratorWatchdog",
+          "is_best_similar": false,
+          "name": "ThrowableInformationPatternConverterPrivate",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 12896,
+            "token_start": 12850
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.978482042633557,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": true,
+          "name": "APRCharsetEncoder",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 14503,
+            "token_start": 14257
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.8083053722455262,
+          "best_target": "try_read",
+          "is_best_similar": true,
+          "name": "try_read",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 871,
+            "token_start": 692
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.5900468726392808,
+          "best_target": "set",
+          "is_best_similar": true,
+          "name": "set",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2411,
+            "token_start": 2380
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.08621454270909737,
+          "best_target": "uv_token",
+          "is_best_similar": true,
+          "name": "uv_token",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3983,
+            "token_start": 3974
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "write_req",
+          "is_best_similar": true,
+          "name": "write_req",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5664,
+            "token_start": 5567
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.19173026589128161,
+          "best_target": "recv",
+          "is_best_similar": true,
+          "name": "recv",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7289,
+            "token_start": 7238
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.6652049901111008,
+          "best_target": "configure",
+          "is_best_similar": true,
+          "name": "configure",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8844,
+            "token_start": 8790
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.01756433981681654,
+          "best_target": "stream_handle",
+          "is_best_similar": true,
+          "name": "stream_handle",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10473,
+            "token_start": 10440
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.029299469202616096,
+          "best_target": "env",
+          "is_best_similar": true,
+          "name": "env",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 10157,
+            "token_start": 9978
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.9370011451812967,
+          "best_target": "fnv1a",
+          "is_best_similar": true,
+          "name": "fnv1a",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 358,
+            "token_start": 211
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.7541859578343534,
+          "best_target": "publish",
+          "is_best_similar": true,
+          "name": "publish",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 1761,
+            "token_start": 1716
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.2961195765632353,
+          "best_target": "CompateStringsCaseInsensitive",
+          "is_best_similar": true,
+          "name": "CompateStringsCaseInsensitive",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 871,
+            "token_start": 747
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "ContainerToString",
+          "is_best_similar": true,
+          "name": "ContainerToString",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2473,
+            "token_start": 2356
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "MapValueView",
+          "is_best_similar": true,
+          "name": "MapValueView",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3993,
+            "token_start": 3969
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "ServerException",
+          "is_best_similar": true,
+          "name": "ServerException",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 3113,
+            "token_start": 3074
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.7252761279126532,
+          "best_target": "AppendMany",
+          "is_best_similar": true,
+          "name": "AppendMany",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7147,
+            "token_start": 7112
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "GetEndpointsIterator",
+          "is_best_similar": true,
+          "name": "GetEndpointsIterator",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8804,
+            "token_start": 8724
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.028424915360075714,
+          "best_target": "swap",
+          "is_best_similar": true,
+          "name": "swap",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 5073,
+            "token_start": 5049
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "CreateColumnByType",
+          "is_best_similar": true,
+          "name": "CreateColumnByType",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12032,
+            "token_start": 11960
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.8863990483446998,
+          "best_target": "ConvertToStorageValue",
+          "is_best_similar": true,
+          "name": "ConvertToStorageValue",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 3620,
+            "token_start": 3440
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "GetSocketFactory",
+          "is_best_similar": true,
+          "name": "GetSocketFactory",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15201,
+            "token_start": 15113
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_mask",
+          "is_best_similar": true,
+          "name": "make_mask",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 867,
+            "token_start": 729
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_runtime_path",
+          "is_best_similar": true,
+          "name": "get_runtime_path",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2450,
+            "token_start": 2341
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.2465969639416065,
+          "best_target": "m_path",
+          "is_best_similar": true,
+          "name": "m_path",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4025,
+            "token_start": 3979
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.020304796765655064,
+          "best_target": "close_walk_cb",
+          "is_best_similar": true,
+          "name": "close_walk_cb",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5637,
+            "token_start": 5590
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "g_mpd_signal_handler",
+          "is_best_similar": true,
+          "name": "g_mpd_signal_handler",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7261,
+            "token_start": 7216
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_virtual",
+          "is_best_similar": true,
+          "name": "is_virtual",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8882,
+            "token_start": 8776
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "utf8_get_len",
+          "is_best_similar": true,
+          "name": "utf8_get_len",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10463,
+            "token_start": 10213
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_color",
+          "is_best_similar": true,
+          "name": "get_color",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12057,
+            "token_start": 12001
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "read",
+          "is_best_similar": true,
+          "name": "read",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13725,
+            "token_start": 13684
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "query",
+          "is_best_similar": true,
+          "name": "query",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15231,
+            "token_start": 15084
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "doAdvicesChain",
+          "is_best_similar": true,
+          "name": "doAdvicesChain",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 969,
+            "token_start": 601
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.0230789165254704,
+          "best_target": "genHttpResponse",
+          "is_best_similar": false,
+          "name": "JsonConfigAdapter",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2407,
+            "token_start": 2400
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "registerCustomExtensionMime",
+          "is_best_similar": true,
+          "name": "registerCustomExtensionMime",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4127,
+            "token_start": 4019
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.9333588643117228,
+          "best_target": "genHttpResponse",
+          "is_best_similar": true,
+          "name": "genHttpResponse",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5689,
+            "token_start": 5570
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "splitStringToSet",
+          "is_best_similar": true,
+          "name": "splitStringToSet",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7355,
+            "token_start": 7115
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "HttpMessageStringViewBody",
+          "is_best_similar": true,
+          "name": "HttpMessageStringViewBody",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8778,
+            "token_start": 8737
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.010638457144858005,
+          "best_target": "handleException",
+          "is_best_similar": false,
+          "name": "ListenerInfo",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10581,
+            "token_start": 10425
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.8761560783209453,
+          "best_target": "handleException",
+          "is_best_similar": true,
+          "name": "handleException",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12158,
+            "token_start": 12096
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.9931271749133769,
+          "best_target": "bytesSize",
+          "is_best_similar": true,
+          "name": "bytesSize",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13892,
+            "token_start": 13407
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.4482700320176827,
+          "best_target": "ChunkingParams",
+          "is_best_similar": true,
+          "name": "ChunkingParams",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15430,
+            "token_start": 15404
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.9363268294149861,
+          "best_target": "compatibility",
+          "is_best_similar": true,
+          "name": "compatibility",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 931,
+            "token_start": 674
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "Sass_Inspect_Options",
+          "is_best_similar": true,
+          "name": "Sass_Inspect_Options",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2429,
+            "token_start": 2364
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.8446319809857226,
+          "best_target": "Thunk",
+          "is_best_similar": true,
+          "name": "Thunk",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4085,
+            "token_start": 4044
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "vector_to_string",
+          "is_best_similar": true,
+          "name": "vector_to_string",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5748,
+            "token_start": 5601
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.9300069758130491,
+          "best_target": "debug_subset_map",
+          "is_best_similar": true,
+          "name": "debug_subset_map",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7428,
+            "token_start": 7299
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.9691937043892331,
+          "best_target": "get_unit_type",
+          "is_best_similar": true,
+          "name": "get_unit_type",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9010,
+            "token_start": 8862
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.016011552454781076,
+          "best_target": "vector_to_string",
+          "is_best_similar": false,
+          "name": "ParentSuperselectorChunker",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10409,
+            "token_start": 10389
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "Operand",
+          "is_best_similar": true,
+          "name": "Operand",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12046,
+            "token_start": 11993
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.8598080536018031,
+          "best_target": "debug_sources_set",
+          "is_best_similar": true,
+          "name": "debug_sources_set",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13804,
+            "token_start": 13682
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_alnum",
+          "is_best_similar": true,
+          "name": "is_alnum",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15311,
+            "token_start": 15278
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "vmap_binary_op",
+          "is_best_similar": true,
+          "name": "vmap_binary_op",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1018,
+            "token_start": 585
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "vmap_trace",
+          "is_best_similar": true,
+          "name": "vmap_trace",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2788,
+            "token_start": 2074
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.537284965911771,
+          "best_target": "in_tracing",
+          "is_best_similar": true,
+          "name": "in_tracing",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 172,
+            "token_start": 144
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "InTracing",
+          "is_best_similar": true,
+          "name": "InTracing",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5645,
+            "token_start": 5628
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.07777025216176742,
+          "best_target": "vmap_trace",
+          "is_best_similar": false,
+          "name": "copy_inplace_dispatch",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7592,
+            "token_start": 7054
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "arange_set_scalars",
+          "is_best_similar": true,
+          "name": "arange_set_scalars",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8942,
+            "token_start": 8875
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unpack_32_4",
+          "is_best_similar": true,
+          "name": "unpack_32_4",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10630,
+            "token_start": 10409
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.9253911813809743,
+          "best_target": "QuantizedMatmul",
+          "is_best_similar": true,
+          "name": "QuantizedMatmul",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11926,
+            "token_start": 11860
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "sqrt",
+          "is_best_similar": true,
+          "name": "sqrt",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13827,
+            "token_start": 13741
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "promote_types",
+          "is_best_similar": true,
+          "name": "promote_types",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15438,
+            "token_start": 15381
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "send",
+          "is_best_similar": true,
+          "name": "send",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 877,
+            "token_start": 717
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.5452469119630863,
+          "best_target": "sharded_parallel_for_each",
+          "is_best_similar": true,
+          "name": "sharded_parallel_for_each",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2410,
+            "token_start": 2313
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "enable_abort_on_allocation_failure",
+          "is_best_similar": true,
+          "name": "enable_abort_on_allocation_failure",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4027,
+            "token_start": 3993
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_shard_local_buffer_copy",
+          "is_best_similar": true,
+          "name": "make_shard_local_buffer_copy",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5702,
+            "token_start": 5395
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "describe_enum_value",
+          "is_best_similar": true,
+          "name": "describe_enum_value",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7263,
+            "token_start": 7115
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.912167909070388,
+          "best_target": "posix_datagram",
+          "is_best_similar": true,
+          "name": "posix_datagram",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8952,
+            "token_start": 8908
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "arp_learn",
+          "is_best_similar": true,
+          "name": "arp_learn",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10513,
+            "token_start": 10413
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "RTE_LCORE_FOREACH_WORKER",
+          "is_best_similar": true,
+          "name": "RTE_LCORE_FOREACH_WORKER",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12182,
+            "token_start": 12125
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "default_isolate_connection",
+          "is_best_similar": true,
+          "name": "default_isolate_connection",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13860,
+            "token_start": 13829
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_control_char",
+          "is_best_similar": true,
+          "name": "is_control_char",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15381,
+            "token_start": 15350
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "packVal",
+          "is_best_similar": true,
+          "name": "packVal",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 870,
+            "token_start": 737
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.8801117367933934,
+          "best_target": "HostVersion",
+          "is_best_similar": true,
+          "name": "HostVersion",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2446,
+            "token_start": 2416
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.9759047945423922,
+          "best_target": "toLLVMConstantZero",
+          "is_best_similar": true,
+          "name": "toLLVMConstantZero",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4188,
+            "token_start": 3944
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
+          "is_best_similar": true,
+          "name": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5746,
+            "token_start": 5571
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "toAdvice",
+          "is_best_similar": true,
+          "name": "toAdvice",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7450,
+            "token_start": 7214
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.8801117367933934,
+          "best_target": "WasmEdge_CompilerContext",
+          "is_best_similar": true,
+          "name": "WasmEdge_CompilerContext",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8917,
+            "token_start": 8876
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.9189449997841013,
+          "best_target": "proxy",
+          "is_best_similar": true,
+          "name": "proxy",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10621,
+            "token_start": 10437
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "loadPlugins",
+          "is_best_similar": true,
+          "name": "loadPlugins",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 6548,
+            "token_start": 6402
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.10587271773456741,
+          "best_target": "toAdvice",
+          "is_best_similar": false,
+          "name": "fromLastError",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13978,
+            "token_start": 13569
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "roundDownPageBoundary",
+          "is_best_similar": true,
+          "name": "roundDownPageBoundary",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15495,
+            "token_start": 15392
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "Pool",
+          "is_best_similar": true,
+          "name": "Pool",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 853,
+            "token_start": 734
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "HandlerCoroutine",
+          "is_best_similar": true,
+          "name": "HandlerCoroutine",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2387,
+            "token_start": 2342
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.06477685362622818,
+          "best_target": "ProtocolError",
+          "is_best_similar": true,
+          "name": "ProtocolError",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3972,
+            "token_start": 3928
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serializePrimitive",
+          "is_best_similar": true,
+          "name": "serializePrimitive",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5693,
+            "token_start": 5590
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.049475702907177795,
+          "best_target": "DataHandle",
+          "is_best_similar": true,
+          "name": "DataHandle",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7111,
+            "token_start": 7087
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.008725369621142079,
+          "best_target": "Pool",
+          "is_best_similar": false,
+          "name": "ListenerCall",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8706,
+            "token_start": 8672
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "PairListObjectWrapper",
+          "is_best_similar": true,
+          "name": "PairListObjectWrapper",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10331,
+            "token_start": 10275
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.08642344511992135,
+          "best_target": "FlushCoroutine",
+          "is_best_similar": true,
+          "name": "FlushCoroutine",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11927,
+            "token_start": 11876
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.01758542189440898,
+          "best_target": "HandlerCoroutine",
+          "is_best_similar": false,
+          "name": "HttpRouterTemplate",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13405,
+            "token_start": 13398
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.018282569091432797,
+          "best_target": "ProtocolError",
+          "is_best_similar": false,
+          "name": "AuthorizationObject",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15049,
+            "token_start": 15039
+          },
+          "repo": "oatpp/oatpp"
+        }
+      ],
+      "java": [
+        {
+          "best_similar_score": 1.0,
+          "best_target": "addTypeAdaptersForDate",
+          "is_best_similar": true,
+          "name": "addTypeAdaptersForDate",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 986,
+            "token_start": 598
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "parseString",
+          "is_best_similar": true,
+          "name": "parseString",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2362,
+            "token_start": 2332
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "newBuilder",
+          "is_best_similar": true,
+          "name": "newBuilder",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4050,
+            "token_start": 4029
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.48954165955695317,
+          "best_target": "getAsJsonNull",
+          "is_best_similar": true,
+          "name": "getAsJsonNull",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5626,
+            "token_start": 5553
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.23588448106534207,
+          "best_target": "nonNull",
+          "is_best_similar": true,
+          "name": "nonNull",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7025,
+            "token_start": 6981
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "rotateLeft",
+          "is_best_similar": true,
+          "name": "rotateLeft",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 6748,
+            "token_start": 6506
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.17226307014894687,
+          "best_target": "getArrayComponentType",
+          "is_best_similar": true,
+          "name": "getArrayComponentType",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10464,
+            "token_start": 10412
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setExclusionStrategies",
+          "is_best_similar": true,
+          "name": "setExclusionStrategies",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12041,
+            "token_start": 11956
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.025511002232192385,
+          "best_target": "addTypeAdaptersForDate",
+          "is_best_similar": false,
+          "name": "run",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13572,
+            "token_start": 13434
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "has",
+          "is_best_similar": true,
+          "name": "has",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 10397,
+            "token_start": 10374
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.864527326307826,
+          "best_target": "getRawCall",
+          "is_best_similar": true,
+          "name": "getRawCall",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 905,
+            "token_start": 686
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "validateServiceInterface",
+          "is_best_similar": true,
+          "name": "validateServiceInterface",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2561,
+            "token_start": 2260
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "resolveTypeVariable",
+          "is_best_similar": true,
+          "name": "resolveTypeVariable",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4103,
+            "token_start": 3947
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.035197945179105884,
+          "best_target": "indexOf",
+          "is_best_similar": false,
+          "name": "getGenericSupertype",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 4169,
+            "token_start": 3822
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "addQueryParam",
+          "is_best_similar": true,
+          "name": "addQueryParam",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7221,
+            "token_start": 7012
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.7165313105737893,
+          "best_target": "getActualTypeArguments",
+          "is_best_similar": true,
+          "name": "getActualTypeArguments",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 6381,
+            "token_start": 6356
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "indexOf",
+          "is_best_similar": true,
+          "name": "indexOf",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 4238,
+            "token_start": 4172
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.8948393168143697,
+          "best_target": "getUpperBounds",
+          "is_best_similar": true,
+          "name": "getUpperBounds",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 7175,
+            "token_start": 7150
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.10687467158870398,
+          "best_target": "callAdapter",
+          "is_best_similar": true,
+          "name": "callAdapter",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13733,
+            "token_start": 13697
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.7788007830714049,
+          "best_target": "annotationType",
+          "is_best_similar": true,
+          "name": "annotationType",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 12152,
+            "token_start": 12124
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "min",
+          "is_best_similar": true,
+          "name": "min",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 844,
+            "token_start": 782
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.9584704616191462,
+          "best_target": "createNodeByPath",
+          "is_best_similar": true,
+          "name": "createNodeByPath",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2542,
+            "token_start": 2250
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.912167909070388,
+          "best_target": "karateLocator",
+          "is_best_similar": true,
+          "name": "karateLocator",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4074,
+            "token_start": 4041
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setEngine",
+          "is_best_similar": true,
+          "name": "setEngine",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5647,
+            "token_start": 5625
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.8003203203844999,
+          "best_target": "execInternal",
+          "is_best_similar": true,
+          "name": "execInternal",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7183,
+            "token_start": 7133
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "callOnce",
+          "is_best_similar": true,
+          "name": "callOnce",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9177,
+            "token_start": 8705
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getCurrentTime",
+          "is_best_similar": true,
+          "name": "getCurrentTime",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10288,
+            "token_start": 10264
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.01539296531445112,
+          "best_target": "enableForUri",
+          "is_best_similar": true,
+          "name": "enableForUri",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11955,
+            "token_start": 11947
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getElementSelector",
+          "is_best_similar": true,
+          "name": "getElementSelector",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13574,
+            "token_start": 13422
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "addTemplateResolver",
+          "is_best_similar": true,
+          "name": "addTemplateResolver",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15078,
+            "token_start": 15050
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "valueOf",
+          "is_best_similar": true,
+          "name": "valueOf",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 802,
+            "token_start": 736
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "rOperation",
+          "is_best_similar": true,
+          "name": "rOperation",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2420,
+            "token_start": 2387
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.06143494394199294,
+          "best_target": "fromCharSequenceToChars",
+          "is_best_similar": false,
+          "name": "blake2bLong",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4207,
+            "token_start": 3830
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.027238379132399147,
+          "best_target": "fromCharSequenceToChars",
+          "is_best_similar": false,
+          "name": "balloon",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5639,
+            "token_start": 5526
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.9660520303055021,
+          "best_target": "fromStringBuilderToBytes",
+          "is_best_similar": true,
+          "name": "fromStringBuilderToBytes",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7349,
+            "token_start": 7268
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "fromCharSequenceToChars",
+          "is_best_similar": true,
+          "name": "fromCharSequenceToChars",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 2865,
+            "token_start": 2751
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getSecureRandom",
+          "is_best_similar": true,
+          "name": "getSecureRandom",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10399,
+            "token_start": 10377
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getResult",
+          "is_best_similar": true,
+          "name": "getResult",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12011,
+            "token_start": 11988
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.0832578587917928,
+          "best_target": "sMix",
+          "is_best_similar": true,
+          "name": "sMix",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13761,
+            "token_start": 13473
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "isPBKDF2Supported",
+          "is_best_similar": true,
+          "name": "isPBKDF2Supported",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15311,
+            "token_start": 15199
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "known",
+          "is_best_similar": true,
+          "name": "known",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 841,
+            "token_start": 783
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "isDefaultTag",
+          "is_best_similar": true,
+          "name": "isDefaultTag",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2439,
+            "token_start": 2412
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "withDirectory",
+          "is_best_similar": true,
+          "name": "withDirectory",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3969,
+            "token_start": 3896
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.767279645960659,
+          "best_target": "getEnvironmentMap",
+          "is_best_similar": true,
+          "name": "getEnvironmentMap",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5656,
+            "token_start": 5628
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkManifestPlatform",
+          "is_best_similar": true,
+          "name": "checkManifestPlatform",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7363,
+            "token_start": 6942
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setConfig",
+          "is_best_similar": true,
+          "name": "setConfig",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8784,
+            "token_start": 8764
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.02756280295054372,
+          "best_target": "withDirectory",
+          "is_best_similar": false,
+          "name": "docker",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10430,
+            "token_start": 10395
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "pushBaseImageLayers",
+          "is_best_similar": true,
+          "name": "pushBaseImageLayers",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12118,
+            "token_start": 12016
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getPath",
+          "is_best_similar": true,
+          "name": "getPath",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13681,
+            "token_start": 13668
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getBaseImageIfAllLayersCached",
+          "is_best_similar": true,
+          "name": "getBaseImageIfAllLayersCached",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15352,
+            "token_start": 15053
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "freeFloatingYoungBlock",
+          "is_best_similar": true,
+          "name": "freeFloatingYoungBlock",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 915,
+            "token_start": 700
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkForGCCause",
+          "is_best_similar": true,
+          "name": "checkForGCCause",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2403,
+            "token_start": 2205
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.8801117367933934,
+          "best_target": "postEvacuatePhaseDuration",
+          "is_best_similar": true,
+          "name": "postEvacuatePhaseDuration",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4081,
+            "token_start": 4027
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.1065095472357353,
+          "best_target": "tagsContain",
+          "is_best_similar": true,
+          "name": "tagsContain",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5688,
+            "token_start": 5664
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "extractValues",
+          "is_best_similar": true,
+          "name": "extractValues",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7400,
+            "token_start": 7199
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.5139699465725068,
+          "best_target": "getMetaSpaceRecord",
+          "is_best_similar": true,
+          "name": "getMetaSpaceRecord",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8927,
+            "token_start": 8805
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "supported",
+          "is_best_similar": true,
+          "name": "supported",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10517,
+            "token_start": 10492
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setHumongousOccupancyAfterCollection",
+          "is_best_similar": true,
+          "name": "setHumongousOccupancyAfterCollection",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12199,
+            "token_start": 12148
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "hits",
+          "is_best_similar": true,
+          "name": "hits",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13785,
+            "token_start": 13722
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "recordRescanStepTimes",
+          "is_best_similar": true,
+          "name": "recordRescanStepTimes",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15463,
+            "token_start": 15213
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "stringComponents",
+          "is_best_similar": true,
+          "name": "stringComponents",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1020,
+            "token_start": 604
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.11102554222892726,
+          "best_target": "formatSourceReflowStringsAndFixImports",
+          "is_best_similar": true,
+          "name": "formatSourceReflowStringsAndFixImports",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2409,
+            "token_start": 2365
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.01765462623236695,
+          "best_target": "rangesAfterAppliedReplacements",
+          "is_best_similar": true,
+          "name": "rangesAfterAppliedReplacements",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4140,
+            "token_start": 3913
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "isArrayValue",
+          "is_best_similar": true,
+          "name": "isArrayValue",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5739,
+            "token_start": 5666
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.27754075019585733,
+          "best_target": "tryBreakLastLevel",
+          "is_best_similar": true,
+          "name": "tryBreakLastLevel",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7277,
+            "token_start": 7143
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.15379176622602886,
+          "best_target": "visitYield",
+          "is_best_similar": true,
+          "name": "visitYield",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8905,
+            "token_start": 8841
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.27130567714631193,
+          "best_target": "addTrivia",
+          "is_best_similar": true,
+          "name": "addTrivia",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10536,
+            "token_start": 10484
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "createDiagnostic",
+          "is_best_similar": true,
+          "name": "createDiagnostic",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 1954,
+            "token_start": 1908
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.006716809445475309,
+          "best_target": "formatSourceReflowStringsAndFixImports",
+          "is_best_similar": false,
+          "name": "blankLines",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13511,
+            "token_start": 13496
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "flush",
+          "is_best_similar": true,
+          "name": "flush",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15407,
+            "token_start": 15264
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.5642351299126014,
+          "best_target": "checkAndAppendClientConnId",
+          "is_best_similar": true,
+          "name": "checkAndAppendClientConnId",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 896,
+            "token_start": 707
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "writeEncryptedRPCTime",
+          "is_best_similar": true,
+          "name": "writeEncryptedRPCTime",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2535,
+            "token_start": 2311
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "removeSingleQuote",
+          "is_best_similar": true,
+          "name": "removeSingleQuote",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4046,
+            "token_start": 3979
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkValidHoldability",
+          "is_best_similar": true,
+          "name": "checkValidHoldability",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5724,
+            "token_start": 5602
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "notifyEvent",
+          "is_best_similar": true,
+          "name": "notifyEvent",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7416,
+            "token_start": 7023
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.10754421249521595,
+          "best_target": "getColumnEncryptionKeyValues",
+          "is_best_similar": true,
+          "name": "getColumnEncryptionKeyValues",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8948,
+            "token_start": 8921
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getTrustStorePassword",
+          "is_best_similar": true,
+          "name": "getTrustStorePassword",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10433,
+            "token_start": 10392
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getRandomNetAddress",
+          "is_best_similar": true,
+          "name": "getRandomNetAddress",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12020,
+            "token_start": 11974
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.23926158077103907,
+          "best_target": "computeResponse",
+          "is_best_similar": true,
+          "name": "computeResponse",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13833,
+            "token_start": 13673
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getParameterInfo",
+          "is_best_similar": true,
+          "name": "getParameterInfo",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15438,
+            "token_start": 15357
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "onEngineHandshakeFinished",
+          "is_best_similar": true,
+          "name": "onEngineHandshakeFinished",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 864,
+            "token_start": 746
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.9200444146293233,
+          "best_target": "engineGetKeyManagers",
+          "is_best_similar": true,
+          "name": "engineGetKeyManagers",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2410,
+            "token_start": 2343
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.13859235980215678,
+          "best_target": "engineGenerateCertificate",
+          "is_best_similar": true,
+          "name": "engineGenerateCertificate",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3970
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.07705561713247024,
+          "best_target": "engineGetKeyManagers",
+          "is_best_similar": false,
+          "name": "open",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5651,
+            "token_start": 5611
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "asn1_read_free",
+          "is_best_similar": true,
+          "name": "asn1_read_free",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7186,
+            "token_start": 7170
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.8668778997501817,
+          "best_target": "engineGetServerSessionContext",
+          "is_best_similar": true,
+          "name": "engineGetServerSessionContext",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8754,
+            "token_start": 8729
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkAndSetEncodedKey",
+          "is_best_similar": true,
+          "name": "checkAndSetEncodedKey",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10516,
+            "token_start": 10286
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "isChannelIdEnabled",
+          "is_best_similar": true,
+          "name": "isChannelIdEnabled",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11904,
+            "token_start": 11887
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "findByApiName",
+          "is_best_similar": true,
+          "name": "findByApiName",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 12348,
+            "token_start": 12284
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.038172482812907,
+          "best_target": "checkCert",
+          "is_best_similar": true,
+          "name": "checkCert",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15127,
+            "token_start": 15086
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "endInputX",
+          "is_best_similar": true,
+          "name": "endInputX",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 908,
+            "token_start": 719
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "onEventTime",
+          "is_best_similar": true,
+          "name": "onEventTime",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2462,
+            "token_start": 2393
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "coGroup",
+          "is_best_similar": true,
+          "name": "coGroup",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4175,
+            "token_start": 3947
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "toList",
+          "is_best_similar": true,
+          "name": "toList",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 2937,
+            "token_start": 2860
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.9649159443723699,
+          "best_target": "putBroadcastVariable",
+          "is_best_similar": true,
+          "name": "putBroadcastVariable",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7206,
+            "token_start": 7095
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getInputs",
+          "is_best_similar": true,
+          "name": "getInputs",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8779,
+            "token_start": 8756
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setKeyContextElement1",
+          "is_best_similar": true,
+          "name": "setKeyContextElement1",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10485,
+            "token_start": 10448
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.6938263924563483,
+          "best_target": "getModelDataFromModel",
+          "is_best_similar": true,
+          "name": "getModelDataFromModel",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12152,
+            "token_start": 11986
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getNumChunks",
+          "is_best_similar": true,
+          "name": "getNumChunks",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13511,
+            "token_start": 13455
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.8668778997501817,
+          "best_target": "getCurrentOuterSnapshotVersion",
+          "is_best_similar": true,
+          "name": "getCurrentOuterSnapshotVersion",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15130,
+            "token_start": 15104
+          },
+          "repo": "apache/flink-ml"
+        }
+      ],
+      "python": [
+        {
+          "best_similar_score": 0.011455830665179776,
+          "best_target": "is_part_of_annotation",
+          "is_best_similar": false,
+          "name": "_merge_string_group",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1066,
+            "token_start": 508
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "convert_unchanged_lines",
+          "is_best_similar": true,
+          "name": "convert_unchanged_lines",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2667,
+            "token_start": 2176
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_simple_prefix",
+          "is_best_similar": true,
+          "name": "make_simple_prefix",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3951
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "run_transformer",
+          "is_best_similar": true,
+          "name": "run_transformer",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5921,
+            "token_start": 5377
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.293905470627611,
+          "best_target": "is_part_of_annotation",
+          "is_best_similar": true,
+          "name": "is_part_of_annotation",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7209,
+            "token_start": 7162
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "maybe_install_uvloop",
+          "is_best_similar": true,
+          "name": "maybe_install_uvloop",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8922,
+            "token_start": 8833
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.033880614522083484,
+          "best_target": "check_stability_and_equivalence",
+          "is_best_similar": true,
+          "name": "check_stability_and_equivalence",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10602,
+            "token_start": 10454
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "visit",
+          "is_best_similar": true,
+          "name": "visit",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12356,
+            "token_start": 12070
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.014137634015693026,
+          "best_target": "is_part_of_annotation",
+          "is_best_similar": false,
+          "name": "__post_init__",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13982,
+            "token_start": 13424
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "should_split_funcdef_with_rhs",
+          "is_best_similar": true,
+          "name": "should_split_funcdef_with_rhs",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15502,
+            "token_start": 15148
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_find_best_version_for_package",
+          "is_best_similar": true,
+          "name": "_find_best_version_for_package",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 894,
+            "token_start": 705
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_package_vcs_properties_from_path",
+          "is_best_similar": true,
+          "name": "get_package_vcs_properties_from_path",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2441,
+            "token_start": 2374
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_validate_group_options",
+          "is_best_similar": true,
+          "name": "_validate_group_options",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4116,
+            "token_start": 3886
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.08766057038819781,
+          "best_target": "_find_best_version_for_package",
+          "is_best_similar": false,
+          "name": "candidates",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5592,
+            "token_start": 5574
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_display_complete_info",
+          "is_best_similar": true,
+          "name": "_display_complete_info",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7426,
+            "token_start": 6960
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_write_lock_file",
+          "is_best_similar": true,
+          "name": "_write_lock_file",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8888,
+            "token_start": 8778
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.26047336048130487,
+          "best_target": "_do_execute_operation",
+          "is_best_similar": true,
+          "name": "_do_execute_operation",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10593,
+            "token_start": 10271
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.8895260356363631,
+          "best_target": "_get_directory_from_hash",
+          "is_best_similar": true,
+          "name": "_get_directory_from_hash",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12042,
+            "token_start": 11917
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_validate_readme",
+          "is_best_similar": true,
+          "name": "_validate_readme",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13622,
+            "token_start": 13503
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "base",
+          "is_best_similar": true,
+          "name": "base",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15207,
+            "token_start": 15193
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_user_classes_with_same_name_is_error",
+          "is_best_similar": true,
+          "name": "test_user_classes_with_same_name_is_error",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 852,
+            "token_start": 709
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "rename_request",
+          "is_best_similar": true,
+          "name": "rename_request",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2422,
+            "token_start": 2358
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_poller",
+          "is_best_similar": true,
+          "name": "get_poller",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4020,
+            "token_start": 3984
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.04124465251244187,
+          "best_target": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
+          "is_best_similar": true,
+          "name": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5899,
+            "token_start": 5418
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_custom_ssl_context_fail_with_bad_context",
+          "is_best_similar": true,
+          "name": "test_custom_ssl_context_fail_with_bad_context",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7363,
+            "token_start": 7129
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_worker_heartbeat_messages_sent_to_master",
+          "is_best_similar": true,
+          "name": "test_worker_heartbeat_messages_sent_to_master",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9005,
+            "token_start": 8705
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.7165313105737893,
+          "best_target": "test_request_stats_named_endpoint_rename_request",
+          "is_best_similar": true,
+          "name": "test_request_stats_named_endpoint_rename_request",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10560,
+            "token_start": 10468
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_valid_percentile",
+          "is_best_similar": true,
+          "name": "is_valid_percentile",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12099,
+            "token_start": 12053
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_construct_basic_auth_str",
+          "is_best_similar": true,
+          "name": "_construct_basic_auth_str",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13783,
+            "token_start": 13678
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.07016426025014133,
+          "best_target": "test_distribute_users",
+          "is_best_similar": true,
+          "name": "test_distribute_users",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15504,
+            "token_start": 15216
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.014370467508582733,
+          "best_target": "maybe_init_stream",
+          "is_best_similar": true,
+          "name": "maybe_init_stream",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 819,
+            "token_start": 756
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "positive_sampling",
+          "is_best_similar": true,
+          "name": "positive_sampling",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2454,
+            "token_start": 2380
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.8894215391839717,
+          "best_target": "read_from_memlab",
+          "is_best_similar": true,
+          "name": "read_from_memlab",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4135,
+            "token_start": 3903
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "num_node_labels",
+          "is_best_similar": true,
+          "name": "num_node_labels",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5655,
+            "token_start": 5629
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.009554276790449333,
+          "best_target": "maybe_init_stream",
+          "is_best_similar": false,
+          "name": "__collate__",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7512,
+            "token_start": 7004
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.9119599580727468,
+          "best_target": "tree",
+          "is_best_similar": true,
+          "name": "tree",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9079,
+            "token_start": 8646
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "to_scipy_sparse_matrix",
+          "is_best_similar": true,
+          "name": "to_scipy_sparse_matrix",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10716,
+            "token_start": 10274
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "set_tuple_item",
+          "is_best_similar": true,
+          "name": "set_tuple_item",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 2878,
+            "token_start": 2771
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_to_edge_mask",
+          "is_best_similar": true,
+          "name": "_to_edge_mask",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13748,
+            "token_start": 13687
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_self_loop_attr",
+          "is_best_similar": true,
+          "name": "get_self_loop_attr",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15603,
+            "token_start": 14965
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_get_arch",
+          "is_best_similar": true,
+          "name": "_get_arch",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 843,
+            "token_start": 735
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "to_custom_raw_response_wrapper",
+          "is_best_similar": true,
+          "name": "to_custom_raw_response_wrapper",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2527,
+            "token_start": 2261
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "transcribe",
+          "is_best_similar": true,
+          "name": "transcribe",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4060,
+            "token_start": 3867
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_request_options",
+          "is_best_similar": true,
+          "name": "make_request_options",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5836,
+            "token_start": 5496
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.90390273463013,
+          "best_target": "_primitive_value_to_str",
+          "is_best_similar": true,
+          "name": "_primitive_value_to_str",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7249,
+            "token_start": 7176
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.01198840925194064,
+          "best_target": "make_request_options",
+          "is_best_similar": false,
+          "name": "_transform_value",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8813,
+            "token_start": 8684
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.24035880737576398,
+          "best_target": "_construct_field",
+          "is_best_similar": true,
+          "name": "_construct_field",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10446,
+            "token_start": 10316
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_basic_config",
+          "is_best_similar": true,
+          "name": "_basic_config",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12148,
+            "token_start": 12002
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__getattr__",
+          "is_best_similar": true,
+          "name": "__getattr__",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 425,
+            "token_start": 358
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_enforce_trailing_slash",
+          "is_best_similar": true,
+          "name": "_enforce_trailing_slash",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15249,
+            "token_start": 15188
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.286992839486024e-06,
+          "best_target": "get_param_set_item",
+          "is_best_similar": false,
+          "name": "fused_decode3_matmul1_fp16_before",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1194,
+            "token_start": 270
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.007580249945128876,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": false,
+          "name": "fused_fused_decode7_matmul4",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2874,
+            "token_start": 1982
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.28811183728997203,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": true,
+          "name": "contain_symbolic_var",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4086,
+            "token_start": 4008
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_param_set_item",
+          "is_best_similar": true,
+          "name": "get_param_set_item",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5862,
+            "token_start": 5447
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.012911391951355565,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": false,
+          "name": "fused_fused_decode9_matmul7",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7805,
+            "token_start": 6907
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.013038525962482981,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": false,
+          "name": "fused_decode4_matmul5_int3_fp16_before",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9368,
+            "token_start": 8523
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.014886943406383508,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": false,
+          "name": "fused_NT_matmul3_add1_before",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 11053,
+            "token_start": 10214
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.9860247178169949,
+          "best_target": "fused_decode4_matmul5_int3_int16_fp16_before",
+          "is_best_similar": true,
+          "name": "fused_decode4_matmul5_int3_int16_fp16_before",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12676,
+            "token_start": 11821
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "softmax_1xn_sch_func",
+          "is_best_similar": true,
+          "name": "softmax_1xn_sch_func",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 14154,
+            "token_start": 13651
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.16291738812492929,
+          "best_target": "f_quantize",
+          "is_best_similar": true,
+          "name": "f_quantize",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 11861,
+            "token_start": 11602
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "sync_function",
+          "is_best_similar": true,
+          "name": "sync_function",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 847,
+            "token_start": 739
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.5752817355954354,
+          "best_target": "custom_vdom_constructor",
+          "is_best_similar": true,
+          "name": "custom_vdom_constructor",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2490,
+            "token_start": 2344
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.3951880604113612,
+          "best_target": "image",
+          "is_best_similar": true,
+          "name": "image",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4106,
+            "token_start": 3907
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.05120897811151822,
+          "best_target": "stop_server",
+          "is_best_similar": false,
+          "name": "use",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5652,
+            "token_start": 5565
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_equal_files",
+          "is_best_similar": true,
+          "name": "_equal_files",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7316,
+            "token_start": 7214
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.7419446627365011,
+          "best_target": "stop_server",
+          "is_best_similar": true,
+          "name": "stop_server",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8853,
+            "token_start": 8800
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "create_context",
+          "is_best_similar": true,
+          "name": "create_context",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10491,
+            "token_start": 10360
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "set_context_provider",
+          "is_best_similar": true,
+          "name": "set_context_provider",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 7254,
+            "token_start": 7172
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "boolean",
+          "is_best_similar": true,
+          "name": "boolean",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 4786,
+            "token_start": 4624
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "all_implementations",
+          "is_best_similar": true,
+          "name": "all_implementations",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15280,
+            "token_start": 15147
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.9847313538241159,
+          "best_target": "register",
+          "is_best_similar": true,
+          "name": "register",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 985,
+            "token_start": 603
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.23040241792122754,
+          "best_target": "store_error",
+          "is_best_similar": true,
+          "name": "store_error",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2471,
+            "token_start": 2336
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "dict_class",
+          "is_best_similar": true,
+          "name": "dict_class",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4055,
+            "token_start": 4033
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "options",
+          "is_best_similar": true,
+          "name": "options",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5746,
+            "token_start": 5502
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.6567427041998118,
+          "best_target": "_invoke_field_validators",
+          "is_best_similar": true,
+          "name": "_invoke_field_validators",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7537,
+            "token_start": 7062
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.6382170313642412,
+          "best_target": "_run_validator",
+          "is_best_similar": true,
+          "name": "_run_validator",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8979,
+            "token_start": 8818
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "from_iso_time",
+          "is_best_similar": true,
+          "name": "from_iso_time",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 8157,
+            "token_start": 7998
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__len__",
+          "is_best_similar": true,
+          "name": "__len__",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 5489,
+            "token_start": 5474
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "normalized_messages",
+          "is_best_similar": true,
+          "name": "normalized_messages",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 2899,
+            "token_start": 2849
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.5281558300572936,
+          "best_target": "_normalize_nested_options",
+          "is_best_similar": true,
+          "name": "_normalize_nested_options",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15446,
+            "token_start": 15237
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_eth_get_logs_with_logs_none_topic_args",
+          "is_best_similar": true,
+          "name": "test_eth_get_logs_with_logs_none_topic_args",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 853,
+            "token_start": 747
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_get_response_for_request_id",
+          "is_best_similar": true,
+          "name": "_get_response_for_request_id",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2635,
+            "token_start": 2195
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_default_middlewares",
+          "is_best_similar": true,
+          "name": "get_default_middlewares",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4072,
+            "token_start": 3935
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.6999288493717348,
+          "best_target": "_get_transaction",
+          "is_best_similar": true,
+          "name": "_get_transaction",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5725,
+            "token_start": 5536
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_async_eth_sign_transaction_legacy",
+          "is_best_similar": true,
+          "name": "test_async_eth_sign_transaction_legacy",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7463,
+            "token_start": 7175
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.013787418811481425,
+          "best_target": "data_tree_map",
+          "is_best_similar": true,
+          "name": "data_tree_map",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8895,
+            "token_start": 8725
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.8322089362050927,
+          "best_target": "test_gas_price_strategy_hex_value",
+          "is_best_similar": true,
+          "name": "test_gas_price_strategy_hex_value",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10707,
+            "token_start": 10417
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.9148095365172607,
+          "best_target": "test_eth_estimate_gas_revert_with_msg",
+          "is_best_similar": true,
+          "name": "test_eth_estimate_gas_revert_with_msg",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12276,
+            "token_start": 12107
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_make_get_request",
+          "is_best_similar": true,
+          "name": "_make_get_request",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13789,
+            "token_start": 13728
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.8587176642699867,
+          "best_target": "test_eth_call_revert_custom_error_with_msg",
+          "is_best_similar": true,
+          "name": "test_eth_call_revert_custom_error_with_msg",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15568,
+            "token_start": 15358
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "chars_to_byte",
+          "is_best_similar": true,
+          "name": "chars_to_byte",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 814,
+            "token_start": 770
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__ge__",
+          "is_best_similar": true,
+          "name": "__ge__",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 1687,
+            "token_start": 1653
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.32184424080043433,
+          "best_target": "alpha",
+          "is_best_similar": true,
+          "name": "alpha",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4029,
+            "token_start": 4015
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "strip_punctuation",
+          "is_best_similar": true,
+          "name": "strip_punctuation",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5616,
+            "token_start": 5601
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.03208262237289522,
+          "best_target": "crackOne",
+          "is_best_similar": true,
+          "name": "crackOne",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7385,
+            "token_start": 7123
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.03212357390460877,
+          "best_target": "new_sort",
+          "is_best_similar": true,
+          "name": "new_sort",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8905,
+            "token_start": 8705
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_name",
+          "is_best_similar": true,
+          "name": "get_name",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10477,
+            "token_start": 10368
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "binary_to_ascii",
+          "is_best_similar": true,
+          "name": "binary_to_ascii",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12183,
+            "token_start": 12001
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.5977858693709381,
+          "best_target": "getSentenceCombo",
+          "is_best_similar": true,
+          "name": "getSentenceCombo",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13841,
+            "token_start": 13535
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "sortlistwithdict",
+          "is_best_similar": true,
+          "name": "sortlistwithdict",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15328,
+            "token_start": 15257
+          },
+          "repo": "Ciphey/Ciphey"
+        }
+      ],
+      "rust": [
+        {
+          "best_similar_score": 0.42728700639623407,
+          "best_target": "yd",
+          "is_best_similar": true,
+          "name": "yd",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 832,
+            "token_start": 792
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.07456667969910809,
+          "best_target": "yd",
+          "is_best_similar": false,
+          "name": "i16_tests",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2550,
+            "token_start": 2310
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.625093269778799,
+          "best_target": "many1_count",
+          "is_best_similar": true,
+          "name": "many1_count",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4116,
+            "token_start": 4037
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_offset_u8",
+          "is_best_similar": true,
+          "name": "test_offset_u8",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5696,
+            "token_start": 5582
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.4758214857025976,
+          "best_target": "many1_count",
+          "is_best_similar": false,
+          "name": "fold_many1",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7411,
+            "token_start": 7251
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "parse",
+          "is_best_similar": true,
+          "name": "parse",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8987,
+            "token_start": 8937
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.02776534105990944,
+          "best_target": "test_offset_u8",
+          "is_best_similar": false,
+          "name": "test_complete_byte_consumption_bits",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10674,
+            "token_start": 10423
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.0453026393207358,
+          "best_target": "many1_count",
+          "is_best_similar": false,
+          "name": "be_i8_tests",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12302,
+            "token_start": 12167
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "tagtr_succeed",
+          "is_best_similar": true,
+          "name": "tagtr_succeed",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13978,
+            "token_start": 13768
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.005427142619414598,
+          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": false,
+          "name": "length_count",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15559,
+            "token_start": 15412
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.015881921017450295,
+          "best_target": "serialize_lang_features",
+          "is_best_similar": false,
+          "name": "composition",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 920,
+            "token_start": 696
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.030544559360566513,
+          "best_target": "tokenize",
+          "is_best_similar": true,
+          "name": "tokenize",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2434,
+            "token_start": 2411
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_lang_features",
+          "is_best_similar": true,
+          "name": "serialize_lang_features",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4158,
+            "token_start": 3949
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.9215070217189091,
+          "best_target": "injection_for_match",
+          "is_best_similar": true,
+          "name": "injection_for_match",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5925,
+            "token_start": 5437
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.8668778997501817,
+          "best_target": "names",
+          "is_best_similar": true,
+          "name": "names",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7307,
+            "token_start": 7278
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "stay_at_gaps",
+          "is_best_similar": true,
+          "name": "stay_at_gaps",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8918,
+            "token_start": 8885
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.26903165413392394,
+          "best_target": "test_invalid_date_times",
+          "is_best_similar": true,
+          "name": "test_invalid_date_times",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10693,
+            "token_start": 10402
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.9831936762627184,
+          "best_target": "move_horizontally",
+          "is_best_similar": true,
+          "name": "move_horizontally",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12244,
+            "token_start": 12057
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.45723134461864345,
+          "best_target": "is_date",
+          "is_best_similar": true,
+          "name": "is_date",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13837,
+            "token_start": 13801
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.24252107463564873,
+          "best_target": "test_input_edits",
+          "is_best_similar": true,
+          "name": "test_input_edits",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15706,
+            "token_start": 15106
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.9018287698867313,
+          "best_target": "get_config_profile",
+          "is_best_similar": true,
+          "name": "get_config_profile",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 926,
+            "token_start": 701
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.01625966293309583,
+          "best_target": "package",
+          "is_best_similar": true,
+          "name": "package",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2641,
+            "token_start": 2209
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_cratesio_hash",
+          "is_best_similar": true,
+          "name": "test_cratesio_hash",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4097,
+            "token_start": 4013
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.028051604056085533,
+          "best_target": "raw_canonicalized_url",
+          "is_best_similar": false,
+          "name": "rebuild_unit_graph_shared",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5873,
+            "token_start": 5516
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "predefined_dir_names",
+          "is_best_similar": true,
+          "name": "predefined_dir_names",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7358,
+            "token_start": 7263
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.06975513960672595,
+          "best_target": "uninstall_one",
+          "is_best_similar": true,
+          "name": "uninstall_one",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9024,
+            "token_start": 8877
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unit_needs_doc_scrape",
+          "is_best_similar": true,
+          "name": "unit_needs_doc_scrape",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10634,
+            "token_start": 10491
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unsupported",
+          "is_best_similar": true,
+          "name": "unsupported",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12304,
+            "token_start": 12081
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "raw_canonicalized_url",
+          "is_best_similar": true,
+          "name": "raw_canonicalized_url",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 1530,
+            "token_start": 1504
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.9897422338208895,
+          "best_target": "max_unpack_size",
+          "is_best_similar": true,
+          "name": "max_unpack_size",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15647,
+            "token_start": 15279
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "h2_options",
+          "is_best_similar": true,
+          "name": "h2_options",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 811,
+            "token_start": 787
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "do_read_body_until_closed",
+          "is_best_similar": true,
+          "name": "do_read_body_until_closed",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2580,
+            "token_start": 2285
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "write_to_buffer",
+          "is_best_similar": true,
+          "name": "write_to_buffer",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4098,
+            "token_start": 4001
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.21204197391026985,
+          "best_target": "test_connect_h1_plaintext",
+          "is_best_similar": true,
+          "name": "test_connect_h1_plaintext",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5755,
+            "token_start": 5618
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_vec_string",
+          "is_best_similar": true,
+          "name": "serialize_vec_string",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 5413,
+            "token_start": 5311
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "h1_is_preferred",
+          "is_best_similar": true,
+          "name": "h1_is_preferred",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8971,
+            "token_start": 8897
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_conn_error_refused",
+          "is_best_similar": true,
+          "name": "test_conn_error_refused",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10598,
+            "token_start": 10512
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.12026061194250894,
+          "best_target": "get_bytes",
+          "is_best_similar": true,
+          "name": "get_bytes",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12202,
+            "token_start": 12168
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.2424279854977456,
+          "best_target": "from_server_conf",
+          "is_best_similar": true,
+          "name": "from_server_conf",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13980,
+            "token_start": 13616
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "enable_h2",
+          "is_best_similar": true,
+          "name": "enable_h2",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15432,
+            "token_start": 15401
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "squeeze_dims",
+          "is_best_similar": true,
+          "name": "squeeze_dims",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 893,
+            "token_start": 720
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "striding_error",
+          "is_best_similar": true,
+          "name": "striding_error",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2499,
+            "token_start": 2383
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.013609139615996616,
+          "best_target": "write_npy",
+          "is_best_similar": false,
+          "name": "erf_inv_impl",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4477,
+            "token_start": 3648
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "index",
+          "is_best_similar": true,
+          "name": "index",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5918,
+            "token_start": 5473
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "read_to_vec",
+          "is_best_similar": true,
+          "name": "read_to_vec",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7374,
+            "token_start": 7289
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unary_map",
+          "is_best_similar": true,
+          "name": "unary_map",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9109,
+            "token_start": 8776
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "apply_op1_no_bwd",
+          "is_best_similar": true,
+          "name": "apply_op1_no_bwd",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10543,
+            "token_start": 10463
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "write_npy",
+          "is_best_similar": true,
+          "name": "write_npy",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11440,
+            "token_start": 11382
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "dequantize_mul_mat_vec",
+          "is_best_similar": true,
+          "name": "dequantize_mul_mat_vec",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 14217,
+            "token_start": 13431
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_id",
+          "is_best_similar": true,
+          "name": "get_id",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15512,
+            "token_start": 15477
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.144769886226851,
+          "best_target": "reject",
+          "is_best_similar": true,
+          "name": "reject",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 818,
+            "token_start": 802
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "map_err",
+          "is_best_similar": true,
+          "name": "map_err",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2483,
+            "token_start": 2388
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "poll_read",
+          "is_best_similar": true,
+          "name": "poll_read",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4088,
+            "token_start": 4010
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "wrap_fn",
+          "is_best_similar": true,
+          "name": "wrap_fn",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5687,
+            "token_start": 5626
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "file_stream",
+          "is_best_similar": true,
+          "name": "file_stream",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7556,
+            "token_start": 7075
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "send_text",
+          "is_best_similar": true,
+          "name": "send_text",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8978,
+            "token_start": 8937
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "description",
+          "is_best_similar": true,
+          "name": "description",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10587,
+            "token_start": 10568
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.11858206329002834,
+          "best_target": "convert_reply",
+          "is_best_similar": true,
+          "name": "convert_reply",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12181,
+            "token_start": 12139
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "extension",
+          "is_best_similar": true,
+          "name": "extension",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13830,
+            "token_start": 13777
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.5757197301274735,
+          "best_target": "__reject_custom_compilefail",
+          "is_best_similar": true,
+          "name": "__reject_custom_compilefail",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15415,
+            "token_start": 15404
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.050231012540716644,
+          "best_target": "newtype_variant",
+          "is_best_similar": true,
+          "name": "newtype_variant",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 836,
+            "token_start": 783
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "from_bounds",
+          "is_best_similar": true,
+          "name": "from_bounds",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 71,
+            "token_start": 28
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.12117880855911829,
+          "best_target": "serialize_entry",
+          "is_best_similar": false,
+          "name": "serialize_key",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4049,
+            "token_start": 3993
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.00812260761789095,
+          "best_target": "serialize_key",
+          "is_best_similar": false,
+          "name": "__deserialize_content",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5736,
+            "token_start": 5634
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "format_u8",
+          "is_best_similar": true,
+          "name": "format_u8",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7389,
+            "token_start": 7159
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_i128",
+          "is_best_similar": true,
+          "name": "serialize_i128",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8966,
+            "token_start": 8911
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.13952118378975725,
+          "best_target": "serialize_key",
+          "is_best_similar": false,
+          "name": "serialize_unit_variant",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10541,
+            "token_start": 10479
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "visit_i8",
+          "is_best_similar": true,
+          "name": "visit_i8",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12226,
+            "token_start": 12170
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.23708987804092638,
+          "best_target": "variant",
+          "is_best_similar": true,
+          "name": "variant",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13838,
+            "token_start": 13785
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_entry",
+          "is_best_similar": true,
+          "name": "serialize_entry",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15535,
+            "token_start": 15449
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "and",
+          "is_best_similar": true,
+          "name": "and",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 825,
+            "token_start": 773
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.4396922386363651,
+          "best_target": "set_global_default",
+          "is_best_similar": true,
+          "name": "set_global_default",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2628,
+            "token_start": 2262
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "as_ref",
+          "is_best_similar": true,
+          "name": "as_ref",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4055,
+            "token_start": 4035
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.0325342270135205,
+          "best_target": "and",
+          "is_best_similar": false,
+          "name": "default",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5717,
+            "token_start": 5692
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.5119965448492497,
+          "best_target": "field",
+          "is_best_similar": true,
+          "name": "field",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7350,
+            "token_start": 7241
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.026480261910431388,
+          "best_target": "as_ref",
+          "is_best_similar": false,
+          "name": "sparse_value_sets_are_not_empty",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8975,
+            "token_start": 8857
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.015548798901953008,
+          "best_target": "linked_list_push",
+          "is_best_similar": true,
+          "name": "linked_list_push",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10679,
+            "token_start": 10474
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "into_u64",
+          "is_best_similar": true,
+          "name": "into_u64",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12192,
+            "token_start": 12166
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "with_default",
+          "is_best_similar": true,
+          "name": "with_default",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13887,
+            "token_start": 13778
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "on_register_dispatch",
+          "is_best_similar": true,
+          "name": "on_register_dispatch",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15486,
+            "token_start": 15459
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "pre_run_target_child",
+          "is_best_similar": true,
+          "name": "pre_run_target_child",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1037,
+            "token_start": 581
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "launched",
+          "is_best_similar": true,
+          "name": "launched",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2478,
+            "token_start": 2420
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.29361286432122874,
+          "best_target": "launched",
+          "is_best_similar": false,
+          "name": "with_max_stack_pow",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4095,
+            "token_start": 4003
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "objective_size",
+          "is_best_similar": true,
+          "name": "objective_size",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5711,
+            "token_start": 5658
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_iters_by_name",
+          "is_best_similar": true,
+          "name": "get_iters_by_name",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7349,
+            "token_start": 7232
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "exposed_executor_state",
+          "is_best_similar": true,
+          "name": "exposed_executor_state",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8981,
+            "token_start": 8951
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.7329648107048913,
+          "best_target": "rtn_extend_encoding",
+          "is_best_similar": true,
+          "name": "rtn_extend_encoding",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10848,
+            "token_start": 10204
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "with_history_map",
+          "is_best_similar": true,
+          "name": "with_history_map",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12239,
+            "token_start": 12136
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.7252884134873838,
+          "best_target": "store_probability",
+          "is_best_similar": true,
+          "name": "store_probability",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13848,
+            "token_start": 13677
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "saturating_next_power_of_two",
+          "is_best_similar": true,
+          "name": "saturating_next_power_of_two",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15458,
+            "token_start": 15366
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "on_left_click",
+          "is_best_similar": true,
+          "name": "on_left_click",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 983,
+            "token_start": 602
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "negative_url_parsing_regex_test",
+          "is_best_similar": true,
+          "name": "negative_url_parsing_regex_test",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2526,
+            "token_start": 2325
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.17181529671327242,
+          "best_target": "set_term_uniforms",
+          "is_best_similar": true,
+          "name": "set_term_uniforms",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3980
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "footer_bar_foreground",
+          "is_best_similar": true,
+          "name": "footer_bar_foreground",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 320,
+            "token_start": 281
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "dynamic_title_ignoring_options_by_default",
+          "is_best_similar": true,
+          "name": "dynamic_title_ignoring_options_by_default",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7296,
+            "token_start": 7214
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "keyboard_input",
+          "is_best_similar": true,
+          "name": "keyboard_input",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9050,
+            "token_start": 8660
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.9914163619433392,
+          "best_target": "fill_cube",
+          "is_best_similar": true,
+          "name": "fill_cube",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 4300,
+            "token_start": 4023
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.8510838609802074,
+          "best_target": "add_render_item",
+          "is_best_similar": true,
+          "name": "add_render_item",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12147,
+            "token_start": 12008
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.9574533680683809,
+          "best_target": "term_options",
+          "is_best_similar": true,
+          "name": "term_options",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13843,
+            "token_start": 13716
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "merge_rects",
+          "is_best_similar": true,
+          "name": "merge_rects",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15472,
+            "token_start": 15320
+          },
+          "repo": "alacritty/alacritty"
+        }
+      ],
+      "typescript": [
+        {
+          "best_similar_score": 1.0,
+          "best_target": "reshape",
+          "is_best_similar": true,
+          "name": "reshape",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 901,
+            "token_start": 675
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "padHelper",
+          "is_best_similar": true,
+          "name": "padHelper",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2457,
+            "token_start": 2339
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "prepareImages",
+          "is_best_similar": true,
+          "name": "prepareImages",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3985,
+            "token_start": 3919
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.9770125183673897,
+          "best_target": "getModelJSON",
+          "is_best_similar": true,
+          "name": "getModelJSON",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5665,
+            "token_start": 5562
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.985611760820714,
+          "best_target": "hanning",
+          "is_best_similar": true,
+          "name": "hanning",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7307,
+            "token_start": 7143
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.8824969025845955,
+          "best_target": "dispatchCallback",
+          "is_best_similar": true,
+          "name": "dispatchCallback",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 164,
+            "token_start": 137
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.9903382397772544,
+          "best_target": "window_function",
+          "is_best_similar": true,
+          "name": "window_function",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10522,
+            "token_start": 10237
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "validate_audio_inputs",
+          "is_best_similar": true,
+          "name": "validate_audio_inputs",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12027,
+            "token_start": 11894
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.577099736389929,
+          "best_target": "permute_data",
+          "is_best_similar": true,
+          "name": "permute_data",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13228,
+            "token_start": 12886
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.4685909905380384,
+          "best_target": "isChat",
+          "is_best_similar": true,
+          "name": "isChat",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 14993,
+            "token_start": 14963
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "sendfile",
+          "is_best_similar": true,
+          "name": "sendfile",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1071,
+            "token_start": 504
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.9774530969522827,
+          "best_target": "trim_prefix",
+          "is_best_similar": true,
+          "name": "trim_prefix",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2525,
+            "token_start": 2137
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "decode_param",
+          "is_best_similar": true,
+          "name": "decode_param",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3853,
+            "token_start": 3737
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "gettype",
+          "is_best_similar": true,
+          "name": "gettype",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5489,
+            "token_start": 5421
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "newObject",
+          "is_best_similar": true,
+          "name": "newObject",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 1947,
+            "token_start": 1936
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.5162236909521245,
+          "best_target": "logerror",
+          "is_best_similar": true,
+          "name": "logerror",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8469,
+            "token_start": 8425
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "acceptParams",
+          "is_best_similar": true,
+          "name": "acceptParams",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 1020,
+            "token_start": 879
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "Route",
+          "is_best_similar": true,
+          "name": "Route",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11534,
+            "token_start": 11483
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "tryStat",
+          "is_best_similar": true,
+          "name": "tryStat",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13116,
+            "token_start": 13065
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "stringify",
+          "is_best_similar": true,
+          "name": "stringify",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 11276,
+            "token_start": 11043
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.8666415730847504,
+          "best_target": "done",
+          "is_best_similar": true,
+          "name": "done",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 839,
+            "token_start": 774
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.8025968769328761,
+          "best_target": "formatMessage",
+          "is_best_similar": true,
+          "name": "formatMessage",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2389,
+            "token_start": 2337
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.9007168067105201,
+          "best_target": "buildURL",
+          "is_best_similar": true,
+          "name": "buildURL",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4060,
+            "token_start": 3821
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.04793496145009402,
+          "best_target": "done",
+          "is_best_similar": false,
+          "name": "combineURLs",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 787,
+            "token_start": 734
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.9534969548334766,
+          "best_target": "settle",
+          "is_best_similar": true,
+          "name": "settle",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7146,
+            "token_start": 6998
+          },
+          "repo": "axios/axios"
+        }
+      ]
+    },
+    "scores": {
+      "all": {
+        "0.0": {
+          "pass@1": 0.8917647058823529
+        },
+        "0.1": {
+          "pass@1": 0.8329411764705882
+        },
+        "0.2": {
+          "pass@1": 0.8
+        },
+        "0.3": {
+          "pass@1": 0.7623529411764706
+        },
+        "0.4": {
+          "pass@1": 0.7576470588235295
+        },
+        "0.5": {
+          "pass@1": 0.7435294117647059
+        },
+        "0.6": {
+          "pass@1": 0.7152941176470589
+        },
+        "0.7": {
+          "pass@1": 0.7011764705882353
+        },
+        "0.8": {
+          "pass@1": 0.68
+        },
+        "0.9": {
+          "pass@1": 0.6258823529411764
+        },
+        "1.0": {
+          "pass@1": 0.548235294117647
+        }
+      },
+      "cpp": {
+        "0.0": {
+          "pass@1": 0.87
+        },
+        "0.1": {
+          "pass@1": 0.78
+        },
+        "0.2": {
+          "pass@1": 0.76
+        },
+        "0.3": {
+          "pass@1": 0.74
+        },
+        "0.4": {
+          "pass@1": 0.74
+        },
+        "0.5": {
+          "pass@1": 0.73
+        },
+        "0.6": {
+          "pass@1": 0.7
+        },
+        "0.7": {
+          "pass@1": 0.69
+        },
+        "0.8": {
+          "pass@1": 0.67
+        },
+        "0.9": {
+          "pass@1": 0.59
+        },
+        "1.0": {
+          "pass@1": 0.48
+        }
+      },
+      "java": {
+        "0.0": {
+          "pass@1": 0.93
+        },
+        "0.1": {
+          "pass@1": 0.89
+        },
+        "0.2": {
+          "pass@1": 0.82
+        },
+        "0.3": {
+          "pass@1": 0.78
+        },
+        "0.4": {
+          "pass@1": 0.78
+        },
+        "0.5": {
+          "pass@1": 0.77
+        },
+        "0.6": {
+          "pass@1": 0.75
+        },
+        "0.7": {
+          "pass@1": 0.74
+        },
+        "0.8": {
+          "pass@1": 0.71
+        },
+        "0.9": {
+          "pass@1": 0.65
+        },
+        "1.0": {
+          "pass@1": 0.6
+        }
+      },
+      "python": {
+        "0.0": {
+          "pass@1": 0.89
+        },
+        "0.1": {
+          "pass@1": 0.82
+        },
+        "0.2": {
+          "pass@1": 0.81
+        },
+        "0.3": {
+          "pass@1": 0.76
+        },
+        "0.4": {
+          "pass@1": 0.74
+        },
+        "0.5": {
+          "pass@1": 0.74
+        },
+        "0.6": {
+          "pass@1": 0.71
+        },
+        "0.7": {
+          "pass@1": 0.68
+        },
+        "0.8": {
+          "pass@1": 0.66
+        },
+        "0.9": {
+          "pass@1": 0.62
+        },
+        "1.0": {
+          "pass@1": 0.57
+        }
+      },
+      "rust": {
+        "0.0": {
+          "pass@1": 0.86
+        },
+        "0.1": {
+          "pass@1": 0.81
+        },
+        "0.2": {
+          "pass@1": 0.77
+        },
+        "0.3": {
+          "pass@1": 0.72
+        },
+        "0.4": {
+          "pass@1": 0.72
+        },
+        "0.5": {
+          "pass@1": 0.69
+        },
+        "0.6": {
+          "pass@1": 0.67
+        },
+        "0.7": {
+          "pass@1": 0.66
+        },
+        "0.8": {
+          "pass@1": 0.64
+        },
+        "0.9": {
+          "pass@1": 0.62
+        },
+        "1.0": {
+          "pass@1": 0.56
+        }
+      },
+      "typescript": {
+        "0.0": {
+          "pass@1": 0.96
+        },
+        "0.1": {
+          "pass@1": 0.96
+        },
+        "0.2": {
+          "pass@1": 0.96
+        },
+        "0.3": {
+          "pass@1": 0.96
+        },
+        "0.4": {
+          "pass@1": 0.96
+        },
+        "0.5": {
+          "pass@1": 0.92
+        },
+        "0.6": {
+          "pass@1": 0.84
+        },
+        "0.7": {
+          "pass@1": 0.84
+        },
+        "0.8": {
+          "pass@1": 0.84
+        },
+        "0.9": {
+          "pass@1": 0.72
+        },
+        "1.0": {
+          "pass@1": 0.48
+        }
+      }
+    },
+    "train_size": null
+  }
+}

@@ -1,0 +1,6230 @@
+{
+  "codellama/CodeLlama-34b-Instruct-hf": {
+    "eval_date": "2024-04-23 03:56:19.483862",
+    "results": {
+      "cpp": [
+        {
+          "best_similar_score": 0.0051260727645566695,
+          "best_target": "decodeUTF16",
+          "is_best_similar": false,
+          "name": "ConfiguratorWatchdog",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 816,
+            "token_start": 767
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.0021159042036297156,
+          "best_target": "decodeUTF16",
+          "is_best_similar": false,
+          "name": "TelnetAppenderPriv",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2330,
+            "token_start": 2241
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.004367830031534806,
+          "best_target": "decodeUTF16",
+          "is_best_similar": false,
+          "name": "HierarchyPrivate",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3847,
+            "token_start": 3790
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.024017035920494256,
+          "best_target": "decodeUTF16",
+          "is_best_similar": true,
+          "name": "decodeUTF16",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5486,
+            "token_start": 5095
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.0094007647655962,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "catch",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 6938,
+            "token_start": 6881
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.049080455027306256,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "StrftimeDateFormatPrivate",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8356,
+            "token_start": 8334
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.005721289598046949,
+          "best_target": "decodeUTF16",
+          "is_best_similar": false,
+          "name": "UTF8CharsetEncoder",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 9837,
+            "token_start": 9822
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.006228820033272417,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": false,
+          "name": "PropertiesPatternConverterPrivate",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11457,
+            "token_start": 11412
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.01779013752029757,
+          "best_target": "decodeUTF16",
+          "is_best_similar": false,
+          "name": "ThrowableInformationPatternConverterPrivate",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 12896,
+            "token_start": 12850
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 0.2365766269319839,
+          "best_target": "APRCharsetEncoder",
+          "is_best_similar": true,
+          "name": "APRCharsetEncoder",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 14503,
+            "token_start": 14257
+          },
+          "repo": "apache/logging-log4cxx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "try_read",
+          "is_best_similar": true,
+          "name": "try_read",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 871,
+            "token_start": 692
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.007028983734882315,
+          "best_target": "try_read",
+          "is_best_similar": false,
+          "name": "set",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2411,
+            "token_start": 2380
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.027115768487627246,
+          "best_target": "set",
+          "is_best_similar": false,
+          "name": "uv_token",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3983,
+            "token_start": 3974
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.0387873677464779,
+          "best_target": "write_req",
+          "is_best_similar": true,
+          "name": "write_req",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5664,
+            "token_start": 5567
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.006830396622619428,
+          "best_target": "recv",
+          "is_best_similar": true,
+          "name": "recv",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7289,
+            "token_start": 7238
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "configure",
+          "is_best_similar": true,
+          "name": "configure",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8844,
+            "token_start": 8790
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.003535637602609712,
+          "best_target": "try_read",
+          "is_best_similar": false,
+          "name": "stream_handle",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10473,
+            "token_start": 10440
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.06302647598688789,
+          "best_target": "set",
+          "is_best_similar": false,
+          "name": "env",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 10157,
+            "token_start": 9978
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "fnv1a",
+          "is_best_similar": true,
+          "name": "fnv1a",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 358,
+            "token_start": 211
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "publish",
+          "is_best_similar": true,
+          "name": "publish",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 1761,
+            "token_start": 1716
+          },
+          "repo": "skypjack/uvw"
+        },
+        {
+          "best_similar_score": 0.8470581716814978,
+          "best_target": "CompateStringsCaseInsensitive",
+          "is_best_similar": true,
+          "name": "CompateStringsCaseInsensitive",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 871,
+            "token_start": 747
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.03935534007961963,
+          "best_target": "ContainerToString",
+          "is_best_similar": true,
+          "name": "ContainerToString",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2473,
+            "token_start": 2356
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.009078330771109599,
+          "best_target": "AppendMany",
+          "is_best_similar": false,
+          "name": "MapValueView",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3993,
+            "token_start": 3969
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.28150046383044863,
+          "best_target": "ServerException",
+          "is_best_similar": true,
+          "name": "ServerException",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 3113,
+            "token_start": 3074
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.9394130628134758,
+          "best_target": "AppendMany",
+          "is_best_similar": true,
+          "name": "AppendMany",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7147,
+            "token_start": 7112
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.6917901740466924,
+          "best_target": "GetEndpointsIterator",
+          "is_best_similar": true,
+          "name": "GetEndpointsIterator",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8804,
+            "token_start": 8724
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.040904021437678066,
+          "best_target": "AppendMany",
+          "is_best_similar": false,
+          "name": "swap",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 5073,
+            "token_start": 5049
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "CreateColumnByType",
+          "is_best_similar": true,
+          "name": "CreateColumnByType",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12032,
+            "token_start": 11960
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.8952905649579331,
+          "best_target": "ConvertToStorageValue",
+          "is_best_similar": true,
+          "name": "ConvertToStorageValue",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 3620,
+            "token_start": 3440
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "GetSocketFactory",
+          "is_best_similar": true,
+          "name": "GetSocketFactory",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15201,
+            "token_start": 15113
+          },
+          "repo": "ClickHouse/clickhouse-cpp"
+        },
+        {
+          "best_similar_score": 0.07359600320580464,
+          "best_target": "make_mask",
+          "is_best_similar": true,
+          "name": "make_mask",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 867,
+            "token_start": 729
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.7343729420743097,
+          "best_target": "get_runtime_path",
+          "is_best_similar": true,
+          "name": "get_runtime_path",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2450,
+            "token_start": 2341
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.010621282852661859,
+          "best_target": "query",
+          "is_best_similar": false,
+          "name": "m_path",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4025,
+            "token_start": 3979
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "close_walk_cb",
+          "is_best_similar": true,
+          "name": "close_walk_cb",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5637,
+            "token_start": 5590
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "g_mpd_signal_handler",
+          "is_best_similar": true,
+          "name": "g_mpd_signal_handler",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7261,
+            "token_start": 7216
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.9649159443723699,
+          "best_target": "is_virtual",
+          "is_best_similar": true,
+          "name": "is_virtual",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8882,
+            "token_start": 8776
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "utf8_get_len",
+          "is_best_similar": true,
+          "name": "utf8_get_len",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10463,
+            "token_start": 10213
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_color",
+          "is_best_similar": true,
+          "name": "get_color",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12057,
+            "token_start": 12001
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "read",
+          "is_best_similar": true,
+          "name": "read",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13725,
+            "token_start": 13684
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "query",
+          "is_best_similar": true,
+          "name": "query",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15231,
+            "token_start": 15084
+          },
+          "repo": "polybar/polybar"
+        },
+        {
+          "best_similar_score": 0.04331784085436124,
+          "best_target": "doAdvicesChain",
+          "is_best_similar": true,
+          "name": "doAdvicesChain",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 969,
+            "token_start": 601
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.004661865692621656,
+          "best_target": "splitStringToSet",
+          "is_best_similar": false,
+          "name": "JsonConfigAdapter",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2407,
+            "token_start": 2400
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.003456140038378914,
+          "best_target": "registerCustomExtensionMime",
+          "is_best_similar": true,
+          "name": "registerCustomExtensionMime",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4127,
+            "token_start": 4019
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.21585315290377588,
+          "best_target": "genHttpResponse",
+          "is_best_similar": true,
+          "name": "genHttpResponse",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5689,
+            "token_start": 5570
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.13814931605592531,
+          "best_target": "splitStringToSet",
+          "is_best_similar": true,
+          "name": "splitStringToSet",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7355,
+            "token_start": 7115
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.002181239761560704,
+          "best_target": "HttpMessageStringViewBody",
+          "is_best_similar": true,
+          "name": "HttpMessageStringViewBody",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8778,
+            "token_start": 8737
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.003726839807201766,
+          "best_target": "registerCustomExtensionMime",
+          "is_best_similar": false,
+          "name": "ListenerInfo",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10581,
+            "token_start": 10425
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.20104141695839878,
+          "best_target": "handleException",
+          "is_best_similar": true,
+          "name": "handleException",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12158,
+            "token_start": 12096
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.0035416590645386964,
+          "best_target": "bytesSize",
+          "is_best_similar": true,
+          "name": "bytesSize",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13892,
+            "token_start": 13407
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 0.004079716763911759,
+          "best_target": "registerCustomExtensionMime",
+          "is_best_similar": false,
+          "name": "ChunkingParams",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15430,
+            "token_start": 15404
+          },
+          "repo": "drogonframework/drogon"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "compatibility",
+          "is_best_similar": true,
+          "name": "compatibility",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 931,
+            "token_start": 674
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.0069224635171811905,
+          "best_target": "compatibility",
+          "is_best_similar": false,
+          "name": "Sass_Inspect_Options",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2429,
+            "token_start": 2364
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.006682424201885279,
+          "best_target": "compatibility",
+          "is_best_similar": false,
+          "name": "Thunk",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4085,
+            "token_start": 4044
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "vector_to_string",
+          "is_best_similar": true,
+          "name": "vector_to_string",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5748,
+            "token_start": 5601
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.9753099120283327,
+          "best_target": "debug_subset_map",
+          "is_best_similar": true,
+          "name": "debug_subset_map",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7428,
+            "token_start": 7299
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.9691937043892331,
+          "best_target": "get_unit_type",
+          "is_best_similar": true,
+          "name": "get_unit_type",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9010,
+            "token_start": 8862
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.004442417891602698,
+          "best_target": "compatibility",
+          "is_best_similar": false,
+          "name": "ParentSuperselectorChunker",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10409,
+            "token_start": 10389
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.011779549755032964,
+          "best_target": "Operand",
+          "is_best_similar": true,
+          "name": "Operand",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12046,
+            "token_start": 11993
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.004021738697429766,
+          "best_target": "debug_subset_map",
+          "is_best_similar": false,
+          "name": "debug_sources_set",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13804,
+            "token_start": 13682
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_alnum",
+          "is_best_similar": true,
+          "name": "is_alnum",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15311,
+            "token_start": 15278
+          },
+          "repo": "sass/node-sass"
+        },
+        {
+          "best_similar_score": 0.10639865654410675,
+          "best_target": "vmap_binary_op",
+          "is_best_similar": true,
+          "name": "vmap_binary_op",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1018,
+            "token_start": 585
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "vmap_trace",
+          "is_best_similar": true,
+          "name": "vmap_trace",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2788,
+            "token_start": 2074
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.030601688609851067,
+          "best_target": "in_tracing",
+          "is_best_similar": true,
+          "name": "in_tracing",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 172,
+            "token_start": 144
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "InTracing",
+          "is_best_similar": true,
+          "name": "InTracing",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5645,
+            "token_start": 5628
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.011604114798865547,
+          "best_target": "copy_inplace_dispatch",
+          "is_best_similar": true,
+          "name": "copy_inplace_dispatch",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7592,
+            "token_start": 7054
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "arange_set_scalars",
+          "is_best_similar": true,
+          "name": "arange_set_scalars",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8942,
+            "token_start": 8875
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unpack_32_4",
+          "is_best_similar": true,
+          "name": "unpack_32_4",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10630,
+            "token_start": 10409
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.010054370939595754,
+          "best_target": "vmap_binary_op",
+          "is_best_similar": false,
+          "name": "QuantizedMatmul",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11926,
+            "token_start": 11860
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.006766834446474673,
+          "best_target": "sqrt",
+          "is_best_similar": true,
+          "name": "sqrt",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13827,
+            "token_start": 13741
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.0026037295819577406,
+          "best_target": "vmap_trace",
+          "is_best_similar": false,
+          "name": "promote_types",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15438,
+            "token_start": 15381
+          },
+          "repo": "ml-explore/mlx"
+        },
+        {
+          "best_similar_score": 0.12221480546215518,
+          "best_target": "send",
+          "is_best_similar": true,
+          "name": "send",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 877,
+            "token_start": 717
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.0023938775269140085,
+          "best_target": "arp_learn",
+          "is_best_similar": false,
+          "name": "sharded_parallel_for_each",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2410,
+            "token_start": 2313
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.0035255989562129946,
+          "best_target": "arp_learn",
+          "is_best_similar": false,
+          "name": "enable_abort_on_allocation_failure",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4027,
+            "token_start": 3993
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_shard_local_buffer_copy",
+          "is_best_similar": true,
+          "name": "make_shard_local_buffer_copy",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5702,
+            "token_start": 5395
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.419793811546288,
+          "best_target": "describe_enum_value",
+          "is_best_similar": true,
+          "name": "describe_enum_value",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7263,
+            "token_start": 7115
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.5827355625822049,
+          "best_target": "posix_datagram",
+          "is_best_similar": true,
+          "name": "posix_datagram",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8952,
+            "token_start": 8908
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0.019779585311288022,
+          "best_target": "arp_learn",
+          "is_best_similar": true,
+          "name": "arp_learn",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10513,
+            "token_start": 10413
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "RTE_LCORE_FOREACH_WORKER",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12182,
+            "token_start": 12125
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "default_isolate_connection",
+          "is_best_similar": true,
+          "name": "default_isolate_connection",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13860,
+            "token_start": 13829
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_control_char",
+          "is_best_similar": true,
+          "name": "is_control_char",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15381,
+            "token_start": 15350
+          },
+          "repo": "scylladb/seastar"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "packVal",
+          "is_best_similar": true,
+          "name": "packVal",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 870,
+            "token_start": 737
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "HostVersion",
+          "is_best_similar": true,
+          "name": "HostVersion",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2446,
+            "token_start": 2416
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.6203619303059917,
+          "best_target": "toLLVMConstantZero",
+          "is_best_similar": true,
+          "name": "toLLVMConstantZero",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4188,
+            "token_start": 3944
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.007003626852520332,
+          "best_target": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
+          "is_best_similar": true,
+          "name": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5746,
+            "token_start": 5571
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "toAdvice",
+          "is_best_similar": true,
+          "name": "toAdvice",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7450,
+            "token_start": 7214
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.010134423141390316,
+          "best_target": "loadPlugins",
+          "is_best_similar": false,
+          "name": "WasmEdge_CompilerContext",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8917,
+            "token_start": 8876
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.008200316997114187,
+          "best_target": "loadPlugins",
+          "is_best_similar": false,
+          "name": "proxy",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10621,
+            "token_start": 10437
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "loadPlugins",
+          "is_best_similar": true,
+          "name": "loadPlugins",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 6548,
+            "token_start": 6402
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.03106645207922081,
+          "best_target": "fromLastError",
+          "is_best_similar": true,
+          "name": "fromLastError",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13978,
+            "token_start": 13569
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0.6407367468083932,
+          "best_target": "roundDownPageBoundary",
+          "is_best_similar": true,
+          "name": "roundDownPageBoundary",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15495,
+            "token_start": 15392
+          },
+          "repo": "WasmEdge/WasmEdge"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "Pool",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 853,
+            "token_start": 734
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.02568481047180467,
+          "best_target": "HandlerCoroutine",
+          "is_best_similar": true,
+          "name": "HandlerCoroutine",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2387,
+            "token_start": 2342
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.007358753653111052,
+          "best_target": "Pool",
+          "is_best_similar": false,
+          "name": "ProtocolError",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3972,
+            "token_start": 3928
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.02571105106991165,
+          "best_target": "serializePrimitive",
+          "is_best_similar": true,
+          "name": "serializePrimitive",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5693,
+            "token_start": 5590
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.049475702907177795,
+          "best_target": "DataHandle",
+          "is_best_similar": true,
+          "name": "DataHandle",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7111,
+            "token_start": 7087
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.00626754287846359,
+          "best_target": "HttpRouterTemplate",
+          "is_best_similar": false,
+          "name": "ListenerCall",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8706,
+            "token_start": 8672
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.0020972554588661683,
+          "best_target": "HttpRouterTemplate",
+          "is_best_similar": false,
+          "name": "PairListObjectWrapper",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10331,
+            "token_start": 10275
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "FlushCoroutine",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11927,
+            "token_start": 11876
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0.01252676428658384,
+          "best_target": "Pool",
+          "is_best_similar": false,
+          "name": "HttpRouterTemplate",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13405,
+            "token_start": 13398
+          },
+          "repo": "oatpp/oatpp"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "AuthorizationObject",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15049,
+            "token_start": 15039
+          },
+          "repo": "oatpp/oatpp"
+        }
+      ],
+      "java": [
+        {
+          "best_similar_score": 0.007987677582676723,
+          "best_target": "rotateLeft",
+          "is_best_similar": false,
+          "name": "addTypeAdaptersForDate",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 986,
+            "token_start": 598
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.004031423734475348,
+          "best_target": "getAsJsonNull",
+          "is_best_similar": false,
+          "name": "parseString",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2362,
+            "token_start": 2332
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.007419728056146471,
+          "best_target": "getAsJsonNull",
+          "is_best_similar": false,
+          "name": "newBuilder",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4050,
+            "token_start": 4029
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.032456865897653,
+          "best_target": "nonNull",
+          "is_best_similar": false,
+          "name": "getAsJsonNull",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5626,
+            "token_start": 5553
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.5292523437057239,
+          "best_target": "nonNull",
+          "is_best_similar": true,
+          "name": "nonNull",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7025,
+            "token_start": 6981
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "rotateLeft",
+          "is_best_similar": true,
+          "name": "rotateLeft",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 6748,
+            "token_start": 6506
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getArrayComponentType",
+          "is_best_similar": true,
+          "name": "getArrayComponentType",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10464,
+            "token_start": 10412
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.009950808799287099,
+          "best_target": "rotateLeft",
+          "is_best_similar": false,
+          "name": "setExclusionStrategies",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12041,
+            "token_start": 11956
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.011304612922232218,
+          "best_target": "addTypeAdaptersForDate",
+          "is_best_similar": false,
+          "name": "run",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13572,
+            "token_start": 13434
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "has",
+          "is_best_similar": true,
+          "name": "has",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 10397,
+            "token_start": 10374
+          },
+          "repo": "google/gson"
+        },
+        {
+          "best_similar_score": 0.004939819244591387,
+          "best_target": "getRawCall",
+          "is_best_similar": true,
+          "name": "getRawCall",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 905,
+            "token_start": 686
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "validateServiceInterface",
+          "is_best_similar": true,
+          "name": "validateServiceInterface",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2561,
+            "token_start": 2260
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.11722968822001953,
+          "best_target": "indexOf",
+          "is_best_similar": false,
+          "name": "resolveTypeVariable",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4103,
+            "token_start": 3947
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.578330582049045,
+          "best_target": "getGenericSupertype",
+          "is_best_similar": true,
+          "name": "getGenericSupertype",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 4169,
+            "token_start": 3822
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.008934772364154445,
+          "best_target": "addQueryParam",
+          "is_best_similar": true,
+          "name": "addQueryParam",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7221,
+            "token_start": 7012
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.0847039252508118,
+          "best_target": "getActualTypeArguments",
+          "is_best_similar": true,
+          "name": "getActualTypeArguments",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 6381,
+            "token_start": 6356
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.9622687143632572,
+          "best_target": "indexOf",
+          "is_best_similar": true,
+          "name": "indexOf",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 4238,
+            "token_start": 4172
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.8948393168143697,
+          "best_target": "getUpperBounds",
+          "is_best_similar": true,
+          "name": "getUpperBounds",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 7175,
+            "token_start": 7150
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.011672675694058702,
+          "best_target": "indexOf",
+          "is_best_similar": false,
+          "name": "callAdapter",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13733,
+            "token_start": 13697
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.8948393168143697,
+          "best_target": "annotationType",
+          "is_best_similar": true,
+          "name": "annotationType",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 12152,
+            "token_start": 12124
+          },
+          "repo": "square/retrofit"
+        },
+        {
+          "best_similar_score": 0.9621954581957615,
+          "best_target": "min",
+          "is_best_similar": true,
+          "name": "min",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 844,
+            "token_start": 782
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.9591911379104605,
+          "best_target": "createNodeByPath",
+          "is_best_similar": true,
+          "name": "createNodeByPath",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2542,
+            "token_start": 2250
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.8496364166597655,
+          "best_target": "karateLocator",
+          "is_best_similar": true,
+          "name": "karateLocator",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4074,
+            "token_start": 4041
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "setEngine",
+          "is_best_similar": true,
+          "name": "setEngine",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5647,
+            "token_start": 5625
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.00608604227935834,
+          "best_target": "execInternal",
+          "is_best_similar": true,
+          "name": "execInternal",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7183,
+            "token_start": 7133
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.0034137324666655604,
+          "best_target": "callOnce",
+          "is_best_similar": true,
+          "name": "callOnce",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9177,
+            "token_start": 8705
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.8633400213704505,
+          "best_target": "getCurrentTime",
+          "is_best_similar": true,
+          "name": "getCurrentTime",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10288,
+            "token_start": 10264
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.33260249505555045,
+          "best_target": "enableForUri",
+          "is_best_similar": true,
+          "name": "enableForUri",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11955,
+            "token_start": 11947
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.9740037464252967,
+          "best_target": "getElementSelector",
+          "is_best_similar": true,
+          "name": "getElementSelector",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13574,
+            "token_start": 13422
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 0.01385736309939694,
+          "best_target": "addTemplateResolver",
+          "is_best_similar": true,
+          "name": "addTemplateResolver",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15078,
+            "token_start": 15050
+          },
+          "repo": "karatelabs/karate"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "valueOf",
+          "is_best_similar": true,
+          "name": "valueOf",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 802,
+            "token_start": 736
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.866397551781362,
+          "best_target": "rOperation",
+          "is_best_similar": true,
+          "name": "rOperation",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2420,
+            "token_start": 2387
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.014246577419417615,
+          "best_target": "valueOf",
+          "is_best_similar": false,
+          "name": "blake2bLong",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4207,
+            "token_start": 3830
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.002271366143568584,
+          "best_target": "rOperation",
+          "is_best_similar": false,
+          "name": "balloon",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5639,
+            "token_start": 5526
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.015208407045984336,
+          "best_target": "fromCharSequenceToChars",
+          "is_best_similar": false,
+          "name": "fromStringBuilderToBytes",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7349,
+            "token_start": 7268
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.9746629709965025,
+          "best_target": "fromCharSequenceToChars",
+          "is_best_similar": true,
+          "name": "fromCharSequenceToChars",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 2865,
+            "token_start": 2751
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getSecureRandom",
+          "is_best_similar": true,
+          "name": "getSecureRandom",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10399,
+            "token_start": 10377
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getResult",
+          "is_best_similar": true,
+          "name": "getResult",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12011,
+            "token_start": 11988
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.16291761338004226,
+          "best_target": "sMix",
+          "is_best_similar": true,
+          "name": "sMix",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13761,
+            "token_start": 13473
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.8033331639285793,
+          "best_target": "isPBKDF2Supported",
+          "is_best_similar": true,
+          "name": "isPBKDF2Supported",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15311,
+            "token_start": 15199
+          },
+          "repo": "Password4j/password4j"
+        },
+        {
+          "best_similar_score": 0.5278099780153099,
+          "best_target": "known",
+          "is_best_similar": true,
+          "name": "known",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 841,
+            "token_start": 783
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.006832460650487236,
+          "best_target": "getBaseImageIfAllLayersCached",
+          "is_best_similar": false,
+          "name": "isDefaultTag",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2439,
+            "token_start": 2412
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "withDirectory",
+          "is_best_similar": true,
+          "name": "withDirectory",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3969,
+            "token_start": 3896
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.363622704650007,
+          "best_target": "getEnvironmentMap",
+          "is_best_similar": true,
+          "name": "getEnvironmentMap",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5656,
+            "token_start": 5628
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.9917005273099977,
+          "best_target": "checkManifestPlatform",
+          "is_best_similar": true,
+          "name": "checkManifestPlatform",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7363,
+            "token_start": 6942
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.0038295369959898008,
+          "best_target": "checkManifestPlatform",
+          "is_best_similar": false,
+          "name": "setConfig",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8784,
+            "token_start": 8764
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.003935778372282805,
+          "best_target": "checkManifestPlatform",
+          "is_best_similar": false,
+          "name": "docker",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10430,
+            "token_start": 10395
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.05678170484701192,
+          "best_target": "isDefaultTag",
+          "is_best_similar": false,
+          "name": "pushBaseImageLayers",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12118,
+            "token_start": 12016
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.09744264611591712,
+          "best_target": "getPath",
+          "is_best_similar": true,
+          "name": "getPath",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13681,
+            "token_start": 13668
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.03148407589879705,
+          "best_target": "getBaseImageIfAllLayersCached",
+          "is_best_similar": true,
+          "name": "getBaseImageIfAllLayersCached",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15352,
+            "token_start": 15053
+          },
+          "repo": "GoogleContainerTools/jib"
+        },
+        {
+          "best_similar_score": 0.04523731130148987,
+          "best_target": "freeFloatingYoungBlock",
+          "is_best_similar": true,
+          "name": "freeFloatingYoungBlock",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 915,
+            "token_start": 700
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.11547216486347472,
+          "best_target": "checkForGCCause",
+          "is_best_similar": true,
+          "name": "checkForGCCause",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2403,
+            "token_start": 2205
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "postEvacuatePhaseDuration",
+          "is_best_similar": true,
+          "name": "postEvacuatePhaseDuration",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4081,
+            "token_start": 4027
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.1065095472357353,
+          "best_target": "tagsContain",
+          "is_best_similar": true,
+          "name": "tagsContain",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5688,
+            "token_start": 5664
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "extractValues",
+          "is_best_similar": true,
+          "name": "extractValues",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7400,
+            "token_start": 7199
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.7541318575573049,
+          "best_target": "getMetaSpaceRecord",
+          "is_best_similar": true,
+          "name": "getMetaSpaceRecord",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8927,
+            "token_start": 8805
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.008742937309928955,
+          "best_target": "getMetaSpaceRecord",
+          "is_best_similar": false,
+          "name": "supported",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10517,
+            "token_start": 10492
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.03906947081246992,
+          "best_target": "setHumongousOccupancyAfterCollection",
+          "is_best_similar": true,
+          "name": "setHumongousOccupancyAfterCollection",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12199,
+            "token_start": 12148
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.0013115983327924557,
+          "best_target": "freeFloatingYoungBlock",
+          "is_best_similar": false,
+          "name": "hits",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13785,
+            "token_start": 13722
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.9837344161747832,
+          "best_target": "recordRescanStepTimes",
+          "is_best_similar": true,
+          "name": "recordRescanStepTimes",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15463,
+            "token_start": 15213
+          },
+          "repo": "microsoft/gctoolkit"
+        },
+        {
+          "best_similar_score": 0.32777590898400966,
+          "best_target": "stringComponents",
+          "is_best_similar": true,
+          "name": "stringComponents",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1020,
+            "token_start": 604
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.005100255642426312,
+          "best_target": "rangesAfterAppliedReplacements",
+          "is_best_similar": false,
+          "name": "formatSourceReflowStringsAndFixImports",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2409,
+            "token_start": 2365
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.3074808128388812,
+          "best_target": "rangesAfterAppliedReplacements",
+          "is_best_similar": true,
+          "name": "rangesAfterAppliedReplacements",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4140,
+            "token_start": 3913
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.13191601177632875,
+          "best_target": "isArrayValue",
+          "is_best_similar": true,
+          "name": "isArrayValue",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5739,
+            "token_start": 5666
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.00333006046785994,
+          "best_target": "isArrayValue",
+          "is_best_similar": false,
+          "name": "tryBreakLastLevel",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7277,
+            "token_start": 7143
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.11838984034964084,
+          "best_target": "visitYield",
+          "is_best_similar": true,
+          "name": "visitYield",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8905,
+            "token_start": 8841
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.47229389414007084,
+          "best_target": "addTrivia",
+          "is_best_similar": true,
+          "name": "addTrivia",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10536,
+            "token_start": 10484
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "createDiagnostic",
+          "is_best_similar": true,
+          "name": "createDiagnostic",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 1954,
+            "token_start": 1908
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.004358632673529301,
+          "best_target": "rangesAfterAppliedReplacements",
+          "is_best_similar": false,
+          "name": "blankLines",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13511,
+            "token_start": 13496
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.009759906985247502,
+          "best_target": "stringComponents",
+          "is_best_similar": false,
+          "name": "flush",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15407,
+            "token_start": 15264
+          },
+          "repo": "palantir/palantir-java-format"
+        },
+        {
+          "best_similar_score": 0.12086038782520497,
+          "best_target": "checkValidHoldability",
+          "is_best_similar": false,
+          "name": "checkAndAppendClientConnId",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 896,
+            "token_start": 707
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "writeEncryptedRPCTime",
+          "is_best_similar": true,
+          "name": "writeEncryptedRPCTime",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2535,
+            "token_start": 2311
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "removeSingleQuote",
+          "is_best_similar": true,
+          "name": "removeSingleQuote",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4046,
+            "token_start": 3979
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkValidHoldability",
+          "is_best_similar": true,
+          "name": "checkValidHoldability",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5724,
+            "token_start": 5602
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.9059527133591614,
+          "best_target": "notifyEvent",
+          "is_best_similar": true,
+          "name": "notifyEvent",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7416,
+            "token_start": 7023
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.8091067115702212,
+          "best_target": "getColumnEncryptionKeyValues",
+          "is_best_similar": true,
+          "name": "getColumnEncryptionKeyValues",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8948,
+            "token_start": 8921
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.7598356856515925,
+          "best_target": "getTrustStorePassword",
+          "is_best_similar": true,
+          "name": "getTrustStorePassword",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10433,
+            "token_start": 10392
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getRandomNetAddress",
+          "is_best_similar": true,
+          "name": "getRandomNetAddress",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12020,
+            "token_start": 11974
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "computeResponse",
+          "is_best_similar": true,
+          "name": "computeResponse",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13833,
+            "token_start": 13673
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getParameterInfo",
+          "is_best_similar": true,
+          "name": "getParameterInfo",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15438,
+            "token_start": 15357
+          },
+          "repo": "microsoft/mssql-jdbc"
+        },
+        {
+          "best_similar_score": 0.11714252040977542,
+          "best_target": "onEngineHandshakeFinished",
+          "is_best_similar": true,
+          "name": "onEngineHandshakeFinished",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 864,
+            "token_start": 746
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.9198098208399205,
+          "best_target": "engineGetKeyManagers",
+          "is_best_similar": true,
+          "name": "engineGetKeyManagers",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2410,
+            "token_start": 2343
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.06302647598688789,
+          "best_target": "engineGetServerSessionContext",
+          "is_best_similar": false,
+          "name": "engineGenerateCertificate",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3970
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.07372071418221185,
+          "best_target": "engineGetKeyManagers",
+          "is_best_similar": false,
+          "name": "open",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5651,
+            "token_start": 5611
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.005223243987425202,
+          "best_target": "onEngineHandshakeFinished",
+          "is_best_similar": false,
+          "name": "asn1_read_free",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7186,
+            "token_start": 7170
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.42383656282787796,
+          "best_target": "engineGetServerSessionContext",
+          "is_best_similar": true,
+          "name": "engineGetServerSessionContext",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8754,
+            "token_start": 8729
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.3392564589815492,
+          "best_target": "checkAndSetEncodedKey",
+          "is_best_similar": true,
+          "name": "checkAndSetEncodedKey",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10516,
+            "token_start": 10286
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.01336249794199283,
+          "best_target": "onEngineHandshakeFinished",
+          "is_best_similar": false,
+          "name": "isChannelIdEnabled",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11904,
+            "token_start": 11887
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 0.9554427922043668,
+          "best_target": "findByApiName",
+          "is_best_similar": true,
+          "name": "findByApiName",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 12348,
+            "token_start": 12284
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkCert",
+          "is_best_similar": true,
+          "name": "checkCert",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15127,
+            "token_start": 15086
+          },
+          "repo": "google/conscrypt"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "endInputX",
+          "is_best_similar": true,
+          "name": "endInputX",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 908,
+            "token_start": 719
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.07503052334282219,
+          "best_target": "setKeyContextElement1",
+          "is_best_similar": false,
+          "name": "onEventTime",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2462,
+            "token_start": 2393
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.003372468885629114,
+          "best_target": "coGroup",
+          "is_best_similar": true,
+          "name": "coGroup",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4175,
+            "token_start": 3947
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "toList",
+          "is_best_similar": true,
+          "name": "toList",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 2937,
+            "token_start": 2860
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.00295284932164665,
+          "best_target": "getModelDataFromModel",
+          "is_best_similar": false,
+          "name": "putBroadcastVariable",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7206,
+            "token_start": 7095
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.005225197009261146,
+          "best_target": "getModelDataFromModel",
+          "is_best_similar": false,
+          "name": "getInputs",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8779,
+            "token_start": 8756
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.1701713127700448,
+          "best_target": "setKeyContextElement1",
+          "is_best_similar": true,
+          "name": "setKeyContextElement1",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10485,
+            "token_start": 10448
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.9572353607981486,
+          "best_target": "getModelDataFromModel",
+          "is_best_similar": true,
+          "name": "getModelDataFromModel",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12152,
+            "token_start": 11986
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getNumChunks",
+          "is_best_similar": true,
+          "name": "getNumChunks",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13511,
+            "token_start": 13455
+          },
+          "repo": "apache/flink-ml"
+        },
+        {
+          "best_similar_score": 0.009838741805641486,
+          "best_target": "onEventTime",
+          "is_best_similar": false,
+          "name": "getCurrentOuterSnapshotVersion",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15130,
+            "token_start": 15104
+          },
+          "repo": "apache/flink-ml"
+        }
+      ],
+      "python": [
+        {
+          "best_similar_score": 0.4338454422081129,
+          "best_target": "_merge_string_group",
+          "is_best_similar": true,
+          "name": "_merge_string_group",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1066,
+            "token_start": 508
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.02633047963536897,
+          "best_target": "convert_unchanged_lines",
+          "is_best_similar": true,
+          "name": "convert_unchanged_lines",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2667,
+            "token_start": 2176
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_simple_prefix",
+          "is_best_similar": true,
+          "name": "make_simple_prefix",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3951
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.47809413241651083,
+          "best_target": "run_transformer",
+          "is_best_similar": true,
+          "name": "run_transformer",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5921,
+            "token_start": 5377
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.2795246587730931,
+          "best_target": "is_part_of_annotation",
+          "is_best_similar": true,
+          "name": "is_part_of_annotation",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7209,
+            "token_start": 7162
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.0045409305528914465,
+          "best_target": "visit",
+          "is_best_similar": false,
+          "name": "maybe_install_uvloop",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8922,
+            "token_start": 8833
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.03516383353270643,
+          "best_target": "check_stability_and_equivalence",
+          "is_best_similar": true,
+          "name": "check_stability_and_equivalence",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10602,
+            "token_start": 10454
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "visit",
+          "is_best_similar": true,
+          "name": "visit",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12356,
+            "token_start": 12070
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__post_init__",
+          "is_best_similar": true,
+          "name": "__post_init__",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13982,
+            "token_start": 13424
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "should_split_funcdef_with_rhs",
+          "is_best_similar": true,
+          "name": "should_split_funcdef_with_rhs",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15502,
+            "token_start": 15148
+          },
+          "repo": "psf/black"
+        },
+        {
+          "best_similar_score": 0.3902963682792953,
+          "best_target": "_find_best_version_for_package",
+          "is_best_similar": true,
+          "name": "_find_best_version_for_package",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 894,
+            "token_start": 705
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.011084956082965851,
+          "best_target": "get_package_vcs_properties_from_path",
+          "is_best_similar": true,
+          "name": "get_package_vcs_properties_from_path",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2441,
+            "token_start": 2374
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.0045247842292965145,
+          "best_target": "_do_execute_operation",
+          "is_best_similar": false,
+          "name": "_validate_group_options",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4116,
+            "token_start": 3886
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.032774257140898225,
+          "best_target": "_find_best_version_for_package",
+          "is_best_similar": false,
+          "name": "candidates",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5592,
+            "token_start": 5574
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.003309166376474579,
+          "best_target": "_validate_group_options",
+          "is_best_similar": false,
+          "name": "_display_complete_info",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7426,
+            "token_start": 6960
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_write_lock_file",
+          "is_best_similar": true,
+          "name": "_write_lock_file",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8888,
+            "token_start": 8778
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.044706344276931285,
+          "best_target": "candidates",
+          "is_best_similar": false,
+          "name": "_do_execute_operation",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10593,
+            "token_start": 10271
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_get_directory_from_hash",
+          "is_best_similar": true,
+          "name": "_get_directory_from_hash",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12042,
+            "token_start": 11917
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_validate_readme",
+          "is_best_similar": true,
+          "name": "_validate_readme",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13622,
+            "token_start": 13503
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.03699194367647313,
+          "best_target": "_find_best_version_for_package",
+          "is_best_similar": false,
+          "name": "base",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15207,
+            "token_start": 15193
+          },
+          "repo": "python-poetry/poetry"
+        },
+        {
+          "best_similar_score": 0.014688139591892245,
+          "best_target": "test_worker_heartbeat_messages_sent_to_master",
+          "is_best_similar": false,
+          "name": "test_user_classes_with_same_name_is_error",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 852,
+            "token_start": 709
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "rename_request",
+          "is_best_similar": true,
+          "name": "rename_request",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2422,
+            "token_start": 2358
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_poller",
+          "is_best_similar": true,
+          "name": "get_poller",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4020,
+            "token_start": 3984
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.9666253454778997,
+          "best_target": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
+          "is_best_similar": true,
+          "name": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5899,
+            "token_start": 5418
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.009324551015866385,
+          "best_target": "test_custom_ssl_context_fail_with_bad_context",
+          "is_best_similar": true,
+          "name": "test_custom_ssl_context_fail_with_bad_context",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7363,
+            "token_start": 7129
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.9646458712936792,
+          "best_target": "test_worker_heartbeat_messages_sent_to_master",
+          "is_best_similar": true,
+          "name": "test_worker_heartbeat_messages_sent_to_master",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9005,
+            "token_start": 8705
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.011486862043726401,
+          "best_target": "test_worker_heartbeat_messages_sent_to_master",
+          "is_best_similar": false,
+          "name": "test_request_stats_named_endpoint_rename_request",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10560,
+            "token_start": 10468
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_valid_percentile",
+          "is_best_similar": true,
+          "name": "is_valid_percentile",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12099,
+            "token_start": 12053
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_construct_basic_auth_str",
+          "is_best_similar": true,
+          "name": "_construct_basic_auth_str",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13783,
+            "token_start": 13678
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_distribute_users",
+          "is_best_similar": true,
+          "name": "test_distribute_users",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15504,
+            "token_start": 15216
+          },
+          "repo": "locustio/locust"
+        },
+        {
+          "best_similar_score": 0.03491249669664401,
+          "best_target": "tree",
+          "is_best_similar": false,
+          "name": "maybe_init_stream",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 819,
+            "token_start": 756
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.01335451470651778,
+          "best_target": "positive_sampling",
+          "is_best_similar": true,
+          "name": "positive_sampling",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2454,
+            "token_start": 2380
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.015838650460592955,
+          "best_target": "maybe_init_stream",
+          "is_best_similar": false,
+          "name": "read_from_memlab",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4135,
+            "token_start": 3903
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.02836106800145637,
+          "best_target": "tree",
+          "is_best_similar": false,
+          "name": "num_node_labels",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5655,
+            "token_start": 5629
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.006292412614750543,
+          "best_target": "get_self_loop_attr",
+          "is_best_similar": false,
+          "name": "__collate__",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7512,
+            "token_start": 7004
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "tree",
+          "is_best_similar": true,
+          "name": "tree",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9079,
+            "token_start": 8646
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "to_scipy_sparse_matrix",
+          "is_best_similar": true,
+          "name": "to_scipy_sparse_matrix",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10716,
+            "token_start": 10274
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "set_tuple_item",
+          "is_best_similar": true,
+          "name": "set_tuple_item",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 2878,
+            "token_start": 2771
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_to_edge_mask",
+          "is_best_similar": true,
+          "name": "_to_edge_mask",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13748,
+            "token_start": 13687
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 0.6518580505625512,
+          "best_target": "get_self_loop_attr",
+          "is_best_similar": true,
+          "name": "get_self_loop_attr",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15603,
+            "token_start": 14965
+          },
+          "repo": "pyg-team/pytorch_geometric"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_get_arch",
+          "is_best_similar": true,
+          "name": "_get_arch",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 843,
+            "token_start": 735
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.008239251749193013,
+          "best_target": "to_custom_raw_response_wrapper",
+          "is_best_similar": true,
+          "name": "to_custom_raw_response_wrapper",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2527,
+            "token_start": 2261
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.025010328180645584,
+          "best_target": "make_request_options",
+          "is_best_similar": false,
+          "name": "transcribe",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4060,
+            "token_start": 3867
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "make_request_options",
+          "is_best_similar": true,
+          "name": "make_request_options",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5836,
+            "token_start": 5496
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_primitive_value_to_str",
+          "is_best_similar": true,
+          "name": "_primitive_value_to_str",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7249,
+            "token_start": 7176
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.014058452113137172,
+          "best_target": "make_request_options",
+          "is_best_similar": false,
+          "name": "_transform_value",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8813,
+            "token_start": 8684
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.11412690441272681,
+          "best_target": "_construct_field",
+          "is_best_similar": true,
+          "name": "_construct_field",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10446,
+            "token_start": 10316
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.08929706358512698,
+          "best_target": "_basic_config",
+          "is_best_similar": true,
+          "name": "_basic_config",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12148,
+            "token_start": 12002
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__getattr__",
+          "is_best_similar": true,
+          "name": "__getattr__",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 425,
+            "token_start": 358
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_enforce_trailing_slash",
+          "is_best_similar": true,
+          "name": "_enforce_trailing_slash",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15249,
+            "token_start": 15188
+          },
+          "repo": "openai/openai-python"
+        },
+        {
+          "best_similar_score": 0.011206614305091954,
+          "best_target": "get_param_set_item",
+          "is_best_similar": false,
+          "name": "fused_decode3_matmul1_fp16_before",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1194,
+            "token_start": 270
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.4659199604765911,
+          "best_target": "fused_decode3_matmul1_fp16_before",
+          "is_best_similar": false,
+          "name": "fused_fused_decode7_matmul4",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2874,
+            "token_start": 1982
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.9036020036098448,
+          "best_target": "contain_symbolic_var",
+          "is_best_similar": true,
+          "name": "contain_symbolic_var",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4086,
+            "token_start": 4008
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.26818529215048686,
+          "best_target": "get_param_set_item",
+          "is_best_similar": true,
+          "name": "get_param_set_item",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5862,
+            "token_start": 5447
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.05751442755237488,
+          "best_target": "softmax_1xn_sch_func",
+          "is_best_similar": false,
+          "name": "fused_fused_decode9_matmul7",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7805,
+            "token_start": 6907
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.5798827068227065,
+          "best_target": "fused_decode4_matmul5_int3_fp16_before",
+          "is_best_similar": true,
+          "name": "fused_decode4_matmul5_int3_fp16_before",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9368,
+            "token_start": 8523
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.19500036718791755,
+          "best_target": "fused_NT_matmul3_add1_before",
+          "is_best_similar": true,
+          "name": "fused_NT_matmul3_add1_before",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 11053,
+            "token_start": 10214
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.006623069603330655,
+          "best_target": "get_param_set_item",
+          "is_best_similar": false,
+          "name": "fused_decode4_matmul5_int3_int16_fp16_before",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12676,
+            "token_start": 11821
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.7468090825054821,
+          "best_target": "softmax_1xn_sch_func",
+          "is_best_similar": true,
+          "name": "softmax_1xn_sch_func",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 14154,
+            "token_start": 13651
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.16291738812492929,
+          "best_target": "f_quantize",
+          "is_best_similar": true,
+          "name": "f_quantize",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 11861,
+            "token_start": 11602
+          },
+          "repo": "mlc-ai/mlc-llm"
+        },
+        {
+          "best_similar_score": 0.10032668722348488,
+          "best_target": "create_context",
+          "is_best_similar": false,
+          "name": "sync_function",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 847,
+            "token_start": 739
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.09119722307478334,
+          "best_target": "custom_vdom_constructor",
+          "is_best_similar": true,
+          "name": "custom_vdom_constructor",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2490,
+            "token_start": 2344
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "image",
+          "is_best_similar": true,
+          "name": "image",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4106,
+            "token_start": 3907
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.10322587176202959,
+          "best_target": "use",
+          "is_best_similar": true,
+          "name": "use",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5652,
+            "token_start": 5565
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.018794293946183864,
+          "best_target": "_equal_files",
+          "is_best_similar": true,
+          "name": "_equal_files",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7316,
+            "token_start": 7214
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.015221871797197976,
+          "best_target": "stop_server",
+          "is_best_similar": true,
+          "name": "stop_server",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8853,
+            "token_start": 8800
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 0.10960400134429438,
+          "best_target": "create_context",
+          "is_best_similar": true,
+          "name": "create_context",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10491,
+            "token_start": 10360
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "set_context_provider",
+          "is_best_similar": true,
+          "name": "set_context_provider",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 7254,
+            "token_start": 7172
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "boolean",
+          "is_best_similar": true,
+          "name": "boolean",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 4786,
+            "token_start": 4624
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "all_implementations",
+          "is_best_similar": true,
+          "name": "all_implementations",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15280,
+            "token_start": 15147
+          },
+          "repo": "reactive-python/reactpy"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "register",
+          "is_best_similar": true,
+          "name": "register",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 985,
+            "token_start": 603
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "store_error",
+          "is_best_similar": true,
+          "name": "store_error",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2471,
+            "token_start": 2336
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.016786287180921355,
+          "best_target": "dict_class",
+          "is_best_similar": true,
+          "name": "dict_class",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4055,
+            "token_start": 4033
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.27658266899761397,
+          "best_target": "options",
+          "is_best_similar": true,
+          "name": "options",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5746,
+            "token_start": 5502
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.025552296819792503,
+          "best_target": "_invoke_field_validators",
+          "is_best_similar": true,
+          "name": "_invoke_field_validators",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7537,
+            "token_start": 7062
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_run_validator",
+          "is_best_similar": true,
+          "name": "_run_validator",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8979,
+            "token_start": 8818
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.9157373531774572,
+          "best_target": "from_iso_time",
+          "is_best_similar": true,
+          "name": "from_iso_time",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 8157,
+            "token_start": 7998
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__len__",
+          "is_best_similar": true,
+          "name": "__len__",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 5489,
+            "token_start": 5474
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.2109646724726209,
+          "best_target": "normalized_messages",
+          "is_best_similar": true,
+          "name": "normalized_messages",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 2899,
+            "token_start": 2849
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_normalize_nested_options",
+          "is_best_similar": true,
+          "name": "_normalize_nested_options",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15446,
+            "token_start": 15237
+          },
+          "repo": "marshmallow-code/marshmallow"
+        },
+        {
+          "best_similar_score": 0.17110077180693561,
+          "best_target": "test_eth_get_logs_with_logs_none_topic_args",
+          "is_best_similar": true,
+          "name": "test_eth_get_logs_with_logs_none_topic_args",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 853,
+            "token_start": 747
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "_get_response_for_request_id",
+          "is_best_similar": true,
+          "name": "_get_response_for_request_id",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2635,
+            "token_start": 2195
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.007648655060739331,
+          "best_target": "test_gas_price_strategy_hex_value",
+          "is_best_similar": false,
+          "name": "get_default_middlewares",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4072,
+            "token_start": 3935
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.13026736874980516,
+          "best_target": "_get_transaction",
+          "is_best_similar": true,
+          "name": "_get_transaction",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5725,
+            "token_start": 5536
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.2749688502016869,
+          "best_target": "test_async_eth_sign_transaction_legacy",
+          "is_best_similar": true,
+          "name": "test_async_eth_sign_transaction_legacy",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7463,
+            "token_start": 7175
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.010444764234080885,
+          "best_target": "data_tree_map",
+          "is_best_similar": true,
+          "name": "data_tree_map",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8895,
+            "token_start": 8725
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.8657808462670444,
+          "best_target": "test_gas_price_strategy_hex_value",
+          "is_best_similar": true,
+          "name": "test_gas_price_strategy_hex_value",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10707,
+            "token_start": 10417
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.09419601373956789,
+          "best_target": "test_eth_estimate_gas_revert_with_msg",
+          "is_best_similar": true,
+          "name": "test_eth_estimate_gas_revert_with_msg",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12276,
+            "token_start": 12107
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.0835227127473685,
+          "best_target": "_make_get_request",
+          "is_best_similar": true,
+          "name": "_make_get_request",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13789,
+            "token_start": 13728
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_eth_call_revert_custom_error_with_msg",
+          "is_best_similar": true,
+          "name": "test_eth_call_revert_custom_error_with_msg",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15568,
+            "token_start": 15358
+          },
+          "repo": "ethereum/web3.py"
+        },
+        {
+          "best_similar_score": 0.02761906849067966,
+          "best_target": "strip_punctuation",
+          "is_best_similar": false,
+          "name": "chars_to_byte",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 814,
+            "token_start": 770
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "__ge__",
+          "is_best_similar": true,
+          "name": "__ge__",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 1687,
+            "token_start": 1653
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.021375329410144712,
+          "best_target": "alpha",
+          "is_best_similar": true,
+          "name": "alpha",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4029,
+            "token_start": 4015
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.06342740292570268,
+          "best_target": "strip_punctuation",
+          "is_best_similar": true,
+          "name": "strip_punctuation",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5616,
+            "token_start": 5601
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.00469295183407322,
+          "best_target": "getSentenceCombo",
+          "is_best_similar": false,
+          "name": "crackOne",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7385,
+            "token_start": 7123
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.030846008172712474,
+          "best_target": "sortlistwithdict",
+          "is_best_similar": false,
+          "name": "new_sort",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8905,
+            "token_start": 8705
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_name",
+          "is_best_similar": true,
+          "name": "get_name",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10477,
+            "token_start": 10368
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 0.02192050982041295,
+          "best_target": "crackOne",
+          "is_best_similar": false,
+          "name": "binary_to_ascii",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12183,
+            "token_start": 12001
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getSentenceCombo",
+          "is_best_similar": true,
+          "name": "getSentenceCombo",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13841,
+            "token_start": 13535
+          },
+          "repo": "Ciphey/Ciphey"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "sortlistwithdict",
+          "is_best_similar": true,
+          "name": "sortlistwithdict",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15328,
+            "token_start": 15257
+          },
+          "repo": "Ciphey/Ciphey"
+        }
+      ],
+      "rust": [
+        {
+          "best_similar_score": 0.4854917717073234,
+          "best_target": "yd",
+          "is_best_similar": true,
+          "name": "yd",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 832,
+            "token_start": 792
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.03496030210385037,
+          "best_target": "i16_tests",
+          "is_best_similar": true,
+          "name": "i16_tests",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2550,
+            "token_start": 2310
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.8307278725457046,
+          "best_target": "many1_count",
+          "is_best_similar": true,
+          "name": "many1_count",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4116,
+            "token_start": 4037
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.03269574315370712,
+          "best_target": "many1_count",
+          "is_best_similar": false,
+          "name": "test_offset_u8",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5696,
+            "token_start": 5582
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.005100255642426312,
+          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": false,
+          "name": "fold_many1",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7411,
+            "token_start": 7251
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.0034959971792792306,
+          "best_target": "many1_count",
+          "is_best_similar": false,
+          "name": "parse",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8987,
+            "token_start": 8937
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.05159912585823018,
+          "best_target": "yd",
+          "is_best_similar": false,
+          "name": "test_complete_byte_consumption_bits",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10674,
+            "token_start": 10423
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.01213899076339441,
+          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": false,
+          "name": "be_i8_tests",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12302,
+            "token_start": 12167
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.03639174582593262,
+          "best_target": "yd",
+          "is_best_similar": false,
+          "name": "tagtr_succeed",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13978,
+            "token_start": 13768
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.0027051299932904557,
+          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": false,
+          "name": "length_count",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15559,
+            "token_start": 15412
+          },
+          "repo": "rust-bakery/nom"
+        },
+        {
+          "best_similar_score": 0.04329398793439738,
+          "best_target": "names",
+          "is_best_similar": false,
+          "name": "composition",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 920,
+            "token_start": 696
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.06003934299439418,
+          "best_target": "names",
+          "is_best_similar": false,
+          "name": "tokenize",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2434,
+            "token_start": 2411
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_lang_features",
+          "is_best_similar": true,
+          "name": "serialize_lang_features",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4158,
+            "token_start": 3949
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.9869480238201359,
+          "best_target": "injection_for_match",
+          "is_best_similar": true,
+          "name": "injection_for_match",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5925,
+            "token_start": 5437
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "names",
+          "is_best_similar": true,
+          "name": "names",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7307,
+            "token_start": 7278
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "stay_at_gaps",
+          "is_best_similar": true,
+          "name": "stay_at_gaps",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8918,
+            "token_start": 8885
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.01315752174935515,
+          "best_target": "serialize_lang_features",
+          "is_best_similar": false,
+          "name": "test_invalid_date_times",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10693,
+            "token_start": 10402
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.8520723268449218,
+          "best_target": "move_horizontally",
+          "is_best_similar": true,
+          "name": "move_horizontally",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12244,
+            "token_start": 12057
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "is_date",
+          "is_best_similar": true,
+          "name": "is_date",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13837,
+            "token_start": 13801
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "test_input_edits",
+          "is_best_similar": true,
+          "name": "test_input_edits",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15706,
+            "token_start": 15106
+          },
+          "repo": "helix-editor/helix"
+        },
+        {
+          "best_similar_score": 0.9618164874234068,
+          "best_target": "get_config_profile",
+          "is_best_similar": true,
+          "name": "get_config_profile",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 926,
+            "token_start": 701
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.007475686109246592,
+          "best_target": "rebuild_unit_graph_shared",
+          "is_best_similar": false,
+          "name": "package",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2641,
+            "token_start": 2209
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.855526185871245,
+          "best_target": "test_cratesio_hash",
+          "is_best_similar": true,
+          "name": "test_cratesio_hash",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4097,
+            "token_start": 4013
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.008241141820590117,
+          "best_target": "rebuild_unit_graph_shared",
+          "is_best_similar": true,
+          "name": "rebuild_unit_graph_shared",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5873,
+            "token_start": 5516
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "predefined_dir_names",
+          "is_best_similar": true,
+          "name": "predefined_dir_names",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7358,
+            "token_start": 7263
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.06975513960672595,
+          "best_target": "uninstall_one",
+          "is_best_similar": true,
+          "name": "uninstall_one",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9024,
+            "token_start": 8877
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.9829064027289661,
+          "best_target": "unit_needs_doc_scrape",
+          "is_best_similar": true,
+          "name": "unit_needs_doc_scrape",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10634,
+            "token_start": 10491
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "unsupported",
+          "is_best_similar": true,
+          "name": "unsupported",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12304,
+            "token_start": 12081
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "raw_canonicalized_url",
+          "is_best_similar": true,
+          "name": "raw_canonicalized_url",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 1530,
+            "token_start": 1504
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 0.009723357775103246,
+          "best_target": "max_unpack_size",
+          "is_best_similar": true,
+          "name": "max_unpack_size",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15647,
+            "token_start": 15279
+          },
+          "repo": "rust-lang/cargo"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "h2_options",
+          "is_best_similar": true,
+          "name": "h2_options",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 811,
+            "token_start": 787
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.9895288919912618,
+          "best_target": "do_read_body_until_closed",
+          "is_best_similar": true,
+          "name": "do_read_body_until_closed",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2580,
+            "token_start": 2285
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "write_to_buffer",
+          "is_best_similar": true,
+          "name": "write_to_buffer",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4098,
+            "token_start": 4001
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.039760030953590715,
+          "best_target": "from_server_conf",
+          "is_best_similar": false,
+          "name": "test_connect_h1_plaintext",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5755,
+            "token_start": 5618
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.09866948017319677,
+          "best_target": "serialize_vec_string",
+          "is_best_similar": true,
+          "name": "serialize_vec_string",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 5413,
+            "token_start": 5311
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.9394130628134758,
+          "best_target": "h1_is_preferred",
+          "is_best_similar": true,
+          "name": "h1_is_preferred",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8971,
+            "token_start": 8897
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.004585586835200742,
+          "best_target": "serialize_vec_string",
+          "is_best_similar": false,
+          "name": "test_conn_error_refused",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10598,
+            "token_start": 10512
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.028347903757100078,
+          "best_target": "h2_options",
+          "is_best_similar": false,
+          "name": "get_bytes",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12202,
+            "token_start": 12168
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "from_server_conf",
+          "is_best_similar": true,
+          "name": "from_server_conf",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13980,
+            "token_start": 13616
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "enable_h2",
+          "is_best_similar": true,
+          "name": "enable_h2",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15432,
+            "token_start": 15401
+          },
+          "repo": "cloudflare/pingora"
+        },
+        {
+          "best_similar_score": 0.877607209725469,
+          "best_target": "squeeze_dims",
+          "is_best_similar": true,
+          "name": "squeeze_dims",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 893,
+            "token_start": 720
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "striding_error",
+          "is_best_similar": true,
+          "name": "striding_error",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2499,
+            "token_start": 2383
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "erf_inv_impl",
+          "is_best_similar": true,
+          "name": "erf_inv_impl",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4477,
+            "token_start": 3648
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.0021140375956462303,
+          "best_target": "index",
+          "is_best_similar": true,
+          "name": "index",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5918,
+            "token_start": 5473
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.006326071179634426,
+          "best_target": "read_to_vec",
+          "is_best_similar": true,
+          "name": "read_to_vec",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7374,
+            "token_start": 7289
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.8333481207750534,
+          "best_target": "unary_map",
+          "is_best_similar": true,
+          "name": "unary_map",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9109,
+            "token_start": 8776
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "apply_op1_no_bwd",
+          "is_best_similar": true,
+          "name": "apply_op1_no_bwd",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10543,
+            "token_start": 10463
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 0.0027355585218372344,
+          "best_target": "index",
+          "is_best_similar": false,
+          "name": "write_npy",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11440,
+            "token_start": 11382
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "dequantize_mul_mat_vec",
+          "is_best_similar": true,
+          "name": "dequantize_mul_mat_vec",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 14217,
+            "token_start": 13431
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_id",
+          "is_best_similar": true,
+          "name": "get_id",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15512,
+            "token_start": 15477
+          },
+          "repo": "huggingface/candle"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "reject",
+          "is_best_similar": true,
+          "name": "reject",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 818,
+            "token_start": 802
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.007736519969200231,
+          "best_target": "map_err",
+          "is_best_similar": true,
+          "name": "map_err",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2483,
+            "token_start": 2388
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.4209369228158289,
+          "best_target": "poll_read",
+          "is_best_similar": true,
+          "name": "poll_read",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4088,
+            "token_start": 4010
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.8726227460099572,
+          "best_target": "wrap_fn",
+          "is_best_similar": true,
+          "name": "wrap_fn",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5687,
+            "token_start": 5626
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.9935271680158773,
+          "best_target": "file_stream",
+          "is_best_similar": true,
+          "name": "file_stream",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7556,
+            "token_start": 7075
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "send_text",
+          "is_best_similar": true,
+          "name": "send_text",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8978,
+            "token_start": 8937
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.008630417170618111,
+          "best_target": "description",
+          "is_best_similar": true,
+          "name": "description",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10587,
+            "token_start": 10568
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.4854917717073234,
+          "best_target": "convert_reply",
+          "is_best_similar": true,
+          "name": "convert_reply",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12181,
+            "token_start": 12139
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.013627220716613877,
+          "best_target": "send_text",
+          "is_best_similar": false,
+          "name": "extension",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13830,
+            "token_start": 13777
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 0.5757197301274735,
+          "best_target": "__reject_custom_compilefail",
+          "is_best_similar": true,
+          "name": "__reject_custom_compilefail",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15415,
+            "token_start": 15404
+          },
+          "repo": "seanmonstar/warp"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "newtype_variant",
+          "is_best_similar": true,
+          "name": "newtype_variant",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 836,
+            "token_start": 783
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.7369231628533763,
+          "best_target": "from_bounds",
+          "is_best_similar": true,
+          "name": "from_bounds",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 71,
+            "token_start": 28
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.0628392861239482,
+          "best_target": "newtype_variant",
+          "is_best_similar": false,
+          "name": "serialize_key",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4049,
+            "token_start": 3993
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.054305447428505634,
+          "best_target": "newtype_variant",
+          "is_best_similar": false,
+          "name": "__deserialize_content",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5736,
+            "token_start": 5634
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "format_u8",
+          "is_best_similar": true,
+          "name": "format_u8",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7389,
+            "token_start": 7159
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_i128",
+          "is_best_similar": true,
+          "name": "serialize_i128",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8966,
+            "token_start": 8911
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.02799946799246989,
+          "best_target": "newtype_variant",
+          "is_best_similar": false,
+          "name": "serialize_unit_variant",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10541,
+            "token_start": 10479
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "visit_i8",
+          "is_best_similar": true,
+          "name": "visit_i8",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12226,
+            "token_start": 12170
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.1171291646655074,
+          "best_target": "variant",
+          "is_best_similar": true,
+          "name": "variant",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13838,
+            "token_start": 13785
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "serialize_entry",
+          "is_best_similar": true,
+          "name": "serialize_entry",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15535,
+            "token_start": 15449
+          },
+          "repo": "serde-rs/serde"
+        },
+        {
+          "best_similar_score": 0.9457416090031758,
+          "best_target": "and",
+          "is_best_similar": true,
+          "name": "and",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 825,
+            "token_start": 773
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "set_global_default",
+          "is_best_similar": true,
+          "name": "set_global_default",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2628,
+            "token_start": 2262
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.18756826382863573,
+          "best_target": "as_ref",
+          "is_best_similar": true,
+          "name": "as_ref",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4055,
+            "token_start": 4035
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.027186400194317614,
+          "best_target": "linked_list_push",
+          "is_best_similar": false,
+          "name": "default",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5717,
+            "token_start": 5692
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.06527078148671275,
+          "best_target": "into_u64",
+          "is_best_similar": false,
+          "name": "field",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7350,
+            "token_start": 7241
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.016456075023549555,
+          "best_target": "with_default",
+          "is_best_similar": false,
+          "name": "sparse_value_sets_are_not_empty",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8975,
+            "token_start": 8857
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.01570877386770822,
+          "best_target": "linked_list_push",
+          "is_best_similar": true,
+          "name": "linked_list_push",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10679,
+            "token_start": 10474
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.089563496460826,
+          "best_target": "into_u64",
+          "is_best_similar": true,
+          "name": "into_u64",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12192,
+            "token_start": 12166
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "with_default",
+          "is_best_similar": true,
+          "name": "with_default",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13887,
+            "token_start": 13778
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "on_register_dispatch",
+          "is_best_similar": true,
+          "name": "on_register_dispatch",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15486,
+            "token_start": 15459
+          },
+          "repo": "tokio-rs/tracing"
+        },
+        {
+          "best_similar_score": 0.99134204566123,
+          "best_target": "pre_run_target_child",
+          "is_best_similar": true,
+          "name": "pre_run_target_child",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1037,
+            "token_start": 581
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.01220911121390511,
+          "best_target": "rtn_extend_encoding",
+          "is_best_similar": false,
+          "name": "launched",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2478,
+            "token_start": 2420
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.08678345215657841,
+          "best_target": "with_max_stack_pow",
+          "is_best_similar": true,
+          "name": "with_max_stack_pow",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4095,
+            "token_start": 4003
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.9253911813809743,
+          "best_target": "objective_size",
+          "is_best_similar": true,
+          "name": "objective_size",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5711,
+            "token_start": 5658
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "get_iters_by_name",
+          "is_best_similar": true,
+          "name": "get_iters_by_name",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7349,
+            "token_start": 7232
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.07948346282299562,
+          "best_target": "exposed_executor_state",
+          "is_best_similar": true,
+          "name": "exposed_executor_state",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8981,
+            "token_start": 8951
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 0.9643268771048815,
+          "best_target": "rtn_extend_encoding",
+          "is_best_similar": true,
+          "name": "rtn_extend_encoding",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10848,
+            "token_start": 10204
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "with_history_map",
+          "is_best_similar": true,
+          "name": "with_history_map",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12239,
+            "token_start": 12136
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "store_probability",
+          "is_best_similar": true,
+          "name": "store_probability",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13848,
+            "token_start": 13677
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "saturating_next_power_of_two",
+          "is_best_similar": true,
+          "name": "saturating_next_power_of_two",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15458,
+            "token_start": 15366
+          },
+          "repo": "AFLplusplus/LibAFL"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "on_left_click",
+          "is_best_similar": true,
+          "name": "on_left_click",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 983,
+            "token_start": 602
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.004086142181558602,
+          "best_target": "keyboard_input",
+          "is_best_similar": false,
+          "name": "negative_url_parsing_regex_test",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2526,
+            "token_start": 2325
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.08170418210184782,
+          "best_target": "set_term_uniforms",
+          "is_best_similar": true,
+          "name": "set_term_uniforms",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4036,
+            "token_start": 3980
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "footer_bar_foreground",
+          "is_best_similar": true,
+          "name": "footer_bar_foreground",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 320,
+            "token_start": 281
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.08233757496071904,
+          "best_target": "dynamic_title_ignoring_options_by_default",
+          "is_best_similar": true,
+          "name": "dynamic_title_ignoring_options_by_default",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7296,
+            "token_start": 7214
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.9273605542078598,
+          "best_target": "keyboard_input",
+          "is_best_similar": true,
+          "name": "keyboard_input",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9050,
+            "token_start": 8660
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.010007960290053063,
+          "best_target": "fill_cube",
+          "is_best_similar": true,
+          "name": "fill_cube",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 4300,
+            "token_start": 4023
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "add_render_item",
+          "is_best_similar": true,
+          "name": "add_render_item",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12147,
+            "token_start": 12008
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 0.9574533680683809,
+          "best_target": "term_options",
+          "is_best_similar": true,
+          "name": "term_options",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13843,
+            "token_start": 13716
+          },
+          "repo": "alacritty/alacritty"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "merge_rects",
+          "is_best_similar": true,
+          "name": "merge_rects",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15472,
+            "token_start": 15320
+          },
+          "repo": "alacritty/alacritty"
+        }
+      ],
+      "typescript": [
+        {
+          "best_similar_score": 0.1768331411890739,
+          "best_target": "reshape",
+          "is_best_similar": true,
+          "name": "reshape",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 901,
+            "token_start": 675
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.10876837516292293,
+          "best_target": "padHelper",
+          "is_best_similar": true,
+          "name": "padHelper",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2457,
+            "token_start": 2339
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.8971148504974097,
+          "best_target": "prepareImages",
+          "is_best_similar": true,
+          "name": "prepareImages",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3985,
+            "token_start": 3919
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.009679155187882467,
+          "best_target": "permute_data",
+          "is_best_similar": false,
+          "name": "getModelJSON",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5665,
+            "token_start": 5562
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.10045984032501766,
+          "best_target": "hanning",
+          "is_best_similar": true,
+          "name": "hanning",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7307,
+            "token_start": 7143
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.0196205998789976,
+          "best_target": "getModelJSON",
+          "is_best_similar": false,
+          "name": "dispatchCallback",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 164,
+            "token_start": 137
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.9903382397772544,
+          "best_target": "window_function",
+          "is_best_similar": true,
+          "name": "window_function",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10522,
+            "token_start": 10237
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "validate_audio_inputs",
+          "is_best_similar": true,
+          "name": "validate_audio_inputs",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12027,
+            "token_start": 11894
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.04414228511408973,
+          "best_target": "permute_data",
+          "is_best_similar": true,
+          "name": "permute_data",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13228,
+            "token_start": 12886
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.02612651936114291,
+          "best_target": "padHelper",
+          "is_best_similar": false,
+          "name": "isChat",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 14993,
+            "token_start": 14963
+          },
+          "repo": "xenova/transformers.js"
+        },
+        {
+          "best_similar_score": 0.9316798817186988,
+          "best_target": "sendfile",
+          "is_best_similar": true,
+          "name": "sendfile",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1071,
+            "token_start": 504
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "trim_prefix",
+          "is_best_similar": true,
+          "name": "trim_prefix",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2525,
+            "token_start": 2137
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.31335262694156507,
+          "best_target": "decode_param",
+          "is_best_similar": true,
+          "name": "decode_param",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3853,
+            "token_start": 3737
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "gettype",
+          "is_best_similar": true,
+          "name": "gettype",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5489,
+            "token_start": 5421
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "newObject",
+          "is_best_similar": true,
+          "name": "newObject",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 1947,
+            "token_start": 1936
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "logerror",
+          "is_best_similar": true,
+          "name": "logerror",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8469,
+            "token_start": 8425
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "acceptParams",
+          "is_best_similar": true,
+          "name": "acceptParams",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 1020,
+            "token_start": 879
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.13117445906009792,
+          "best_target": "Route",
+          "is_best_similar": true,
+          "name": "Route",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11534,
+            "token_start": 11483
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.309847109179001,
+          "best_target": "tryStat",
+          "is_best_similar": true,
+          "name": "tryStat",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13116,
+            "token_start": 13065
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "stringify",
+          "is_best_similar": true,
+          "name": "stringify",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 11276,
+            "token_start": 11043
+          },
+          "repo": "expressjs/express"
+        },
+        {
+          "best_similar_score": 0.45788313721339824,
+          "best_target": "done",
+          "is_best_similar": true,
+          "name": "done",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 839,
+            "token_start": 774
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.04331412720926564,
+          "best_target": "isAxiosError",
+          "is_best_similar": false,
+          "name": "formatMessage",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2389,
+            "token_start": 2337
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.013150919401790927,
+          "best_target": "formatHeader",
+          "is_best_similar": false,
+          "name": "buildURL",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4060,
+            "token_start": 3821
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.7363203407082369,
+          "best_target": "combineURLs",
+          "is_best_similar": true,
+          "name": "combineURLs",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 787,
+            "token_start": 734
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.9534969548334766,
+          "best_target": "settle",
+          "is_best_similar": true,
+          "name": "settle",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7146,
+            "token_start": 6998
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "AxiosError",
+          "is_best_similar": true,
+          "name": "AxiosError",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 7248,
+            "token_start": 7111
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "formatHeader",
+          "is_best_similar": true,
+          "name": "formatHeader",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10159,
+            "token_start": 10097
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "AxiosError",
+          "is_best_similar": false,
+          "name": "CanceledError",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11073,
+            "token_start": 10990
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.24784092714303563,
+          "best_target": "deleteHeader",
+          "is_best_similar": true,
+          "name": "deleteHeader",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13321,
+            "token_start": 13229
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.8187307530779819,
+          "best_target": "isAxiosError",
+          "is_best_similar": true,
+          "name": "isAxiosError",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15166,
+            "token_start": 15131
+          },
+          "repo": "axios/axios"
+        },
+        {
+          "best_similar_score": 0.9180981433729446,
+          "best_target": "execScript",
+          "is_best_similar": true,
+          "name": "execScript",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 893,
+            "token_start": 721
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.0034772572024689514,
+          "best_target": "execScript",
+          "is_best_similar": false,
+          "name": "addHours",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2355,
+            "token_start": 2304
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.9082489095559811,
+          "best_target": "convertToFP",
+          "is_best_similar": true,
+          "name": "convertToFP",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4074,
+            "token_start": 3943
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.01336164739327787,
+          "best_target": "millisecondsToSeconds",
+          "is_best_similar": false,
+          "name": "intervalToDuration",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5585,
+            "token_start": 5234
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "formatTimezoneShort",
+          "is_best_similar": true,
+          "name": "formatTimezoneShort",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7316,
+            "token_start": 7190
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.01587640207232541,
+          "best_target": "dateOrdinalNumber",
+          "is_best_similar": false,
+          "name": "fn",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8887,
+            "token_start": 8827
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.007541025922630458,
+          "best_target": "formatTimezoneShort",
+          "is_best_similar": false,
+          "name": "differenceInHours",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10061,
+            "token_start": 9968
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.26922722645237773,
+          "best_target": "getResultByTense",
+          "is_best_similar": true,
+          "name": "getResultByTense",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12177,
+            "token_start": 12177
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.9310627797040228,
+          "best_target": "millisecondsToSeconds",
+          "is_best_similar": true,
+          "name": "millisecondsToSeconds",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13157,
+            "token_start": 13119
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "dateOrdinalNumber",
+          "is_best_similar": true,
+          "name": "dateOrdinalNumber",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15423,
+            "token_start": 15278
+          },
+          "repo": "date-fns/date-fns"
+        },
+        {
+          "best_similar_score": 0.12807327174314076,
+          "best_target": "isBinaryPath",
+          "is_best_similar": true,
+          "name": "isBinaryPath",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 798,
+            "token_start": 766
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.5916654968444337,
+          "best_target": "isFilterEmpty",
+          "is_best_similar": true,
+          "name": "isFilterEmpty",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2489,
+            "token_start": 2352
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.011757514225329767,
+          "best_target": "getEndpoint",
+          "is_best_similar": false,
+          "name": "createOpenAIToolsAgent",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4095,
+            "token_start": 3818
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "processValue",
+          "is_best_similar": true,
+          "name": "processValue",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5666,
+            "token_start": 5600
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.025605511114088587,
+          "best_target": "convertObjectFilterToStructuredQuery",
+          "is_best_similar": true,
+          "name": "convertObjectFilterToStructuredQuery",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7296,
+            "token_start": 7206
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.002945263026923226,
+          "best_target": "complexValue",
+          "is_best_similar": false,
+          "name": "createOpenAIFunctionsAgent",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8926,
+            "token_start": 8640
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.9847331232494917,
+          "best_target": "getEndpoint",
+          "is_best_similar": true,
+          "name": "getEndpoint",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10781,
+            "token_start": 10495
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.05977220709486161,
+          "best_target": "isOffTheShelfEvaluator",
+          "is_best_similar": true,
+          "name": "isOffTheShelfEvaluator",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12072,
+            "token_start": 11982
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.9910314505214005,
+          "best_target": "complexValue",
+          "is_best_similar": true,
+          "name": "complexValue",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13808,
+            "token_start": 13531
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "isAgentAction",
+          "is_best_similar": true,
+          "name": "isAgentAction",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15311,
+            "token_start": 15272
+          },
+          "repo": "langchain-ai/langchainjs"
+        },
+        {
+          "best_similar_score": 0.09602379343252368,
+          "best_target": "setCss",
+          "is_best_similar": true,
+          "name": "setCss",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 890,
+            "token_start": 640
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "insertAfter",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2430,
+            "token_start": 2164
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.8519156349446313,
+          "best_target": "testAppleSelect",
+          "is_best_similar": true,
+          "name": "testAppleSelect",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4103,
+            "token_start": 3973
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0,
+          "best_target": null,
+          "is_best_similar": false,
+          "name": "toggleClass",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5665,
+            "token_start": 5154
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.00787152183751198,
+          "best_target": "empty",
+          "is_best_similar": false,
+          "name": "attr",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7170,
+            "token_start": 6815
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.7253556485625583,
+          "best_target": "createTestServer",
+          "is_best_similar": true,
+          "name": "createTestServer",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8938,
+            "token_start": 8778
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.009457715908176277,
+          "best_target": "empty",
+          "is_best_similar": true,
+          "name": "empty",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10057,
+            "token_start": 9961
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "withClass",
+          "is_best_similar": true,
+          "name": "withClass",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12140,
+            "token_start": 12113
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.1530219158775289,
+          "best_target": "appendTo",
+          "is_best_similar": true,
+          "name": "appendTo",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13222,
+            "token_start": 13138
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.004869286394515984,
+          "best_target": "insertAfter",
+          "is_best_similar": false,
+          "name": "is",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 14651,
+            "token_start": 14540
+          },
+          "repo": "cheeriojs/cheerio"
+        },
+        {
+          "best_similar_score": 0.8230034125969015,
+          "best_target": "getBrowserInfo",
+          "is_best_similar": true,
+          "name": "getBrowserInfo",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1034,
+            "token_start": 589
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.017049969198451857,
+          "best_target": "mockStreamingChatCompletionFetch",
+          "is_best_similar": false,
+          "name": "mockFetch",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2654,
+            "token_start": 2190
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.42231766621889283,
+          "best_target": "applyHeadersMut",
+          "is_best_similar": true,
+          "name": "applyHeadersMut",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4098,
+            "token_start": 3967
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.005940127715217914,
+          "best_target": "findDoubleNewlineIndex",
+          "is_best_similar": false,
+          "name": "getDefaultAgent",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5636,
+            "token_start": 5619
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.9269359747451615,
+          "best_target": "toFile",
+          "is_best_similar": true,
+          "name": "toFile",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 2791,
+            "token_start": 2508
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.2668078180198539,
+          "best_target": "isPresent",
+          "is_best_similar": true,
+          "name": "isPresent",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8884,
+            "token_start": 8856
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.007223575228418938,
+          "best_target": "findDoubleNewlineIndex",
+          "is_best_similar": false,
+          "name": "mockStreamingChatCompletionFetch",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10659,
+            "token_start": 10363
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.0026414031377418653,
+          "best_target": "findDoubleNewlineIndex",
+          "is_best_similar": false,
+          "name": "str",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12085,
+            "token_start": 12066
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "findDoubleNewlineIndex",
+          "is_best_similar": true,
+          "name": "findDoubleNewlineIndex",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13870,
+            "token_start": 13565
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 0.08953470672640998,
+          "best_target": "isRunnableFunctionWithParse",
+          "is_best_similar": true,
+          "name": "isRunnableFunctionWithParse",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15325,
+            "token_start": 15278
+          },
+          "repo": "openai/openai-node"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getKeyName",
+          "is_best_similar": true,
+          "name": "getKeyName",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 819,
+            "token_start": 773
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "convertFilters",
+          "is_best_similar": true,
+          "name": "convertFilters",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2443,
+            "token_start": 2396
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "checkUserBlock",
+          "is_best_similar": true,
+          "name": "checkUserBlock",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4043,
+            "token_start": 3978
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.08977807881137152,
+          "best_target": "getRetention",
+          "is_best_similar": true,
+          "name": "getRetention",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5701,
+            "token_start": 5605
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.9740274534203012,
+          "best_target": "getAllowedUnits",
+          "is_best_similar": true,
+          "name": "getAllowedUnits",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7283,
+            "token_start": 7184
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.023282631485584133,
+          "best_target": "getRetention",
+          "is_best_similar": false,
+          "name": "getWebsiteStats",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8928,
+            "token_start": 8824
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.8774232157661442,
+          "best_target": "useLanguageNames",
+          "is_best_similar": true,
+          "name": "useLanguageNames",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10598,
+            "token_start": 10423
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.017759560274975435,
+          "best_target": "useLanguageNames",
+          "is_best_similar": false,
+          "name": "getFunnel",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12174,
+            "token_start": 12061
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.9672161004820058,
+          "best_target": "updateTeam",
+          "is_best_similar": true,
+          "name": "updateTeam",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13785,
+            "token_start": 13699
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "getTimestampDiffQuery",
+          "is_best_similar": true,
+          "name": "getTimestampDiffQuery",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15326,
+            "token_start": 15226
+          },
+          "repo": "umami-software/umami"
+        },
+        {
+          "best_similar_score": 0.5958747293953951,
+          "best_target": "generateTorso",
+          "is_best_similar": true,
+          "name": "generateTorso",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 1169,
+            "token_start": 359
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.4888290318657942,
+          "best_target": "sortOpaque",
+          "is_best_similar": true,
+          "name": "sortOpaque",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2212,
+            "token_start": 2186
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.9886987508375231,
+          "best_target": "transformVertex",
+          "is_best_similar": true,
+          "name": "transformVertex",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 3839,
+            "token_start": 3609
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.02979364485348827,
+          "best_target": "handleTriangle",
+          "is_best_similar": true,
+          "name": "handleTriangle",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5289,
+            "token_start": 4857
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.1085227257868695,
+          "best_target": "createCanvas",
+          "is_best_similar": true,
+          "name": "createCanvas",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 6645,
+            "token_start": 6566
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.2330650361923246,
+          "best_target": "setupFrameBufferTexture",
+          "is_best_similar": true,
+          "name": "setupFrameBufferTexture",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 8526,
+            "token_start": 7983
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.04230595512925571,
+          "best_target": "convertArray",
+          "is_best_similar": true,
+          "name": "convertArray",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 9401,
+            "token_start": 9292
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.021669589019862857,
+          "best_target": "linkedList",
+          "is_best_similar": true,
+          "name": "linkedList",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 11226,
+            "token_start": 11040
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.07722596626713468,
+          "best_target": "WebGLExtensions",
+          "is_best_similar": true,
+          "name": "WebGLExtensions",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 12947,
+            "token_start": 12185
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.11073063441118092,
+          "best_target": "serialize",
+          "is_best_similar": true,
+          "name": "serialize",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 13986,
+            "token_start": 13920
+          },
+          "repo": "mrdoob/three.js"
+        },
+        {
+          "best_similar_score": 0.0013278380286293227,
+          "best_target": "createIdTokenVerifier",
+          "is_best_similar": false,
+          "name": "initFirestore",
+          "needle_position": 0.05,
+          "position": {
+            "token_end": 910,
+            "token_start": 703
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.9310627797040228,
+          "best_target": "createIdTokenVerifier",
+          "is_best_similar": true,
+          "name": "createIdTokenVerifier",
+          "needle_position": 0.15,
+          "position": {
+            "token_end": 2465,
+            "token_start": 2399
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.12785412797716855,
+          "best_target": "initFirestore",
+          "is_best_similar": false,
+          "name": "getFirestoreOptions",
+          "needle_position": 0.25,
+          "position": {
+            "token_end": 4201,
+            "token_start": 3727
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.9661049965255963,
+          "best_target": "getMessaging",
+          "is_best_similar": true,
+          "name": "getMessaging",
+          "needle_position": 0.35,
+          "position": {
+            "token_end": 5643,
+            "token_start": 5569
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.4854917717073234,
+          "best_target": "emulatorHost",
+          "is_best_similar": true,
+          "name": "emulatorHost",
+          "needle_position": 0.45,
+          "position": {
+            "token_end": 7334,
+            "token_start": 7304
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "validateProviderUserInfo",
+          "is_best_similar": true,
+          "name": "validateProviderUserInfo",
+          "needle_position": 0.55,
+          "position": {
+            "token_end": 9103,
+            "token_start": 8555
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.8750891328274301,
+          "best_target": "validateTestPhoneNumbers",
+          "is_best_similar": true,
+          "name": "validateTestPhoneNumbers",
+          "needle_position": 0.65,
+          "position": {
+            "token_end": 10526,
+            "token_start": 10176
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 1.0,
+          "best_target": "createPart",
+          "is_best_similar": true,
+          "name": "createPart",
+          "needle_position": 0.75,
+          "position": {
+            "token_end": 12046,
+            "token_start": 11894
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.9607894391523232,
+          "best_target": "assertServerResponse",
+          "is_best_similar": true,
+          "name": "assertServerResponse",
+          "needle_position": 0.85,
+          "position": {
+            "token_end": 13498,
+            "token_start": 13422
+          },
+          "repo": "firebase/firebase-admin-node"
+        },
+        {
+          "best_similar_score": 0.9893049153303822,
+          "best_target": "appCheckErrorFromCryptoSignerError",
+          "is_best_similar": true,
+          "name": "appCheckErrorFromCryptoSignerError",
+          "needle_position": 0.95,
+          "position": {
+            "token_end": 15366,
+            "token_start": 15065
+          },
+          "repo": "firebase/firebase-admin-node"
+        }
+      ]
+    },
+    "scores": {
+      "all": {
+        "0.0": {
+          "pass@1": 0.724
+        },
+        "0.1": {
+          "pass@1": 0.576
+        },
+        "0.2": {
+          "pass@1": 0.522
+        },
+        "0.3": {
+          "pass@1": 0.496
+        },
+        "0.4": {
+          "pass@1": 0.48
+        },
+        "0.5": {
+          "pass@1": 0.456
+        },
+        "0.6": {
+          "pass@1": 0.44
+        },
+        "0.7": {
+          "pass@1": 0.432
+        },
+        "0.8": {
+          "pass@1": 0.418
+        },
+        "0.9": {
+          "pass@1": 0.374
+        },
+        "1.0": {
+          "pass@1": 0.28
+        }
+      },
+      "cpp": {
+        "0.0": {
+          "pass@1": 0.64
+        },
+        "0.1": {
+          "pass@1": 0.45
+        },
+        "0.2": {
+          "pass@1": 0.42
+        },
+        "0.3": {
+          "pass@1": 0.38
+        },
+        "0.4": {
+          "pass@1": 0.38
+        },
+        "0.5": {
+          "pass@1": 0.37
+        },
+        "0.6": {
+          "pass@1": 0.36
+        },
+        "0.7": {
+          "pass@1": 0.33
+        },
+        "0.8": {
+          "pass@1": 0.32
+        },
+        "0.9": {
+          "pass@1": 0.3
+        },
+        "1.0": {
+          "pass@1": 0.26
+        }
+      },
+      "java": {
+        "0.0": {
+          "pass@1": 0.7
+        },
+        "0.1": {
+          "pass@1": 0.59
+        },
+        "0.2": {
+          "pass@1": 0.52
+        },
+        "0.3": {
+          "pass@1": 0.52
+        },
+        "0.4": {
+          "pass@1": 0.47
+        },
+        "0.5": {
+          "pass@1": 0.45
+        },
+        "0.6": {
+          "pass@1": 0.42
+        },
+        "0.7": {
+          "pass@1": 0.42
+        },
+        "0.8": {
+          "pass@1": 0.4
+        },
+        "0.9": {
+          "pass@1": 0.33
+        },
+        "1.0": {
+          "pass@1": 0.22
+        }
+      },
+      "python": {
+        "0.0": {
+          "pass@1": 0.76
+        },
+        "0.1": {
+          "pass@1": 0.59
+        },
+        "0.2": {
+          "pass@1": 0.52
+        },
+        "0.3": {
+          "pass@1": 0.47
+        },
+        "0.4": {
+          "pass@1": 0.46
+        },
+        "0.5": {
+          "pass@1": 0.44
+        },
+        "0.6": {
+          "pass@1": 0.43
+        },
+        "0.7": {
+          "pass@1": 0.42
+        },
+        "0.8": {
+          "pass@1": 0.41
+        },
+        "0.9": {
+          "pass@1": 0.4
+        },
+        "1.0": {
+          "pass@1": 0.36
+        }
+      },
+      "rust": {
+        "0.0": {
+          "pass@1": 0.76
+        },
+        "0.1": {
+          "pass@1": 0.6
+        },
+        "0.2": {
+          "pass@1": 0.58
+        },
+        "0.3": {
+          "pass@1": 0.58
+        },
+        "0.4": {
+          "pass@1": 0.58
+        },
+        "0.5": {
+          "pass@1": 0.55
+        },
+        "0.6": {
+          "pass@1": 0.54
+        },
+        "0.7": {
+          "pass@1": 0.54
+        },
+        "0.8": {
+          "pass@1": 0.53
+        },
+        "0.9": {
+          "pass@1": 0.47
+        },
+        "1.0": {
+          "pass@1": 0.35
+        }
+      },
+      "typescript": {
+        "0.0": {
+          "pass@1": 0.76
+        },
+        "0.1": {
+          "pass@1": 0.65
+        },
+        "0.2": {
+          "pass@1": 0.57
+        },
+        "0.3": {
+          "pass@1": 0.53
+        },
+        "0.4": {
+          "pass@1": 0.51
+        },
+        "0.5": {
+          "pass@1": 0.47
+        },
+        "0.6": {
+          "pass@1": 0.45
+        },
+        "0.7": {
+          "pass@1": 0.45
+        },
+        "0.8": {
+          "pass@1": 0.43
+        },
+        "0.9": {
+          "pass@1": 0.37
+        },
+        "1.0": {
+          "pass@1": 0.21
+        }
+      }
+    },
+    "train_size": null
+  }
+}
