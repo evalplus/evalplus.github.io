@@ -100,6 +100,11 @@
       <div class="container-fluid d-flex flex-column align-items-center">
         <h2 class="text-nowrap mt-5"><b>🔎 Searching Needle Function</b></h2>
         <h3 class="text-nowrap mt-5">🏆 Leaderboard for 16K Code Context</h3>
+        <div class="slider-container d-flex flex-row justify-content-center gap-3">
+          <div class="slider-title">Select the Threshold</div>
+          <input type="range" id="fixedPointSlider" min="0" max="10" step="1" value="0", width="100%">
+          <div class="slider-value" id="sliderValue">0.0</div>
+        </div>
         <table id="16k" class="table table-responsive table-striped table-bordered flex-shrink-1 border border-3">
         </table>
       </div>
@@ -130,7 +135,6 @@
       "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
     ];
     const dataUrlPrefix = "results/repoqa/ntoken_16384/";
-    const scoreThrasold = 0.8;
     const correctColor = 'rgba(52, 92, 139', incorrectColor = 'rgba(142, 53, 50'
 
     // Load data
@@ -170,12 +174,8 @@
       }
     }
 
-    // sort by total score at [scoreThrasold]
-    data.sort((a, b) => {
-      return b['scores']['total'][scoreThrasold] - a['scores']['total'][scoreThrasold];
-    });
-
     const globalData = data;
+    var scoreThrasold = 0.8;
 
     // each row represents a model
     const theaders = [
@@ -348,12 +348,19 @@
     };
 
     const getChartMetaData = (results, color) => {
+      if (results.length == 0) {
+        return {
+          chartPoints: [],
+          visualMapPieces: []
+        };
+      }
+
       // calculate the changes
       var changes = [];
       for (var i = 0; i < results.length; i++) {
         start = results[i]['position']['token_start'];
         end = results[i]['position']['token_end'];
-        if (changes.length < end) {
+        if (end >= changes.length) {
           for (var j = changes.length; j <= end; j++) {
             changes.push(0);
           }
@@ -409,6 +416,9 @@
     const displayChart = (chartId, results) => {
       chart = echarts.init(document.getElementById(chartId));
 
+      // filter results based on 'best_similar_score' > scoreThrasold
+      results = results.filter((result) => result['best_similar_score'] >= scoreThrasold);
+
       correctResults = results.filter((result) => result['is_best_similar']);
       incorrectResults = results.filter((result) => !result['is_best_similar']);
 
@@ -422,19 +432,35 @@
       chart.setOption(chartOption);
     }
 
-
-    clearTable();
-    displayTable(contextTable);
-    globalData.forEach((row) => {
-      allLangData = []
-      langs = Object.keys(row['results']);
-      for (var i = 0; i < langs.length; i++) {
-        if (langs[i] != 'all') {
-          displayChart(row['Model']+langs[i], row['results'][langs[i]]);
-          allLangData = allLangData.concat(row['results'][langs[i]]);
+    const main = () => {
+      data.sort((a, b) => {
+        return b['scores']['total'][scoreThrasold] - a['scores']['total'][scoreThrasold];
+      });
+      clearTable();
+      displayTable(contextTable);
+      globalData.forEach((row) => {
+        allLangData = []
+        langs = Object.keys(row['results']);
+        for (var i = 0; i < langs.length; i++) {
+          if (langs[i] != 'all') {
+            displayChart(row['Model']+langs[i], row['results'][langs[i]]);
+            allLangData = allLangData.concat(row['results'][langs[i]]);
+          }
         }
-      }
-      displayChart(row['Model']+'all', allLangData);
+        displayChart(row['Model']+'all', allLangData);
+      });
+    }
+
+    main();
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = document.getElementById('fixedPointSlider');
+      var output = document.getElementById('sliderValue');
+      slider.addEventListener('input', function () {
+        var sliderValue = this.value;
+        output.textContent = (sliderValue / 10).toFixed(1);
+        scoreThrasold = (sliderValue / 10).toFixed(1);
+        main();
+      });
     });
   </script>
 
