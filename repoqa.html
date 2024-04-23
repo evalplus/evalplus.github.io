@@ -131,6 +131,7 @@
     ];
     const dataUrlPrefix = "results/repoqa/ntoken_16384/";
     const scoreThrasold = 0.8;
+    const correctColor = 'rgba(52, 92, 139', incorrectColor = 'rgba(142, 53, 50'
 
     // Load data
     var data = [];
@@ -174,8 +175,6 @@
       return b['scores']['total'][scoreThrasold] - a['scores']['total'][scoreThrasold];
     });
 
-    console.log("data");
-    console.log(data);
     const globalData = data;
 
     // each row represents a model
@@ -298,117 +297,144 @@
       contextTable.innerHTML = '';
     }
 
-    clearTable();
-    displayTable(contextTable);
-
     var chartOption = {
-      grid: {
-        top: 0,
-        left: -10,
-        right: 10,
-        bottom: 0,
-        containLabel: true
-      },
       xAxis: {
         type: 'value',
-        boundaryGap: true,
-        min: 0,
-        max: eval_size,
-        interval: 1024,
-        splitLine: {
-          show: false
-        },
-        axisLabel: {
-          formatter: function (value) {
-            if (value == 0) {
-              return '0';
-            }
-            return value / 1024 + 'k';
-          }
-        }
+        boundaryGap: false,
       },
       yAxis: {
         type: 'value',
         max: 1,
         show: false
       },
-      series: [{
-        type: 'custom',
-        renderItem: function (params, api) {
-          var yValue = api.value(2);
-          var start = api.coord([api.value(0), yValue]);
-          var size = api.size([api.value(1), yValue]);
-          var style = api.style();
-          return {
-            type: 'rect',
-            shape: {
-              x: start[0],
-              y: start[1],
-              width: size[0],
-              height: size[1]
-            },
-            style: style
-          };
+      visualMap: {
+        type: 'piecewise',
+        show: false,
+        dimension: 0,
+        pieces: []
+      },
+      series: [
+        {
+          type: 'line',
+          symbol: 'none',
+          lineStyle: {
+            color: correctColor + ', 0.4)',
+            width: 1
+          },
+          markLine: {
+            symbol: ['none', 'none'],
+            label: { show: false }
+          },
+          areaStyle: {},
+          
+          data: []
         },
-        data: []
-      }],
+        {
+          type: 'line',
+          symbol: 'none',
+          lineStyle: {
+            color: incorrectColor + ', 0.4)',
+            width: 1
+          },
+          markLine: {
+            symbol: ['none', 'none'],
+            label: { show: false }
+          },
+          areaStyle: {},
+          
+          data: []
+        }
+      ]
     };
 
-
-    data.forEach((row) => {
-      var eval_size = row["eval_size"];
-      var rowspan = Object.keys(row['results']).length + 1;
-      var chartOption_current = chartOption;
-
-      var global_data = [];
-      for (var i = 0; i < rowspan; i++) {
-        if (i==rowspan - 1) {
-          lang="all";
-          chartOption_current.series[0].data = global_data
+    const getChartMetaData = (results, color) => {
+      // calculate the changes
+      var changes = [];
+      for (var i = 0; i < results.length; i++) {
+        start = results[i]['position']['token_start'];
+        end = results[i]['position']['token_end'];
+        if (changes.length < end) {
+          for (var j = changes.length; j <= end; j++) {
+            changes.push(0);
+          }
         }
-        else {
-          lang=Object.keys(row['results'])[i];
-
-          // prepare data of the chart
-          var data = [];
-          row['results'][lang].forEach((needle) => {
-            data.push(
-              [
-                needle["position"]["token_start"], 
-                needle["position"]["token_end"] - needle["position"]["token_start"], 
-                1, 
-                needle["is_best_similar"]
-              ]
-            );
-          });
-
-          // set color
-          data = data.map(function (item, index) {
-            if (item[item.length - 1]) { // is_best_similar
-              return {
-                value: item,
-                itemStyle: {
-                  color: '#4f81bd'      // blue
-                }
-              };
-            }
-            else {
-              return {
-                value: item,
-                itemStyle: {
-                  color: '#c0504d'
-                }
-              };
-            }
-          });
-
-          // update global data
-          global_data = global_data.concat(data);
-          chartOption_current.series[0].data = data
-        }
-        var chart = echarts.init(document.getElementById(row['Model']+lang));
-        chart.setOption(chartOption_current);
+        changes[start] += 1;
+        changes[end] -= 1;
       }
+
+      // calculate the points
+      var points = [];
+      var y = 0, max_y = 0;
+      for (var x = 0; x < changes.length; x++) {
+        if (changes[x] != 0) {
+          y += changes[x];
+          points.push([x, y]);
+          if (y > max_y) {
+            max_y = y;
+          }
+        }
+      }
+
+      // calculate the chart points
+      var y = 0;
+      var chartPoints = [];
+      var visualMapPieces = [];
+      for (var i = 0; i < points.length; i++) {
+        if (points[i][1] > 0 && y == 0) {
+          chartPoints.push([points[i][0], y]);
+          y = 1;
+          chartPoints.push([points[i][0], y]);
+        }
+        if (points[i][1] == 0 && y > 0) {
+          chartPoints.push([points[i][0], y]);
+          y = 0;
+          chartPoints.push([points[i][0]+1, y]);
+        }
+        if (i > 0) {
+          visualMapPieces.push({
+              gt: points[i-1][0],
+              lt: points[i][0],
+              // change the opacity based on the relative score
+              color: color + ', ' + (0.7 + points[i][1] / max_y * 0.3) + ')'
+          });
+        }
+      }
+
+      return {
+        chartPoints: chartPoints,
+        visualMapPieces: visualMapPieces
+      };
+    }
+
+    const displayChart = (chartId, results) => {
+      chart = echarts.init(document.getElementById(chartId));
+
+      correctResults = results.filter((result) => result['is_best_similar']);
+      incorrectResults = results.filter((result) => !result['is_best_similar']);
+
+      chartMetaData = getChartMetaData(results, correctColor);
+      incorrectChartMetaData = getChartMetaData(incorrectResults, incorrectColor);
+
+      chartOption.series[0].data = chartMetaData.chartPoints;
+      chartOption.series[1].data = incorrectChartMetaData.chartPoints;
+      chartOption.visualMap.pieces = chartMetaData.visualMapPieces;
+      
+      chart.setOption(chartOption);
+    }
+
+
+    clearTable();
+    displayTable(contextTable);
+    globalData.forEach((row) => {
+      allLangData = []
+      langs = Object.keys(row['results']);
+      for (var i = 0; i < langs.length; i++) {
+        if (langs[i] != 'all') {
+          displayChart(row['Model']+langs[i], row['results'][langs[i]]);
+          allLangData = allLangData.concat(row['results'][langs[i]]);
+        }
+      }
+      displayChart(row['Model']+'all', allLangData);
     });
   </script>
 
