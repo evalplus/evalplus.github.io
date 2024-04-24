@@ -289,13 +289,21 @@
         top: 0,
         left: 1,
         right: 1,
-        bottom: 1
+        bottom: 10
       },
       xAxis: {
         type: 'value',
         boundaryGap: false,
         min: 0,
         max: 16384,
+        axisLabel: {
+          show: true,
+          margin: 0,
+          formatter: function (value, index) {
+            return value/1000 + 'k';
+          },
+          fontSize: 10
+        },
         splitLine: {
           lineStyle: {
             color: 'black',
