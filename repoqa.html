@@ -296,6 +296,14 @@
 
           // score
           var rowLangs = Object.keys(row["scores"]);
+
+          var sortedScores = langs.map(lang => ({
+            lang: lang,
+            score: rowLangs.includes(lang) ? 100 * row["scores"][lang][scoreThresh]["pass@1"] : null
+          })).filter(item => item.lang !== 'all');;
+
+          sortedScores.sort((a, b) => b.score - a.score);
+
           for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
             var scoreCell = document.createElement("td");
@@ -309,6 +317,11 @@
             scoreCell.style.textAlign = "right";
             if (lang != "all") {
               scoreCell.style.color = "gray";
+            }
+            if (lang == sortedScores[0]["lang"] && sortedScores[0]["score"]){
+              scoreCell.style.color = '#10912a';
+            } else if (lang == sortedScores[1]["lang"] && sortedScores[0]["score"]){
+              scoreCell.style.color = '#0366fc';
             }
             dataRow.appendChild(scoreCell);
           }
