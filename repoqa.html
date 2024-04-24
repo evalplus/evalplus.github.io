@@ -435,12 +435,13 @@
       correctResults = results.filter((result) => result['is_best_similar']);
       incorrectResults = results.filter((result) => !result['is_best_similar']);
 
-      chartMetaData = getChartMetaData(results, correctColor);
+      chartMetaData = getChartMetaData(correctResults, correctColor);
       incorrectChartMetaData = getChartMetaData(incorrectResults, incorrectColor);
 
       chartOption.series[0].data = chartMetaData.chartPoints;
       chartOption.series[1].data = incorrectChartMetaData.chartPoints;
-      chartOption.visualMap.pieces = chartMetaData.visualMapPieces;
+      chartOption.visualMap.pieces = chartMetaData.visualMapPieces
+        .concat(incorrectChartMetaData.visualMapPieces);
 
       chart.setOption(chartOption);
     }
