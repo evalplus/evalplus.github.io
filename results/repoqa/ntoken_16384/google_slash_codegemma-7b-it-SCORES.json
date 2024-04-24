@@ -544,7 +544,7 @@
           "repo": "drogonframework/drogon"
         },
         {
-          "best_similar_score": 2.3942707510322927e-05,
+          "best_similar_score": 2.3942707510322927e-5,
           "best_target": "bytesSize",
           "is_best_similar": false,
           "name": "HttpMessageStringViewBody",
@@ -556,7 +556,7 @@
           "repo": "drogonframework/drogon"
         },
         {
-          "best_similar_score": 2.909890735256065e-08,
+          "best_similar_score": 2.909890735256065e-8,
           "best_target": "bytesSize",
           "is_best_similar": false,
           "name": "ListenerInfo",
@@ -808,7 +808,7 @@
           "repo": "ml-explore/mlx"
         },
         {
-          "best_similar_score": 4.5399929762484854e-05,
+          "best_similar_score": 4.5399929762484854e-5,
           "best_target": "promote_types",
           "is_best_similar": false,
           "name": "QuantizedMatmul",
@@ -1242,7 +1242,7 @@
           "repo": "google/gson"
         },
         {
-          "best_similar_score": 1.2108315514845409e-06,
+          "best_similar_score": 1.2108315514845409e-6,
           "best_target": "getAsJsonNull",
           "is_best_similar": true,
           "name": "getAsJsonNull",
@@ -1374,7 +1374,7 @@
           "repo": "square/retrofit"
         },
         {
-          "best_similar_score": 1.9695068388378145e-05,
+          "best_similar_score": 1.9695068388378145e-5,
           "best_target": "addQueryParam",
           "is_best_similar": true,
           "name": "addQueryParam",
@@ -1758,7 +1758,7 @@
           "repo": "GoogleContainerTools/jib"
         },
         {
-          "best_similar_score": 3.794858212973542e-05,
+          "best_similar_score": 3.794858212973542e-5,
           "best_target": "getBaseImageIfAllLayersCached",
           "is_best_similar": false,
           "name": "docker",
@@ -2504,7 +2504,7 @@
           "repo": "psf/black"
         },
         {
-          "best_similar_score": 1.0557111190378754e-06,
+          "best_similar_score": 1.0557111190378754e-6,
           "best_target": "visit",
           "is_best_similar": false,
           "name": "__post_init__",
@@ -2516,7 +2516,7 @@
           "repo": "psf/black"
         },
         {
-          "best_similar_score": 7.661207316193348e-05,
+          "best_similar_score": 7.661207316193348e-5,
           "best_target": "visit",
           "is_best_similar": false,
           "name": "should_split_funcdef_with_rhs",
@@ -3416,7 +3416,7 @@
           "repo": "ethereum/web3.py"
         },
         {
-          "best_similar_score": 8.315287191035679e-07,
+          "best_similar_score": 8.315287191035679e-7,
           "best_target": "_make_get_request",
           "is_best_similar": false,
           "name": "test_async_eth_sign_transaction_legacy",
@@ -4126,7 +4126,7 @@
           "repo": "huggingface/candle"
         },
         {
-          "best_similar_score": 4.632458555831352e-05,
+          "best_similar_score": 4.632458555831352e-5,
           "best_target": "unary_map",
           "is_best_similar": false,
           "name": "index",
@@ -4270,7 +4270,7 @@
           "repo": "seanmonstar/warp"
         },
         {
-          "best_similar_score": 1.4069191694180594e-08,
+          "best_similar_score": 1.4069191694180594e-8,
           "best_target": "file_stream",
           "is_best_similar": false,
           "name": "send_text",
@@ -4534,7 +4534,7 @@
           "repo": "tokio-rs/tracing"
         },
         {
-          "best_similar_score": 7.751017789886969e-06,
+          "best_similar_score": 7.751017789886969e-6,
           "best_target": "with_default",
           "is_best_similar": false,
           "name": "into_u64",
@@ -4546,7 +4546,7 @@
           "repo": "tokio-rs/tracing"
         },
         {
-          "best_similar_score": 9.312310705683813e-07,
+          "best_similar_score": 9.312310705683813e-7,
           "best_target": "with_default",
           "is_best_similar": true,
           "name": "with_default",

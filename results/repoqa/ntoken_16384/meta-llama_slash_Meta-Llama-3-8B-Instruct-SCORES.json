@@ -1758,7 +1758,7 @@
           "repo": "GoogleContainerTools/jib"
         },
         {
-          "best_similar_score": 3.10782259135221e-08,
+          "best_similar_score": 3.10782259135221e-8,
           "best_target": "getBaseImageIfAllLayersCached",
           "is_best_similar": false,
           "name": "docker",
@@ -2576,7 +2576,7 @@
           "repo": "python-poetry/poetry"
         },
         {
-          "best_similar_score": 7.624275156960667e-07,
+          "best_similar_score": 7.624275156960667e-7,
           "best_target": "_find_best_version_for_package",
           "is_best_similar": false,
           "name": "_display_complete_info",
@@ -3032,7 +3032,7 @@
           "repo": "mlc-ai/mlc-llm"
         },
         {
-          "best_similar_score": 2.150134588456562e-07,
+          "best_similar_score": 2.150134588456562e-7,
           "best_target": "fused_decode4_matmul5_int3_fp16_before",
           "is_best_similar": false,
           "name": "contain_symbolic_var",
@@ -3260,7 +3260,7 @@
           "repo": "marshmallow-code/marshmallow"
         },
         {
-          "best_similar_score": 1.2418329792344492e-05,
+          "best_similar_score": 1.2418329792344492e-5,
           "best_target": "_run_validator",
           "is_best_similar": false,
           "name": "store_error",

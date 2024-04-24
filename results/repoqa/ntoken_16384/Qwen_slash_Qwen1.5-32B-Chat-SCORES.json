@@ -940,7 +940,7 @@
           "repo": "scylladb/seastar"
         },
         {
-          "best_similar_score": 2.4320201835103353e-05,
+          "best_similar_score": 2.4320201835103353e-5,
           "best_target": "arp_learn",
           "is_best_similar": false,
           "name": "default_isolate_connection",
@@ -1242,7 +1242,7 @@
           "repo": "google/gson"
         },
         {
-          "best_similar_score": 1.2108315514845409e-06,
+          "best_similar_score": 1.2108315514845409e-6,
           "best_target": "getAsJsonNull",
           "is_best_similar": true,
           "name": "getAsJsonNull",
@@ -1410,7 +1410,7 @@
           "repo": "square/retrofit"
         },
         {
-          "best_similar_score": 1.1386130233708856e-08,
+          "best_similar_score": 1.1386130233708856e-8,
           "best_target": "resolveTypeVariable",
           "is_best_similar": false,
           "name": "getUpperBounds",
@@ -1998,7 +1998,7 @@
           "repo": "palantir/palantir-java-format"
         },
         {
-          "best_similar_score": 3.7607881263952336e-06,
+          "best_similar_score": 3.7607881263952336e-6,
           "best_target": "stringComponents",
           "is_best_similar": false,
           "name": "addTrivia",
@@ -4450,7 +4450,7 @@
           "repo": "serde-rs/serde"
         },
         {
-          "best_similar_score": 6.51780307408372e-06,
+          "best_similar_score": 6.51780307408372e-6,
           "best_target": "with_default",
           "is_best_similar": false,
           "name": "and",

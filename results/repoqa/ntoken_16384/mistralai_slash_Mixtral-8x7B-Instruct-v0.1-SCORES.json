@@ -3008,7 +3008,7 @@
           "repo": "openai/openai-python"
         },
         {
-          "best_similar_score": 1.286992839486024e-06,
+          "best_similar_score": 1.286992839486024e-6,
           "best_target": "get_param_set_item",
           "is_best_similar": false,
           "name": "fused_decode3_matmul1_fp16_before",

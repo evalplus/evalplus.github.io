@@ -1650,7 +1650,7 @@
           "repo": "Password4j/password4j"
         },
         {
-          "best_similar_score": 1.0137581066956792e-07,
+          "best_similar_score": 1.0137581066956792e-7,
           "best_target": "blake2bLong",
           "is_best_similar": false,
           "name": "getResult",
@@ -2070,7 +2070,7 @@
           "repo": "microsoft/mssql-jdbc"
         },
         {
-          "best_similar_score": 4.593492782736326e-06,
+          "best_similar_score": 4.593492782736326e-6,
           "best_target": "getParameterInfo",
           "is_best_similar": false,
           "name": "removeSingleQuote",

@@ -4258,7 +4258,7 @@
           "repo": "seanmonstar/warp"
         },
         {
-          "best_similar_score": 2.7900754246828386e-05,
+          "best_similar_score": 2.7900754246828386e-5,
           "best_target": "file_stream",
           "is_best_similar": true,
           "name": "file_stream",

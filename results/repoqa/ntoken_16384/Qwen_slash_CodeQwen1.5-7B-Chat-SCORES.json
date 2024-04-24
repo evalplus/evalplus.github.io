@@ -4222,7 +4222,7 @@
           "repo": "seanmonstar/warp"
         },
         {
-          "best_similar_score": 4.771765904310957e-05,
+          "best_similar_score": 4.771765904310957e-5,
           "best_target": "file_stream",
           "is_best_similar": false,
           "name": "map_err",

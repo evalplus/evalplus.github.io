@@ -964,7 +964,7 @@
           "repo": "scylladb/seastar"
         },
         {
-          "best_similar_score": 8.946902260274508e-06,
+          "best_similar_score": 8.946902260274508e-6,
           "best_target": "roundDownPageBoundary",
           "is_best_similar": false,
           "name": "packVal",
@@ -1374,7 +1374,7 @@
           "repo": "square/retrofit"
         },
         {
-          "best_similar_score": 1.1386130233708856e-08,
+          "best_similar_score": 1.1386130233708856e-8,
           "best_target": "resolveTypeVariable",
           "is_best_similar": false,
           "name": "addQueryParam",
@@ -2804,7 +2804,7 @@
           "repo": "pyg-team/pytorch_geometric"
         },
         {
-          "best_similar_score": 2.15798213908385e-06,
+          "best_similar_score": 2.15798213908385e-6,
           "best_target": "read_from_memlab",
           "is_best_similar": false,
           "name": "num_node_labels",
@@ -2828,7 +2828,7 @@
           "repo": "pyg-team/pytorch_geometric"
         },
         {
-          "best_similar_score": 2.15798213908385e-06,
+          "best_similar_score": 2.15798213908385e-6,
           "best_target": "read_from_memlab",
           "is_best_similar": false,
           "name": "tree",
@@ -3200,7 +3200,7 @@
           "repo": "reactive-python/reactpy"
         },
         {
-          "best_similar_score": 5.565509290220389e-05,
+          "best_similar_score": 5.565509290220389e-5,
           "best_target": "all_implementations",
           "is_best_similar": false,
           "name": "create_context",
@@ -3236,7 +3236,7 @@
           "repo": "reactive-python/reactpy"
         },
         {
-          "best_similar_score": 5.565509290220389e-05,
+          "best_similar_score": 5.565509290220389e-5,
           "best_target": "all_implementations",
           "is_best_similar": true,
           "name": "all_implementations",
@@ -3248,7 +3248,7 @@
           "repo": "reactive-python/reactpy"
         },
         {
-          "best_similar_score": 1.2418329792344492e-05,
+          "best_similar_score": 1.2418329792344492e-5,
           "best_target": "_run_validator",
           "is_best_similar": false,
           "name": "register",
@@ -4174,7 +4174,7 @@
           "repo": "huggingface/candle"
         },
         {
-          "best_similar_score": 6.341114321076931e-06,
+          "best_similar_score": 6.341114321076931e-6,
           "best_target": "unary_map",
           "is_best_similar": false,
           "name": "write_npy",
@@ -4690,7 +4690,7 @@
           "repo": "AFLplusplus/LibAFL"
         },
         {
-          "best_similar_score": 1.7768032810326934e-07,
+          "best_similar_score": 1.7768032810326934e-7,
           "best_target": "on_left_click",
           "is_best_similar": true,
           "name": "on_left_click",

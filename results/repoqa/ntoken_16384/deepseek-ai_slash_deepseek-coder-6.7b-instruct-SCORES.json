@@ -1578,7 +1578,7 @@
           "repo": "Password4j/password4j"
         },
         {
-          "best_similar_score": 2.0474364475207472e-05,
+          "best_similar_score": 2.0474364475207472e-5,
           "best_target": "isPBKDF2Supported",
           "is_best_similar": false,
           "name": "rOperation",
@@ -4234,7 +4234,7 @@
           "repo": "seanmonstar/warp"
         },
         {
-          "best_similar_score": 1.4671310170574105e-06,
+          "best_similar_score": 1.4671310170574105e-6,
           "best_target": "file_stream",
           "is_best_similar": false,
           "name": "poll_read",
@@ -4606,7 +4606,7 @@
           "repo": "AFLplusplus/LibAFL"
         },
         {
-          "best_similar_score": 1.975306767668658e-05,
+          "best_similar_score": 1.975306767668658e-5,
           "best_target": "pre_run_target_child",
           "is_best_similar": false,
           "name": "objective_size",

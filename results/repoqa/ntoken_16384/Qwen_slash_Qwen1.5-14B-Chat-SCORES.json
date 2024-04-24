@@ -2672,7 +2672,7 @@
           "repo": "locustio/locust"
         },
         {
-          "best_similar_score": 3.223611554635803e-07,
+          "best_similar_score": 3.223611554635803e-7,
           "best_target": "test_distribute_users",
           "is_best_similar": false,
           "name": "get_poller",
