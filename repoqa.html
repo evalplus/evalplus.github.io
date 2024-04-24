@@ -130,6 +130,23 @@
       "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
       "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
     ];
+    const linkMapping = new Map([])
+    const linkPrefix = "https://huggingface.co/"
+    files.map(file => {
+      modelFile = file.slice(0, -12);
+      modelPaths = modelFile.split("_");
+      linkSuffix = ""
+      for(var i =0; i < modelPaths.length; i++){
+        if(modelPaths[i] == "slash"){
+          linkSuffix += "/";
+        } else {
+          linkSuffix += modelPaths[i];
+        }
+      }
+      modelName = modelPaths.pop();
+      modelLink = linkPrefix + linkSuffix;
+      linkMapping.set(modelName, modelLink);
+    });
     const dataUrlPrefix = "results/repoqa/ntoken_16384/";
     const correctColor = 'rgba(72, 200, 120', incorrectColor = 'rgba(142, 53, 50'
 
@@ -218,6 +235,9 @@
         }
         var modelLink = document.createElement('a');
         modelLink.textContent = row['Model'];
+        if(linkMapping.has(row['Model'])){
+          modelLink.href = linkMapping.get(row["Model"]);  
+        }
         modelLink.classList.add('link-underline-primary');
         modelLink.classList.add('text-nowrap');
         modelCell.appendChild(modelLink);
