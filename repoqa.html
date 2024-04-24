@@ -238,7 +238,7 @@
         rust: ".rs",
         java: ".java",
         typescript: ".ts",
-        all: "⭐Avg.",
+        all: "🏆Avg.",
       };
 
       const displayTable = (table) => {
@@ -253,7 +253,11 @@
           if (header == "Score (%)") {
             for (var i = 0; i < langs.length; i++) {
               var th = document.createElement("th");
+              th.style.textAlign = "right";
               th.textContent = lang_map[langs[i]] + " (%)";
+              if (langs[i] == "all") {
+                th.style.backgroundColor = "#EEFFEE";
+              }
               headerRow.appendChild(th);
             }
           } else {
@@ -297,10 +301,14 @@
           // score
           var rowLangs = Object.keys(row["scores"]);
 
-          var sortedScores = langs.map(lang => ({
-            lang: lang,
-            score: rowLangs.includes(lang) ? 100 * row["scores"][lang][scoreThresh]["pass@1"] : null
-          })).filter(item => item.lang !== 'all');;
+          var sortedScores = langs
+            .map((lang) => ({
+              lang: lang,
+              score: rowLangs.includes(lang)
+                ? 100 * row["scores"][lang][scoreThresh]["pass@1"]
+                : null,
+            }))
+            .filter((item) => item.lang !== "all");
 
           sortedScores.sort((a, b) => b.score - a.score);
 
@@ -311,17 +319,31 @@
               scoreCell.textContent = (
                 100 * row["scores"][lang][scoreThresh]["pass@1"]
               ).toFixed(1);
+              // remove suffix of .0
+              if (scoreCell.textContent.endsWith(".0")) {
+                scoreCell.textContent = scoreCell.textContent.slice(0, -2);
+              }
             } else {
               scoreCell.textContent = "N/A";
             }
             scoreCell.style.textAlign = "right";
             if (lang != "all") {
               scoreCell.style.color = "gray";
+            } else {
+              scoreCell.style.fontWeight = "bold";
+              scoreCell.style.backgroundColor = "#EEFFEE";
             }
-            if (lang == sortedScores[0]["lang"] && sortedScores[0]["score"]){
-              scoreCell.style.color = '#10912a';
-            } else if (lang == sortedScores[1]["lang"] && sortedScores[0]["score"]){
-              scoreCell.style.color = '#0366fc';
+            const good_color = "#32CD32";
+            if (lang == sortedScores[0]["lang"] && sortedScores[0]["score"]) {
+              scoreCell.textContent = "👍" + scoreCell.textContent;
+              scoreCell.style.color = good_color;
+              scoreCell.style.fontWeight = "bold";
+            } else if (
+              lang == sortedScores[1]["lang"] &&
+              sortedScores[0]["score"]
+            ) {
+              scoreCell.style.color = good_color;
+              scoreCell.style.fontWeight = "bold";
             }
             dataRow.appendChild(scoreCell);
           }
