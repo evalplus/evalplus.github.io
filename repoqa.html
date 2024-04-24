@@ -35,7 +35,8 @@
       th,
       td {
         text-align: left;
-        width: max-content;
+        width: fit-content;
+        font-size: larger;
       }
 
       #notes {
@@ -56,6 +57,12 @@
 
       .form-select {
         font-size: 1em;
+      }
+
+      .slider-title {
+        font-size: 1.2em;
+        margin: 0.5em;
+        color: gray;
       }
 
       @media screen and (max-width: 1400px) {
@@ -92,14 +99,11 @@
       class="container-fluid d-flex flex-column align-items-center gap-3"
     >
       <h1 class="text-nowrap mt-5">
-        <bold>💬 RepoQA</bold>
+        <b>💬 RepoQA</b>
       </h1>
-      <p class="fw-light text-nowrap">
-        <small id="warning"
-          >🚩The <i>First</i> Benchmark for Long-Context Code
-          Understanding.🚩<br
-        /></small>
-      </p>
+      <div id="warning">
+        🚩The <i>First</i> Benchmark for Long-Context Code Understanding.🚩<br />
+      </div>
       <div class="d-flex flex-row justify-content-center gap-3">
         <a href="https://github.com/evalplus/repoqa"
           ><img
@@ -111,14 +115,14 @@
       <div class="container-fluid d-flex flex-row flex-nowrap">
         <div class="container-fluid d-flex flex-column align-items-center">
           <h2 class="text-nowrap mt-5">
-            <b>🔎🪡 Searching Needle Function</b>
+            <b>🔎 Searching Needle Function</b>
           </h2>
           <h3 class="text-nowrap mt-5">🏆 Benchmark @ 16K Code Context</h3>
           <div
             class="slider-container d-flex flex-row justify-content-center gap-3"
           >
             <div class="slider-title">
-              Select the threshold for match similarity
+              Select the threshold for match similarity (0~1)
             </div>
             <input
               type="range"
@@ -130,7 +134,7 @@
               ,
               width="100%"
             />
-            <div class="slider-value" id="sliderValue">0.8</div>
+            <div class="slider-title" id="sliderValue">0.8</div>
           </div>
           <table
             id="16k"
@@ -163,23 +167,32 @@
         "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
         "bigcode_slash_starcoder2-instruct-15b-v0.1-SCORES.json",
+        "gpt-3.5-turbo-0125-SCORES.json",
+        "gpt-4-turbo-2024-04-09-SCORES.json",
       ];
       const linkMapping = new Map([]);
-      const linkPrefix = "https://huggingface.co/";
+      const hfLinkPrefix = "https://huggingface.co/";
       files.map((file) => {
-        modelFile = file.slice(0, -12);
-        modelPaths = modelFile.split("_");
-        linkSuffix = "";
-        for (var i = 0; i < modelPaths.length; i++) {
-          if (modelPaths[i] == "slash") {
-            linkSuffix += "/";
-          } else {
-            linkSuffix += modelPaths[i];
-          }
+        modelId = file.slice(0, -12);
+
+        // if _slash_ in modelId, split by _slash_ and get the last one
+        if (modelId.includes("_slash_")) {
+          modelId = modelId.split("_slash_");
+          modelOrg = modelId[0];
+          modelId = modelId[1];
+          url = hfLinkPrefix + modelOrg + "/" + modelId;
+          linkMapping.set(modelId, url);
+        } else if (modelId.startsWith("gpt-4-")) {
+          linkMapping.set(
+            modelId,
+            "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
+          );
+        } else if (modelId.startsWith("gpt-3.5-")) {
+          linkMapping.set(
+            modelId,
+            "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+          );
         }
-        modelName = modelPaths.pop();
-        modelLink = linkPrefix + linkSuffix;
-        linkMapping.set(modelName, modelLink);
       });
       const dataUrlPrefix = "results/repoqa/ntoken_16384/";
       const correctColor = "rgba(72, 200, 120",
@@ -225,7 +238,7 @@
         rust: ".rs",
         java: ".java",
         typescript: ".ts",
-        all: "all",
+        all: "⭐Avg.",
       };
 
       const displayTable = (table) => {
@@ -293,7 +306,10 @@
             } else {
               scoreCell.textContent = "N/A";
             }
-            scoreCell.style.textAlign = "left";
+            scoreCell.style.textAlign = "right";
+            if (lang != "all") {
+              scoreCell.style.color = "gray";
+            }
             dataRow.appendChild(scoreCell);
           }
           tbody.appendChild(dataRow);
