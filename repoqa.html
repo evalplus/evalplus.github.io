@@ -216,7 +216,7 @@
       const theaders = [
         "#", // rank
         "Model", // model name
-        "Context (16K)", // context chart
+        // "Context (16K)", // context chart
         "Score (%)", // score of each language
       ];
 
@@ -232,16 +232,22 @@
       const displayTable = (table) => {
         var thead = document.createElement("thead");
         var headerRow = document.createElement("tr");
+        var langs = Object.keys(lang_map);
 
         // headers
         theaders.forEach(function (header) {
           var th = document.createElement("th");
           th.classList.add("text-nowrap");
-          if (header == "Context (16K)") {
-            th.colSpan = 2;
+          if (header == "Score (%)") {
+            for (var i = 0; i < langs.length; i++) {
+              var th = document.createElement("th");
+              th.textContent = lang_map[langs[i]] + " (%)";
+              headerRow.appendChild(th);
+            }
+          } else {
+            th.textContent = header;
+            headerRow.appendChild(th);
           }
-          th.textContent = header;
-          headerRow.appendChild(th);
         });
         thead.appendChild(headerRow);
         table.appendChild(thead);
@@ -250,17 +256,14 @@
         // add rank
         var rank = 0;
         data.forEach((row) => {
-          rowspan = Object.keys(row["results"]).length + 1;
           var dataRow = document.createElement("tr");
           // rank
           var rankCell = document.createElement("td");
-          rankCell.rowSpan = rowspan;
           rankCell.textContent = ++rank;
           dataRow.appendChild(rankCell);
 
           // model name
           var modelCell = document.createElement("td");
-          modelCell.rowSpan = rowspan;
           var modelLink = document.createElement("a");
           if (rank == 1) {
             modelLink.textContent = "🥇 " + row["Model"];
@@ -279,42 +282,22 @@
           modelCell.appendChild(modelLink);
           dataRow.appendChild(modelCell);
 
-          // context chart
-          langs = Object.keys(row["results"]);
-          for (var i = 0; i < rowspan; i++) {
-            // lang
-            if (i == 0) {
-              lang = "all";
-            } else {
-              lang = langs[i - 1];
-              var dataRow = document.createElement("tr");
-            }
-            var passCell = document.createElement("td");
-            passCell.textContent = lang_map[lang];
-            dataRow.appendChild(passCell);
-
-            // chart
-            var chartCell = document.createElement("td");
-            // TODO: Improve format stuff
-            chartCell.style.width = "100%";
-            chartCell.style.height = "65px";
-            chartDiv = document.createElement("div");
-            chartDiv.setAttribute("id", row["Model"] + lang);
-            chartDiv.style.width = "100%";
-            chartDiv.style.height = "100%";
-            chartCell.appendChild(chartDiv);
-            dataRow.appendChild(chartCell);
-
-            // score
+          // score
+          var rowLangs = Object.keys(row["scores"]);
+          for (var i = 0; i < langs.length; i++) {
+            var lang = langs[i];
             var scoreCell = document.createElement("td");
-            scoreCell.textContent = (
-              100 * row["scores"][lang][scoreThresh]["pass@1"]
-            ).toFixed(1);
+            if (rowLangs.includes(lang)) {
+              scoreCell.textContent = (
+                100 * row["scores"][lang][scoreThresh]["pass@1"]
+              ).toFixed(1);
+            } else {
+              scoreCell.textContent = "N/A";
+            }
             scoreCell.style.textAlign = "right";
             dataRow.appendChild(scoreCell);
-
-            tbody.appendChild(dataRow);
           }
+          tbody.appendChild(dataRow);
         });
         table.appendChild(tbody);
       };
@@ -509,17 +492,17 @@
         });
         clearTable();
         displayTable(contextTable);
-        globalData.forEach((row) => {
-          allLangData = [];
-          langs = Object.keys(row["results"]);
-          for (var i = 0; i < langs.length; i++) {
-            if (langs[i] != "all") {
-              displayChart(row["Model"] + langs[i], row["results"][langs[i]]);
-              allLangData = allLangData.concat(row["results"][langs[i]]);
-            }
-          }
-          displayChart(row["Model"] + "all", allLangData);
-        });
+        // globalData.forEach((row) => {
+        //   allLangData = [];
+        //   langs = Object.keys(row["results"]);
+        //   for (var i = 0; i < langs.length; i++) {
+        //     if (langs[i] != "all") {
+        //       displayChart(row["Model"] + langs[i], row["results"][langs[i]]);
+        //       allLangData = allLangData.concat(row["results"][langs[i]]);
+        //     }
+        //   }
+        //   displayChart(row["Model"] + "all", allLangData);
+        // });
       };
 
       main();
