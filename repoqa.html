@@ -235,7 +235,7 @@
           modelLink.textContent = row['Model'];
         }
         if(linkMapping.has(row['Model'])){
-          modelLink.href = linkMapping.get(row["Model"]);  
+          modelLink.href = linkMapping.get(row["Model"]);
         }
         modelLink.classList.add('link-underline-primary');
         modelLink.classList.add('text-nowrap');
@@ -289,13 +289,21 @@
         top: 0,
         left: 1,
         right: 1,
-        bottom: 1
+        bottom: 10
       },
       xAxis: {
         type: 'value',
         boundaryGap: false,
         min: 0,
         max: 16384,
+        axisLabel: {
+          show: true,
+          margin: 0,
+          formatter: function (value, index) {
+            return value/1024 + 'k';
+          },
+          fontSize: 10
+        },
         splitLine: {
           lineStyle: {
             color: 'black',
@@ -327,7 +335,7 @@
             label: { show: false }
           },
           areaStyle: {},
-          
+
           data: []
         },
         {
@@ -342,7 +350,7 @@
             label: { show: false }
           },
           areaStyle: {},
-          
+
           data: []
         }
       ]
@@ -429,7 +437,7 @@
       chartOption.series[0].data = chartMetaData.chartPoints;
       chartOption.series[1].data = incorrectChartMetaData.chartPoints;
       chartOption.visualMap.pieces = chartMetaData.visualMapPieces;
-      
+
       chart.setOption(chartOption);
     }
 
