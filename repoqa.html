@@ -162,6 +162,7 @@
         "Qwen_slash_Qwen1.5-72B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
+        "bigcode_slash_starcoder2-instruct-15b-v0.1-SCORES.json",
       ];
       const linkMapping = new Map([]);
       const linkPrefix = "https://huggingface.co/";
@@ -182,7 +183,7 @@
       });
       const dataUrlPrefix = "results/repoqa/ntoken_16384/";
       const correctColor = "rgba(72, 200, 120",
-        incorrectColor = "rgba(142, 53, 50";
+        incorrectColor = "rgba(200, 53, 50";
 
       // Load data
       var data = [];
@@ -369,7 +370,7 @@
             type: "line",
             symbol: "none",
             lineStyle: {
-              color: correctColor + ", 0.4)",
+              color: correctColor + ", 0.3)",
               width: 0,
             },
             markLine: {
@@ -384,7 +385,7 @@
             type: "bar",
             symbol: "none",
             lineStyle: {
-              color: incorrectColor + ", 0.4)",
+              color: incorrectColor + ", 0.3)",
               width: 0,
             },
             markLine: {
@@ -468,14 +469,17 @@
       const displayChart = (chartId, results) => {
         chart = echarts.init(document.getElementById(chartId));
 
-        // filter results based on 'best_similar_score' > scoreThrasold
-        results = results.filter(
-          (result) => result["best_similar_score"] >= scoreThresh,
+        correctResults = results.filter(
+          (result) =>
+            result["is_best_similar"] &&
+            result["best_similar_score"] >= scoreThresh,
         );
-
-        correctResults = results.filter((result) => result["is_best_similar"]);
         incorrectResults = results.filter(
-          (result) => !result["is_best_similar"],
+          (result) =>
+            !(
+              result["is_best_similar"] &&
+              result["best_similar_score"] >= scoreThresh
+            ),
         );
 
         chartMetaData = getChartMetaData(correctResults, correctColor);
