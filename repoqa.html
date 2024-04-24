@@ -260,7 +260,7 @@
           var chartCell = document.createElement('td');
           // TODO: Improve format stuff
           chartCell.style.width = '100%';
-          chartCell.style.height = '80px';
+          chartCell.style.height = '65px';
           chartDiv = document.createElement('div');
           chartDiv.setAttribute('id', row['Model']+lang);
           chartDiv.style.width = '100%';
@@ -287,26 +287,30 @@
     var chartOption = {
       grid: {
         top: 0,
-        left: 1,
-        right: 1,
-        bottom: 10
+        left: 8,
+        right: 8,
+        bottom: 20
       },
       xAxis: {
         type: 'value',
         boundaryGap: false,
         min: 0,
         max: 16384,
+        interval: 2048,
         axisLabel: {
           show: true,
-          margin: 0,
+          margin: 5,
           formatter: function (value, index) {
+            if (value == 0) {
+              return '0';
+            }
             return value/1024 + 'k';
           },
-          fontSize: 10
+          fontSize: 10,
         },
         splitLine: {
           lineStyle: {
-            color: 'black',
+            color: 'gray',
             type: 'dashed'
           }
         }
@@ -339,7 +343,7 @@
           data: []
         },
         {
-          type: 'line',
+          type: 'bar',
           symbol: 'none',
           lineStyle: {
             color: incorrectColor + ', 0.4)',
