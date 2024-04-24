@@ -468,18 +468,21 @@
 
       const displayChart = (chartId, results) => {
         chart = echarts.init(document.getElementById(chartId));
-
-        correctResults = results.filter(
+        function partition(array, isValid) {
+          return array.reduce(
+            ([pass, fail], elem) => {
+              return isValid(elem)
+                ? [[...pass, elem], fail]
+                : [pass, [...fail, elem]];
+            },
+            [[], []],
+          );
+        }
+        const [correctResults, incorrectResults] = partition(
+          results,
           (result) =>
             result["is_best_similar"] &&
             result["best_similar_score"] >= scoreThresh,
-        );
-        incorrectResults = results.filter(
-          (result) =>
-            !(
-              result["is_best_similar"] &&
-              result["best_similar_score"] >= scoreThresh
-            ),
         );
 
         chartMetaData = getChartMetaData(correctResults, correctColor);
