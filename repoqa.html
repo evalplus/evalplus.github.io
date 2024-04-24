@@ -180,7 +180,7 @@
       '#',              // rank
       'Model',          // model name
       'Context (16K)',  // context chart
-      'Score (%)',          // score of each language
+      'Score (%)',      // score of each language
     ]
 
     const lang_map = {
@@ -199,6 +199,7 @@
       // headers
       theaders.forEach(function (header) {
         var th = document.createElement('th');
+        th.classList.add('text-nowrap');
         if (header == "Context (16K)") {
           th.colSpan = 2;
         }
@@ -213,7 +214,6 @@
       var rank = 0;
       data.forEach((row) => {
         rowspan = Object.keys(row['results']).length + 1;
-        eval_size = row["eval_size"];
         var dataRow = document.createElement('tr');
         // rank
         var rankCell = document.createElement('td');
@@ -224,17 +224,16 @@
         // model name
         var modelCell = document.createElement('td');
         modelCell.rowSpan = rowspan;
-        if (rank == 1) {
-          modelCell.textContent = '🥇 ';
-        } else if (rank == 2) {
-          modelCell.textContent = '🥈 ';
-        } else if (rank == 3) {
-          modelCell.textContent = '🥉 ';
-        } else {
-          modelCell.textContent = '';
-        }
         var modelLink = document.createElement('a');
-        modelLink.textContent = row['Model'];
+        if (rank == 1) {
+          modelLink.textContent = '🥇 ' + row['Model'];
+        } else if (rank == 2) {
+          modelLink.textContent = '🥈 ' + row['Model'];
+        } else if (rank == 3) {
+          modelLink.textContent = '🥉 ' + row['Model'];
+        } else {
+          modelLink.textContent = row['Model'];
+        }
         if(linkMapping.has(row['Model'])){
           modelLink.href = linkMapping.get(row["Model"]);  
         }
@@ -321,7 +320,7 @@
           symbol: 'none',
           lineStyle: {
             color: correctColor + ', 0.4)',
-            width: 1
+            width: 0
           },
           markLine: {
             symbol: ['none', 'none'],
@@ -336,7 +335,7 @@
           symbol: 'none',
           lineStyle: {
             color: incorrectColor + ', 0.4)',
-            width: 1
+            width: 0
           },
           markLine: {
             symbol: ['none', 'none'],
@@ -457,7 +456,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       var slider = document.getElementById('fixedPointSlider');
       var output = document.getElementById('sliderValue');
-      slider.addEventListener('input', function () {
+      slider.addEventListener('change', function () {
         var sliderValue = this.value;
         output.textContent = (sliderValue / 10).toFixed(1);
         scoreThresh = (sliderValue / 10).toFixed(1);
