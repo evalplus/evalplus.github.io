@@ -216,7 +216,6 @@
       const theaders = [
         "#", // rank
         "Model", // model name
-        // "Context (16K)", // context chart
         "Score (%)", // score of each language
       ];
 
@@ -294,7 +293,7 @@
             } else {
               scoreCell.textContent = "N/A";
             }
-            scoreCell.style.textAlign = "right";
+            scoreCell.style.textAlign = "left";
             dataRow.appendChild(scoreCell);
           }
           tbody.appendChild(dataRow);
@@ -492,17 +491,6 @@
         });
         clearTable();
         displayTable(contextTable);
-        // globalData.forEach((row) => {
-        //   allLangData = [];
-        //   langs = Object.keys(row["results"]);
-        //   for (var i = 0; i < langs.length; i++) {
-        //     if (langs[i] != "all") {
-        //       displayChart(row["Model"] + langs[i], row["results"][langs[i]]);
-        //       allLangData = allLangData.concat(row["results"][langs[i]]);
-        //     }
-        //   }
-        //   displayChart(row["Model"] + "all", allLangData);
-        // });
       };
 
       main();
