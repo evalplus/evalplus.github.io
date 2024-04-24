@@ -320,7 +320,7 @@
                 100 * row["scores"][lang][scoreThresh]["pass@1"]
               ).toFixed(1);
               // remove suffix of .0
-              if (scoreCell.textContent.endsWith(".0")) {
+              if (lang != "all" && scoreCell.textContent.endsWith(".0")) {
                 scoreCell.textContent = scoreCell.textContent.slice(0, -2);
               }
             } else {
