@@ -1,7 +1,7 @@
 {
   "gpt-3.5-turbo-0125": {
-    "eval_date": "2024-04-24 02:50:12.858169",
-    "train_size": null,
+    "eval_date": "2024-04-25 19:29:30.694861",
+    "train_size": "16k",
     "scores": {
       "all": {
         "0.0": { "pass@1": 0.87 },

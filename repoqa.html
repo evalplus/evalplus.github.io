@@ -169,6 +169,9 @@
         "bigcode_slash_starcoder2-instruct-15b-v0.1-SCORES.json",
         "gpt-3.5-turbo-0125-SCORES.json",
         "gpt-4-turbo-2024-04-09-SCORES.json",
+        "microsoft_slash_Phi-3-mini-128k-instruct-SCORES.json",
+        "ise-uiuc_slash_Magicoder-S-DS-6.7B-SCORES.json",
+        "claude-3-haiku-20240307-SCORES.json",
       ];
       const linkMapping = new Map([]);
       const hfLinkPrefix = "https://huggingface.co/";
@@ -229,6 +232,7 @@
       const theaders = [
         "#", // rank
         "Model", // model name
+        "Ctx Size", //training context size
         "Score (%)", // score of each language
       ];
 
@@ -260,6 +264,10 @@
               }
               headerRow.appendChild(th);
             }
+          } else if (header == "Ctx Size") {
+            th.style.textAlign = "right";
+            th.textContent = header;
+            headerRow.appendChild(th);
           } else {
             th.textContent = header;
             headerRow.appendChild(th);
@@ -297,6 +305,12 @@
           modelLink.classList.add("text-nowrap");
           modelCell.appendChild(modelLink);
           dataRow.appendChild(modelCell);
+
+          // Train Size
+          var trainCell = document.createElement("td");
+          trainCell.textContent = row["train_size"];
+          trainCell.style.textAlign = "right";
+          dataRow.appendChild(trainCell);
 
           // score
           var rowLangs = Object.keys(row["scores"]);
