@@ -189,6 +189,18 @@
             </li>
             <li>...More tasks are coming soon... Stay tuned!</li>
           </ul>
+          <pre>
+          <code class="language-shell">
+# Using RepoQA is super easy
+pip install "repoqa[vllm]"
+# RepoQA supports 5 backends
+repoqa.search_needle_function --backend openai    --model "gpt4-turbo"
+repoqa.search_needle_function --backend anthropic --model "claude-3-haiku-20240307"
+repoqa.search_needle_function --backend vllm      --model "Qwen/CodeQwen1.5-7B-Chat"
+repoqa.search_needle_function --backend hf        --model "Qwen/CodeQwen1.5-7B-Chat"
+repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest"
+          </code>
+          </pre>
           <h2 id="task-snf" class="text-nowrap mt-5">
             <b>🔎Searching Needle Function (SNF)</b>
           </h2>
