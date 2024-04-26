@@ -28,6 +28,7 @@
 
       .slider {
         -webkit-appearance: none;
+        appearance: none;
         width: 70%;
         height: 15px;
         border-radius: 5px;
@@ -59,6 +60,12 @@
       .slider-title-container {
         margin-bottom: 10px;
         color: #04aa6d;
+      }
+
+      #sliderValue {
+        background-color: #dddddd; /* Just for visibility */
+        padding: 0 10px; /* Optional styling */
+        border-radius: 5px; /* Optional styling */
       }
 
       body {
@@ -173,8 +180,8 @@
             Tweak 🟢 to select the threshold of match similarity from 0 to 1
           </div>
           <div
-            class="slider-container d-flex flex-row justify-content-center gap-3"
-            style="width: 90%"
+            class="slider-container d-flex flex-row justify-content-center align-items-center gap-3"
+            style="width: 70%"
           >
             <input
               type="range"
@@ -189,6 +196,7 @@
             <div>thresh =</div>
             <div id="sliderValue">0.8</div>
           </div>
+          <br />
           <table
             id="16k"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-3"
