@@ -160,24 +160,44 @@
       </div>
       <div class="container-fluid d-flex flex-row flex-nowrap">
         <div class="container-fluid d-flex flex-column align-items-center">
-          <div id="warning">
-            <b>🔊 The goal of RepoQA</b> is to create a series of long-context
-            code understanding tasks to challenge chat/instruction models for
-            code:
-            <ul>
-              <li>
-                <b><a href="#task-snf">🔍 Searching Needle Function</a>:</b>
-                Retrieve a function given its description.
-              </li>
-              <li>...More tasks are coming soon... Stay tuned!</li>
-            </ul>
-          </div>
+          <b>🔊 The goal of RepoQA</b> is to create a series of long-context
+          code understanding tasks to challenge chat/instruction models for
+          code:
+          <ul>
+            <li>
+              <b>Multi-Lingual:</b> RepoQA covers 50 high-quality respositories
+              from 5 programming langauges.
+            </li>
+            <li>
+              <b>Application-Driven:</b> While <i>"Needle in the Code"</i> by
+              <a href="https://qwenlm.github.io/blog/codeqwen1.5/">CodeQwen</a>
+              uses a synthetic task to exam the vulnerable parts over the code
+              LLM's long context, RepoQA focuses on tasks that can reflect
+              real-world uses.
+            </li>
+            <li>
+              <b>🔍 Searching Needle Function (<a href="#task-snf">🔗</a>):</b>
+              Search a function given its description.
+            </li>
+            <li>...More tasks are coming soon... Stay tuned!</li>
+          </ul>
           <h2 id="task-snf" class="text-nowrap mt-5">
-            <b>🔎Searching Needle Function</b>
+            <b>🔎Searching Needle Function (SNF)</b>
           </h2>
+          <p>
+            <b>Overview:</b>
+            This task ask the model to retrieve 10 needle functions from each of
+            5 langauges x 10 repositories (500 sub-tasks/tests). Each time the
+            model is given a long chunk of source code (following import
+            dependency) and a precise function description, and we ask the model
+            to find the function in the context that corresponds to the
+            description. More details can be found at
+            <a href="#task-snf-how">🔗How It Works</a>.
+          </p>
           <h3 class="text-nowrap mt-5">🏆 Benchmark @ 16K Code Context</h3>
           <div class="slider-title">
             Tweak 🟢 to select the threshold of match similarity from 0 to 1
+            (larger -> closer to exact match)
           </div>
           <div
             class="slider-container d-flex flex-row justify-content-center align-items-center gap-3"
@@ -201,6 +221,37 @@
             id="16k"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-3"
           ></table>
+          <h3 id="task-snf-how" class="text-nowrap mt-5">How It Works</h3>
+          <p>
+            SNF includes 500 sub-tasks from 5 languages x 10 repositories x 10
+            needles. The prompt and expected output are demonstrated in the
+            following figure:
+          </p>
+          <img
+            src="assets/RepoQA-CTX.svg"
+            style="width: 100%; max-width: 1000px"
+          />
+          <p>
+            The evaluator passes a test if the model generated function:
+            <i>(i)</i> has the highest similarity to the ground-truth compared
+            to all other functions; <i>(ii)</i> the similarity is above certain
+            threshold (default is 0.8 but can be user defined). By default, we
+            define the similarity using BLEU score (method 4).
+          </p>
+          <p>
+            The curation of the dataset includes four steps: <i>(i)</i> select
+            permissive repositories based on some quality-based metrics;
+            <i>(ii)</i> collect source code content and analyze their file
+            dependency; <i>(iii)</i> use tree-sitter to parse all functions and
+            select a subset of them as needle functions; <i>(iv)</i> prompt
+            GPT-4 Turbo to generate function description for the needle.
+            Detailed information and scripts for dataset curation can be found
+            at our
+            <a
+              href="https://github.com/evalplus/repoqa/blob/main/docs/curate_dataset.md"
+              >GitHub repo</a
+            >.
+          </p>
         </div>
       </div>
     </div>
