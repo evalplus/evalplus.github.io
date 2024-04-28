@@ -9,7 +9,7 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>Benchmarks Created by the EvalPlus Team</title>
+    <title>Benchmarks by EvalPlus Team</title>
     <link
       rel="icon"
       href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png"
@@ -26,9 +26,13 @@
         color: #000000;
       }
 
+      #content {
+        width: 75%;
+      }
+
       .block {
         height: 40%;
-        width: 80%;
+        width: 90%;
         margin: 20px;
         padding: 20px;
         border: 1px solid #ccc;
@@ -37,7 +41,7 @@
 
       @media screen and (max-width: 1400px) {
         body {
-          font-size: 1.6vw;
+          font-size: 1.9vw;
         }
 
         #content {
@@ -57,28 +61,44 @@
 
   <body>
     <div class="container-fluid d-flex flex-column align-items-center gap-3">
-      <h1 class="text-nowrap mt-5">Benchmarks Created by the EvalPlus Team</h1>
+      <!-- add an image -->
+      <img
+        src="assets/evalplus.png"
+        alt="EvalPlus Logo"
+        style="max-width: 180px; width: 20%"
+        class="mt-5"
+      />
+      <h1 class="text-nowrap mt-5"><b>Benchmarks @ EvalPlus</b></h1>
+      <div class="px-5">
+        <p>
+          EvalPlus team aims to build high-quality benchmarks for evaluating
+          LLMs for code. Below are the benchmarks we have beening building so
+          far:
+        </p>
+      </div>
       <div class="block">
         <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
-          HumanEval & MBPP with Rigorous EvalPlus Tests
+          HumanEval+ & MBPP+
         </h2>
         <p>
-          Explore our detailed leaderboard showcasing AI coding benchmarks using
-          HumanEval and MBPP enhanced by our EvalPlus rigorous tests.
+          HumanEval and MBPP initially came with limited tests. EvalPlus made
+          HumanEval+ & MBPP+ by extending the tests by 80x/35x for rigorous
+          eval.
         </p>
         <a
           class="d-flex flex-row justify-content-center gap-3 text-nowrap"
           href="leaderboard.html"
-          >Go to Leaderboard</a
+          >Go to EvalPlus Leaderboard</a
         >
       </div>
       <div class="block">
         <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
-          RepoQA for Long-Context Code Understanding
+          RepoQA: Long-Context Code Understanding
         </h2>
         <p>
-          Dive into RepoQA, our benchmark for evaluating long-context
-          understanding in coding tasks across multiple languages.
+          Repository understanding is crucial for intelligent code agents. At
+          RepoQA, we are designing evaluators of long-context code
+          understanding.
         </p>
         <a
           class="d-flex flex-row justify-content-center gap-3 text-nowrap"
