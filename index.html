@@ -1,7 +1,91 @@
 <!doctype html>
 <html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
+    rel="stylesheet"
+  />
+
   <head>
-    <title>EvalPlus</title>
-    <meta http-equiv="refresh" content="0; url = ./leaderboard.html" />
+    <meta charset="UTF-8" />
+    <title>Benchmarks Created by the EvalPlus Team</title>
+    <link
+      rel="icon"
+      href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "JetBrains Mono", monospace;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .block {
+        height: 40%;
+        width: 80%;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        body {
+          font-size: 1.6vw;
+        }
+
+        #content {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+      }
+    </style>
   </head>
+
+  <body>
+    <div class="container-fluid d-flex flex-column align-items-center gap-3">
+      <h1 class="text-nowrap mt-5">Benchmarks Created by the EvalPlus Team</h1>
+      <div class="block">
+        <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
+          HumanEval & MBPP with Rigorous EvalPlus Tests
+        </h2>
+        <p>
+          Explore our detailed leaderboard showcasing AI coding benchmarks using
+          HumanEval and MBPP enhanced by our EvalPlus rigorous tests.
+        </p>
+        <a
+          class="d-flex flex-row justify-content-center gap-3 text-nowrap"
+          href="leaderboard.html"
+          >Go to Leaderboard</a
+        >
+      </div>
+      <div class="block">
+        <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
+          RepoQA for Long-Context Code Understanding
+        </h2>
+        <p>
+          Dive into RepoQA, our benchmark for evaluating long-context
+          understanding in coding tasks across multiple languages.
+        </p>
+        <a
+          class="d-flex flex-row justify-content-center gap-3 text-nowrap"
+          href="repoqa.html"
+          >Learn about RepoQA</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
