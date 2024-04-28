@@ -1,7 +1,111 @@
 <!doctype html>
 <html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
+    rel="stylesheet"
+  />
+
   <head>
-    <title>EvalPlus</title>
-    <meta http-equiv="refresh" content="0; url = ./leaderboard.html" />
+    <meta charset="UTF-8" />
+    <title>Benchmarks by EvalPlus Team</title>
+    <link
+      rel="icon"
+      href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "JetBrains Mono", monospace;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      #content {
+        width: 75%;
+      }
+
+      .block {
+        height: 40%;
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        body {
+          font-size: 1.9vw;
+        }
+
+        #content {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+      }
+    </style>
   </head>
+
+  <body>
+    <div class="container-fluid d-flex flex-column align-items-center gap-3">
+      <!-- add an image -->
+      <img
+        src="assets/evalplus.png"
+        alt="EvalPlus Logo"
+        style="max-width: 180px; width: 20%"
+        class="mt-5"
+      />
+      <h1 class="text-nowrap mt-5"><b>Benchmarks @ EvalPlus</b></h1>
+      <div class="px-5">
+        <p>
+          EvalPlus team aims to build high-quality benchmarks for evaluating
+          LLMs for code. Below are the benchmarks we have beening building so
+          far:
+        </p>
+      </div>
+      <div class="block">
+        <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
+          HumanEval+ & MBPP+
+        </h2>
+        <p>
+          HumanEval and MBPP initially came with limited tests. EvalPlus made
+          HumanEval+ & MBPP+ by extending the tests by 80x/35x for rigorous
+          eval.
+        </p>
+        <a
+          class="d-flex flex-row justify-content-center gap-3 text-nowrap"
+          href="leaderboard.html"
+          >Go to EvalPlus Leaderboard</a
+        >
+      </div>
+      <div class="block">
+        <h2 class="d-flex flex-row justify-content-center gap-3 text-nowrap">
+          RepoQA: Long-Context Code Understanding
+        </h2>
+        <p>
+          Repository understanding is crucial for intelligent code agents. At
+          RepoQA, we are designing evaluators of long-context code
+          understanding.
+        </p>
+        <a
+          class="d-flex flex-row justify-content-center gap-3 text-nowrap"
+          href="repoqa.html"
+          >Learn about RepoQA</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
