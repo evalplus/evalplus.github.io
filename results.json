@@ -215,6 +215,18 @@
     "prompted": true,
     "size": 7
   },
+  "Qwen1.5-72B-Chat": {
+    "link": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 67.1,
+      "humaneval+": 58.5,
+      "mbpp": 72.5,
+      "mbpp+": 61.6
+    },
+    "prompted": true,
+    "size": 72
+  },
   "CodeT5+-16B": {
     "link": "https://blog.salesforceairesearch.com/codet5/",
     "open-data": "Full",
@@ -257,8 +269,8 @@
     "pass@1": {
       "humaneval": 64,
       "humaneval+": 56.7,
-      "mbpp": null,
-      "mbpp+": null
+      "mbpp": 74.3,
+      "mbpp+": 63.5
     },
     "prompted": true,
     "size": 104
@@ -587,12 +599,36 @@
     "prompted": true,
     "size": 7.0
   },
-  "Mixtral-8x22B-Instruct-v0.1": {
-    "link": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "databricks/dbrx-instruct": {
+    "link": "https://huggingface.co/databricks/dbrx-instruct",
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 75.0,
       "humaneval+": 70.1,
+      "mbpp": 67.2,
+      "mbpp+": 55.8
+    },
+    "prompted": true,
+    "size": 36
+  },
+  "Mistral-7B-Instruct-v0.2": {
+    "link": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 75.0,
+      "humaneval+": 70.1,
+      "mbpp": 44.7,
+      "mbpp+": 37.0
+    },
+    "prompted": true,
+    "size": 7
+  },
+  "Mixtral-8x22B-Instruct-v0.1": {
+    "link": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 39.6,
+      "humaneval+": 34.1,
       "mbpp": 73.8,
       "mbpp+": 64.3
     },
@@ -730,6 +766,18 @@
     },
     "prompted": false,
     "size": 7.0
+  },
+  "starchat2-15b-v0.1": {
+    "link": "https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1",
+    "open-data": "Full",
+    "pass@1": {
+      "humaneval": 73.8,
+      "humaneval+": 70.7,
+      "mbpp": 74.9,
+      "mbpp+": 64.6
+    },
+    "prompted": true,
+    "size": 15.0
   },
   "StarCoder-15B": {
     "link": "https://huggingface.co/bigcode/starcoder",
