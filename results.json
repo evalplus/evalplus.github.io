@@ -808,9 +808,9 @@
     "open-data": "Full",
     "pass@1": {
       "humaneval": 67.7,
-      "humaneval+": 59.8,
-      "mbpp": 77.8,
-      "mbpp+": 64.6
+      "humaneval+": 60.4,
+      "mbpp": 78.0,
+      "mbpp+": 65.1
     },
     "prompted": true,
     "size": 15.0
