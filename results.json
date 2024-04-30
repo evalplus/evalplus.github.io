@@ -527,6 +527,18 @@
     "prompted": true,
     "size": 8.0
   },
+  "WaveCoder-Ultra-6.7B": {
+    "link": "https://huggingface.co/microsoft/wavecoder-ultra-6.7b",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 73.8,
+      "humaneval+": 67.1,
+      "mbpp": 77.5,
+      "mbpp+": 65.1
+    },
+    "prompted": false,
+    "size": 7.0
+  },
   "Magicoder-S-CL-7B": {
     "link": "https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B",
     "open-data": "Partial",
