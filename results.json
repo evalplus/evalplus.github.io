@@ -803,6 +803,18 @@
     "prompted": false,
     "size": 15.0
   },
+  "starcoder2-15b-instruct-v0.1": {
+    "link": "https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1",
+    "open-data": "Full",
+    "pass@1": {
+      "humaneval": 77.8,
+      "humaneval+": 64.6,
+      "mbpp": 67.7,
+      "mbpp+": 59.8
+    },
+    "prompted": true,
+    "size": 15.0
+  },
   "StarCoder2-15B": {
     "link": "https://huggingface.co/bigcode/starcoder2-15b",
     "open-data": "Full",
