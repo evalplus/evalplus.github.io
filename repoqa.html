@@ -219,26 +219,24 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           </p>
           <h3 class="text-nowrap mt-5">🏆 Benchmark @ 16K Code Context</h3>
           <p>
-            🛠️ <b>Config:</b> The code in the prompt for all models is fixed to
-            16K tokens (by DeepSeekCoder tokenizer). The actual required context
-            size is a bit larger than 16K. We evaluate models trained on at
-            least 8K (half of 16K) as prior work shows that models' functional
-            context can go longer than their trained context. For 8K models, we
-            do
+            🛠️ <b>Config:</b> The code in the prompt is fixed to 16K tokens (by
+            DeepSeekCoder tokenizer). Yet, the required context is a bit larger
+            than 16K so we extend 8K and 16K models using either
             <a
               href="https://www.reddit.com/r/LocalLLaMA/comments/14mrgpr/dynamically_scaled_rope_further_increases/"
               >Dynamic RoPE Scaling</a
             >
-            to extend to 32K.
+            or just no scaling -- whichever is better. For example, RoPE scaling
+            makes Llama 3 models substaintially better and CodeLlama-13B slight
+            better (Credit to @abacaj for the finding!).
           </p>
           <p>
-            <b>📝 Note:</b> This leaderboard serves as an elementary test that
-            focuses on testing LLMs' capabilities on long-context code
-            understanding and retrieval. It does not necessarily lead to simple
-            conclusions like
+            <b>📝 Note:</b> SNF is an elementary test focusing on testing LLMs'
+            capabilities on long-context code understanding and retrieval. It
+            does not lead to simple conclusions like
             <i>"model X is better than Model Y (on everything)"</i>. It's a
-            start point and RepoQA aims to build more indepth and challenging
-            tasks. :D
+            start-point task, and we will include more challenging tasks in the
+            future. :D
           </p>
           <div class="slider-title">
             Drag 🟢 to select the threshold of match similarity (larger ->
@@ -314,12 +312,20 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
               We will build more challenging tasks in the future.
             </li>
             <li>
-              <b>SNF is...:</b> a multi-lingual, application-driven, and
-              comprehensive test that require LLMs to understand NL description
-              before retrieval. Vanilla needle tests often use one sample and is
-              retrieval only (no need to understand descriptions). Many existing
-              needle tests only present synthetic usages of LLMs, whereas SNF in
-              RepoQA reflect the code-search application.
+              Unlike vanilla needle tests which use single test to perform fully
+              synthetic retrieval, SNF is a multi-lingual, application-driven,
+              and comprehensive test that require LLMs to understand NL
+              description before retrieval, which aligns with the use of
+              advanced code search.
+            </li>
+          </ul>
+          <h3 id="limit" class="text-nowrap mt-5">Known Limitations</h3>
+          <ul>
+            <li>
+              The current description is made verbose to avoid one description
+              being mapped to multiple functions. However, in real world,
+              developers may naturally use short description for code search.
+              (Thanks @chrisgorgo for the suggestion!)
             </li>
           </ul>
         </div>
