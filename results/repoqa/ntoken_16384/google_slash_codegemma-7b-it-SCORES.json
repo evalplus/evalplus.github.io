@@ -1,6 +1,6 @@
 {
   "google/codegemma-7b-it": {
-    "eval_date": "2024-04-25 19:29:24.841459",
+    "eval_date": "2024-05-02 02:03:14.666662",
     "train_size": "8k",
     "scores": {
       "all": {

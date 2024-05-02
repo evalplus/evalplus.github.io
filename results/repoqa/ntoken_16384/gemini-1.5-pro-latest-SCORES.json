@@ -1,19 +1,19 @@
 {
   "gemini-1.5-pro-latest": {
-    "eval_date": "2024-04-25 21:42:51.015330",
+    "eval_date": "2024-05-02 02:03:09.316868",
     "train_size": "1000k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.924 },
-        "0.1": { "pass@1": 0.886 },
-        "0.2": { "pass@1": 0.852 },
-        "0.3": { "pass@1": 0.816 },
-        "0.4": { "pass@1": 0.798 },
-        "0.5": { "pass@1": 0.782 },
-        "0.6": { "pass@1": 0.76 },
-        "0.7": { "pass@1": 0.74 },
-        "0.8": { "pass@1": 0.73 },
-        "0.9": { "pass@1": 0.718 },
+        "0.0": { "pass@1": 0.928 },
+        "0.1": { "pass@1": 0.89 },
+        "0.2": { "pass@1": 0.856 },
+        "0.3": { "pass@1": 0.82 },
+        "0.4": { "pass@1": 0.802 },
+        "0.5": { "pass@1": 0.786 },
+        "0.6": { "pass@1": 0.764 },
+        "0.7": { "pass@1": 0.742 },
+        "0.8": { "pass@1": 0.734 },
+        "0.9": { "pass@1": 0.722 },
         "1.0": { "pass@1": 0.65 }
       },
       "python": {
@@ -37,10 +37,10 @@
         "0.4": { "pass@1": 0.77 },
         "0.5": { "pass@1": 0.77 },
         "0.6": { "pass@1": 0.75 },
-        "0.7": { "pass@1": 0.73 },
-        "0.8": { "pass@1": 0.71 },
-        "0.9": { "pass@1": 0.71 },
-        "1.0": { "pass@1": 0.69 }
+        "0.7": { "pass@1": 0.72 },
+        "0.8": { "pass@1": 0.7 },
+        "0.9": { "pass@1": 0.7 },
+        "1.0": { "pass@1": 0.68 }
       },
       "java": {
         "0.0": { "pass@1": 0.98 },
@@ -51,21 +51,21 @@
         "0.5": { "pass@1": 0.94 },
         "0.6": { "pass@1": 0.93 },
         "0.7": { "pass@1": 0.92 },
-        "0.8": { "pass@1": 0.91 },
-        "0.9": { "pass@1": 0.91 },
-        "1.0": { "pass@1": 0.91 }
+        "0.8": { "pass@1": 0.92 },
+        "0.9": { "pass@1": 0.92 },
+        "1.0": { "pass@1": 0.92 }
       },
       "typescript": {
-        "0.0": { "pass@1": 0.95 },
-        "0.1": { "pass@1": 0.94 },
-        "0.2": { "pass@1": 0.9 },
-        "0.3": { "pass@1": 0.82 },
-        "0.4": { "pass@1": 0.79 },
-        "0.5": { "pass@1": 0.75 },
-        "0.6": { "pass@1": 0.7 },
-        "0.7": { "pass@1": 0.66 },
-        "0.8": { "pass@1": 0.66 },
-        "0.9": { "pass@1": 0.6 },
+        "0.0": { "pass@1": 0.97 },
+        "0.1": { "pass@1": 0.96 },
+        "0.2": { "pass@1": 0.92 },
+        "0.3": { "pass@1": 0.84 },
+        "0.4": { "pass@1": 0.81 },
+        "0.5": { "pass@1": 0.77 },
+        "0.6": { "pass@1": 0.72 },
+        "0.7": { "pass@1": 0.68 },
+        "0.8": { "pass@1": 0.68 },
+        "0.9": { "pass@1": 0.62 },
         "1.0": { "pass@1": 0.31 }
       },
       "rust": {
@@ -1603,7 +1603,7 @@
           "name": "sqrt",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.04253875172147839,
+          "best_similar_score": 0.04318838620043973,
           "best_target": "sqrt",
           "position": { "token_start": 13741, "token_end": 13827 }
         },
@@ -1684,7 +1684,7 @@
           "name": "RTE_LCORE_FOREACH_WORKER",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6803749333171202,
           "best_target": "RTE_LCORE_FOREACH_WORKER",
           "position": { "token_start": 12125, "token_end": 12182 }
         },
@@ -2649,7 +2649,7 @@
           "name": "asn1_read_free",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.7788007830714049,
+          "best_similar_score": 1.0,
           "best_target": "asn1_read_free",
           "position": { "token_start": 7170, "token_end": 7186 }
         },
@@ -3029,7 +3029,7 @@
           "name": "formatHeader",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.18214205455493154,
+          "best_similar_score": 0.185612986874714,
           "best_target": "formatHeader",
           "position": { "token_start": 10097, "token_end": 10159 }
         },
@@ -3172,9 +3172,9 @@
           "repo": "langchain-ai/langchainjs",
           "name": "createOpenAIToolsAgent",
           "needle_position": 0.25,
-          "is_best_similar": false,
-          "best_similar_score": 0.006485296533129827,
-          "best_target": "processValue",
+          "is_best_similar": true,
+          "best_similar_score": 0.985611760820714,
+          "best_target": "createOpenAIToolsAgent",
           "position": { "token_start": 3818, "token_end": 4095 }
         },
         {
@@ -3281,7 +3281,7 @@
           "name": "attr",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.11660207482299893,
+          "best_similar_score": 0.11451290485831997,
           "best_target": "attr",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
@@ -3298,9 +3298,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "empty",
           "needle_position": 0.65,
-          "is_best_similar": false,
-          "best_similar_score": 0.0092991042878441,
-          "best_target": "testAppleSelect",
+          "is_best_similar": true,
+          "best_similar_score": 0.9710165517924373,
+          "best_target": "empty",
           "position": { "token_start": 9961, "token_end": 10057 }
         },
         {
@@ -3488,7 +3488,7 @@
           "name": "getFunnel",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.0018354344144307932,
+          "best_similar_score": 0.001841897881450494,
           "best_target": "useLanguageNames",
           "position": { "token_start": 12061, "token_end": 12174 }
         },
@@ -3841,7 +3841,7 @@
           "name": "test_invalid_date_times",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.1517636536182634,
+          "best_similar_score": 0.15304447310013802,
           "best_target": "test_invalid_date_times",
           "position": { "token_start": 10402, "token_end": 10693 }
         },
@@ -3877,7 +3877,7 @@
           "name": "get_config_profile",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.002432605386385471,
+          "best_similar_score": 0.002216041824502084,
           "best_target": "get_config_profile",
           "position": { "token_start": 701, "token_end": 926 }
         },
@@ -3922,7 +3922,7 @@
           "name": "uninstall_one",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.0042207294875994126,
+          "best_similar_score": 0.004230439708931618,
           "best_target": "rebuild_unit_graph_shared",
           "position": { "token_start": 8877, "token_end": 9024 }
         },
@@ -3985,7 +3985,7 @@
           "name": "write_to_buffer",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.02473429157091865,
+          "best_similar_score": 0.02523053457422911,
           "best_target": "write_to_buffer",
           "position": { "token_start": 4001, "token_end": 4098 }
         },
@@ -4021,7 +4021,7 @@
           "name": "test_conn_error_refused",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.007640485861053065,
+          "best_similar_score": 0.007696009446768128,
           "best_target": "test_conn_error_refused",
           "position": { "token_start": 10512, "token_end": 10598 }
         },
@@ -4057,7 +4057,7 @@
           "name": "squeeze_dims",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.38086439518580517,
+          "best_similar_score": 0.38526818335672075,
           "best_target": "squeeze_dims",
           "position": { "token_start": 720, "token_end": 893 }
         },
@@ -4075,7 +4075,7 @@
           "name": "erf_inv_impl",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.3987272570679228,
+          "best_similar_score": 0.39864828381081807,
           "best_target": "erf_inv_impl",
           "position": { "token_start": 3648, "token_end": 4477 }
         },
@@ -4084,7 +4084,7 @@
           "name": "index",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.011349798733555353,
+          "best_similar_score": 0.05086006322322557,
           "best_target": "index",
           "position": { "token_start": 5473, "token_end": 5918 }
         },
@@ -4111,7 +4111,7 @@
           "name": "apply_op1_no_bwd",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.01196657477017549,
+          "best_similar_score": 0.012123323826531713,
           "best_target": "apply_op1_no_bwd",
           "position": { "token_start": 10463, "token_end": 10543 }
         },
@@ -4120,7 +4120,7 @@
           "name": "write_npy",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.15956399774635496,
+          "best_similar_score": 0.16350681949708384,
           "best_target": "write_npy",
           "position": { "token_start": 11382, "token_end": 11440 }
         },
@@ -4129,7 +4129,7 @@
           "name": "dequantize_mul_mat_vec",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.06957538629798612,
+          "best_similar_score": 0.06987208977149555,
           "best_target": "dequantize_mul_mat_vec",
           "position": { "token_start": 13431, "token_end": 14217 }
         },
@@ -4309,7 +4309,7 @@
           "name": "variant",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.08036517486170723,
+          "best_similar_score": 0.08309327583315261,
           "best_target": "variant",
           "position": { "token_start": 13785, "token_end": 13838 }
         },
@@ -4471,7 +4471,7 @@
           "name": "rtn_extend_encoding",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.09292097896747219,
+          "best_similar_score": 0.09289455385691606,
           "best_target": "rtn_extend_encoding",
           "position": { "token_start": 10204, "token_end": 10848 }
         },
@@ -4543,7 +4543,7 @@
           "name": "dynamic_title_ignoring_options_by_default",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.014164161559123022,
+          "best_similar_score": 0.01433959140657983,
           "best_target": "dynamic_title_ignoring_options_by_default",
           "position": { "token_start": 7214, "token_end": 7296 }
         },
@@ -4552,7 +4552,7 @@
           "name": "keyboard_input",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.9867102250666446,
+          "best_similar_score": 0.986754179263989,
           "best_target": "keyboard_input",
           "position": { "token_start": 8660, "token_end": 9050 }
         },
@@ -4579,7 +4579,7 @@
           "name": "term_options",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.00627477865855757,
+          "best_similar_score": 0.006115198783738274,
           "best_target": "negative_url_parsing_regex_test",
           "position": { "token_start": 13716, "token_end": 13843 }
         },

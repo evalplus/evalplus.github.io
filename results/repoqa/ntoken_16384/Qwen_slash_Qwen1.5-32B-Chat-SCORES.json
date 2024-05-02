@@ -1,19 +1,19 @@
 {
   "Qwen/Qwen1.5-32B-Chat": {
-    "eval_date": "2024-04-25 19:30:45.264883",
+    "eval_date": "2024-05-02 02:04:37.940821",
     "train_size": "32k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.708 },
-        "0.1": { "pass@1": 0.59 },
-        "0.2": { "pass@1": 0.558 },
-        "0.3": { "pass@1": 0.52 },
-        "0.4": { "pass@1": 0.484 },
-        "0.5": { "pass@1": 0.446 },
-        "0.6": { "pass@1": 0.392 },
-        "0.7": { "pass@1": 0.37 },
-        "0.8": { "pass@1": 0.334 },
-        "0.9": { "pass@1": 0.274 },
+        "0.0": { "pass@1": 0.718 },
+        "0.1": { "pass@1": 0.598 },
+        "0.2": { "pass@1": 0.564 },
+        "0.3": { "pass@1": 0.526 },
+        "0.4": { "pass@1": 0.49 },
+        "0.5": { "pass@1": 0.452 },
+        "0.6": { "pass@1": 0.398 },
+        "0.7": { "pass@1": 0.376 },
+        "0.8": { "pass@1": 0.338 },
+        "0.9": { "pass@1": 0.278 },
         "1.0": { "pass@1": 0.19 }
       },
       "python": {
@@ -32,8 +32,8 @@
       "cpp": {
         "0.0": { "pass@1": 0.63 },
         "0.1": { "pass@1": 0.53 },
-        "0.2": { "pass@1": 0.48 },
-        "0.3": { "pass@1": 0.43 },
+        "0.2": { "pass@1": 0.47 },
+        "0.3": { "pass@1": 0.42 },
         "0.4": { "pass@1": 0.41 },
         "0.5": { "pass@1": 0.38 },
         "0.6": { "pass@1": 0.32 },
@@ -69,16 +69,16 @@
         "1.0": { "pass@1": 0.14 }
       },
       "typescript": {
-        "0.0": { "pass@1": 0.78 },
-        "0.1": { "pass@1": 0.69 },
-        "0.2": { "pass@1": 0.66 },
-        "0.3": { "pass@1": 0.62 },
-        "0.4": { "pass@1": 0.57 },
-        "0.5": { "pass@1": 0.55 },
-        "0.6": { "pass@1": 0.52 },
-        "0.7": { "pass@1": 0.5 },
-        "0.8": { "pass@1": 0.46 },
-        "0.9": { "pass@1": 0.4 },
+        "0.0": { "pass@1": 0.83 },
+        "0.1": { "pass@1": 0.73 },
+        "0.2": { "pass@1": 0.7 },
+        "0.3": { "pass@1": 0.66 },
+        "0.4": { "pass@1": 0.6 },
+        "0.5": { "pass@1": 0.58 },
+        "0.6": { "pass@1": 0.55 },
+        "0.7": { "pass@1": 0.53 },
+        "0.8": { "pass@1": 0.48 },
+        "0.9": { "pass@1": 0.42 },
         "1.0": { "pass@1": 0.24 }
       }
     },
@@ -305,7 +305,7 @@
           "name": "test_custom_ssl_context_fail_with_bad_context",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.43548358847760243,
+          "best_similar_score": 0.42656531094660355,
           "best_target": "test_custom_ssl_context_fail_with_bad_context",
           "position": { "token_start": 7129, "token_end": 7363 }
         },
@@ -800,7 +800,7 @@
           "name": "_normalize_nested_options",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.21167847554248745,
+          "best_similar_score": 0.20888388700256605,
           "best_target": "_normalize_nested_options",
           "position": { "token_start": 15237, "token_end": 15446 }
         },
@@ -1315,7 +1315,7 @@
           "name": "utf8_get_len",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.06059168239395757,
+          "best_similar_score": 0.06013837547678527,
           "best_target": "utf8_get_len",
           "position": { "token_start": 10213, "token_end": 10463 }
         },
@@ -1738,7 +1738,7 @@
           "name": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.3085674385738123,
+          "best_similar_score": 0.1270253116976755,
           "best_target": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
           "position": { "token_start": 5571, "token_end": 5746 }
         },
@@ -1974,7 +1974,7 @@
           "name": "has",
           "needle_position": 0.95,
           "is_best_similar": false,
-          "best_similar_score": 0.008261611121059845,
+          "best_similar_score": 0.008408831139847174,
           "best_target": "getAsJsonNull",
           "position": { "token_start": 10374, "token_end": 10397 }
         },
@@ -2055,7 +2055,7 @@
           "name": "callAdapter",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.0053887512146536054,
+          "best_similar_score": 0.005430957267381821,
           "best_target": "getRawCall",
           "position": { "token_start": 13697, "token_end": 13733 }
         },
@@ -2775,7 +2775,7 @@
           "name": "getNumChunks",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.028051604056085533,
+          "best_similar_score": 0.026936851496754878,
           "best_target": "getInputs",
           "position": { "token_start": 13455, "token_end": 13511 }
         },
@@ -2804,7 +2804,7 @@
           "name": "i16_tests",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.017756403208943325,
+          "best_similar_score": 0.017879948857967454,
           "best_target": "test_complete_byte_consumption_bits",
           "position": { "token_start": 2310, "token_end": 2550 }
         },
@@ -3173,7 +3173,7 @@
           "name": "erf_inv_impl",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.007313425995364251,
+          "best_similar_score": 0.007469938459592591,
           "best_target": "striding_error",
           "position": { "token_start": 3648, "token_end": 4477 }
         },
@@ -3200,7 +3200,7 @@
           "name": "unary_map",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.004390676807929259,
+          "best_similar_score": 0.004418786468766005,
           "best_target": "unary_map",
           "position": { "token_start": 8776, "token_end": 9109 }
         },
@@ -3877,7 +3877,7 @@
           "name": "done",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.010213489324855638,
+          "best_similar_score": 0.010479097231107725,
           "best_target": "CanceledError",
           "position": { "token_start": 774, "token_end": 839 }
         },
@@ -3994,7 +3994,7 @@
           "name": "intervalToDuration",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.00945476081986844,
+          "best_similar_score": 0.009397459232475902,
           "best_target": "formatTimezoneShort",
           "position": { "token_start": 5234, "token_end": 5585 }
         },
@@ -4101,9 +4101,9 @@
           "repo": "langchain-ai/langchainjs",
           "name": "createOpenAIFunctionsAgent",
           "needle_position": 0.55,
-          "is_best_similar": false,
-          "best_similar_score": 0.006681818194687343,
-          "best_target": "createOpenAIToolsAgent",
+          "is_best_similar": true,
+          "best_similar_score": 0.7950148743558378,
+          "best_target": "createOpenAIFunctionsAgent",
           "position": { "token_start": 8640, "token_end": 8926 }
         },
         {
@@ -4155,9 +4155,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "insertAfter",
           "needle_position": 0.15,
-          "is_best_similar": false,
-          "best_similar_score": 0.006886818367406171,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9893049153303822,
+          "best_target": "insertAfter",
           "position": { "token_start": 2164, "token_end": 2430 }
         },
         {
@@ -4173,18 +4173,18 @@
           "repo": "cheeriojs/cheerio",
           "name": "toggleClass",
           "needle_position": 0.35,
-          "is_best_similar": false,
-          "best_similar_score": 0.007633935801913548,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.39003464432178375,
+          "best_target": "toggleClass",
           "position": { "token_start": 5154, "token_end": 5665 }
         },
         {
           "repo": "cheeriojs/cheerio",
           "name": "attr",
           "needle_position": 0.45,
-          "is_best_similar": false,
-          "best_similar_score": 0.026346169908714245,
-          "best_target": "setCss",
+          "is_best_similar": true,
+          "best_similar_score": 0.017173214867121374,
+          "best_target": "attr",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
         {
@@ -4237,7 +4237,7 @@
           "name": "getBrowserInfo",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.6617995560988076,
+          "best_similar_score": 0.6666482286137286,
           "best_target": "getBrowserInfo",
           "position": { "token_start": 589, "token_end": 1034 }
         },
@@ -4533,9 +4533,9 @@
           "repo": "firebase/firebase-admin-node",
           "name": "getMessaging",
           "needle_position": 0.35,
-          "is_best_similar": false,
-          "best_similar_score": 0.005817688765505478,
-          "best_target": "validateTestPhoneNumbers",
+          "is_best_similar": true,
+          "best_similar_score": 0.9661049965255963,
+          "best_target": "getMessaging",
           "position": { "token_start": 5569, "token_end": 5643 }
         },
         {

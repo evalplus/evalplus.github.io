@@ -1,20 +1,20 @@
 {
   "gpt-3.5-turbo-0125": {
-    "eval_date": "2024-04-25 19:29:30.694861",
+    "eval_date": "2024-05-02 02:03:20.616860",
     "train_size": "16k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.87 },
-        "0.1": { "pass@1": 0.776 },
-        "0.2": { "pass@1": 0.742 },
-        "0.3": { "pass@1": 0.732 },
-        "0.4": { "pass@1": 0.718 },
-        "0.5": { "pass@1": 0.694 },
-        "0.6": { "pass@1": 0.664 },
-        "0.7": { "pass@1": 0.632 },
-        "0.8": { "pass@1": 0.594 },
-        "0.9": { "pass@1": 0.55 },
-        "1.0": { "pass@1": 0.468 }
+        "0.0": { "pass@1": 0.878 },
+        "0.1": { "pass@1": 0.79 },
+        "0.2": { "pass@1": 0.752 },
+        "0.3": { "pass@1": 0.742 },
+        "0.4": { "pass@1": 0.73 },
+        "0.5": { "pass@1": 0.706 },
+        "0.6": { "pass@1": 0.674 },
+        "0.7": { "pass@1": 0.642 },
+        "0.8": { "pass@1": 0.604 },
+        "0.9": { "pass@1": 0.562 },
+        "1.0": { "pass@1": 0.47 }
       },
       "python": {
         "0.0": { "pass@1": 0.77 },
@@ -31,16 +31,16 @@
       },
       "cpp": {
         "0.0": { "pass@1": 0.87 },
-        "0.1": { "pass@1": 0.78 },
+        "0.1": { "pass@1": 0.8 },
         "0.2": { "pass@1": 0.76 },
         "0.3": { "pass@1": 0.75 },
-        "0.4": { "pass@1": 0.74 },
-        "0.5": { "pass@1": 0.72 },
+        "0.4": { "pass@1": 0.75 },
+        "0.5": { "pass@1": 0.73 },
         "0.6": { "pass@1": 0.67 },
         "0.7": { "pass@1": 0.65 },
         "0.8": { "pass@1": 0.65 },
-        "0.9": { "pass@1": 0.59 },
-        "1.0": { "pass@1": 0.49 }
+        "0.9": { "pass@1": 0.6 },
+        "1.0": { "pass@1": 0.5 }
       },
       "java": {
         "0.0": { "pass@1": 0.95 },
@@ -56,16 +56,16 @@
         "1.0": { "pass@1": 0.72 }
       },
       "typescript": {
-        "0.0": { "pass@1": 0.9 },
-        "0.1": { "pass@1": 0.85 },
-        "0.2": { "pass@1": 0.8 },
-        "0.3": { "pass@1": 0.78 },
-        "0.4": { "pass@1": 0.77 },
-        "0.5": { "pass@1": 0.73 },
-        "0.6": { "pass@1": 0.67 },
-        "0.7": { "pass@1": 0.62 },
-        "0.8": { "pass@1": 0.53 },
-        "0.9": { "pass@1": 0.43 },
+        "0.0": { "pass@1": 0.94 },
+        "0.1": { "pass@1": 0.9 },
+        "0.2": { "pass@1": 0.85 },
+        "0.3": { "pass@1": 0.83 },
+        "0.4": { "pass@1": 0.82 },
+        "0.5": { "pass@1": 0.78 },
+        "0.6": { "pass@1": 0.72 },
+        "0.7": { "pass@1": 0.67 },
+        "0.8": { "pass@1": 0.58 },
+        "0.9": { "pass@1": 0.48 },
         "1.0": { "pass@1": 0.26 }
       },
       "rust": {
@@ -89,7 +89,7 @@
           "name": "_merge_string_group",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.01052857177091985,
+          "best_similar_score": 0.010588135710488944,
           "best_target": "visit",
           "position": { "token_start": 508, "token_end": 1066 }
         },
@@ -134,7 +134,7 @@
           "name": "maybe_install_uvloop",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.015334261564930798,
+          "best_similar_score": 0.015224516501661975,
           "best_target": "visit",
           "position": { "token_start": 8833, "token_end": 8922 }
         },
@@ -179,7 +179,7 @@
           "name": "_find_best_version_for_package",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.007042674825202109,
+          "best_similar_score": 0.0070851266145340935,
           "best_target": "_find_best_version_for_package",
           "position": { "token_start": 705, "token_end": 894 }
         },
@@ -197,7 +197,7 @@
           "name": "_validate_group_options",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.024723948868464768,
+          "best_similar_score": 0.02491542093027717,
           "best_target": "_validate_group_options",
           "position": { "token_start": 3886, "token_end": 4116 }
         },
@@ -215,7 +215,7 @@
           "name": "_display_complete_info",
           "needle_position": 0.45,
           "is_best_similar": false,
-          "best_similar_score": 0.004897640839039046,
+          "best_similar_score": 0.00493200438923766,
           "best_target": "_validate_group_options",
           "position": { "token_start": 6960, "token_end": 7426 }
         },
@@ -233,7 +233,7 @@
           "name": "_do_execute_operation",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.004509488031155086,
+          "best_similar_score": 0.00453485130449356,
           "best_target": "_do_execute_operation",
           "position": { "token_start": 10271, "token_end": 10593 }
         },
@@ -278,7 +278,7 @@
           "name": "rename_request",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.008293282586065999,
+          "best_similar_score": 0.008353076645357805,
           "best_target": "test_worker_heartbeat_messages_sent_to_master",
           "position": { "token_start": 2358, "token_end": 2422 }
         },
@@ -359,7 +359,7 @@
           "name": "maybe_init_stream",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.00895641917198852,
+          "best_similar_score": 0.008950041559473407,
           "best_target": "tree",
           "position": { "token_start": 756, "token_end": 819 }
         },
@@ -386,7 +386,7 @@
           "name": "num_node_labels",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.011520835252100741,
+          "best_similar_score": 0.01166549525107691,
           "best_target": "read_from_memlab",
           "position": { "token_start": 5629, "token_end": 5655 }
         },
@@ -395,7 +395,7 @@
           "name": "__collate__",
           "needle_position": 0.45,
           "is_best_similar": false,
-          "best_similar_score": 0.009264421568148775,
+          "best_similar_score": 0.009307138171653712,
           "best_target": "to_scipy_sparse_matrix",
           "position": { "token_start": 7004, "token_end": 7512 }
         },
@@ -413,7 +413,7 @@
           "name": "to_scipy_sparse_matrix",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.07685591897456436,
+          "best_similar_score": 0.07742737778917227,
           "best_target": "to_scipy_sparse_matrix",
           "position": { "token_start": 10274, "token_end": 10716 }
         },
@@ -440,7 +440,7 @@
           "name": "get_self_loop_attr",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.022746482579648564,
+          "best_similar_score": 0.02286589078998707,
           "best_target": "get_self_loop_attr",
           "position": { "token_start": 14965, "token_end": 15603 }
         },
@@ -449,7 +449,7 @@
           "name": "_get_arch",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.009942803496832754,
+          "best_similar_score": 0.01003032443392158,
           "best_target": "_transform_value",
           "position": { "token_start": 735, "token_end": 843 }
         },
@@ -458,7 +458,7 @@
           "name": "to_custom_raw_response_wrapper",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.008447404132076992,
+          "best_similar_score": 0.008501140393173751,
           "best_target": "to_custom_raw_response_wrapper",
           "position": { "token_start": 2261, "token_end": 2527 }
         },
@@ -503,7 +503,7 @@
           "name": "_construct_field",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.006933632884088542,
+          "best_similar_score": 0.006967641224989747,
           "best_target": "_primitive_value_to_str",
           "position": { "token_start": 10316, "token_end": 10446 }
         },
@@ -512,7 +512,7 @@
           "name": "_basic_config",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.011222329254379892,
+          "best_similar_score": 0.01133524635229813,
           "best_target": "_transform_value",
           "position": { "token_start": 12002, "token_end": 12148 }
         },
@@ -566,7 +566,7 @@
           "name": "get_param_set_item",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.0255576828124886,
+          "best_similar_score": 0.025690337120449967,
           "best_target": "get_param_set_item",
           "position": { "token_start": 5447, "token_end": 5862 }
         },
@@ -611,7 +611,7 @@
           "name": "softmax_1xn_sch_func",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.00726733165971764,
+          "best_similar_score": 0.007304354753219471,
           "best_target": "get_param_set_item",
           "position": { "token_start": 13651, "token_end": 14154 }
         },
@@ -656,7 +656,7 @@
           "name": "use",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.0086355013736104,
+          "best_similar_score": 0.008702501756143637,
           "best_target": "set_context_provider",
           "position": { "token_start": 5565, "token_end": 5652 }
         },
@@ -674,7 +674,7 @@
           "name": "stop_server",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.005852023599790949,
+          "best_similar_score": 0.0059009265151971566,
           "best_target": "set_context_provider",
           "position": { "token_start": 8800, "token_end": 8853 }
         },
@@ -728,7 +728,7 @@
           "name": "store_error",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.01041759615336308,
+          "best_similar_score": 0.010475119075965541,
           "best_target": "store_error",
           "position": { "token_start": 2336, "token_end": 2471 }
         },
@@ -764,7 +764,7 @@
           "name": "_run_validator",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.010159563081370886,
+          "best_similar_score": 0.010205943854839115,
           "best_target": "register",
           "position": { "token_start": 8818, "token_end": 8979 }
         },
@@ -809,7 +809,7 @@
           "name": "test_eth_get_logs_with_logs_none_topic_args",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.008115922608521542,
+          "best_similar_score": 0.00818167445797657,
           "best_target": "data_tree_map",
           "position": { "token_start": 747, "token_end": 853 }
         },
@@ -818,7 +818,7 @@
           "name": "_get_response_for_request_id",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.046451568561123216,
+          "best_similar_score": 0.04631468681757428,
           "best_target": "_get_response_for_request_id",
           "position": { "token_start": 2195, "token_end": 2635 }
         },
@@ -827,7 +827,7 @@
           "name": "get_default_middlewares",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.005272000102247913,
+          "best_similar_score": 0.005319712795222671,
           "best_target": "data_tree_map",
           "position": { "token_start": 3935, "token_end": 4072 }
         },
@@ -854,7 +854,7 @@
           "name": "data_tree_map",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.007000750365772455,
+          "best_similar_score": 0.007042674825202109,
           "best_target": "data_tree_map",
           "position": { "token_start": 8725, "token_end": 8895 }
         },
@@ -863,7 +863,7 @@
           "name": "test_gas_price_strategy_hex_value",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.009026242878896971,
+          "best_similar_score": 0.009014529239617321,
           "best_target": "_get_response_for_request_id",
           "position": { "token_start": 10417, "token_end": 10707 }
         },
@@ -899,7 +899,7 @@
           "name": "chars_to_byte",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.010306007410192775,
+          "best_similar_score": 0.010406387686546793,
           "best_target": "sortlistwithdict",
           "position": { "token_start": 770, "token_end": 814 }
         },
@@ -908,7 +908,7 @@
           "name": "__ge__",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.007032213019349812,
+          "best_similar_score": 0.007104934076936922,
           "best_target": "binary_to_ascii",
           "position": { "token_start": 1653, "token_end": 1687 }
         },
@@ -971,7 +971,7 @@
           "name": "getSentenceCombo",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.04713014372231467,
+          "best_similar_score": 0.047356194061549825,
           "best_target": "getSentenceCombo",
           "position": { "token_start": 13535, "token_end": 13841 }
         },
@@ -1108,7 +1108,7 @@
           "name": "write_req",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.04006293477226463,
+          "best_similar_score": 0.11809858631445573,
           "best_target": "write_req",
           "position": { "token_start": 5567, "token_end": 5664 }
         },
@@ -1117,7 +1117,7 @@
           "name": "recv",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.006019220642757884,
+          "best_similar_score": 0.00610232513021697,
           "best_target": "recv",
           "position": { "token_start": 7238, "token_end": 7289 }
         },
@@ -1405,7 +1405,7 @@
           "name": "ListenerInfo",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.023888992699399522,
+          "best_similar_score": 0.024053187878432476,
           "best_target": "ListenerInfo",
           "position": { "token_start": 10425, "token_end": 10581 }
         },
@@ -1459,7 +1459,7 @@
           "name": "Thunk",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.805312203079627,
+          "best_similar_score": 1.0,
           "best_target": "Thunk",
           "position": { "token_start": 4044, "token_end": 4085 }
         },
@@ -1540,7 +1540,7 @@
           "name": "vmap_trace",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.9815093651412945,
+          "best_similar_score": 0.9857861956826753,
           "best_target": "vmap_trace",
           "position": { "token_start": 2074, "token_end": 2788 }
         },
@@ -1567,7 +1567,7 @@
           "name": "copy_inplace_dispatch",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.3131982655486462,
+          "best_similar_score": 0.5616596855157713,
           "best_target": "copy_inplace_dispatch",
           "position": { "token_start": 7054, "token_end": 7592 }
         },
@@ -1603,7 +1603,7 @@
           "name": "sqrt",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.006824650227982344,
+          "best_similar_score": 0.006879940722485379,
           "best_target": "unpack_32_4",
           "position": { "token_start": 13741, "token_end": 13827 }
         },
@@ -1630,7 +1630,7 @@
           "name": "sharded_parallel_for_each",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.03528557808129226,
+          "best_similar_score": 0.16564565321939204,
           "best_target": "sharded_parallel_for_each",
           "position": { "token_start": 2313, "token_end": 2410 }
         },
@@ -1756,7 +1756,7 @@
           "name": "WasmEdge_CompilerContext",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.003615745825696601,
+          "best_similar_score": 0.003643324444456646,
           "best_target": "loadPlugins",
           "position": { "token_start": 8876, "token_end": 8917 }
         },
@@ -2343,7 +2343,7 @@
           "name": "freeFloatingYoungBlock",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.15353664176418552,
+          "best_similar_score": 0.15476013802256613,
           "best_target": "freeFloatingYoungBlock",
           "position": { "token_start": 700, "token_end": 915 }
         },
@@ -2948,7 +2948,7 @@
           "name": "Route",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.012073611356094145,
+          "best_similar_score": 0.012459334764811482,
           "best_target": "logerror",
           "position": { "token_start": 11483, "token_end": 11534 }
         },
@@ -2975,7 +2975,7 @@
           "name": "done",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.003774018946135332,
+          "best_similar_score": 0.0038009296042592054,
           "best_target": "buildURL",
           "position": { "token_start": 774, "token_end": 839 }
         },
@@ -3253,9 +3253,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "insertAfter",
           "needle_position": 0.15,
-          "is_best_similar": false,
-          "best_similar_score": 0.006886818367406171,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9893049153303822,
+          "best_target": "insertAfter",
           "position": { "token_start": 2164, "token_end": 2430 }
         },
         {
@@ -3271,9 +3271,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "toggleClass",
           "needle_position": 0.35,
-          "is_best_similar": false,
-          "best_similar_score": 0.0008489575573512177,
-          "best_target": "insertAfter",
+          "is_best_similar": true,
+          "best_similar_score": 0.9955456643969636,
+          "best_target": "toggleClass",
           "position": { "token_start": 5154, "token_end": 5665 }
         },
         {
@@ -3281,7 +3281,7 @@
           "name": "attr",
           "needle_position": 0.45,
           "is_best_similar": false,
-          "best_similar_score": 0.006189600670345497,
+          "best_similar_score": 0.006182517110688905,
           "best_target": "toggleClass",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
@@ -3298,9 +3298,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "empty",
           "needle_position": 0.65,
-          "is_best_similar": false,
-          "best_similar_score": 0.0074017312707499875,
-          "best_target": "is",
+          "is_best_similar": true,
+          "best_similar_score": 0.9710165517924373,
+          "best_target": "empty",
           "position": { "token_start": 9961, "token_end": 10057 }
         },
         {
@@ -3316,9 +3316,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "appendTo",
           "needle_position": 0.85,
-          "is_best_similar": false,
-          "best_similar_score": 0.007411475045569079,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9574533680683809,
+          "best_target": "appendTo",
           "position": { "token_start": 13138, "token_end": 13222 }
         },
         {
@@ -3470,7 +3470,7 @@
           "name": "getWebsiteStats",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.003695677986058068,
+          "best_similar_score": 0.0037214022850064767,
           "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 8824, "token_end": 8928 }
         },
@@ -3497,7 +3497,7 @@
           "name": "updateTeam",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.004155446233506524,
+          "best_similar_score": 0.004192667363374663,
           "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 13699, "token_end": 13785 }
         },
@@ -3632,7 +3632,7 @@
           "name": "getMessaging",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.007213727908218376,
+          "best_similar_score": 0.9661049965255963,
           "best_target": "getMessaging",
           "position": { "token_start": 5569, "token_end": 5643 }
         },
@@ -4273,7 +4273,7 @@
           "name": "format_u8",
           "needle_position": 0.45,
           "is_best_similar": false,
-          "best_similar_score": 0.0053181413660150206,
+          "best_similar_score": 0.005354759636657032,
           "best_target": "serialize_i128",
           "position": { "token_start": 7159, "token_end": 7389 }
         },

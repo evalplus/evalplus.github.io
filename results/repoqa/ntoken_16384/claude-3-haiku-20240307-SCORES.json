@@ -1,20 +1,20 @@
 {
   "claude-3-haiku-20240307": {
-    "eval_date": "2024-04-25 19:28:49.235231",
+    "eval_date": "2024-05-02 02:02:19.686636",
     "train_size": "200k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.914 },
-        "0.1": { "pass@1": 0.866 },
-        "0.2": { "pass@1": 0.85 },
-        "0.3": { "pass@1": 0.846 },
-        "0.4": { "pass@1": 0.838 },
-        "0.5": { "pass@1": 0.832 },
-        "0.6": { "pass@1": 0.818 },
-        "0.7": { "pass@1": 0.814 },
-        "0.8": { "pass@1": 0.81 },
-        "0.9": { "pass@1": 0.79 },
-        "1.0": { "pass@1": 0.704 }
+        "0.0": { "pass@1": 0.926 },
+        "0.1": { "pass@1": 0.876 },
+        "0.2": { "pass@1": 0.858 },
+        "0.3": { "pass@1": 0.854 },
+        "0.4": { "pass@1": 0.846 },
+        "0.5": { "pass@1": 0.84 },
+        "0.6": { "pass@1": 0.826 },
+        "0.7": { "pass@1": 0.822 },
+        "0.8": { "pass@1": 0.818 },
+        "0.9": { "pass@1": 0.798 },
+        "1.0": { "pass@1": 0.706 }
       },
       "python": {
         "0.0": { "pass@1": 0.94 },
@@ -53,24 +53,24 @@
         "0.7": { "pass@1": 0.91 },
         "0.8": { "pass@1": 0.9 },
         "0.9": { "pass@1": 0.89 },
-        "1.0": { "pass@1": 0.86 }
+        "1.0": { "pass@1": 0.87 }
       },
       "typescript": {
-        "0.0": { "pass@1": 0.94 },
-        "0.1": { "pass@1": 0.9 },
-        "0.2": { "pass@1": 0.87 },
-        "0.3": { "pass@1": 0.86 },
-        "0.4": { "pass@1": 0.86 },
-        "0.5": { "pass@1": 0.86 },
-        "0.6": { "pass@1": 0.86 },
-        "0.7": { "pass@1": 0.86 },
-        "0.8": { "pass@1": 0.86 },
-        "0.9": { "pass@1": 0.82 },
+        "0.0": { "pass@1": 0.99 },
+        "0.1": { "pass@1": 0.94 },
+        "0.2": { "pass@1": 0.91 },
+        "0.3": { "pass@1": 0.9 },
+        "0.4": { "pass@1": 0.9 },
+        "0.5": { "pass@1": 0.9 },
+        "0.6": { "pass@1": 0.9 },
+        "0.7": { "pass@1": 0.9 },
+        "0.8": { "pass@1": 0.9 },
+        "0.9": { "pass@1": 0.86 },
         "1.0": { "pass@1": 0.5 }
       },
       "rust": {
-        "0.0": { "pass@1": 0.87 },
-        "0.1": { "pass@1": 0.78 },
+        "0.0": { "pass@1": 0.88 },
+        "0.1": { "pass@1": 0.79 },
         "0.2": { "pass@1": 0.78 },
         "0.3": { "pass@1": 0.77 },
         "0.4": { "pass@1": 0.76 },
@@ -2091,7 +2091,7 @@
           "name": "karateLocator",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.9200444146293233,
+          "best_similar_score": 1.0,
           "best_target": "karateLocator",
           "position": { "token_start": 4041, "token_end": 4074 }
         },
@@ -3029,7 +3029,7 @@
           "name": "formatHeader",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.08445274226031542,
+          "best_similar_score": 0.08867522604030831,
           "best_target": "formatHeader",
           "position": { "token_start": 10097, "token_end": 10159 }
         },
@@ -3253,9 +3253,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "insertAfter",
           "needle_position": 0.15,
-          "is_best_similar": false,
-          "best_similar_score": 0.006886818367406171,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9893049153303822,
+          "best_target": "insertAfter",
           "position": { "token_start": 2164, "token_end": 2430 }
         },
         {
@@ -3271,18 +3271,18 @@
           "repo": "cheeriojs/cheerio",
           "name": "toggleClass",
           "needle_position": 0.35,
-          "is_best_similar": false,
-          "best_similar_score": 0.007633935801913548,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9955456643969636,
+          "best_target": "toggleClass",
           "position": { "token_start": 5154, "token_end": 5665 }
         },
         {
           "repo": "cheeriojs/cheerio",
           "name": "attr",
           "needle_position": 0.45,
-          "is_best_similar": false,
-          "best_similar_score": 0.00787152183751198,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.031247163937594996,
+          "best_target": "attr",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
         {
@@ -3298,9 +3298,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "empty",
           "needle_position": 0.65,
-          "is_best_similar": false,
-          "best_similar_score": 0.0092991042878441,
-          "best_target": "testAppleSelect",
+          "is_best_similar": true,
+          "best_similar_score": 0.9710165517924373,
+          "best_target": "empty",
           "position": { "token_start": 9961, "token_end": 10057 }
         },
         {
@@ -3316,9 +3316,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "appendTo",
           "needle_position": 0.85,
-          "is_best_similar": false,
-          "best_similar_score": 0.007411475045569079,
-          "best_target": "empty",
+          "is_best_similar": true,
+          "best_similar_score": 0.9574533680683809,
+          "best_target": "appendTo",
           "position": { "token_start": 13138, "token_end": 13222 }
         },
         {
@@ -3777,9 +3777,9 @@
           "repo": "rust-bakery/nom",
           "name": "length_count",
           "needle_position": 0.95,
-          "is_best_similar": false,
-          "best_similar_score": 0.007313425995364251,
-          "best_target": "many1_count",
+          "is_best_similar": true,
+          "best_similar_score": 0.15703864880261398,
+          "best_target": "length_count",
           "position": { "token_start": 15412, "token_end": 15559 }
         },
         {
@@ -4237,8 +4237,8 @@
           "name": "newtype_variant",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0,
-          "best_target": null,
+          "best_similar_score": 0.009795755121163109,
+          "best_target": "serialize_entry",
           "position": { "token_start": 783, "token_end": 836 }
         },
         {

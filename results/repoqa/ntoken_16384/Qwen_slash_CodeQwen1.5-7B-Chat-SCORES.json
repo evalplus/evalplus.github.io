@@ -1,19 +1,19 @@
 {
   "Qwen/CodeQwen1.5-7B-Chat": {
-    "eval_date": "2024-04-25 19:30:33.368485",
+    "eval_date": "2024-05-02 02:04:26.138610",
     "train_size": "64k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.796 },
-        "0.1": { "pass@1": 0.68 },
-        "0.2": { "pass@1": 0.648 },
-        "0.3": { "pass@1": 0.63 },
-        "0.4": { "pass@1": 0.618 },
-        "0.5": { "pass@1": 0.596 },
-        "0.6": { "pass@1": 0.566 },
-        "0.7": { "pass@1": 0.552 },
-        "0.8": { "pass@1": 0.538 },
-        "0.9": { "pass@1": 0.492 },
+        "0.0": { "pass@1": 0.802 },
+        "0.1": { "pass@1": 0.684 },
+        "0.2": { "pass@1": 0.65 },
+        "0.3": { "pass@1": 0.632 },
+        "0.4": { "pass@1": 0.62 },
+        "0.5": { "pass@1": 0.598 },
+        "0.6": { "pass@1": 0.568 },
+        "0.7": { "pass@1": 0.554 },
+        "0.8": { "pass@1": 0.54 },
+        "0.9": { "pass@1": 0.494 },
         "1.0": { "pass@1": 0.416 }
       },
       "python": {
@@ -56,8 +56,8 @@
         "1.0": { "pass@1": 0.48 }
       },
       "rust": {
-        "0.0": { "pass@1": 0.77 },
-        "0.1": { "pass@1": 0.69 },
+        "0.0": { "pass@1": 0.8 },
+        "0.1": { "pass@1": 0.7 },
         "0.2": { "pass@1": 0.64 },
         "0.3": { "pass@1": 0.61 },
         "0.4": { "pass@1": 0.59 },
@@ -70,15 +70,15 @@
       },
       "typescript": {
         "0.0": { "pass@1": 0.73 },
-        "0.1": { "pass@1": 0.59 },
-        "0.2": { "pass@1": 0.57 },
-        "0.3": { "pass@1": 0.55 },
-        "0.4": { "pass@1": 0.54 },
-        "0.5": { "pass@1": 0.51 },
-        "0.6": { "pass@1": 0.5 },
-        "0.7": { "pass@1": 0.48 },
-        "0.8": { "pass@1": 0.47 },
-        "0.9": { "pass@1": 0.41 },
+        "0.1": { "pass@1": 0.6 },
+        "0.2": { "pass@1": 0.58 },
+        "0.3": { "pass@1": 0.56 },
+        "0.4": { "pass@1": 0.55 },
+        "0.5": { "pass@1": 0.52 },
+        "0.6": { "pass@1": 0.51 },
+        "0.7": { "pass@1": 0.49 },
+        "0.8": { "pass@1": 0.48 },
+        "0.9": { "pass@1": 0.42 },
         "1.0": { "pass@1": 0.23 }
       }
     },
@@ -548,7 +548,7 @@
           "name": "fused_fused_decode7_matmul4",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.008352413409508583,
+          "best_similar_score": 0.00839151064640457,
           "best_target": "get_param_set_item",
           "position": { "token_start": 1982, "token_end": 2874 }
         },
@@ -602,7 +602,7 @@
           "name": "fused_decode4_matmul5_int3_int16_fp16_before",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.00681165094585963,
+          "best_similar_score": 0.006841852096541931,
           "best_target": "get_param_set_item",
           "position": { "token_start": 11821, "token_end": 12676 }
         },
@@ -1000,7 +1000,7 @@
           "name": "TelnetAppenderPriv",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.004178834069571571,
+          "best_similar_score": 0.004174612044381113,
           "best_target": "decodeUTF16",
           "position": { "token_start": 2241, "token_end": 2330 }
         },
@@ -1036,7 +1036,7 @@
           "name": "StrftimeDateFormatPrivate",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.007059257728339033,
+          "best_similar_score": 0.007029327245561186,
           "best_target": "decodeUTF16",
           "position": { "token_start": 8334, "token_end": 8356 }
         },
@@ -1063,7 +1063,7 @@
           "name": "ThrowableInformationPatternConverterPrivate",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.003968697683097053,
+          "best_similar_score": 0.0039477610315231,
           "best_target": "decodeUTF16",
           "position": { "token_start": 12850, "token_end": 12896 }
         },
@@ -1540,7 +1540,7 @@
           "name": "vmap_trace",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.014294436257056857,
+          "best_similar_score": 0.014283489224843085,
           "best_target": "vmap_trace",
           "position": { "token_start": 2074, "token_end": 2788 }
         },
@@ -1603,7 +1603,7 @@
           "name": "sqrt",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.006156228028473507,
+          "best_similar_score": 0.006197383162185914,
           "best_target": "unpack_32_4",
           "position": { "token_start": 13741, "token_end": 13827 }
         },
@@ -1684,7 +1684,7 @@
           "name": "RTE_LCORE_FOREACH_WORKER",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.004143545452014314,
+          "best_similar_score": 0.004173830474375446,
           "best_target": "arp_learn",
           "position": { "token_start": 12125, "token_end": 12182 }
         },
@@ -1720,7 +1720,7 @@
           "name": "HostVersion",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.005598996258250374,
+          "best_similar_score": 0.0056860862169080505,
           "best_target": "roundDownPageBoundary",
           "position": { "token_start": 2416, "token_end": 2446 }
         },
@@ -1729,7 +1729,7 @@
           "name": "toLLVMConstantZero",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.0035097590837790244,
+          "best_similar_score": 0.0035356276760820943,
           "best_target": "loadPlugins",
           "position": { "token_start": 3944, "token_end": 4188 }
         },
@@ -1765,7 +1765,7 @@
           "name": "proxy",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.0033919343513858793,
+          "best_similar_score": 0.003411641373547772,
           "best_target": "proxy",
           "position": { "token_start": 10437, "token_end": 10621 }
         },
@@ -1774,7 +1774,7 @@
           "name": "loadPlugins",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.003928918497382594,
+          "best_similar_score": 0.003954256599349833,
           "best_target": "loadPlugins",
           "position": { "token_start": 6402, "token_end": 6548 }
         },
@@ -1801,7 +1801,7 @@
           "name": "Pool",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.002008885942907553,
+          "best_similar_score": 0.002018422194310168,
           "best_target": "Pool",
           "position": { "token_start": 734, "token_end": 853 }
         },
@@ -2343,7 +2343,7 @@
           "name": "freeFloatingYoungBlock",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.0027479359269207094,
+          "best_similar_score": 0.002761566317544387,
           "best_target": "extractValues",
           "position": { "token_start": 700, "token_end": 915 }
         },
@@ -2703,7 +2703,7 @@
           "name": "endInputX",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.0036525550749880696,
+          "best_similar_score": 0.0036708784277251403,
           "best_target": "getModelDataFromModel",
           "position": { "token_start": 719, "token_end": 908 }
         },
@@ -2830,9 +2830,9 @@
           "repo": "rust-bakery/nom",
           "name": "fold_many1",
           "needle_position": 0.45,
-          "is_best_similar": false,
-          "best_similar_score": 0.004267601365391102,
-          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": true,
+          "best_similar_score": 0.09834484828025826,
+          "best_target": "fold_many1",
           "position": { "token_start": 7251, "token_end": 7411 }
         },
         {
@@ -2857,9 +2857,9 @@
           "repo": "rust-bakery/nom",
           "name": "be_i8_tests",
           "needle_position": 0.75,
-          "is_best_similar": false,
-          "best_similar_score": 0.008862807824323025,
-          "best_target": "test_offset_u8",
+          "is_best_similar": true,
+          "best_similar_score": 0.018871963606556588,
+          "best_target": "be_i8_tests",
           "position": { "token_start": 12167, "token_end": 12302 }
         },
         {
@@ -2875,18 +2875,18 @@
           "repo": "rust-bakery/nom",
           "name": "length_count",
           "needle_position": 0.95,
-          "is_best_similar": false,
-          "best_similar_score": 0.004768426274246802,
-          "best_target": "test_complete_byte_consumption_bits",
+          "is_best_similar": true,
+          "best_similar_score": 0.14080684136659427,
+          "best_target": "length_count",
           "position": { "token_start": 15412, "token_end": 15559 }
         },
         {
           "repo": "helix-editor/helix",
           "name": "composition",
           "needle_position": 0.05,
-          "is_best_similar": false,
-          "best_similar_score": 0.007314726570632798,
-          "best_target": "injection_for_match",
+          "is_best_similar": true,
+          "best_similar_score": 0.025701186586471657,
+          "best_target": "composition",
           "position": { "token_start": 696, "token_end": 920 }
         },
         {
@@ -2984,7 +2984,7 @@
           "name": "package",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.005389373616006381,
+          "best_similar_score": 0.00540473843434031,
           "best_target": "rebuild_unit_graph_shared",
           "position": { "token_start": 2209, "token_end": 2641 }
         },
@@ -3082,9 +3082,9 @@
           "repo": "cloudflare/pingora",
           "name": "write_to_buffer",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 0.007024072207420897,
-          "best_target": "write_to_buffer",
+          "is_best_similar": false,
+          "best_similar_score": 0.006645601945592809,
+          "best_target": "do_read_body_until_closed",
           "position": { "token_start": 4001, "token_end": 4098 }
         },
         {
@@ -3137,7 +3137,7 @@
           "name": "from_server_conf",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.003693376343426432,
+          "best_similar_score": 0.003715567291944143,
           "best_target": "serialize_vec_string",
           "position": { "token_start": 13616, "token_end": 13980 }
         },
@@ -3254,8 +3254,8 @@
           "name": "map_err",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 4.771765904310957e-5,
-          "best_target": "file_stream",
+          "best_similar_score": 0.004661755840628946,
+          "best_target": "poll_read",
           "position": { "token_start": 2388, "token_end": 2483 }
         },
         {
@@ -3308,8 +3308,8 @@
           "name": "convert_reply",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.0019506957475475852,
-          "best_target": "file_stream",
+          "best_similar_score": 0.004692834130141654,
+          "best_target": "reject",
           "position": { "token_start": 12139, "token_end": 12181 }
         },
         {
@@ -3362,8 +3362,8 @@
           "name": "__deserialize_content",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.0031855493520440243,
-          "best_target": "format_u8",
+          "best_similar_score": 0.009591259647854018,
+          "best_target": "visit_i8",
           "position": { "token_start": 5634, "token_end": 5736 }
         },
         {
@@ -3389,8 +3389,8 @@
           "name": "serialize_unit_variant",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.005965939103175657,
-          "best_target": "serialize_i128",
+          "best_similar_score": 0.03547679644936931,
+          "best_target": "serialize_key",
           "position": { "token_start": 10479, "token_end": 10541 }
         },
         {
@@ -3425,7 +3425,7 @@
           "name": "and",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.013619561588033376,
+          "best_similar_score": 0.004090683052682696,
           "best_target": "with_default",
           "position": { "token_start": 773, "token_end": 825 }
         },
@@ -3850,7 +3850,7 @@
           "name": "Route",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.010179621085787311,
+          "best_similar_score": 0.010160911314963121,
           "best_target": "trim_prefix",
           "position": { "token_start": 11483, "token_end": 11534 }
         },
@@ -3877,7 +3877,7 @@
           "name": "done",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.003774018946135332,
+          "best_similar_score": 0.0038009296042592054,
           "best_target": "buildURL",
           "position": { "token_start": 774, "token_end": 839 }
         },
@@ -3886,7 +3886,7 @@
           "name": "formatMessage",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.003206860655230148,
+          "best_similar_score": 0.0032281681220314167,
           "best_target": "formatMessage",
           "position": { "token_start": 2337, "token_end": 2389 }
         },
@@ -3895,7 +3895,7 @@
           "name": "buildURL",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.0032509233798494403,
+          "best_similar_score": 0.0032678076786151716,
           "best_target": "buildURL",
           "position": { "token_start": 3821, "token_end": 4060 }
         },
@@ -3904,7 +3904,7 @@
           "name": "combineURLs",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.003971450567343715,
+          "best_similar_score": 0.004001480531530338,
           "best_target": "settle",
           "position": { "token_start": 734, "token_end": 787 }
         },
@@ -3922,7 +3922,7 @@
           "name": "AxiosError",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.003144076412370597,
+          "best_similar_score": 0.0031590014523925317,
           "best_target": "AxiosError",
           "position": { "token_start": 7111, "token_end": 7248 }
         },
@@ -3940,7 +3940,7 @@
           "name": "CanceledError",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.0030342401510960897,
+          "best_similar_score": 0.003051090855024135,
           "best_target": "settle",
           "position": { "token_start": 10990, "token_end": 11073 }
         },
@@ -3994,7 +3994,7 @@
           "name": "intervalToDuration",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.0034578872824510827,
+          "best_similar_score": 0.003480187643380518,
           "best_target": "execScript",
           "position": { "token_start": 5234, "token_end": 5585 }
         },
@@ -4147,7 +4147,7 @@
           "name": "setCss",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.013420311867074982,
+          "best_similar_score": 0.01338965811933497,
           "best_target": "toggleClass",
           "position": { "token_start": 640, "token_end": 890 }
         },
@@ -4156,7 +4156,7 @@
           "name": "insertAfter",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.046704871459678984,
+          "best_similar_score": 0.04714762115686002,
           "best_target": "insertAfter",
           "position": { "token_start": 2164, "token_end": 2430 }
         },
@@ -4183,7 +4183,7 @@
           "name": "attr",
           "needle_position": 0.45,
           "is_best_similar": false,
-          "best_similar_score": 0.0071399231890875055,
+          "best_similar_score": 0.007134050254691996,
           "best_target": "toggleClass",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
@@ -4192,7 +4192,7 @@
           "name": "createTestServer",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.007916911203111039,
+          "best_similar_score": 0.007881750881425967,
           "best_target": "toggleClass",
           "position": { "token_start": 8778, "token_end": 8938 }
         },
@@ -4228,7 +4228,7 @@
           "name": "is",
           "needle_position": 0.95,
           "is_best_similar": false,
-          "best_similar_score": 0.004946207454784629,
+          "best_similar_score": 0.004985654169946553,
           "best_target": "insertAfter",
           "position": { "token_start": 14540, "token_end": 14651 }
         },
@@ -4327,7 +4327,7 @@
           "name": "getKeyName",
           "needle_position": 0.05,
           "is_best_similar": false,
-          "best_similar_score": 0.004113727176921718,
+          "best_similar_score": 0.004143545452014314,
           "best_target": "useLanguageNames",
           "position": { "token_start": 773, "token_end": 819 }
         },
@@ -4345,7 +4345,7 @@
           "name": "checkUserBlock",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.004404021604068034,
+          "best_similar_score": 0.0044415425710391185,
           "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 3978, "token_end": 4043 }
         },
@@ -4354,7 +4354,7 @@
           "name": "getRetention",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.004126635139005564,
+          "best_similar_score": 0.004159248117829596,
           "best_target": "useLanguageNames",
           "position": { "token_start": 5605, "token_end": 5701 }
         },
@@ -4372,7 +4372,7 @@
           "name": "getWebsiteStats",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.003620737221110608,
+          "best_similar_score": 0.003645353791997318,
           "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 8824, "token_end": 8928 }
         },
@@ -4381,7 +4381,7 @@
           "name": "useLanguageNames",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.004248508174847199,
+          "best_similar_score": 0.004276952031901082,
           "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 10423, "token_end": 10598 }
         },
@@ -4390,7 +4390,7 @@
           "name": "getFunnel",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.0021687573505053885,
+          "best_similar_score": 0.0021769814186280985,
           "best_target": "useLanguageNames",
           "position": { "token_start": 12061, "token_end": 12174 }
         },
@@ -4417,7 +4417,7 @@
           "name": "generateTorso",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.006805160291913043,
+          "best_similar_score": 0.0067689967424591786,
           "best_target": "generateTorso",
           "position": { "token_start": 359, "token_end": 1169 }
         },
@@ -4462,7 +4462,7 @@
           "name": "setupFrameBufferTexture",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.003879124157611275,
+          "best_similar_score": 0.003855503455221719,
           "best_target": "generateTorso",
           "position": { "token_start": 7983, "token_end": 8526 }
         },
@@ -4480,7 +4480,7 @@
           "name": "linkedList",
           "needle_position": 0.75,
           "is_best_similar": false,
-          "best_similar_score": 0.004545532296577448,
+          "best_similar_score": 0.004512608651676981,
           "best_target": "generateTorso",
           "position": { "token_start": 11040, "token_end": 11226 }
         },
@@ -4534,7 +4534,7 @@
           "name": "getMessaging",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.0070947372291694415,
+          "best_similar_score": 0.9661049965255963,
           "best_target": "getMessaging",
           "position": { "token_start": 5569, "token_end": 5643 }
         },

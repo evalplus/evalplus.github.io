@@ -205,7 +205,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           </code>
           </pre>
           <h2 id="task-snf" class="text-nowrap mt-5">
-            <b>🔎Searching Needle Function (SNF)</b>
+            <b>🔎 Searching Needle Function (SNF)</b>
           </h2>
           <p>
             <b>Overview:</b>
@@ -218,6 +218,19 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
             <a href="#task-snf-how">🔗How It Works</a>.
           </p>
           <h3 class="text-nowrap mt-5">🏆 Benchmark @ 16K Code Context</h3>
+          <p>
+            🛠️ <b>Config:</b> The code in the prompt for all models is fixed to
+            16K tokens (by DeepSeekCoder tokenizer). The actual required context
+            size is a bit larger than 16K. We evaluate models trained on at
+            least 8K (half of 16K) as prior work shows that models' functional
+            context can go longer than their trained context. For 8K models, we
+            do
+            <a
+              href="https://www.reddit.com/r/LocalLLaMA/comments/14mrgpr/dynamically_scaled_rope_further_increases/"
+              >Dynamic RoPE Scaling</a
+            >
+            to extend to 32K.
+          </p>
           <p>
             <b>📝 Note:</b> This leaderboard serves as an elementary test that
             focuses on testing LLMs' capabilities on long-context code
@@ -284,6 +297,31 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
               >GitHub repo</a
             >.
           </p>
+          <h2 id="faq" class="text-nowrap mt-5">🙋🏻‍♀️ FAQ</h2>
+          <h3 id="yet-another" class="text-nowrap mt-5">
+            Just yet another needle test?
+          </h3>
+          No. Here are some notes:
+          <ul>
+            <li>
+              <b>SNF != RepoQA, SNF \in RepoQA:</b> Yes, SNF is a variant of
+              needle test, but SNF != RepoQA. SNF is a start point and
+              elementary test:
+              <b
+                >if a model can't pass SNF, don't expect it to pass more
+                challenging tasks.</b
+              >
+              We will build more challenging tasks in the future.
+            </li>
+            <li>
+              <b>SNF is...:</b> a multi-lingual, application-driven, and
+              comprehensive test that require LLMs to understand NL description
+              before retrieval. Vanilla needle tests often use one sample and is
+              retrieval only (no need to understand descriptions). Many existing
+              needle tests only present synthetic usages of LLMs, whereas SNF in
+              RepoQA reflect the code-search application.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -306,10 +344,8 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
         "Qwen_slash_CodeQwen1.5-7B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-14B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-32B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-4B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-72B-Chat-SCORES.json",
         "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-MoE-A2.7B-SCORES.json",
         "gpt-3.5-turbo-0125-SCORES.json",
         "gpt-4-turbo-2024-04-09-SCORES.json",
         "microsoft_slash_Phi-3-mini-128k-instruct-SCORES.json",
@@ -378,7 +414,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
       const theaders = [
         "#", // rank
         "Model", // model name
-        "Ctx Size", //training context size
+        "Trained Ctx", //training context size
         "Score (%)", // score of each language
       ];
 
@@ -410,7 +446,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
               }
               headerRow.appendChild(th);
             }
-          } else if (header == "Ctx Size") {
+          } else if (header == "Trained Ctx") {
             th.style.textAlign = "right";
             th.textContent = header;
             headerRow.appendChild(th);
