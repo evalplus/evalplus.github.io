@@ -420,7 +420,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
       const theaders = [
         "#", // rank
         "Model", // model name
-        "Trained Ctx", //training context size
+        "Claimed Ctx", // Claimed ctx
         "Score (%)", // score of each language
       ];
 
@@ -452,7 +452,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
               }
               headerRow.appendChild(th);
             }
-          } else if (header == "Trained Ctx") {
+          } else if (header == "Claimed Ctx") {
             th.style.textAlign = "right";
             th.textContent = header;
             headerRow.appendChild(th);
