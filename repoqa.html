@@ -321,12 +321,12 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           </ul>
           <h3 id="non-determinism" class="text-nowrap mt-5">Non-determinism</h3>
           <p>
-            In theory as we use greedy decoding the results should be
+            In theory as we use greedy decoding, the results should be
             deterministic. In practice, the results may slightly vary: (i) for
-            OpenAI/Anthropic models, they does not seem to be fully
-            deterministic all the time (Thanks to @scottinallcaps); and (ii) for
-            local inference, the configuration of library versions and tensor
-            parallelism sizes may also impact reproducibility.
+            OpenAI/Anthropic models, they do not seem to be deterministic all
+            the time (Thanks to @scottinallcaps); and (ii) for local inference,
+            the configuration of library versions and tensor parallelism sizes
+            may also slightly impact reproducibility.
           </p>
           <h3 id="limit" class="text-nowrap mt-5">Known limitations</h3>
           <ul>
