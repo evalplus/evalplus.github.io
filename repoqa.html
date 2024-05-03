@@ -392,6 +392,11 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
             modelId,
             "https://platform.openai.com/docs/models/gpt-3-5-turbo",
           );
+        } else if (modelId.startsWith("claude-3-")) {
+          linkMapping.set(
+            modelId,
+            "https://docs.anthropic.com/claude/docs/models-overview",
+          );
         }
       });
       const dataUrlPrefix = "results/repoqa/ntoken_16384/";
