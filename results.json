@@ -531,12 +531,12 @@
     "link": "https://huggingface.co/microsoft/wavecoder-ultra-6.7b",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 73.8,
-      "humaneval+": 67.1,
-      "mbpp": 77.5,
-      "mbpp+": 65.1
+      "humaneval": 75.0,
+      "humaneval+": 69.5,
+      "mbpp": 74.9,
+      "mbpp+": 63.5
     },
-    "prompted": false,
+    "prompted": true,
     "size": 7.0
   },
   "Magicoder-S-CL-7B": {
@@ -544,7 +544,7 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 70.7,
-      "humaneval+": 67.1,
+      "humaneval+": 67.7,
       "mbpp": 70.6,
       "mbpp+": 60.1
     },
@@ -1186,6 +1186,18 @@
     },
     "prompted": true,
     "size": 7.0
+  },
+  "Phi-3-mini-4k-instruct": {
+    "link": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 64.6,
+      "humaneval+": 59.1,
+      "mbpp": 65.9,
+      "mbpp+": 54.2
+    },
+    "prompted": true,
+    "size": 3.8
   },
   "phi-2-2.7B": {
     "link": "https://huggingface.co/microsoft/phi-2",
