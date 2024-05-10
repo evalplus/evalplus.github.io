@@ -65,8 +65,8 @@
     "pass@1": {
       "humaneval": 24.4,
       "humaneval+": 22.6,
-      "mbpp": null,
-      "mbpp+": null
+      "mbpp": 46.3,
+      "mbpp+": 36.0
     },
     "prompted": false,
     "size": 2.0
@@ -219,8 +219,8 @@
     "link": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 67.1,
-      "humaneval+": 58.5,
+      "humaneval": 68.3,
+      "humaneval+": 59.1,
       "mbpp": 72.5,
       "mbpp+": 61.6
     },
@@ -245,8 +245,8 @@
     "pass@1": {
       "humaneval": 25.0,
       "humaneval+": 22.0,
-      "mbpp": 48.1,
-      "mbpp+": 37.8
+      "mbpp": 48.4,
+      "mbpp+": 38.1
     },
     "prompted": false,
     "size": 2.0
@@ -351,7 +351,7 @@
     "link": "https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 75.0,
+      "humaneval": 75.6,
       "humaneval+": 71.3,
       "mbpp": 75.2,
       "mbpp+": 62.2
@@ -495,8 +495,8 @@
     "link": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 76.2,
-      "humaneval+": 70.7,
+      "humaneval": 77.4,
+      "humaneval+": 72.0,
       "mbpp": 82.3,
       "mbpp+": 69.0
     },
@@ -627,8 +627,8 @@
     "link": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 75.0,
-      "humaneval+": 70.1,
+      "humaneval": 42.1,
+      "humaneval+": 36.0,
       "mbpp": 44.7,
       "mbpp+": 37.0
     },
@@ -639,8 +639,8 @@
     "link": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 39.6,
-      "humaneval+": 34.1,
+      "humaneval": 76.2,
+      "humaneval+": 72.0,
       "mbpp": 73.8,
       "mbpp+": 64.3
     },
@@ -688,7 +688,7 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 77.4,
-      "humaneval+": 72.0,
+      "humaneval+": 73.8,
       "mbpp": 76.5,
       "mbpp+": 66.4
     },
@@ -784,7 +784,7 @@
     "open-data": "Full",
     "pass@1": {
       "humaneval": 73.8,
-      "humaneval+": 70.7,
+      "humaneval+": 71.3,
       "mbpp": 74.9,
       "mbpp+": 64.6
     },
@@ -976,7 +976,7 @@
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 75.6,
-      "humaneval+": 68.9,
+      "humaneval+": 69.5,
       "mbpp": 77.0,
       "mbpp+": 64.8
     },
@@ -1073,8 +1073,8 @@
     "pass@1": {
       "humaneval": 26.8,
       "humaneval+": 20.7,
-      "mbpp": null,
-      "mbpp+": null
+      "mbpp": 55.6,
+      "mbpp+": 46.6
     },
     "prompted": false,
     "size": 2.0
@@ -1083,10 +1083,10 @@
     "link": "https://huggingface.co/google/codegemma-7b",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 40.2,
-      "humaneval+": 29.9,
-      "mbpp": null,
-      "mbpp+": null
+      "humaneval": 44.5,
+      "humaneval+": 41.5,
+      "mbpp": 65.1,
+      "mbpp+": 52.4
     },
     "prompted": false,
     "size": 7.0
@@ -1096,9 +1096,9 @@
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 60.4,
-      "humaneval+": 51.2,
-      "mbpp": null,
-      "mbpp+": null
+      "humaneval+": 51.8,
+      "mbpp": 70.4,
+      "mbpp+": 56.9
     },
     "prompted": true,
     "size": 7.0
@@ -1167,8 +1167,8 @@
     "link": "https://huggingface.co/google/gemma-7b",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 26.8,
-      "humaneval+": 20.1,
+      "humaneval": 35.4,
+      "humaneval+": 28.7,
       "mbpp": 52.6,
       "mbpp+": 43.4
     },
@@ -1180,7 +1180,7 @@
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 28.7,
-      "humaneval+": 24.4,
+      "humaneval+": 25.0,
       "mbpp": 47.1,
       "mbpp+": 36.8
     },
