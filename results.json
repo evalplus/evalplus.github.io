@@ -688,7 +688,7 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 77.4,
-      "humaneval+": 73.8,
+      "humaneval+": 72.0,
       "mbpp": 76.5,
       "mbpp+": 66.4
     },
