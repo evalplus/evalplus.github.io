@@ -291,8 +291,8 @@
     "link": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 65.2,
-      "humaneval+": 59.8,
+      "humaneval": 65.9,
+      "humaneval+": 60.4,
       "mbpp": 65.3,
       "mbpp+": 54.8
     },
@@ -318,7 +318,7 @@
       "humaneval": 81.1,
       "humaneval+": 75.0,
       "mbpp": 80.4,
-      "mbpp+": 70.7
+      "mbpp+": 70.1
     },
     "prompted": true,
     "size": 33.0
@@ -339,8 +339,8 @@
     "link": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 73.8,
-      "humaneval+": 70.7,
+      "humaneval": 74.4,
+      "humaneval+": 71.3,
       "mbpp": 74.9,
       "mbpp+": 65.6
     },
@@ -567,8 +567,8 @@
     "link": "https://mistral.ai/news/mistral-large/",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 70.7,
-      "humaneval+": 63.4,
+      "humaneval": 69.5,
+      "humaneval+": 62.2,
       "mbpp": 72.8,
       "mbpp+": 59.5
     },
@@ -663,8 +663,8 @@
     "link": "https://huggingface.co/openchat/openchat-3.5-0106",
     "open-data": "Partial",
     "pass@1": {
-      "humaneval": 72.0,
-      "humaneval+": 67.1,
+      "humaneval": 72.6,
+      "humaneval+": 67.7,
       "mbpp": 63.8,
       "mbpp+": 54.5
     },
@@ -747,8 +747,8 @@
     "link": "https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0",
     "open-data": "Partial",
     "pass@1": {
-      "humaneval": 42.1,
-      "humaneval+": 35.4,
+      "humaneval": 43.3,
+      "humaneval+": 37.2,
       "mbpp": 43.9,
       "mbpp+": 36.2
     },
@@ -927,8 +927,8 @@
     "link": "https://huggingface.co/WizardLM/WizardCoder-15B-V1.0",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 57.3,
-      "humaneval+": 51.8,
+      "humaneval": 56.7,
+      "humaneval+": 50.6,
       "mbpp": 64.3,
       "mbpp+": 54.2
     },
@@ -963,8 +963,8 @@
     "link": "https://huggingface.co/WizardLM/WizardCoder-Python-7B-V1.0",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 48.2,
-      "humaneval+": 42.7,
+      "humaneval": 50.6,
+      "humaneval+": 45.1,
       "mbpp": 58.5,
       "mbpp+": 49.5
     },
@@ -1024,7 +1024,7 @@
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 82.9,
-      "humaneval+": 76.8,
+      "humaneval+": 77.4,
       "mbpp": 89.4,
       "mbpp+": 73.3
     },
@@ -1036,7 +1036,7 @@
     "open-data": "NONE",
     "pass@1": {
       "humaneval": 70.7,
-      "humaneval+": 63.4,
+      "humaneval+": 64.0,
       "mbpp": 83.6,
       "mbpp+": 69.3
     },
@@ -1203,7 +1203,7 @@
     "link": "https://huggingface.co/microsoft/phi-2",
     "open-data": "NONE",
     "pass@1": {
-      "humaneval": 48.8,
+      "humaneval": 49.4,
       "humaneval+": 45.1,
       "mbpp": 64.0,
       "mbpp+": 54.2
@@ -1216,7 +1216,7 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 48.2,
-      "humaneval+": 40.9,
+      "humaneval+": 41.5,
       "mbpp": 57.4,
       "mbpp+": 48.7
     },
@@ -1287,7 +1287,7 @@
     "link": "https://huggingface.co/stabilityai/stable-code-3b",
     "open-data": "Full",
     "pass@1": {
-      "humaneval": 28.7,
+      "humaneval": 29.3,
       "humaneval+": 25.6,
       "mbpp": 54.8,
       "mbpp+": 45.8
@@ -1300,7 +1300,7 @@
     "open-data": "Partial",
     "pass@1": {
       "humaneval": 40.2,
-      "humaneval+": 33.5,
+      "humaneval+": 32.9,
       "mbpp": 50.3,
       "mbpp+": 41.3
     },
