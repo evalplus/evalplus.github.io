@@ -325,8 +325,8 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
             deterministic. In practice, the results may slightly vary: (i) for
             OpenAI/Anthropic models, they do not seem to be deterministic all
             the time (Thanks to @scottinallcaps); and (ii) for local inference,
-            the configuration of library versions and tensor parallelism sizes
-            may also slightly impact reproducibility.
+            the library configuration such as tensor parallelism sizes may also
+            slightly impact reproducibility.
           </p>
           <h3 id="limit" class="text-nowrap mt-5">Known limitations</h3>
           <ul>
@@ -371,6 +371,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
         "claude-3-sonnet-20240229-SCORES.json",
         "CohereForAI_slash_c4ai-command-r-plus-SCORES.json",
         "gpt-4o-2024-05-13-SCORES.json",
+        "gemini-1.5-flash-latest-SCORES.json",
       ];
       const linkMapping = new Map([]);
       const hfLinkPrefix = "https://huggingface.co/";
