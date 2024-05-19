@@ -1,85 +1,85 @@
 {
-  "deepseek-ai/DeepSeek-V2-Chat": {
-    "eval_date": "2024-05-19 13:56:08.965716",
-    "train_size": "128k",
+  "deepseek-ai/DeepSeek-V2-Lite-Chat": {
+    "eval_date": "2024-05-19 08:01:09.773213",
+    "train_size": "32k",
     "scores": {
       "all": {
-        "0.0": { "pass@1": 0.95 },
-        "0.1": { "pass@1": 0.912 },
-        "0.2": { "pass@1": 0.892 },
-        "0.3": { "pass@1": 0.882 },
-        "0.4": { "pass@1": 0.876 },
-        "0.5": { "pass@1": 0.866 },
-        "0.6": { "pass@1": 0.848 },
-        "0.7": { "pass@1": 0.838 },
-        "0.8": { "pass@1": 0.834 },
-        "0.9": { "pass@1": 0.806 },
-        "1.0": { "pass@1": 0.718 }
+        "0.0": { "pass@1": 0.786 },
+        "0.1": { "pass@1": 0.666 },
+        "0.2": { "pass@1": 0.624 },
+        "0.3": { "pass@1": 0.574 },
+        "0.4": { "pass@1": 0.544 },
+        "0.5": { "pass@1": 0.522 },
+        "0.6": { "pass@1": 0.476 },
+        "0.7": { "pass@1": 0.446 },
+        "0.8": { "pass@1": 0.416 },
+        "0.9": { "pass@1": 0.346 },
+        "1.0": { "pass@1": 0.256 }
       },
       "python": {
-        "0.0": { "pass@1": 0.97 },
-        "0.1": { "pass@1": 0.94 },
-        "0.2": { "pass@1": 0.93 },
-        "0.3": { "pass@1": 0.92 },
-        "0.4": { "pass@1": 0.92 },
-        "0.5": { "pass@1": 0.92 },
-        "0.6": { "pass@1": 0.9 },
-        "0.7": { "pass@1": 0.9 },
-        "0.8": { "pass@1": 0.9 },
-        "0.9": { "pass@1": 0.86 },
-        "1.0": { "pass@1": 0.84 }
+        "0.0": { "pass@1": 0.83 },
+        "0.1": { "pass@1": 0.65 },
+        "0.2": { "pass@1": 0.6 },
+        "0.3": { "pass@1": 0.58 },
+        "0.4": { "pass@1": 0.51 },
+        "0.5": { "pass@1": 0.51 },
+        "0.6": { "pass@1": 0.44 },
+        "0.7": { "pass@1": 0.41 },
+        "0.8": { "pass@1": 0.39 },
+        "0.9": { "pass@1": 0.33 },
+        "1.0": { "pass@1": 0.25 }
       },
       "cpp": {
-        "0.0": { "pass@1": 0.9 },
-        "0.1": { "pass@1": 0.85 },
-        "0.2": { "pass@1": 0.83 },
-        "0.3": { "pass@1": 0.83 },
-        "0.4": { "pass@1": 0.82 },
-        "0.5": { "pass@1": 0.82 },
-        "0.6": { "pass@1": 0.79 },
-        "0.7": { "pass@1": 0.76 },
-        "0.8": { "pass@1": 0.76 },
-        "0.9": { "pass@1": 0.75 },
-        "1.0": { "pass@1": 0.69 }
+        "0.0": { "pass@1": 0.75 },
+        "0.1": { "pass@1": 0.59 },
+        "0.2": { "pass@1": 0.53 },
+        "0.3": { "pass@1": 0.5 },
+        "0.4": { "pass@1": 0.49 },
+        "0.5": { "pass@1": 0.46 },
+        "0.6": { "pass@1": 0.42 },
+        "0.7": { "pass@1": 0.38 },
+        "0.8": { "pass@1": 0.37 },
+        "0.9": { "pass@1": 0.3 },
+        "1.0": { "pass@1": 0.23 }
       },
       "java": {
-        "0.0": { "pass@1": 0.97 },
-        "0.1": { "pass@1": 0.96 },
-        "0.2": { "pass@1": 0.93 },
-        "0.3": { "pass@1": 0.92 },
-        "0.4": { "pass@1": 0.92 },
-        "0.5": { "pass@1": 0.92 },
-        "0.6": { "pass@1": 0.91 },
-        "0.7": { "pass@1": 0.91 },
-        "0.8": { "pass@1": 0.91 },
-        "0.9": { "pass@1": 0.89 },
-        "1.0": { "pass@1": 0.87 }
+        "0.0": { "pass@1": 0.79 },
+        "0.1": { "pass@1": 0.65 },
+        "0.2": { "pass@1": 0.64 },
+        "0.3": { "pass@1": 0.54 },
+        "0.4": { "pass@1": 0.52 },
+        "0.5": { "pass@1": 0.52 },
+        "0.6": { "pass@1": 0.48 },
+        "0.7": { "pass@1": 0.46 },
+        "0.8": { "pass@1": 0.41 },
+        "0.9": { "pass@1": 0.38 },
+        "1.0": { "pass@1": 0.3 }
       },
       "typescript": {
-        "0.0": { "pass@1": 0.99 },
-        "0.1": { "pass@1": 0.96 },
-        "0.2": { "pass@1": 0.94 },
-        "0.3": { "pass@1": 0.92 },
-        "0.4": { "pass@1": 0.9 },
-        "0.5": { "pass@1": 0.87 },
-        "0.6": { "pass@1": 0.86 },
-        "0.7": { "pass@1": 0.85 },
-        "0.8": { "pass@1": 0.83 },
-        "0.9": { "pass@1": 0.76 },
-        "1.0": { "pass@1": 0.44 }
+        "0.0": { "pass@1": 0.84 },
+        "0.1": { "pass@1": 0.79 },
+        "0.2": { "pass@1": 0.75 },
+        "0.3": { "pass@1": 0.69 },
+        "0.4": { "pass@1": 0.66 },
+        "0.5": { "pass@1": 0.6 },
+        "0.6": { "pass@1": 0.53 },
+        "0.7": { "pass@1": 0.5 },
+        "0.8": { "pass@1": 0.46 },
+        "0.9": { "pass@1": 0.34 },
+        "1.0": { "pass@1": 0.17 }
       },
       "rust": {
-        "0.0": { "pass@1": 0.92 },
-        "0.1": { "pass@1": 0.85 },
-        "0.2": { "pass@1": 0.83 },
-        "0.3": { "pass@1": 0.82 },
-        "0.4": { "pass@1": 0.82 },
-        "0.5": { "pass@1": 0.8 },
-        "0.6": { "pass@1": 0.78 },
-        "0.7": { "pass@1": 0.77 },
-        "0.8": { "pass@1": 0.77 },
-        "0.9": { "pass@1": 0.77 },
-        "1.0": { "pass@1": 0.75 }
+        "0.0": { "pass@1": 0.72 },
+        "0.1": { "pass@1": 0.65 },
+        "0.2": { "pass@1": 0.6 },
+        "0.3": { "pass@1": 0.56 },
+        "0.4": { "pass@1": 0.54 },
+        "0.5": { "pass@1": 0.52 },
+        "0.6": { "pass@1": 0.51 },
+        "0.7": { "pass@1": 0.48 },
+        "0.8": { "pass@1": 0.45 },
+        "0.9": { "pass@1": 0.38 },
+        "1.0": { "pass@1": 0.33 }
       }
     },
     "results": {
@@ -89,7 +89,7 @@
           "name": "_merge_string_group",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.11554231173944361,
           "best_target": "_merge_string_group",
           "position": { "token_start": 508, "token_end": 1066 }
         },
@@ -98,7 +98,7 @@
           "name": "convert_unchanged_lines",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.10750548139409652,
           "best_target": "convert_unchanged_lines",
           "position": { "token_start": 2176, "token_end": 2667 }
         },
@@ -125,7 +125,7 @@
           "name": "is_part_of_annotation",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.04816370356442415,
           "best_target": "is_part_of_annotation",
           "position": { "token_start": 7162, "token_end": 7209 }
         },
@@ -143,7 +143,7 @@
           "name": "check_stability_and_equivalence",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03494743043500484,
           "best_target": "check_stability_and_equivalence",
           "position": { "token_start": 10454, "token_end": 10602 }
         },
@@ -160,9 +160,9 @@
           "repo": "psf/black",
           "name": "__post_init__",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "__post_init__",
+          "is_best_similar": false,
+          "best_similar_score": 0.11318440142728083,
+          "best_target": "should_split_funcdef_with_rhs",
           "position": { "token_start": 13424, "token_end": 13982 }
         },
         {
@@ -179,7 +179,7 @@
           "name": "_find_best_version_for_package",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.9048209817028601,
+          "best_similar_score": 1.0,
           "best_target": "_find_best_version_for_package",
           "position": { "token_start": 705, "token_end": 894 }
         },
@@ -188,7 +188,7 @@
           "name": "get_package_vcs_properties_from_path",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8434168123760957,
           "best_target": "get_package_vcs_properties_from_path",
           "position": { "token_start": 2374, "token_end": 2441 }
         },
@@ -197,7 +197,7 @@
           "name": "_validate_group_options",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7079874075379102,
           "best_target": "_validate_group_options",
           "position": { "token_start": 3886, "token_end": 4116 }
         },
@@ -206,8 +206,8 @@
           "name": "candidates",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.01593377920103707,
-          "best_target": "_validate_readme",
+          "best_similar_score": 0.007360161253742171,
+          "best_target": "_validate_group_options",
           "position": { "token_start": 5574, "token_end": 5592 }
         },
         {
@@ -215,7 +215,7 @@
           "name": "_display_complete_info",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.966734420848294,
           "best_target": "_display_complete_info",
           "position": { "token_start": 6960, "token_end": 7426 }
         },
@@ -224,7 +224,7 @@
           "name": "_write_lock_file",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.15550736854031622,
           "best_target": "_write_lock_file",
           "position": { "token_start": 8778, "token_end": 8888 }
         },
@@ -233,7 +233,7 @@
           "name": "_do_execute_operation",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.01559815045840492,
           "best_target": "_do_execute_operation",
           "position": { "token_start": 10271, "token_end": 10593 }
         },
@@ -242,7 +242,7 @@
           "name": "_get_directory_from_hash",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.8895260356363631,
+          "best_similar_score": 0.029657946450488266,
           "best_target": "_get_directory_from_hash",
           "position": { "token_start": 11917, "token_end": 12042 }
         },
@@ -278,7 +278,7 @@
           "name": "rename_request",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.026874912514062283,
           "best_target": "rename_request",
           "position": { "token_start": 2358, "token_end": 2422 }
         },
@@ -296,7 +296,7 @@
           "name": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9841226022828962,
           "best_target": "test_ramp_down_users_to_3_workers_with_spawn_rate_of_9",
           "position": { "token_start": 5418, "token_end": 5899 }
         },
@@ -305,7 +305,7 @@
           "name": "test_custom_ssl_context_fail_with_bad_context",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9718693806790235,
           "best_target": "test_custom_ssl_context_fail_with_bad_context",
           "position": { "token_start": 7129, "token_end": 7363 }
         },
@@ -314,7 +314,7 @@
           "name": "test_worker_heartbeat_messages_sent_to_master",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03450268765850505,
           "best_target": "test_worker_heartbeat_messages_sent_to_master",
           "position": { "token_start": 8705, "token_end": 9005 }
         },
@@ -323,7 +323,7 @@
           "name": "test_request_stats_named_endpoint_rename_request",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7071067811865475,
           "best_target": "test_request_stats_named_endpoint_rename_request",
           "position": { "token_start": 10468, "token_end": 10560 }
         },
@@ -332,7 +332,7 @@
           "name": "is_valid_percentile",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.22906190291658018,
           "best_target": "is_valid_percentile",
           "position": { "token_start": 12053, "token_end": 12099 }
         },
@@ -350,7 +350,7 @@
           "name": "test_distribute_users",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.18156856189390988,
           "best_target": "test_distribute_users",
           "position": { "token_start": 15216, "token_end": 15504 }
         },
@@ -368,7 +368,7 @@
           "name": "positive_sampling",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.016621909795099952,
           "best_target": "positive_sampling",
           "position": { "token_start": 2380, "token_end": 2454 }
         },
@@ -376,27 +376,27 @@
           "repo": "pyg-team/pytorch_geometric",
           "name": "read_from_memlab",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "read_from_memlab",
+          "is_best_similar": false,
+          "best_similar_score": 0.016872675385888124,
+          "best_target": "num_node_labels",
           "position": { "token_start": 3903, "token_end": 4135 }
         },
         {
           "repo": "pyg-team/pytorch_geometric",
           "name": "num_node_labels",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "num_node_labels",
+          "is_best_similar": false,
+          "best_similar_score": 0.018423962270719848,
+          "best_target": "read_from_memlab",
           "position": { "token_start": 5629, "token_end": 5655 }
         },
         {
           "repo": "pyg-team/pytorch_geometric",
           "name": "__collate__",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "__collate__",
+          "is_best_similar": false,
+          "best_similar_score": 0.008731533056400074,
+          "best_target": "tree",
           "position": { "token_start": 7004, "token_end": 7512 }
         },
         {
@@ -404,7 +404,7 @@
           "name": "tree",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3054628672531577,
           "best_target": "tree",
           "position": { "token_start": 8646, "token_end": 9079 }
         },
@@ -413,7 +413,7 @@
           "name": "to_scipy_sparse_matrix",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.961673662702593,
           "best_target": "to_scipy_sparse_matrix",
           "position": { "token_start": 10274, "token_end": 10716 }
         },
@@ -422,7 +422,7 @@
           "name": "set_tuple_item",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6266888385793429,
           "best_target": "set_tuple_item",
           "position": { "token_start": 2771, "token_end": 2878 }
         },
@@ -439,9 +439,9 @@
           "repo": "pyg-team/pytorch_geometric",
           "name": "get_self_loop_attr",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 0.8877783861358977,
-          "best_target": "get_self_loop_attr",
+          "is_best_similar": false,
+          "best_similar_score": 0.014902992198142753,
+          "best_target": "set_tuple_item",
           "position": { "token_start": 14965, "token_end": 15603 }
         },
         {
@@ -458,7 +458,7 @@
           "name": "to_custom_raw_response_wrapper",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.36494342126352075,
           "best_target": "to_custom_raw_response_wrapper",
           "position": { "token_start": 2261, "token_end": 2527 }
         },
@@ -467,7 +467,7 @@
           "name": "transcribe",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5132869274748059,
           "best_target": "transcribe",
           "position": { "token_start": 3867, "token_end": 4060 }
         },
@@ -476,7 +476,7 @@
           "name": "make_request_options",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5112114263299052,
           "best_target": "make_request_options",
           "position": { "token_start": 5496, "token_end": 5836 }
         },
@@ -485,7 +485,7 @@
           "name": "_primitive_value_to_str",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.8019211582917377,
+          "best_similar_score": 0.6304425622056276,
           "best_target": "_primitive_value_to_str",
           "position": { "token_start": 7176, "token_end": 7249 }
         },
@@ -493,9 +493,9 @@
           "repo": "openai/openai-python",
           "name": "_transform_value",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 0.11407786423279015,
-          "best_target": "_transform_value",
+          "is_best_similar": false,
+          "best_similar_score": 0.0162524574933443,
+          "best_target": "to_custom_raw_response_wrapper",
           "position": { "token_start": 8684, "token_end": 8813 }
         },
         {
@@ -503,7 +503,7 @@
           "name": "_construct_field",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.0679494907374626,
           "best_target": "_construct_field",
           "position": { "token_start": 10316, "token_end": 10446 }
         },
@@ -512,7 +512,7 @@
           "name": "_basic_config",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.02415090513694114,
+          "best_similar_score": 0.15844501337268932,
           "best_target": "_basic_config",
           "position": { "token_start": 12002, "token_end": 12148 }
         },
@@ -539,7 +539,7 @@
           "name": "fused_decode3_matmul1_fp16_before",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.9666841226127937,
+          "best_similar_score": 0.050417587243097944,
           "best_target": "fused_decode3_matmul1_fp16_before",
           "position": { "token_start": 270, "token_end": 1194 }
         },
@@ -548,7 +548,7 @@
           "name": "fused_fused_decode7_matmul4",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.543233346998878,
+          "best_similar_score": 0.5264396405069958,
           "best_target": "fused_fused_decode7_matmul4",
           "position": { "token_start": 1982, "token_end": 2874 }
         },
@@ -557,7 +557,7 @@
           "name": "contain_symbolic_var",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9036020036098448,
           "best_target": "contain_symbolic_var",
           "position": { "token_start": 4008, "token_end": 4086 }
         },
@@ -566,7 +566,7 @@
           "name": "get_param_set_item",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8891559537366366,
           "best_target": "get_param_set_item",
           "position": { "token_start": 5447, "token_end": 5862 }
         },
@@ -574,9 +574,9 @@
           "repo": "mlc-ai/mlc-llm",
           "name": "fused_fused_decode9_matmul7",
           "needle_position": 0.45,
-          "is_best_similar": false,
-          "best_similar_score": 1.0,
-          "best_target": "fused_fused_decode7_matmul4",
+          "is_best_similar": true,
+          "best_similar_score": 0.04772730931315505,
+          "best_target": "fused_fused_decode9_matmul7",
           "position": { "token_start": 6907, "token_end": 7805 }
         },
         {
@@ -584,7 +584,7 @@
           "name": "fused_decode4_matmul5_int3_fp16_before",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5576496246026622,
           "best_target": "fused_decode4_matmul5_int3_fp16_before",
           "position": { "token_start": 8523, "token_end": 9368 }
         },
@@ -593,7 +593,7 @@
           "name": "fused_NT_matmul3_add1_before",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5423054584915943,
           "best_target": "fused_NT_matmul3_add1_before",
           "position": { "token_start": 10214, "token_end": 11053 }
         },
@@ -602,7 +602,7 @@
           "name": "fused_decode4_matmul5_int3_int16_fp16_before",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5714308016693164,
           "best_target": "fused_decode4_matmul5_int3_int16_fp16_before",
           "position": { "token_start": 11821, "token_end": 12676 }
         },
@@ -610,9 +610,9 @@
           "repo": "mlc-ai/mlc-llm",
           "name": "softmax_1xn_sch_func",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "softmax_1xn_sch_func",
+          "is_best_similar": false,
+          "best_similar_score": 0.15458211946421338,
+          "best_target": "fused_NT_matmul3_add1_before",
           "position": { "token_start": 13651, "token_end": 14154 }
         },
         {
@@ -629,7 +629,7 @@
           "name": "sync_function",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3057180885635927,
           "best_target": "sync_function",
           "position": { "token_start": 739, "token_end": 847 }
         },
@@ -638,7 +638,7 @@
           "name": "custom_vdom_constructor",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.047473830757904456,
           "best_target": "custom_vdom_constructor",
           "position": { "token_start": 2344, "token_end": 2490 }
         },
@@ -647,7 +647,7 @@
           "name": "image",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9145793207357038,
           "best_target": "image",
           "position": { "token_start": 3907, "token_end": 4106 }
         },
@@ -656,17 +656,17 @@
           "name": "use",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.05120897811151822,
-          "best_target": "stop_server",
+          "best_similar_score": 0.0090273994116577,
+          "best_target": "image",
           "position": { "token_start": 5565, "token_end": 5652 }
         },
         {
           "repo": "reactive-python/reactpy",
           "name": "_equal_files",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "_equal_files",
+          "is_best_similar": false,
+          "best_similar_score": 0.01611644699178665,
+          "best_target": "boolean",
           "position": { "token_start": 7214, "token_end": 7316 }
         },
         {
@@ -674,7 +674,7 @@
           "name": "stop_server",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.35630548449868954,
           "best_target": "stop_server",
           "position": { "token_start": 8800, "token_end": 8853 }
         },
@@ -701,7 +701,7 @@
           "name": "boolean",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8388005801520451,
           "best_target": "boolean",
           "position": { "token_start": 4624, "token_end": 4786 }
         },
@@ -719,7 +719,7 @@
           "name": "register",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9450919335057243,
           "best_target": "register",
           "position": { "token_start": 603, "token_end": 985 }
         },
@@ -746,7 +746,7 @@
           "name": "options",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9772160520895917,
           "best_target": "options",
           "position": { "token_start": 5502, "token_end": 5746 }
         },
@@ -755,7 +755,7 @@
           "name": "_invoke_field_validators",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8841606838155254,
           "best_target": "_invoke_field_validators",
           "position": { "token_start": 7062, "token_end": 7537 }
         },
@@ -764,7 +764,7 @@
           "name": "_run_validator",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.05191965771431859,
           "best_target": "_run_validator",
           "position": { "token_start": 8818, "token_end": 8979 }
         },
@@ -773,7 +773,7 @@
           "name": "from_iso_time",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8560350734056041,
           "best_target": "from_iso_time",
           "position": { "token_start": 7998, "token_end": 8157 }
         },
@@ -781,9 +781,9 @@
           "repo": "marshmallow-code/marshmallow",
           "name": "__len__",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "__len__",
+          "is_best_similar": false,
+          "best_similar_score": 0.012787229318336757,
+          "best_target": "_normalize_nested_options",
           "position": { "token_start": 5474, "token_end": 5489 }
         },
         {
@@ -791,7 +791,7 @@
           "name": "normalized_messages",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.855526185871245,
           "best_target": "normalized_messages",
           "position": { "token_start": 2849, "token_end": 2899 }
         },
@@ -800,7 +800,7 @@
           "name": "_normalize_nested_options",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.07569309294801244,
           "best_target": "_normalize_nested_options",
           "position": { "token_start": 15237, "token_end": 15446 }
         },
@@ -809,7 +809,7 @@
           "name": "test_eth_get_logs_with_logs_none_topic_args",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3817758805103915,
           "best_target": "test_eth_get_logs_with_logs_none_topic_args",
           "position": { "token_start": 747, "token_end": 853 }
         },
@@ -818,7 +818,7 @@
           "name": "_get_response_for_request_id",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.36033510666631946,
           "best_target": "_get_response_for_request_id",
           "position": { "token_start": 2195, "token_end": 2635 }
         },
@@ -836,7 +836,7 @@
           "name": "_get_transaction",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.2639540503568062,
+          "best_similar_score": 0.29044821170011026,
           "best_target": "_get_transaction",
           "position": { "token_start": 5536, "token_end": 5725 }
         },
@@ -844,9 +844,9 @@
           "repo": "ethereum/web3.py",
           "name": "test_async_eth_sign_transaction_legacy",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_async_eth_sign_transaction_legacy",
+          "is_best_similar": false,
+          "best_similar_score": 0.01756523761397551,
+          "best_target": "test_eth_get_logs_with_logs_none_topic_args",
           "position": { "token_start": 7175, "token_end": 7463 }
         },
         {
@@ -863,7 +863,7 @@
           "name": "test_gas_price_strategy_hex_value",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6205975088539759,
           "best_target": "test_gas_price_strategy_hex_value",
           "position": { "token_start": 10417, "token_end": 10707 }
         },
@@ -871,27 +871,27 @@
           "repo": "ethereum/web3.py",
           "name": "test_eth_estimate_gas_revert_with_msg",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_eth_estimate_gas_revert_with_msg",
+          "is_best_similar": false,
+          "best_similar_score": 0.2562557129764855,
+          "best_target": "test_gas_price_strategy_hex_value",
           "position": { "token_start": 12107, "token_end": 12276 }
         },
         {
           "repo": "ethereum/web3.py",
           "name": "_make_get_request",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "_make_get_request",
+          "is_best_similar": false,
+          "best_similar_score": 0.03090403111562713,
+          "best_target": "_get_response_for_request_id",
           "position": { "token_start": 13728, "token_end": 13789 }
         },
         {
           "repo": "ethereum/web3.py",
           "name": "test_eth_call_revert_custom_error_with_msg",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_eth_call_revert_custom_error_with_msg",
+          "is_best_similar": false,
+          "best_similar_score": 0.07863869423819403,
+          "best_target": "test_async_eth_sign_transaction_legacy",
           "position": { "token_start": 15358, "token_end": 15568 }
         },
         {
@@ -899,7 +899,7 @@
           "name": "chars_to_byte",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.53107253497887,
           "best_target": "chars_to_byte",
           "position": { "token_start": 770, "token_end": 814 }
         },
@@ -908,7 +908,7 @@
           "name": "__ge__",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.033173907815632314,
           "best_target": "__ge__",
           "position": { "token_start": 1653, "token_end": 1687 }
         },
@@ -916,9 +916,9 @@
           "repo": "Ciphey/Ciphey",
           "name": "alpha",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "alpha",
+          "is_best_similar": false,
+          "best_similar_score": 0.02111008229515979,
+          "best_target": "get_name",
           "position": { "token_start": 4015, "token_end": 4029 }
         },
         {
@@ -926,7 +926,7 @@
           "name": "strip_punctuation",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.8831773273745787,
+          "best_similar_score": 0.024641485242435875,
           "best_target": "strip_punctuation",
           "position": { "token_start": 5601, "token_end": 5616 }
         },
@@ -935,7 +935,7 @@
           "name": "crackOne",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.010121566488183884,
           "best_target": "crackOne",
           "position": { "token_start": 7123, "token_end": 7385 }
         },
@@ -944,7 +944,7 @@
           "name": "new_sort",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.02730054306527316,
+          "best_similar_score": 0.030108111438865538,
           "best_target": "new_sort",
           "position": { "token_start": 8705, "token_end": 8905 }
         },
@@ -962,7 +962,7 @@
           "name": "binary_to_ascii",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.5708075685163333,
+          "best_similar_score": 1.0,
           "best_target": "binary_to_ascii",
           "position": { "token_start": 12001, "token_end": 12183 }
         },
@@ -971,7 +971,7 @@
           "name": "getSentenceCombo",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.30521077536,
           "best_target": "getSentenceCombo",
           "position": { "token_start": 13535, "token_end": 13841 }
         },
@@ -979,9 +979,9 @@
           "repo": "Ciphey/Ciphey",
           "name": "sortlistwithdict",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "sortlistwithdict",
+          "is_best_similar": false,
+          "best_similar_score": 0.03962055449475579,
+          "best_target": "getSentenceCombo",
           "position": { "token_start": 15257, "token_end": 15328 }
         }
       ],
@@ -990,9 +990,9 @@
           "repo": "apache/logging-log4cxx",
           "name": "ConfiguratorWatchdog",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 0.6407117598241614,
-          "best_target": "ConfiguratorWatchdog",
+          "is_best_similar": false,
+          "best_similar_score": 0.044706344276931285,
+          "best_target": "UTF8CharsetEncoder",
           "position": { "token_start": 767, "token_end": 816 }
         },
         {
@@ -1000,7 +1000,7 @@
           "name": "TelnetAppenderPriv",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.04375157823610834,
+          "best_similar_score": 0.043328852165835,
           "best_target": "TelnetAppenderPriv",
           "position": { "token_start": 2241, "token_end": 2330 }
         },
@@ -1009,8 +1009,8 @@
           "name": "HierarchyPrivate",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.019730657693620934,
-          "best_target": "ConfiguratorWatchdog",
+          "best_similar_score": 0.009411783139550505,
+          "best_target": "decodeUTF16",
           "position": { "token_start": 3790, "token_end": 3847 }
         },
         {
@@ -1018,7 +1018,7 @@
           "name": "decodeUTF16",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.6558758743450661,
+          "best_similar_score": 0.29169717613770224,
           "best_target": "decodeUTF16",
           "position": { "token_start": 5095, "token_end": 5486 }
         },
@@ -1026,9 +1026,9 @@
           "repo": "apache/logging-log4cxx",
           "name": "catch",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "catch",
+          "is_best_similar": false,
+          "best_similar_score": 0.009141150874526605,
+          "best_target": "APRCharsetEncoder",
           "position": { "token_start": 6881, "token_end": 6938 }
         },
         {
@@ -1036,8 +1036,8 @@
           "name": "StrftimeDateFormatPrivate",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.005144879925208511,
-          "best_target": "decodeUTF16",
+          "best_similar_score": 0.010235738393222196,
+          "best_target": "APRCharsetEncoder",
           "position": { "token_start": 8334, "token_end": 8356 }
         },
         {
@@ -1045,7 +1045,7 @@
           "name": "UTF8CharsetEncoder",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.009868087202011303,
+          "best_similar_score": 0.011970618365308015,
           "best_target": "APRCharsetEncoder",
           "position": { "token_start": 9822, "token_end": 9837 }
         },
@@ -1053,18 +1053,18 @@
           "repo": "apache/logging-log4cxx",
           "name": "PropertiesPatternConverterPrivate",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 0.36922112516660954,
-          "best_target": "PropertiesPatternConverterPrivate",
+          "is_best_similar": false,
+          "best_similar_score": 0.01524629523340685,
+          "best_target": "APRCharsetEncoder",
           "position": { "token_start": 11412, "token_end": 11457 }
         },
         {
           "repo": "apache/logging-log4cxx",
           "name": "ThrowableInformationPatternConverterPrivate",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "ThrowableInformationPatternConverterPrivate",
+          "is_best_similar": false,
+          "best_similar_score": 0.01105856098225652,
+          "best_target": "ConfiguratorWatchdog",
           "position": { "token_start": 12850, "token_end": 12896 }
         },
         {
@@ -1072,7 +1072,7 @@
           "name": "APRCharsetEncoder",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.586605416694623,
+          "best_similar_score": 0.01186386714598141,
           "best_target": "APRCharsetEncoder",
           "position": { "token_start": 14257, "token_end": 14503 }
         },
@@ -1081,7 +1081,7 @@
           "name": "try_read",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6273386207482956,
           "best_target": "try_read",
           "position": { "token_start": 692, "token_end": 871 }
         },
@@ -1098,9 +1098,9 @@
           "repo": "skypjack/uvw",
           "name": "uv_token",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 0.5757197301274735,
-          "best_target": "uv_token",
+          "is_best_similar": false,
+          "best_similar_score": 0.048970314286134506,
+          "best_target": "set",
           "position": { "token_start": 3974, "token_end": 3983 }
         },
         {
@@ -1108,7 +1108,7 @@
           "name": "write_req",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.022284528656728347,
           "best_target": "write_req",
           "position": { "token_start": 5567, "token_end": 5664 }
         },
@@ -1126,7 +1126,7 @@
           "name": "configure",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5348259312838877,
           "best_target": "configure",
           "position": { "token_start": 8790, "token_end": 8844 }
         },
@@ -1134,18 +1134,18 @@
           "repo": "skypjack/uvw",
           "name": "stream_handle",
           "needle_position": 0.65,
-          "is_best_similar": true,
-          "best_similar_score": 0.0166075192511208,
-          "best_target": "stream_handle",
+          "is_best_similar": false,
+          "best_similar_score": 0.031047536754521186,
+          "best_target": "write_req",
           "position": { "token_start": 10440, "token_end": 10473 }
         },
         {
           "repo": "skypjack/uvw",
           "name": "env",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "env",
+          "is_best_similar": false,
+          "best_similar_score": 0.04367293914076029,
+          "best_target": "set",
           "position": { "token_start": 9978, "token_end": 10157 }
         },
         {
@@ -1162,7 +1162,7 @@
           "name": "publish",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.014485308151669738,
           "best_target": "publish",
           "position": { "token_start": 1716, "token_end": 1761 }
         },
@@ -1171,7 +1171,7 @@
           "name": "CompateStringsCaseInsensitive",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8589264692851095,
           "best_target": "CompateStringsCaseInsensitive",
           "position": { "token_start": 747, "token_end": 871 }
         },
@@ -1180,7 +1180,7 @@
           "name": "ContainerToString",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.06708873118618978,
           "best_target": "ContainerToString",
           "position": { "token_start": 2356, "token_end": 2473 }
         },
@@ -1197,9 +1197,9 @@
           "repo": "ClickHouse/clickhouse-cpp",
           "name": "ServerException",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "ServerException",
+          "is_best_similar": false,
+          "best_similar_score": 0.012417181048898173,
+          "best_target": "CreateColumnByType",
           "position": { "token_start": 3074, "token_end": 3113 }
         },
         {
@@ -1207,7 +1207,7 @@
           "name": "AppendMany",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.09858437095371828,
           "best_target": "AppendMany",
           "position": { "token_start": 7112, "token_end": 7147 }
         },
@@ -1225,7 +1225,7 @@
           "name": "swap",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.8824969025845955,
+          "best_similar_score": 0.033866335496821456,
           "best_target": "swap",
           "position": { "token_start": 5049, "token_end": 5073 }
         },
@@ -1243,7 +1243,7 @@
           "name": "ConvertToStorageValue",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.0053322269491128905,
           "best_target": "ConvertToStorageValue",
           "position": { "token_start": 3440, "token_end": 3620 }
         },
@@ -1270,7 +1270,7 @@
           "name": "get_runtime_path",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7641254083103469,
           "best_target": "get_runtime_path",
           "position": { "token_start": 2341, "token_end": 2450 }
         },
@@ -1278,9 +1278,9 @@
           "repo": "polybar/polybar",
           "name": "m_path",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 0.03319603430011192,
-          "best_target": "m_path",
+          "is_best_similar": false,
+          "best_similar_score": 0.02506865661465162,
+          "best_target": "read",
           "position": { "token_start": 3979, "token_end": 4025 }
         },
         {
@@ -1323,9 +1323,9 @@
           "repo": "polybar/polybar",
           "name": "get_color",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "get_color",
+          "is_best_similar": false,
+          "best_similar_score": 0.020088997706503898,
+          "best_target": "utf8_get_len",
           "position": { "token_start": 12001, "token_end": 12057 }
         },
         {
@@ -1351,7 +1351,7 @@
           "name": "doAdvicesChain",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9885715536772978,
           "best_target": "doAdvicesChain",
           "position": { "token_start": 601, "token_end": 969 }
         },
@@ -1360,8 +1360,8 @@
           "name": "JsonConfigAdapter",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.01793443105390337,
-          "best_target": "genHttpResponse",
+          "best_similar_score": 0.008612661969248429,
+          "best_target": "splitStringToSet",
           "position": { "token_start": 2400, "token_end": 2407 }
         },
         {
@@ -1378,7 +1378,7 @@
           "name": "genHttpResponse",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.21585315290377588,
           "best_target": "genHttpResponse",
           "position": { "token_start": 5570, "token_end": 5689 }
         },
@@ -1396,7 +1396,7 @@
           "name": "HttpMessageStringViewBody",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.023463838512937193,
           "best_target": "HttpMessageStringViewBody",
           "position": { "token_start": 8737, "token_end": 8778 }
         },
@@ -1405,7 +1405,7 @@
           "name": "ListenerInfo",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.1273648326857903,
+          "best_similar_score": 0.10949741420907307,
           "best_target": "ListenerInfo",
           "position": { "token_start": 10425, "token_end": 10581 }
         },
@@ -1414,7 +1414,7 @@
           "name": "handleException",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.18970360562169677,
           "best_target": "handleException",
           "position": { "token_start": 12096, "token_end": 12158 }
         },
@@ -1423,7 +1423,7 @@
           "name": "bytesSize",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.9931271749133769,
+          "best_similar_score": 0.9809449806538211,
           "best_target": "bytesSize",
           "position": { "token_start": 13407, "token_end": 13892 }
         },
@@ -1431,9 +1431,9 @@
           "repo": "drogonframework/drogon",
           "name": "ChunkingParams",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "ChunkingParams",
+          "is_best_similar": false,
+          "best_similar_score": 0.013928109163467841,
+          "best_target": "splitStringToSet",
           "position": { "token_start": 15404, "token_end": 15430 }
         },
         {
@@ -1441,7 +1441,7 @@
           "name": "compatibility",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3943880613468293,
           "best_target": "compatibility",
           "position": { "token_start": 674, "token_end": 931 }
         },
@@ -1450,7 +1450,7 @@
           "name": "Sass_Inspect_Options",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.02315976375538632,
           "best_target": "Sass_Inspect_Options",
           "position": { "token_start": 2364, "token_end": 2429 }
         },
@@ -1459,7 +1459,7 @@
           "name": "Thunk",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5367088830805397,
           "best_target": "Thunk",
           "position": { "token_start": 4044, "token_end": 4085 }
         },
@@ -1468,7 +1468,7 @@
           "name": "vector_to_string",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8825272398231013,
           "best_target": "vector_to_string",
           "position": { "token_start": 5601, "token_end": 5748 }
         },
@@ -1477,7 +1477,7 @@
           "name": "debug_subset_map",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8188390243793079,
           "best_target": "debug_subset_map",
           "position": { "token_start": 7299, "token_end": 7428 }
         },
@@ -1495,8 +1495,8 @@
           "name": "ParentSuperselectorChunker",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.006441809760383514,
-          "best_target": "compatibility",
+          "best_similar_score": 2.2869653922138307e-7,
+          "best_target": "debug_sources_set",
           "position": { "token_start": 10389, "token_end": 10409 }
         },
         {
@@ -1504,7 +1504,7 @@
           "name": "Operand",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5194264628599394,
           "best_target": "Operand",
           "position": { "token_start": 11993, "token_end": 12046 }
         },
@@ -1513,7 +1513,7 @@
           "name": "debug_sources_set",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9753099120283327,
           "best_target": "debug_sources_set",
           "position": { "token_start": 13682, "token_end": 13804 }
         },
@@ -1531,7 +1531,7 @@
           "name": "vmap_binary_op",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8773004430149,
           "best_target": "vmap_binary_op",
           "position": { "token_start": 585, "token_end": 1018 }
         },
@@ -1540,7 +1540,7 @@
           "name": "vmap_trace",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.16787788544359514,
           "best_target": "vmap_trace",
           "position": { "token_start": 2074, "token_end": 2788 }
         },
@@ -1557,9 +1557,9 @@
           "repo": "ml-explore/mlx",
           "name": "InTracing",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "InTracing",
+          "is_best_similar": false,
+          "best_similar_score": 0.012702246279958633,
+          "best_target": "unpack_32_4",
           "position": { "token_start": 5628, "token_end": 5645 }
         },
         {
@@ -1567,7 +1567,7 @@
           "name": "copy_inplace_dispatch",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.5616596855157713,
+          "best_similar_score": 0.4378627308472896,
           "best_target": "copy_inplace_dispatch",
           "position": { "token_start": 7054, "token_end": 7592 }
         },
@@ -1575,9 +1575,9 @@
           "repo": "ml-explore/mlx",
           "name": "arange_set_scalars",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "arange_set_scalars",
+          "is_best_similar": false,
+          "best_similar_score": 0.017838543186486616,
+          "best_target": "vmap_binary_op",
           "position": { "token_start": 8875, "token_end": 8942 }
         },
         {
@@ -1594,7 +1594,7 @@
           "name": "QuantizedMatmul",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.9253911813809743,
+          "best_similar_score": 0.861173529963367,
           "best_target": "QuantizedMatmul",
           "position": { "token_start": 11860, "token_end": 11926 }
         },
@@ -1603,7 +1603,7 @@
           "name": "sqrt",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6535697968961118,
           "best_target": "sqrt",
           "position": { "token_start": 13741, "token_end": 13827 }
         },
@@ -1621,7 +1621,7 @@
           "name": "send",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.9182252311230936,
+          "best_similar_score": 0.23305763178917274,
           "best_target": "send",
           "position": { "token_start": 717, "token_end": 877 }
         },
@@ -1639,7 +1639,7 @@
           "name": "enable_abort_on_allocation_failure",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.015071184180845467,
           "best_target": "enable_abort_on_allocation_failure",
           "position": { "token_start": 3993, "token_end": 4027 }
         },
@@ -1648,7 +1648,7 @@
           "name": "make_shard_local_buffer_copy",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6721116688102866,
           "best_target": "make_shard_local_buffer_copy",
           "position": { "token_start": 5395, "token_end": 5702 }
         },
@@ -1657,7 +1657,7 @@
           "name": "describe_enum_value",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.1961887304255141,
           "best_target": "describe_enum_value",
           "position": { "token_start": 7115, "token_end": 7263 }
         },
@@ -1666,7 +1666,7 @@
           "name": "posix_datagram",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.12171285204356082,
           "best_target": "posix_datagram",
           "position": { "token_start": 8908, "token_end": 8952 }
         },
@@ -1683,9 +1683,9 @@
           "repo": "scylladb/seastar",
           "name": "RTE_LCORE_FOREACH_WORKER",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "RTE_LCORE_FOREACH_WORKER",
+          "is_best_similar": false,
+          "best_similar_score": 0.033866335496821456,
+          "best_target": "default_isolate_connection",
           "position": { "token_start": 12125, "token_end": 12182 }
         },
         {
@@ -1693,7 +1693,7 @@
           "name": "default_isolate_connection",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.4347208719449914,
           "best_target": "default_isolate_connection",
           "position": { "token_start": 13829, "token_end": 13860 }
         },
@@ -1702,7 +1702,7 @@
           "name": "is_control_char",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8574039191604413,
           "best_target": "is_control_char",
           "position": { "token_start": 15350, "token_end": 15381 }
         },
@@ -1720,7 +1720,7 @@
           "name": "HostVersion",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8824969025845955,
           "best_target": "HostVersion",
           "position": { "token_start": 2416, "token_end": 2446 }
         },
@@ -1738,7 +1738,7 @@
           "name": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9120815172610118,
           "best_target": "LLVMOrcLLJITBuilderSetObjectLinkingLayerCreator",
           "position": { "token_start": 5571, "token_end": 5746 }
         },
@@ -1756,7 +1756,7 @@
           "name": "WasmEdge_CompilerContext",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03823047674690734,
           "best_target": "WasmEdge_CompilerContext",
           "position": { "token_start": 8876, "token_end": 8917 }
         },
@@ -1764,9 +1764,9 @@
           "repo": "WasmEdge/WasmEdge",
           "name": "proxy",
           "needle_position": 0.65,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "proxy",
+          "is_best_similar": false,
+          "best_similar_score": 0.04329398793439738,
+          "best_target": "HostVersion",
           "position": { "token_start": 10437, "token_end": 10621 }
         },
         {
@@ -1783,7 +1783,7 @@
           "name": "fromLastError",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.031128045975833605,
+          "best_similar_score": 0.03186709136842993,
           "best_target": "fromLastError",
           "position": { "token_start": 13569, "token_end": 13978 }
         },
@@ -1819,8 +1819,8 @@
           "name": "ProtocolError",
           "needle_position": 0.25,
           "is_best_similar": false,
-          "best_similar_score": 0.044022686633808955,
-          "best_target": "DataHandle",
+          "best_similar_score": 0,
+          "best_target": null,
           "position": { "token_start": 3928, "token_end": 3972 }
         },
         {
@@ -1828,7 +1828,7 @@
           "name": "serializePrimitive",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.49476665153885574,
           "best_target": "serializePrimitive",
           "position": { "token_start": 5590, "token_end": 5693 }
         },
@@ -1837,7 +1837,7 @@
           "name": "DataHandle",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.044706344276931285,
           "best_target": "DataHandle",
           "position": { "token_start": 7087, "token_end": 7111 }
         },
@@ -1846,8 +1846,8 @@
           "name": "ListenerCall",
           "needle_position": 0.55,
           "is_best_similar": false,
-          "best_similar_score": 0.0044788623808605,
-          "best_target": "Pool",
+          "best_similar_score": 0.023854922443805587,
+          "best_target": "serializePrimitive",
           "position": { "token_start": 8672, "token_end": 8706 }
         },
         {
@@ -1855,7 +1855,7 @@
           "name": "PairListObjectWrapper",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.021598265052211615,
           "best_target": "PairListObjectWrapper",
           "position": { "token_start": 10275, "token_end": 10331 }
         },
@@ -1864,7 +1864,7 @@
           "name": "FlushCoroutine",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.537284965911771,
           "best_target": "FlushCoroutine",
           "position": { "token_start": 11876, "token_end": 11927 }
         },
@@ -1873,7 +1873,7 @@
           "name": "HttpRouterTemplate",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.03265830837077511,
+          "best_similar_score": 0.041263216881455095,
           "best_target": "ProtocolError",
           "position": { "token_start": 13398, "token_end": 13405 }
         },
@@ -1882,7 +1882,7 @@
           "name": "AuthorizationObject",
           "needle_position": 0.95,
           "is_best_similar": false,
-          "best_similar_score": 0.013137209862130366,
+          "best_similar_score": 0.009661813967503317,
           "best_target": "ProtocolError",
           "position": { "token_start": 15039, "token_end": 15049 }
         }
@@ -1919,9 +1919,9 @@
           "repo": "google/gson",
           "name": "getAsJsonNull",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "getAsJsonNull",
+          "is_best_similar": false,
+          "best_similar_score": 0.04794788249772564,
+          "best_target": "nonNull",
           "position": { "token_start": 5553, "token_end": 5626 }
         },
         {
@@ -1929,7 +1929,7 @@
           "name": "nonNull",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.23677591070891463,
           "best_target": "nonNull",
           "position": { "token_start": 6981, "token_end": 7025 }
         },
@@ -1937,9 +1937,9 @@
           "repo": "google/gson",
           "name": "rotateLeft",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "rotateLeft",
+          "is_best_similar": false,
+          "best_similar_score": 0.028387290312736457,
+          "best_target": "addTypeAdaptersForDate",
           "position": { "token_start": 6506, "token_end": 6748 }
         },
         {
@@ -1955,9 +1955,9 @@
           "repo": "google/gson",
           "name": "setExclusionStrategies",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "setExclusionStrategies",
+          "is_best_similar": false,
+          "best_similar_score": 0.0026320975890707205,
+          "best_target": "run",
           "position": { "token_start": 11956, "token_end": 12041 }
         },
         {
@@ -1965,7 +1965,7 @@
           "name": "run",
           "needle_position": 0.85,
           "is_best_similar": false,
-          "best_similar_score": 0.015307562883906582,
+          "best_similar_score": 0.04711846368419909,
           "best_target": "addTypeAdaptersForDate",
           "position": { "token_start": 13434, "token_end": 13572 }
         },
@@ -1974,7 +1974,7 @@
           "name": "has",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5578002860768766,
           "best_target": "has",
           "position": { "token_start": 10374, "token_end": 10397 }
         },
@@ -1982,9 +1982,9 @@
           "repo": "square/retrofit",
           "name": "getRawCall",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "getRawCall",
+          "is_best_similar": false,
+          "best_similar_score": 0.02383765064930276,
+          "best_target": "getUpperBounds",
           "position": { "token_start": 686, "token_end": 905 }
         },
         {
@@ -2001,7 +2001,7 @@
           "name": "resolveTypeVariable",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9121591626315467,
           "best_target": "resolveTypeVariable",
           "position": { "token_start": 3947, "token_end": 4103 }
         },
@@ -2009,9 +2009,9 @@
           "repo": "square/retrofit",
           "name": "getGenericSupertype",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "getGenericSupertype",
+          "is_best_similar": false,
+          "best_similar_score": 0.035197945179105884,
+          "best_target": "indexOf",
           "position": { "token_start": 3822, "token_end": 4169 }
         },
         {
@@ -2028,7 +2028,7 @@
           "name": "getActualTypeArguments",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.089563496460826,
           "best_target": "getActualTypeArguments",
           "position": { "token_start": 6356, "token_end": 6381 }
         },
@@ -2037,7 +2037,7 @@
           "name": "indexOf",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9622687143632572,
           "best_target": "indexOf",
           "position": { "token_start": 4172, "token_end": 4238 }
         },
@@ -2045,9 +2045,9 @@
           "repo": "square/retrofit",
           "name": "getUpperBounds",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 0.2907153684841096,
-          "best_target": "getUpperBounds",
+          "is_best_similar": false,
+          "best_similar_score": 0.038319342506773955,
+          "best_target": "addQueryParam",
           "position": { "token_start": 7150, "token_end": 7175 }
         },
         {
@@ -2064,7 +2064,7 @@
           "name": "annotationType",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.048867899472826,
           "best_target": "annotationType",
           "position": { "token_start": 12124, "token_end": 12152 }
         },
@@ -2090,9 +2090,9 @@
           "repo": "karatelabs/karate",
           "name": "karateLocator",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "karateLocator",
+          "is_best_similar": false,
+          "best_similar_score": 0.0695635988471652,
+          "best_target": "getCurrentTime",
           "position": { "token_start": 4041, "token_end": 4074 }
         },
         {
@@ -2108,9 +2108,9 @@
           "repo": "karatelabs/karate",
           "name": "execInternal",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "execInternal",
+          "is_best_similar": false,
+          "best_similar_score": 0.038731382358530166,
+          "best_target": "getElementSelector",
           "position": { "token_start": 7133, "token_end": 7183 }
         },
         {
@@ -2118,7 +2118,7 @@
           "name": "callOnce",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03564700389553427,
           "best_target": "callOnce",
           "position": { "token_start": 8705, "token_end": 9177 }
         },
@@ -2127,7 +2127,7 @@
           "name": "getCurrentTime",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.32668286409255015,
           "best_target": "getCurrentTime",
           "position": { "token_start": 10264, "token_end": 10288 }
         },
@@ -2136,7 +2136,7 @@
           "name": "enableForUri",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.10873941109330497,
+          "best_similar_score": 0.026748503191801554,
           "best_target": "enableForUri",
           "position": { "token_start": 11947, "token_end": 11955 }
         },
@@ -2145,7 +2145,7 @@
           "name": "getElementSelector",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9740037464252967,
           "best_target": "getElementSelector",
           "position": { "token_start": 13422, "token_end": 13574 }
         },
@@ -2163,7 +2163,7 @@
           "name": "valueOf",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6688916893222756,
           "best_target": "valueOf",
           "position": { "token_start": 736, "token_end": 802 }
         },
@@ -2172,7 +2172,7 @@
           "name": "rOperation",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.09871478426984116,
           "best_target": "rOperation",
           "position": { "token_start": 2387, "token_end": 2420 }
         },
@@ -2180,27 +2180,27 @@
           "repo": "Password4j/password4j",
           "name": "blake2bLong",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "blake2bLong",
+          "is_best_similar": false,
+          "best_similar_score": 0.08603520723426228,
+          "best_target": "fromCharSequenceToChars",
           "position": { "token_start": 3830, "token_end": 4207 }
         },
         {
           "repo": "Password4j/password4j",
           "name": "balloon",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 0.09136685477923899,
-          "best_target": "balloon",
+          "is_best_similar": false,
+          "best_similar_score": 0.05768311351783049,
+          "best_target": "fromCharSequenceToChars",
           "position": { "token_start": 5526, "token_end": 5639 }
         },
         {
           "repo": "Password4j/password4j",
           "name": "fromStringBuilderToBytes",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 0.9660520303055021,
-          "best_target": "fromStringBuilderToBytes",
+          "is_best_similar": false,
+          "best_similar_score": 0.2922884478276928,
+          "best_target": "fromCharSequenceToChars",
           "position": { "token_start": 7268, "token_end": 7349 }
         },
         {
@@ -2217,7 +2217,7 @@
           "name": "getSecureRandom",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7165313105737893,
           "best_target": "getSecureRandom",
           "position": { "token_start": 10377, "token_end": 10399 }
         },
@@ -2234,9 +2234,9 @@
           "repo": "Password4j/password4j",
           "name": "sMix",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "sMix",
+          "is_best_similar": false,
+          "best_similar_score": 0.02779378313809067,
+          "best_target": "rOperation",
           "position": { "token_start": 13473, "token_end": 13761 }
         },
         {
@@ -2244,7 +2244,7 @@
           "name": "isPBKDF2Supported",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.791537399130509,
           "best_target": "isPBKDF2Supported",
           "position": { "token_start": 15199, "token_end": 15311 }
         },
@@ -2262,7 +2262,7 @@
           "name": "isDefaultTag",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5341735956899847,
           "best_target": "isDefaultTag",
           "position": { "token_start": 2412, "token_end": 2439 }
         },
@@ -2280,7 +2280,7 @@
           "name": "getEnvironmentMap",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.02717076173570544,
           "best_target": "getEnvironmentMap",
           "position": { "token_start": 5628, "token_end": 5656 }
         },
@@ -2289,7 +2289,7 @@
           "name": "checkManifestPlatform",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9705733906555176,
           "best_target": "checkManifestPlatform",
           "position": { "token_start": 6942, "token_end": 7363 }
         },
@@ -2298,7 +2298,7 @@
           "name": "setConfig",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03569344013073345,
           "best_target": "setConfig",
           "position": { "token_start": 8764, "token_end": 8784 }
         },
@@ -2307,8 +2307,8 @@
           "name": "docker",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.07161190261650083,
-          "best_target": "isDefaultTag",
+          "best_similar_score": 0.03734668214066855,
+          "best_target": "withDirectory",
           "position": { "token_start": 10395, "token_end": 10430 }
         },
         {
@@ -2316,7 +2316,7 @@
           "name": "pushBaseImageLayers",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6888365053466561,
           "best_target": "pushBaseImageLayers",
           "position": { "token_start": 12016, "token_end": 12118 }
         },
@@ -2325,7 +2325,7 @@
           "name": "getPath",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.537284965911771,
           "best_target": "getPath",
           "position": { "token_start": 13668, "token_end": 13681 }
         },
@@ -2343,7 +2343,7 @@
           "name": "freeFloatingYoungBlock",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.06950985875434708,
           "best_target": "freeFloatingYoungBlock",
           "position": { "token_start": 700, "token_end": 915 }
         },
@@ -2352,7 +2352,7 @@
           "name": "checkForGCCause",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9221220693827681,
           "best_target": "checkForGCCause",
           "position": { "token_start": 2205, "token_end": 2403 }
         },
@@ -2361,7 +2361,7 @@
           "name": "postEvacuatePhaseDuration",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.8801117367933934,
+          "best_similar_score": 0.20333448190047881,
           "best_target": "postEvacuatePhaseDuration",
           "position": { "token_start": 4027, "token_end": 4081 }
         },
@@ -2370,7 +2370,7 @@
           "name": "tagsContain",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.08516138411042476,
           "best_target": "tagsContain",
           "position": { "token_start": 5664, "token_end": 5688 }
         },
@@ -2379,7 +2379,7 @@
           "name": "extractValues",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.8470651325287474,
+          "best_similar_score": 0.8121210334992832,
           "best_target": "extractValues",
           "position": { "token_start": 7199, "token_end": 7400 }
         },
@@ -2388,7 +2388,7 @@
           "name": "getMetaSpaceRecord",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.033239230550659284,
           "best_target": "getMetaSpaceRecord",
           "position": { "token_start": 8805, "token_end": 8927 }
         },
@@ -2406,7 +2406,7 @@
           "name": "setHumongousOccupancyAfterCollection",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.21725885420079705,
           "best_target": "setHumongousOccupancyAfterCollection",
           "position": { "token_start": 12148, "token_end": 12199 }
         },
@@ -2442,7 +2442,7 @@
           "name": "formatSourceReflowStringsAndFixImports",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.11556647985416685,
+          "best_similar_score": 0.07771324020744104,
           "best_target": "formatSourceReflowStringsAndFixImports",
           "position": { "token_start": 2365, "token_end": 2409 }
         },
@@ -2451,7 +2451,7 @@
           "name": "rangesAfterAppliedReplacements",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2215428143745612,
           "best_target": "rangesAfterAppliedReplacements",
           "position": { "token_start": 3913, "token_end": 4140 }
         },
@@ -2460,7 +2460,7 @@
           "name": "isArrayValue",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.24276887859707402,
           "best_target": "isArrayValue",
           "position": { "token_start": 5666, "token_end": 5739 }
         },
@@ -2469,7 +2469,7 @@
           "name": "tryBreakLastLevel",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.05690181960554177,
           "best_target": "tryBreakLastLevel",
           "position": { "token_start": 7143, "token_end": 7277 }
         },
@@ -2478,7 +2478,7 @@
           "name": "visitYield",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.15379176622602886,
+          "best_similar_score": 0.06132821326071129,
           "best_target": "visitYield",
           "position": { "token_start": 8841, "token_end": 8905 }
         },
@@ -2487,7 +2487,7 @@
           "name": "addTrivia",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03011834967182607,
           "best_target": "addTrivia",
           "position": { "token_start": 10484, "token_end": 10536 }
         },
@@ -2504,9 +2504,9 @@
           "repo": "palantir/palantir-java-format",
           "name": "blankLines",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 0.5757197301274735,
-          "best_target": "blankLines",
+          "is_best_similar": false,
+          "best_similar_score": 0.025114518131476242,
+          "best_target": "formatSourceReflowStringsAndFixImports",
           "position": { "token_start": 13496, "token_end": 13511 }
         },
         {
@@ -2522,9 +2522,9 @@
           "repo": "microsoft/mssql-jdbc",
           "name": "checkAndAppendClientConnId",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "checkAndAppendClientConnId",
+          "is_best_similar": false,
+          "best_similar_score": 0.04799161702873432,
+          "best_target": "notifyEvent",
           "position": { "token_start": 707, "token_end": 896 }
         },
         {
@@ -2532,7 +2532,7 @@
           "name": "writeEncryptedRPCTime",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3195672714854471,
           "best_target": "writeEncryptedRPCTime",
           "position": { "token_start": 2311, "token_end": 2535 }
         },
@@ -2541,7 +2541,7 @@
           "name": "removeSingleQuote",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.960707139034002,
           "best_target": "removeSingleQuote",
           "position": { "token_start": 3979, "token_end": 4046 }
         },
@@ -2568,7 +2568,7 @@
           "name": "getColumnEncryptionKeyValues",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.11556377708900069,
           "best_target": "getColumnEncryptionKeyValues",
           "position": { "token_start": 8921, "token_end": 8948 }
         },
@@ -2577,7 +2577,7 @@
           "name": "getTrustStorePassword",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7598356856515925,
           "best_target": "getTrustStorePassword",
           "position": { "token_start": 10392, "token_end": 10433 }
         },
@@ -2595,7 +2595,7 @@
           "name": "computeResponse",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2718970121689612,
           "best_target": "computeResponse",
           "position": { "token_start": 13673, "token_end": 13833 }
         },
@@ -2612,9 +2612,9 @@
           "repo": "google/conscrypt",
           "name": "onEngineHandshakeFinished",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "onEngineHandshakeFinished",
+          "is_best_similar": false,
+          "best_similar_score": 0.027895820162122397,
+          "best_target": "engineGetServerSessionContext",
           "position": { "token_start": 746, "token_end": 864 }
         },
         {
@@ -2622,7 +2622,7 @@
           "name": "engineGetKeyManagers",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2494927603288791,
           "best_target": "engineGetKeyManagers",
           "position": { "token_start": 2343, "token_end": 2410 }
         },
@@ -2630,18 +2630,18 @@
           "repo": "google/conscrypt",
           "name": "engineGenerateCertificate",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "engineGenerateCertificate",
+          "is_best_similar": false,
+          "best_similar_score": 0.016330702038618312,
+          "best_target": "open",
           "position": { "token_start": 3970, "token_end": 4036 }
         },
         {
           "repo": "google/conscrypt",
           "name": "open",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "open",
+          "is_best_similar": false,
+          "best_similar_score": 0.10487303092333145,
+          "best_target": "engineGenerateCertificate",
           "position": { "token_start": 5611, "token_end": 5651 }
         },
         {
@@ -2657,9 +2657,9 @@
           "repo": "google/conscrypt",
           "name": "engineGetServerSessionContext",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "engineGetServerSessionContext",
+          "is_best_similar": false,
+          "best_similar_score": 0.008899205859050041,
+          "best_target": "onEngineHandshakeFinished",
           "position": { "token_start": 8729, "token_end": 8754 }
         },
         {
@@ -2667,7 +2667,7 @@
           "name": "checkAndSetEncodedKey",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9874188792217663,
           "best_target": "checkAndSetEncodedKey",
           "position": { "token_start": 10286, "token_end": 10516 }
         },
@@ -2685,7 +2685,7 @@
           "name": "findByApiName",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9554427922043668,
           "best_target": "findByApiName",
           "position": { "token_start": 12284, "token_end": 12348 }
         },
@@ -2703,7 +2703,7 @@
           "name": "endInputX",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.9753099120283327,
+          "best_similar_score": 0.20142246820880172,
           "best_target": "endInputX",
           "position": { "token_start": 719, "token_end": 908 }
         },
@@ -2712,7 +2712,7 @@
           "name": "onEventTime",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.20326213373677707,
           "best_target": "onEventTime",
           "position": { "token_start": 2393, "token_end": 2462 }
         },
@@ -2730,7 +2730,7 @@
           "name": "toList",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.27560016787236363,
           "best_target": "toList",
           "position": { "token_start": 2860, "token_end": 2937 }
         },
@@ -2739,7 +2739,7 @@
           "name": "putBroadcastVariable",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8910233766955563,
           "best_target": "putBroadcastVariable",
           "position": { "token_start": 7095, "token_end": 7206 }
         },
@@ -2748,7 +2748,7 @@
           "name": "getInputs",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5578002860768766,
           "best_target": "getInputs",
           "position": { "token_start": 8756, "token_end": 8779 }
         },
@@ -2757,7 +2757,7 @@
           "name": "setKeyContextElement1",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7788007830714049,
           "best_target": "setKeyContextElement1",
           "position": { "token_start": 10448, "token_end": 10485 }
         },
@@ -2766,7 +2766,7 @@
           "name": "getModelDataFromModel",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8660902835114818,
           "best_target": "getModelDataFromModel",
           "position": { "token_start": 11986, "token_end": 12152 }
         },
@@ -2784,7 +2784,7 @@
           "name": "getCurrentOuterSnapshotVersion",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7165313105737893,
           "best_target": "getCurrentOuterSnapshotVersion",
           "position": { "token_start": 15104, "token_end": 15130 }
         }
@@ -2795,7 +2795,7 @@
           "name": "reshape",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.9022070992889258,
+          "best_similar_score": 0.8837050093184204,
           "best_target": "reshape",
           "position": { "token_start": 675, "token_end": 901 }
         },
@@ -2822,7 +2822,7 @@
           "name": "getModelJSON",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.9770125183673897,
+          "best_similar_score": 0.8559651810832407,
           "best_target": "getModelJSON",
           "position": { "token_start": 5562, "token_end": 5665 }
         },
@@ -2830,9 +2830,9 @@
           "repo": "xenova/transformers.js",
           "name": "hanning",
           "needle_position": 0.45,
-          "is_best_similar": false,
-          "best_similar_score": 0.9903382397772544,
-          "best_target": "window_function",
+          "is_best_similar": true,
+          "best_similar_score": 0.985611760820714,
+          "best_target": "hanning",
           "position": { "token_start": 7143, "token_end": 7307 }
         },
         {
@@ -2849,7 +2849,7 @@
           "name": "window_function",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.9903382397772544,
+          "best_similar_score": 0.44949762231376933,
           "best_target": "window_function",
           "position": { "token_start": 10237, "token_end": 10522 }
         },
@@ -2867,7 +2867,7 @@
           "name": "permute_data",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.9931271749133769,
+          "best_similar_score": 0.19007332352646092,
           "best_target": "permute_data",
           "position": { "token_start": 12886, "token_end": 13228 }
         },
@@ -2876,7 +2876,7 @@
           "name": "isChat",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.4685909905380384,
+          "best_similar_score": 1.0,
           "best_target": "isChat",
           "position": { "token_start": 14963, "token_end": 14993 }
         },
@@ -2885,7 +2885,7 @@
           "name": "sendfile",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7759011654074257,
           "best_target": "sendfile",
           "position": { "token_start": 504, "token_end": 1071 }
         },
@@ -2894,7 +2894,7 @@
           "name": "trim_prefix",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.4325742882964847,
           "best_target": "trim_prefix",
           "position": { "token_start": 2137, "token_end": 2525 }
         },
@@ -2903,7 +2903,7 @@
           "name": "decode_param",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9636953777259365,
           "best_target": "decode_param",
           "position": { "token_start": 3737, "token_end": 3853 }
         },
@@ -2911,9 +2911,9 @@
           "repo": "expressjs/express",
           "name": "gettype",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "gettype",
+          "is_best_similar": false,
+          "best_similar_score": 0.024232342152420806,
+          "best_target": "decode_param",
           "position": { "token_start": 5421, "token_end": 5489 }
         },
         {
@@ -2921,7 +2921,7 @@
           "name": "newObject",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.537284965911771,
           "best_target": "newObject",
           "position": { "token_start": 1936, "token_end": 1947 }
         },
@@ -2948,7 +2948,7 @@
           "name": "Route",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.42131488419981705,
+          "best_similar_score": 1.0,
           "best_target": "Route",
           "position": { "token_start": 11483, "token_end": 11534 }
         },
@@ -2957,7 +2957,7 @@
           "name": "tryStat",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9428731438548749,
           "best_target": "tryStat",
           "position": { "token_start": 13065, "token_end": 13116 }
         },
@@ -2966,7 +2966,7 @@
           "name": "stringify",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.774745021025012,
+          "best_similar_score": 0.7947632649924686,
           "best_target": "stringify",
           "position": { "token_start": 11043, "token_end": 11276 }
         },
@@ -2975,7 +2975,7 @@
           "name": "done",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8666415730847504,
           "best_target": "done",
           "position": { "token_start": 774, "token_end": 839 }
         },
@@ -2983,9 +2983,9 @@
           "repo": "axios/axios",
           "name": "formatMessage",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "formatMessage",
+          "is_best_similar": false,
+          "best_similar_score": 0.007288008449799379,
+          "best_target": "buildURL",
           "position": { "token_start": 2337, "token_end": 2389 }
         },
         {
@@ -3001,9 +3001,9 @@
           "repo": "axios/axios",
           "name": "combineURLs",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 0.8890097654027757,
-          "best_target": "combineURLs",
+          "is_best_similar": false,
+          "best_similar_score": 0.9229984322877336,
+          "best_target": "buildURL",
           "position": { "token_start": 734, "token_end": 787 }
         },
         {
@@ -3011,7 +3011,7 @@
           "name": "settle",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.9534969548334766,
+          "best_similar_score": 0.8448024231509461,
           "best_target": "settle",
           "position": { "token_start": 6998, "token_end": 7146 }
         },
@@ -3028,18 +3028,18 @@
           "repo": "axios/axios",
           "name": "formatHeader",
           "needle_position": 0.65,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "formatHeader",
+          "is_best_similar": false,
+          "best_similar_score": 0.02428706324042873,
+          "best_target": "CanceledError",
           "position": { "token_start": 10097, "token_end": 10159 }
         },
         {
           "repo": "axios/axios",
           "name": "CanceledError",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "CanceledError",
+          "is_best_similar": false,
+          "best_similar_score": 0.2685322063684663,
+          "best_target": "AxiosError",
           "position": { "token_start": 10990, "token_end": 11073 }
         },
         {
@@ -3047,7 +3047,7 @@
           "name": "deleteHeader",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.12351026307731532,
           "best_target": "deleteHeader",
           "position": { "token_start": 13229, "token_end": 13321 }
         },
@@ -3056,7 +3056,7 @@
           "name": "isAxiosError",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.8187307530779819,
+          "best_similar_score": 0.24736929544091932,
           "best_target": "isAxiosError",
           "position": { "token_start": 15131, "token_end": 15166 }
         },
@@ -3065,7 +3065,7 @@
           "name": "execScript",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9574703659004046,
           "best_target": "execScript",
           "position": { "token_start": 721, "token_end": 893 }
         },
@@ -3083,7 +3083,7 @@
           "name": "convertToFP",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.9082489095559811,
+          "best_similar_score": 0.9746849137081522,
           "best_target": "convertToFP",
           "position": { "token_start": 3943, "token_end": 4074 }
         },
@@ -3092,7 +3092,7 @@
           "name": "intervalToDuration",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.9920319148370607,
+          "best_similar_score": 0.8067303362536947,
           "best_target": "intervalToDuration",
           "position": { "token_start": 5234, "token_end": 5585 }
         },
@@ -3101,7 +3101,7 @@
           "name": "formatTimezoneShort",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8863491991954914,
           "best_target": "formatTimezoneShort",
           "position": { "token_start": 7190, "token_end": 7316 }
         },
@@ -3110,7 +3110,7 @@
           "name": "fn",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.03673869394780409,
           "best_target": "fn",
           "position": { "token_start": 8827, "token_end": 8887 }
         },
@@ -3137,7 +3137,7 @@
           "name": "millisecondsToSeconds",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.7285959997974691,
+          "best_similar_score": 0.2679602856676624,
           "best_target": "millisecondsToSeconds",
           "position": { "token_start": 13119, "token_end": 13157 }
         },
@@ -3145,9 +3145,9 @@
           "repo": "date-fns/date-fns",
           "name": "dateOrdinalNumber",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "dateOrdinalNumber",
+          "is_best_similar": false,
+          "best_similar_score": 0.03301533245840463,
+          "best_target": "millisecondsToSeconds",
           "position": { "token_start": 15278, "token_end": 15423 }
         },
         {
@@ -3155,7 +3155,7 @@
           "name": "isBinaryPath",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.04329398793439738,
+          "best_similar_score": 0.06003934299439418,
           "best_target": "isBinaryPath",
           "position": { "token_start": 766, "token_end": 798 }
         },
@@ -3164,7 +3164,7 @@
           "name": "isFilterEmpty",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.982609137827942,
+          "best_similar_score": 0.8149695927510339,
           "best_target": "isFilterEmpty",
           "position": { "token_start": 2352, "token_end": 2489 }
         },
@@ -3173,7 +3173,7 @@
           "name": "createOpenAIToolsAgent",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.985611760820714,
+          "best_similar_score": 0.5420529722951042,
           "best_target": "createOpenAIToolsAgent",
           "position": { "token_start": 3818, "token_end": 4095 }
         },
@@ -3182,7 +3182,7 @@
           "name": "processValue",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.3415646993645711,
           "best_target": "processValue",
           "position": { "token_start": 5600, "token_end": 5666 }
         },
@@ -3190,9 +3190,9 @@
           "repo": "langchain-ai/langchainjs",
           "name": "convertObjectFilterToStructuredQuery",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 0.08461795479465183,
-          "best_target": "convertObjectFilterToStructuredQuery",
+          "is_best_similar": false,
+          "best_similar_score": 0,
+          "best_target": null,
           "position": { "token_start": 7206, "token_end": 7296 }
         },
         {
@@ -3200,7 +3200,7 @@
           "name": "createOpenAIFunctionsAgent",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.8980997040373143,
+          "best_similar_score": 0.985611760820714,
           "best_target": "createOpenAIFunctionsAgent",
           "position": { "token_start": 8640, "token_end": 8926 }
         },
@@ -3209,7 +3209,7 @@
           "name": "getEndpoint",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.9847331232494917,
+          "best_similar_score": 0.7616722897659672,
           "best_target": "getEndpoint",
           "position": { "token_start": 10495, "token_end": 10781 }
         },
@@ -3218,7 +3218,7 @@
           "name": "isOffTheShelfEvaluator",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.9733349348192527,
+          "best_similar_score": 0.25907217465890986,
           "best_target": "isOffTheShelfEvaluator",
           "position": { "token_start": 11982, "token_end": 12072 }
         },
@@ -3227,7 +3227,7 @@
           "name": "complexValue",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.8831163328908891,
+          "best_similar_score": 0.8443822560824699,
           "best_target": "complexValue",
           "position": { "token_start": 13531, "token_end": 13808 }
         },
@@ -3245,7 +3245,7 @@
           "name": "setCss",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.20309866951923652,
           "best_target": "setCss",
           "position": { "token_start": 640, "token_end": 890 }
         },
@@ -3254,7 +3254,7 @@
           "name": "insertAfter",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.9893049153303822,
+          "best_similar_score": 0.5497228795522414,
           "best_target": "insertAfter",
           "position": { "token_start": 2164, "token_end": 2430 }
         },
@@ -3272,7 +3272,7 @@
           "name": "toggleClass",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.9955456643969636,
+          "best_similar_score": 0.6271127726005871,
           "best_target": "toggleClass",
           "position": { "token_start": 5154, "token_end": 5665 }
         },
@@ -3280,9 +3280,9 @@
           "repo": "cheeriojs/cheerio",
           "name": "attr",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 0.9691322618641436,
-          "best_target": "attr",
+          "is_best_similar": false,
+          "best_similar_score": 0.026867471373357404,
+          "best_target": "createTestServer",
           "position": { "token_start": 6815, "token_end": 7170 }
         },
         {
@@ -3290,7 +3290,7 @@
           "name": "createTestServer",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2770983225866643,
           "best_target": "createTestServer",
           "position": { "token_start": 8778, "token_end": 8938 }
         },
@@ -3299,7 +3299,7 @@
           "name": "empty",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.9710165517924373,
+          "best_similar_score": 0.8385130047130208,
           "best_target": "empty",
           "position": { "token_start": 9961, "token_end": 10057 }
         },
@@ -3317,7 +3317,7 @@
           "name": "appendTo",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.9574533680683809,
+          "best_similar_score": 0.6429711509854475,
           "best_target": "appendTo",
           "position": { "token_start": 13138, "token_end": 13222 }
         },
@@ -3326,7 +3326,7 @@
           "name": "is",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.9718328750329812,
+          "best_similar_score": 0.8938510701271204,
           "best_target": "is",
           "position": { "token_start": 14540, "token_end": 14651 }
         },
@@ -3335,7 +3335,7 @@
           "name": "getBrowserInfo",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.6498621957458346,
+          "best_similar_score": 0.837602903875891,
           "best_target": "getBrowserInfo",
           "position": { "token_start": 589, "token_end": 1034 }
         },
@@ -3343,9 +3343,9 @@
           "repo": "openai/openai-node",
           "name": "mockFetch",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "mockFetch",
+          "is_best_similar": false,
+          "best_similar_score": 0.12278343956722053,
+          "best_target": "mockStreamingChatCompletionFetch",
           "position": { "token_start": 2190, "token_end": 2654 }
         },
         {
@@ -3362,7 +3362,7 @@
           "name": "getDefaultAgent",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.8668778997501817,
+          "best_similar_score": 0.4111336169005197,
           "best_target": "getDefaultAgent",
           "position": { "token_start": 5619, "token_end": 5636 }
         },
@@ -3407,7 +3407,7 @@
           "name": "findDoubleNewlineIndex",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7040233750519773,
           "best_target": "findDoubleNewlineIndex",
           "position": { "token_start": 13565, "token_end": 13870 }
         },
@@ -3416,7 +3416,7 @@
           "name": "isRunnableFunctionWithParse",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.9487294800164372,
+          "best_similar_score": 0.4370865684029776,
           "best_target": "isRunnableFunctionWithParse",
           "position": { "token_start": 15278, "token_end": 15325 }
         },
@@ -3425,7 +3425,7 @@
           "name": "getKeyName",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.630190855592386,
           "best_target": "getKeyName",
           "position": { "token_start": 773, "token_end": 819 }
         },
@@ -3443,7 +3443,7 @@
           "name": "checkUserBlock",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.32362227253846987,
           "best_target": "checkUserBlock",
           "position": { "token_start": 3978, "token_end": 4043 }
         },
@@ -3452,7 +3452,7 @@
           "name": "getRetention",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.0877112236952021,
+          "best_similar_score": 0.08745953896710164,
           "best_target": "getRetention",
           "position": { "token_start": 5605, "token_end": 5701 }
         },
@@ -3461,7 +3461,7 @@
           "name": "getAllowedUnits",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 0.9740274534203012,
+          "best_similar_score": 0.008924789964594494,
           "best_target": "getAllowedUnits",
           "position": { "token_start": 7184, "token_end": 7283 }
         },
@@ -3469,9 +3469,9 @@
           "repo": "umami-software/umami",
           "name": "getWebsiteStats",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 0.9726044771163485,
-          "best_target": "getWebsiteStats",
+          "is_best_similar": false,
+          "best_similar_score": 0,
+          "best_target": null,
           "position": { "token_start": 8824, "token_end": 8928 }
         },
         {
@@ -3479,7 +3479,7 @@
           "name": "useLanguageNames",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.8774232157661442,
+          "best_similar_score": 0.9805831403241088,
           "best_target": "useLanguageNames",
           "position": { "token_start": 10423, "token_end": 10598 }
         },
@@ -3487,27 +3487,27 @@
           "repo": "umami-software/umami",
           "name": "getFunnel",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 0.10573628011270286,
-          "best_target": "getFunnel",
+          "is_best_similar": false,
+          "best_similar_score": 0.0031384359321370973,
+          "best_target": "getTimestampDiffQuery",
           "position": { "token_start": 12061, "token_end": 12174 }
         },
         {
           "repo": "umami-software/umami",
           "name": "updateTeam",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 0.9672161004820058,
-          "best_target": "updateTeam",
+          "is_best_similar": false,
+          "best_similar_score": 0.004269301659322756,
+          "best_target": "checkUserBlock",
           "position": { "token_start": 13699, "token_end": 13785 }
         },
         {
           "repo": "umami-software/umami",
           "name": "getTimestampDiffQuery",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "getTimestampDiffQuery",
+          "is_best_similar": false,
+          "best_similar_score": 0,
+          "best_target": null,
           "position": { "token_start": 15226, "token_end": 15326 }
         },
         {
@@ -3515,7 +3515,7 @@
           "name": "generateTorso",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.42780142492242773,
+          "best_similar_score": 0.5500234144429741,
           "best_target": "generateTorso",
           "position": { "token_start": 359, "token_end": 1169 }
         },
@@ -3523,9 +3523,9 @@
           "repo": "mrdoob/three.js",
           "name": "sortOpaque",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "sortOpaque",
+          "is_best_similar": false,
+          "best_similar_score": 0.004619102721885521,
+          "best_target": "transformVertex",
           "position": { "token_start": 2186, "token_end": 2212 }
         },
         {
@@ -3533,7 +3533,7 @@
           "name": "transformVertex",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.3166578049491195,
+          "best_similar_score": 0.18546873927589022,
           "best_target": "transformVertex",
           "position": { "token_start": 3609, "token_end": 3839 }
         },
@@ -3542,7 +3542,7 @@
           "name": "handleTriangle",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.022225954588728104,
           "best_target": "handleTriangle",
           "position": { "token_start": 4857, "token_end": 5289 }
         },
@@ -3559,9 +3559,9 @@
           "repo": "mrdoob/three.js",
           "name": "setupFrameBufferTexture",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 0.20558147251203057,
-          "best_target": "setupFrameBufferTexture",
+          "is_best_similar": false,
+          "best_similar_score": 0.04331412720926564,
+          "best_target": "sortOpaque",
           "position": { "token_start": 7983, "token_end": 8526 }
         },
         {
@@ -3578,7 +3578,7 @@
           "name": "linkedList",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 0.26084070377434737,
+          "best_similar_score": 0.2680934724498752,
           "best_target": "linkedList",
           "position": { "token_start": 11040, "token_end": 11226 }
         },
@@ -3587,7 +3587,7 @@
           "name": "WebGLExtensions",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.4159586801191047,
           "best_target": "WebGLExtensions",
           "position": { "token_start": 12185, "token_end": 12947 }
         },
@@ -3604,9 +3604,9 @@
           "repo": "firebase/firebase-admin-node",
           "name": "initFirestore",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "initFirestore",
+          "is_best_similar": false,
+          "best_similar_score": 0.25731854609470384,
+          "best_target": "getMessaging",
           "position": { "token_start": 703, "token_end": 910 }
         },
         {
@@ -3623,7 +3623,7 @@
           "name": "getFirestoreOptions",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 0.9948320528755021,
+          "best_similar_score": 0.981766021010731,
           "best_target": "getFirestoreOptions",
           "position": { "token_start": 3727, "token_end": 4201 }
         },
@@ -3641,7 +3641,7 @@
           "name": "emulatorHost",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.4854917717073234,
           "best_target": "emulatorHost",
           "position": { "token_start": 7304, "token_end": 7334 }
         },
@@ -3650,7 +3650,7 @@
           "name": "validateProviderUserInfo",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.571049002517191,
           "best_target": "validateProviderUserInfo",
           "position": { "token_start": 8555, "token_end": 9103 }
         },
@@ -3677,7 +3677,7 @@
           "name": "assertServerResponse",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 0.9607894391523232,
+          "best_similar_score": 0.5888277808034706,
           "best_target": "assertServerResponse",
           "position": { "token_start": 13422, "token_end": 13498 }
         },
@@ -3697,7 +3697,7 @@
           "name": "yd",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.42728700639623407,
+          "best_similar_score": 0.09604819623436828,
           "best_target": "yd",
           "position": { "token_start": 792, "token_end": 832 }
         },
@@ -3705,9 +3705,9 @@
           "repo": "rust-bakery/nom",
           "name": "i16_tests",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "i16_tests",
+          "is_best_similar": false,
+          "best_similar_score": 0.15301767524945895,
+          "best_target": "yd",
           "position": { "token_start": 2310, "token_end": 2550 }
         },
         {
@@ -3715,7 +3715,7 @@
           "name": "many1_count",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.1490914855066324,
           "best_target": "many1_count",
           "position": { "token_start": 4037, "token_end": 4116 }
         },
@@ -3723,27 +3723,27 @@
           "repo": "rust-bakery/nom",
           "name": "test_offset_u8",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_offset_u8",
+          "is_best_similar": false,
+          "best_similar_score": 0.010726098468952406,
+          "best_target": "yd",
           "position": { "token_start": 5582, "token_end": 5696 }
         },
         {
           "repo": "rust-bakery/nom",
           "name": "fold_many1",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "fold_many1",
+          "is_best_similar": false,
+          "best_similar_score": 0.48969353628595275,
+          "best_target": "length_count",
           "position": { "token_start": 7251, "token_end": 7411 }
         },
         {
           "repo": "rust-bakery/nom",
           "name": "parse",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 0.4385068972747104,
-          "best_target": "parse",
+          "is_best_similar": false,
+          "best_similar_score": 0.051312804034022046,
+          "best_target": "many1_count",
           "position": { "token_start": 8937, "token_end": 8987 }
         },
         {
@@ -3751,17 +3751,17 @@
           "name": "test_complete_byte_consumption_bits",
           "needle_position": 0.65,
           "is_best_similar": false,
-          "best_similar_score": 0.026480261910431388,
-          "best_target": "yd",
+          "best_similar_score": 0.018234546137674654,
+          "best_target": "fold_many1",
           "position": { "token_start": 10423, "token_end": 10674 }
         },
         {
           "repo": "rust-bakery/nom",
           "name": "be_i8_tests",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "be_i8_tests",
+          "is_best_similar": false,
+          "best_similar_score": 0.04308005080610541,
+          "best_target": "many1_count",
           "position": { "token_start": 12167, "token_end": 12302 }
         },
         {
@@ -3778,26 +3778,26 @@
           "name": "length_count",
           "needle_position": 0.95,
           "is_best_similar": false,
-          "best_similar_score": 0.028694328961304638,
-          "best_target": "yd",
+          "best_similar_score": 0.1693919363163366,
+          "best_target": "fold_many1",
           "position": { "token_start": 15412, "token_end": 15559 }
         },
         {
           "repo": "helix-editor/helix",
           "name": "composition",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 0.0511801315247307,
-          "best_target": "composition",
+          "is_best_similar": false,
+          "best_similar_score": 0.03627956101892783,
+          "best_target": "serialize_lang_features",
           "position": { "token_start": 696, "token_end": 920 }
         },
         {
           "repo": "helix-editor/helix",
           "name": "tokenize",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 0.040445966468773985,
-          "best_target": "tokenize",
+          "is_best_similar": false,
+          "best_similar_score": 0.05188574832299887,
+          "best_target": "names",
           "position": { "token_start": 2411, "token_end": 2434 }
         },
         {
@@ -3805,7 +3805,7 @@
           "name": "serialize_lang_features",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.06115479470412296,
           "best_target": "serialize_lang_features",
           "position": { "token_start": 3949, "token_end": 4158 }
         },
@@ -3814,7 +3814,7 @@
           "name": "injection_for_match",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8149823342354867,
           "best_target": "injection_for_match",
           "position": { "token_start": 5437, "token_end": 5925 }
         },
@@ -3823,7 +3823,7 @@
           "name": "names",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.1901696869733609,
           "best_target": "names",
           "position": { "token_start": 7278, "token_end": 7307 }
         },
@@ -3840,9 +3840,9 @@
           "repo": "helix-editor/helix",
           "name": "test_invalid_date_times",
           "needle_position": 0.65,
-          "is_best_similar": true,
-          "best_similar_score": 0.9299238452109287,
-          "best_target": "test_invalid_date_times",
+          "is_best_similar": false,
+          "best_similar_score": 0.010491442357347528,
+          "best_target": "serialize_lang_features",
           "position": { "token_start": 10402, "token_end": 10693 }
         },
         {
@@ -3850,7 +3850,7 @@
           "name": "move_horizontally",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9566758893610273,
           "best_target": "move_horizontally",
           "position": { "token_start": 12057, "token_end": 12244 }
         },
@@ -3867,9 +3867,9 @@
           "repo": "helix-editor/helix",
           "name": "test_input_edits",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_input_edits",
+          "is_best_similar": false,
+          "best_similar_score": 0.01167087130076562,
+          "best_target": "serialize_lang_features",
           "position": { "token_start": 15106, "token_end": 15706 }
         },
         {
@@ -3895,7 +3895,7 @@
           "name": "test_cratesio_hash",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.5260093017679724,
           "best_target": "test_cratesio_hash",
           "position": { "token_start": 4013, "token_end": 4097 }
         },
@@ -3904,7 +3904,7 @@
           "name": "rebuild_unit_graph_shared",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 0.24385929743894375,
+          "best_similar_score": 0.8311664592593615,
           "best_target": "rebuild_unit_graph_shared",
           "position": { "token_start": 5516, "token_end": 5873 }
         },
@@ -3922,7 +3922,7 @@
           "name": "uninstall_one",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 0.11246468207379683,
+          "best_similar_score": 0.37762230743943304,
           "best_target": "uninstall_one",
           "position": { "token_start": 8877, "token_end": 9024 }
         },
@@ -3931,7 +3931,7 @@
           "name": "unit_needs_doc_scrape",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8632834563172167,
           "best_target": "unit_needs_doc_scrape",
           "position": { "token_start": 10491, "token_end": 10634 }
         },
@@ -3958,7 +3958,7 @@
           "name": "max_unpack_size",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.45783173412054406,
           "best_target": "max_unpack_size",
           "position": { "token_start": 15279, "token_end": 15647 }
         },
@@ -3976,7 +3976,7 @@
           "name": "do_read_body_until_closed",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.07521740532422919,
           "best_target": "do_read_body_until_closed",
           "position": { "token_start": 2285, "token_end": 2580 }
         },
@@ -3984,18 +3984,18 @@
           "repo": "cloudflare/pingora",
           "name": "write_to_buffer",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "write_to_buffer",
+          "is_best_similar": false,
+          "best_similar_score": 0.008743874411125353,
+          "best_target": "do_read_body_until_closed",
           "position": { "token_start": 4001, "token_end": 4098 }
         },
         {
           "repo": "cloudflare/pingora",
           "name": "test_connect_h1_plaintext",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "test_connect_h1_plaintext",
+          "is_best_similar": false,
+          "best_similar_score": 0.009556844402511155,
+          "best_target": "from_server_conf",
           "position": { "token_start": 5618, "token_end": 5755 }
         },
         {
@@ -4003,7 +4003,7 @@
           "name": "serialize_vec_string",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.10904035235733703,
           "best_target": "serialize_vec_string",
           "position": { "token_start": 5311, "token_end": 5413 }
         },
@@ -4012,7 +4012,7 @@
           "name": "h1_is_preferred",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2955630673793738,
           "best_target": "h1_is_preferred",
           "position": { "token_start": 8897, "token_end": 8971 }
         },
@@ -4029,9 +4029,9 @@
           "repo": "cloudflare/pingora",
           "name": "get_bytes",
           "needle_position": 0.75,
-          "is_best_similar": false,
-          "best_similar_score": 0.020995132982506437,
-          "best_target": "test_connect_h1_plaintext",
+          "is_best_similar": true,
+          "best_similar_score": 1.0,
+          "best_target": "get_bytes",
           "position": { "token_start": 12168, "token_end": 12202 }
         },
         {
@@ -4047,9 +4047,9 @@
           "repo": "cloudflare/pingora",
           "name": "enable_h2",
           "needle_position": 0.95,
-          "is_best_similar": false,
-          "best_similar_score": 0.031014197565680503,
-          "best_target": "get_bytes",
+          "is_best_similar": true,
+          "best_similar_score": 1.0,
+          "best_target": "enable_h2",
           "position": { "token_start": 15401, "token_end": 15432 }
         },
         {
@@ -4057,7 +4057,7 @@
           "name": "squeeze_dims",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.16686292991750862,
           "best_target": "squeeze_dims",
           "position": { "token_start": 720, "token_end": 893 }
         },
@@ -4084,7 +4084,7 @@
           "name": "index",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9294836336802015,
           "best_target": "index",
           "position": { "token_start": 5473, "token_end": 5918 }
         },
@@ -4093,7 +4093,7 @@
           "name": "read_to_vec",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.05114786574252734,
           "best_target": "read_to_vec",
           "position": { "token_start": 7289, "token_end": 7374 }
         },
@@ -4102,7 +4102,7 @@
           "name": "unary_map",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.39194284602788,
           "best_target": "unary_map",
           "position": { "token_start": 8776, "token_end": 9109 }
         },
@@ -4129,7 +4129,7 @@
           "name": "dequantize_mul_mat_vec",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6245792390712285,
           "best_target": "dequantize_mul_mat_vec",
           "position": { "token_start": 13431, "token_end": 14217 }
         },
@@ -4138,7 +4138,7 @@
           "name": "get_id",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7825422900366437,
           "best_target": "get_id",
           "position": { "token_start": 15477, "token_end": 15512 }
         },
@@ -4147,7 +4147,7 @@
           "name": "reject",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.144769886226851,
+          "best_similar_score": 1.0,
           "best_target": "reject",
           "position": { "token_start": 802, "token_end": 818 }
         },
@@ -4156,7 +4156,7 @@
           "name": "map_err",
           "needle_position": 0.15,
           "is_best_similar": false,
-          "best_similar_score": 0.029864068439122655,
+          "best_similar_score": 0.021210437067016776,
           "best_target": "wrap_fn",
           "position": { "token_start": 2388, "token_end": 2483 }
         },
@@ -4164,9 +4164,9 @@
           "repo": "seanmonstar/warp",
           "name": "poll_read",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "poll_read",
+          "is_best_similar": false,
+          "best_similar_score": 0.039670958902436285,
+          "best_target": "reject",
           "position": { "token_start": 4010, "token_end": 4088 }
         },
         {
@@ -4174,7 +4174,7 @@
           "name": "wrap_fn",
           "needle_position": 0.35,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7674174160136337,
           "best_target": "wrap_fn",
           "position": { "token_start": 5626, "token_end": 5687 }
         },
@@ -4183,7 +4183,7 @@
           "name": "file_stream",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8681898823643313,
           "best_target": "file_stream",
           "position": { "token_start": 7075, "token_end": 7556 }
         },
@@ -4192,7 +4192,7 @@
           "name": "send_text",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.4779995354275013,
           "best_target": "send_text",
           "position": { "token_start": 8937, "token_end": 8978 }
         },
@@ -4210,7 +4210,7 @@
           "name": "convert_reply",
           "needle_position": 0.75,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6606328636027614,
           "best_target": "convert_reply",
           "position": { "token_start": 12139, "token_end": 12181 }
         },
@@ -4219,7 +4219,7 @@
           "name": "extension",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.6745582854420089,
           "best_target": "extension",
           "position": { "token_start": 13777, "token_end": 13830 }
         },
@@ -4227,18 +4227,18 @@
           "repo": "seanmonstar/warp",
           "name": "__reject_custom_compilefail",
           "needle_position": 0.95,
-          "is_best_similar": true,
-          "best_similar_score": 0.5757197301274735,
-          "best_target": "__reject_custom_compilefail",
+          "is_best_similar": false,
+          "best_similar_score": 0.0025625471441578784,
+          "best_target": "file_stream",
           "position": { "token_start": 15404, "token_end": 15415 }
         },
         {
           "repo": "serde-rs/serde",
           "name": "newtype_variant",
           "needle_position": 0.05,
-          "is_best_similar": true,
-          "best_similar_score": 0.050231012540716644,
-          "best_target": "newtype_variant",
+          "is_best_similar": false,
+          "best_similar_score": 0.009076229289055252,
+          "best_target": "serialize_entry",
           "position": { "token_start": 783, "token_end": 836 }
         },
         {
@@ -4254,9 +4254,9 @@
           "repo": "serde-rs/serde",
           "name": "serialize_key",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "serialize_key",
+          "is_best_similar": false,
+          "best_similar_score": 0.02997425881153643,
+          "best_target": "newtype_variant",
           "position": { "token_start": 3993, "token_end": 4049 }
         },
         {
@@ -4264,17 +4264,17 @@
           "name": "__deserialize_content",
           "needle_position": 0.35,
           "is_best_similar": false,
-          "best_similar_score": 0.00433002071343124,
-          "best_target": "format_u8",
+          "best_similar_score": 0.05823584617299056,
+          "best_target": "from_bounds",
           "position": { "token_start": 5634, "token_end": 5736 }
         },
         {
           "repo": "serde-rs/serde",
           "name": "format_u8",
           "needle_position": 0.45,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "format_u8",
+          "is_best_similar": false,
+          "best_similar_score": 0.02335223113530872,
+          "best_target": "serialize_i128",
           "position": { "token_start": 7159, "token_end": 7389 }
         },
         {
@@ -4291,7 +4291,7 @@
           "name": "serialize_unit_variant",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.21675453206953177,
           "best_target": "serialize_unit_variant",
           "position": { "token_start": 10479, "token_end": 10541 }
         },
@@ -4308,9 +4308,9 @@
           "repo": "serde-rs/serde",
           "name": "variant",
           "needle_position": 0.85,
-          "is_best_similar": true,
-          "best_similar_score": 0.04500220374048071,
-          "best_target": "variant",
+          "is_best_similar": false,
+          "best_similar_score": 0.049931642744346694,
+          "best_target": "visit_i8",
           "position": { "token_start": 13785, "token_end": 13838 }
         },
         {
@@ -4336,7 +4336,7 @@
           "name": "set_global_default",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.017038102410892843,
           "best_target": "set_global_default",
           "position": { "token_start": 2262, "token_end": 2628 }
         },
@@ -4344,18 +4344,18 @@
           "repo": "tokio-rs/tracing",
           "name": "as_ref",
           "needle_position": 0.25,
-          "is_best_similar": false,
-          "best_similar_score": 0.07948346282299562,
-          "best_target": "into_u64",
+          "is_best_similar": true,
+          "best_similar_score": 0.14619963489696408,
+          "best_target": "as_ref",
           "position": { "token_start": 4035, "token_end": 4055 }
         },
         {
           "repo": "tokio-rs/tracing",
           "name": "default",
           "needle_position": 0.35,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "default",
+          "is_best_similar": false,
+          "best_similar_score": 0.029333010563862102,
+          "best_target": "and",
           "position": { "token_start": 5692, "token_end": 5717 }
         },
         {
@@ -4371,9 +4371,9 @@
           "repo": "tokio-rs/tracing",
           "name": "sparse_value_sets_are_not_empty",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "sparse_value_sets_are_not_empty",
+          "is_best_similar": false,
+          "best_similar_score": 0.03639174582593262,
+          "best_target": "as_ref",
           "position": { "token_start": 8857, "token_end": 8975 }
         },
         {
@@ -4381,7 +4381,7 @@
           "name": "linked_list_push",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.015548798901953008,
+          "best_similar_score": 0.015392199812188366,
           "best_target": "linked_list_push",
           "position": { "token_start": 10474, "token_end": 10679 }
         },
@@ -4389,9 +4389,9 @@
           "repo": "tokio-rs/tracing",
           "name": "into_u64",
           "needle_position": 0.75,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "into_u64",
+          "is_best_similar": false,
+          "best_similar_score": 0.10237664105496519,
+          "best_target": "default",
           "position": { "token_start": 12166, "token_end": 12192 }
         },
         {
@@ -4399,7 +4399,7 @@
           "name": "with_default",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.7100927300433495,
           "best_target": "with_default",
           "position": { "token_start": 13778, "token_end": 13887 }
         },
@@ -4408,7 +4408,7 @@
           "name": "on_register_dispatch",
           "needle_position": 0.95,
           "is_best_similar": true,
-          "best_similar_score": 0.08773393531104272,
+          "best_similar_score": 1.0,
           "best_target": "on_register_dispatch",
           "position": { "token_start": 15459, "token_end": 15486 }
         },
@@ -4417,7 +4417,7 @@
           "name": "pre_run_target_child",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8900345509370649,
           "best_target": "pre_run_target_child",
           "position": { "token_start": 581, "token_end": 1037 }
         },
@@ -4426,7 +4426,7 @@
           "name": "launched",
           "needle_position": 0.15,
           "is_best_similar": true,
-          "best_similar_score": 0.9306048591020997,
+          "best_similar_score": 1.0,
           "best_target": "launched",
           "position": { "token_start": 2420, "token_end": 2478 }
         },
@@ -4434,9 +4434,9 @@
           "repo": "AFLplusplus/LibAFL",
           "name": "with_max_stack_pow",
           "needle_position": 0.25,
-          "is_best_similar": true,
-          "best_similar_score": 0.5939906178436192,
-          "best_target": "with_max_stack_pow",
+          "is_best_similar": false,
+          "best_similar_score": 0.013952910612798287,
+          "best_target": "pre_run_target_child",
           "position": { "token_start": 4003, "token_end": 4095 }
         },
         {
@@ -4453,7 +4453,7 @@
           "name": "get_iters_by_name",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9574533680683809,
           "best_target": "get_iters_by_name",
           "position": { "token_start": 7232, "token_end": 7349 }
         },
@@ -4461,9 +4461,9 @@
           "repo": "AFLplusplus/LibAFL",
           "name": "exposed_executor_state",
           "needle_position": 0.55,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "exposed_executor_state",
+          "is_best_similar": false,
+          "best_similar_score": 0.013118155581222122,
+          "best_target": "get_iters_by_name",
           "position": { "token_start": 8951, "token_end": 8981 }
         },
         {
@@ -4471,7 +4471,7 @@
           "name": "rtn_extend_encoding",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 0.021946000763234084,
+          "best_similar_score": 0.9191936871012274,
           "best_target": "rtn_extend_encoding",
           "position": { "token_start": 10204, "token_end": 10848 }
         },
@@ -4489,7 +4489,7 @@
           "name": "store_probability",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.8114066652658459,
           "best_target": "store_probability",
           "position": { "token_start": 13677, "token_end": 13848 }
         },
@@ -4507,7 +4507,7 @@
           "name": "on_left_click",
           "needle_position": 0.05,
           "is_best_similar": true,
-          "best_similar_score": 0.6575649390909842,
+          "best_similar_score": 1.0,
           "best_target": "on_left_click",
           "position": { "token_start": 602, "token_end": 983 }
         },
@@ -4515,9 +4515,9 @@
           "repo": "alacritty/alacritty",
           "name": "negative_url_parsing_regex_test",
           "needle_position": 0.15,
-          "is_best_similar": true,
-          "best_similar_score": 1.0,
-          "best_target": "negative_url_parsing_regex_test",
+          "is_best_similar": false,
+          "best_similar_score": 0.028439381087261437,
+          "best_target": "keyboard_input",
           "position": { "token_start": 2325, "token_end": 2526 }
         },
         {
@@ -4525,7 +4525,7 @@
           "name": "set_term_uniforms",
           "needle_position": 0.25,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.28646290158800986,
           "best_target": "set_term_uniforms",
           "position": { "token_start": 3980, "token_end": 4036 }
         },
@@ -4543,7 +4543,7 @@
           "name": "dynamic_title_ignoring_options_by_default",
           "needle_position": 0.45,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.2291502637248317,
           "best_target": "dynamic_title_ignoring_options_by_default",
           "position": { "token_start": 7214, "token_end": 7296 }
         },
@@ -4552,7 +4552,7 @@
           "name": "keyboard_input",
           "needle_position": 0.55,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.06396501557290532,
           "best_target": "keyboard_input",
           "position": { "token_start": 8660, "token_end": 9050 }
         },
@@ -4561,7 +4561,7 @@
           "name": "fill_cube",
           "needle_position": 0.65,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.9914163619433392,
           "best_target": "fill_cube",
           "position": { "token_start": 4023, "token_end": 4300 }
         },
@@ -4579,7 +4579,7 @@
           "name": "term_options",
           "needle_position": 0.85,
           "is_best_similar": true,
-          "best_similar_score": 1.0,
+          "best_similar_score": 0.878288861506925,
           "best_target": "term_options",
           "position": { "token_start": 13716, "token_end": 13843 }
         },

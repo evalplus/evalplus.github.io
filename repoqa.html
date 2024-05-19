@@ -350,6 +350,7 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
         "deepseek-ai_slash_deepseek-coder-33b-instruct-SCORES.json",
         "deepseek-ai_slash_deepseek-coder-6.7b-instruct-SCORES.json",
         "deepseek-ai_slash_DeepSeek-V2-Chat-SCORES.json",
+        "deepseek-ai_slash_DeepSeek-V2-Lite-Chat-SCORES.json",
         "google_slash_codegemma-7b-it-SCORES.json",
         "meta-llama_slash_Meta-Llama-3-70B-Instruct-SCORES.json",
         "meta-llama_slash_Meta-Llama-3-8B-Instruct-SCORES.json",
@@ -495,11 +496,11 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           if (last_best != cur_score) {
             rank += n_last_best;
             last_best = cur_score;
+            rankCell.textContent = rank;
             n_last_best = 1;
           } else {
             n_last_best += 1;
           }
-          rankCell.textContent = rank;
           dataRow.appendChild(rankCell);
 
           // model name
