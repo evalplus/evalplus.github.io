@@ -343,93 +343,68 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
 
     <script>
       const contextTable = document.getElementById("16k");
-      const files = [
-        "codellama_slash_CodeLlama-13b-Instruct-hf-SCORES.json",
-        "codellama_slash_CodeLlama-34b-Instruct-hf-SCORES.json",
-        "codellama_slash_CodeLlama-7b-Instruct-hf-SCORES.json",
-        "deepseek-ai_slash_deepseek-coder-33b-instruct-SCORES.json",
-        "deepseek-ai_slash_deepseek-coder-6.7b-instruct-SCORES.json",
-        "deepseek-ai_slash_DeepSeek-V2-Chat-SCORES.json",
-        "deepseek-ai_slash_DeepSeek-V2-Lite-Chat-SCORES.json",
-        "google_slash_codegemma-7b-it-SCORES.json",
-        "meta-llama_slash_Meta-Llama-3-70B-Instruct-SCORES.json",
-        "meta-llama_slash_Meta-Llama-3-8B-Instruct-SCORES.json",
-        "mistralai_slash_Mistral-7B-Instruct-v0.1-SCORES.json",
-        "mistralai_slash_Mistral-7B-Instruct-v0.2-SCORES.json",
-        "mistralai_slash_Mixtral-8x22B-Instruct-v0.1-SCORES.json",
-        "mistralai_slash_Mixtral-8x7B-Instruct-v0.1-SCORES.json",
-        "Qwen_slash_CodeQwen1.5-7B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-14B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-32B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-72B-Chat-SCORES.json",
-        "Qwen_slash_Qwen1.5-7B-Chat-SCORES.json",
-        "gpt-3.5-turbo-0125-SCORES.json",
-        "gpt-4-turbo-2024-04-09-SCORES.json",
-        "microsoft_slash_Phi-3-mini-128k-instruct-SCORES.json",
-        "ise-uiuc_slash_Magicoder-S-DS-6.7B-SCORES.json",
-        "claude-3-haiku-20240307-SCORES.json",
-        "gemini-1.5-pro-latest-SCORES.json",
-        "claude-3-opus-20240229-SCORES.json",
-        "claude-3-sonnet-20240229-SCORES.json",
-        "CohereForAI_slash_c4ai-command-r-plus-SCORES.json",
-        "gpt-4o-2024-05-13-SCORES.json",
-        "gemini-1.5-flash-latest-SCORES.json",
-      ];
       const linkMapping = new Map([]);
       const hfLinkPrefix = "https://huggingface.co/";
-      files.map((file) => {
-        modelId = file.slice(0, -12);
-
-        // if _slash_ in modelId, split by _slash_ and get the last one
-        if (modelId.includes("_slash_")) {
-          modelId = modelId.split("_slash_");
-          modelOrg = modelId[0];
-          modelId = modelId[1];
-          url = hfLinkPrefix + modelOrg + "/" + modelId;
-          linkMapping.set(modelId, url);
-        } else if (modelId.startsWith("gpt-4-")) {
-          linkMapping.set(
-            modelId,
-            "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
-          );
-        } else if (modelId.startsWith("gpt-3.5-")) {
-          linkMapping.set(
-            modelId,
-            "https://platform.openai.com/docs/models/gpt-3-5-turbo",
-          );
-        } else if (modelId.startsWith("claude-3-")) {
-          linkMapping.set(
-            modelId,
-            "https://www.anthropic.com/news/claude-3-family",
-          );
-        }
-      });
-      const dataUrlPrefix = "results/repoqa/ntoken_16384/";
+      const dataUrlPrefix = "results/repoqa";
       const correctColor = "rgba(72, 200, 120",
         incorrectColor = "rgba(200, 53, 50";
 
       // Load data
       var data = [];
-      for (var i = 0; i < files.length; i++) {
-        var dataUrl = dataUrlPrefix + files[i];
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", dataUrl, false); // false makes the request synchronous
-        xhr.send();
-        if (xhr.status === 200) {
-          dataRow = JSON.parse(xhr.responseText);
-          dataRow = Object.keys(dataRow).map((key) => {
-            return {
-              Model: key.split("/").pop(),
-              ...dataRow[key],
-            };
-          });
+      var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", dataUrl, false); // false makes the request synchronous
+      xhr.send();
 
-          data = data.concat(dataRow);
-        } else {
-          alert(
-            "Failed to load data from " + dataUrl + ". Please try again later.",
-          );
-        }
+      if (xhr.status === 200) {
+        var scores = JSON.parse(xhr.responseText);
+        var scoresMap = new Map(Object.entries(scores));
+        scoresMap.forEach((value, modelId) => {
+          var result = {
+            Model: modelId.split("/").pop(),
+            ...value,
+          };
+          data = data.concat(result);
+
+          if (modelId.includes("/")) {
+            modelId = modelId.split("/");
+            modelOrg = modelId[0];
+            modelId = modelId[1];
+            url = hfLinkPrefix + modelOrg + "/" + modelId;
+            linkMapping.set(modelId, url);
+          } else if (modelId.startsWith("gpt-4-")) {
+            linkMapping.set(
+              modelId,
+              "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
+            );
+          } else if (modelId.startsWith("gpt-3.5-")) {
+            linkMapping.set(
+              modelId,
+              "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+            );
+          } else if (modelId.startsWith("claude-3-")) {
+            linkMapping.set(
+              modelId,
+              "https://www.anthropic.com/news/claude-3-family",
+            );
+          } else if (modelId.startsWith("gemini-1.5-pro")) {
+            linkMapping.set(
+              modelId,
+              "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note",
+            );
+          } else if (modelId.startsWith("gemini-1.5-flash")) {
+            linkMapping.set(
+              modelId,
+              "https://deepmind.google/technologies/gemini/flash/",
+            );
+          } else if (modelId.startsWith("gpt-4o-")) {
+            linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
+          }
+        });
+      } else {
+        alert(
+          "Failed to load data from " + dataUrl + ". Please try again later.",
+        );
       }
 
       const globalData = data;
