@@ -275,6 +275,18 @@
     "prompted": true,
     "size": 104
   },
+  "DeepSeek-Coder-V2-Instruct": {
+    "link": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 85.4,
+      "humaneval+": 82.3,
+      "mbpp": 89.4,
+      "mbpp+": 75.1
+    },
+    "prompted": false,
+    "size": 21
+  },
   "DeepSeek-Coder-1.3B-base": {
     "link": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
     "open-data": "NONE",
