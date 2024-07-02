@@ -151,7 +151,12 @@
         🚩The <i>First</i> Benchmark for Long-Context Code Understanding.🚩<br />
       </div>
       <div class="d-flex flex-row justify-content-center gap-3">
-        <a href="https://github.com/evalplus/repoqa"
+        <a href="https://arxiv.org/abs/2406.06025"
+          ><img
+            src="https://img.shields.io/badge/arXiv-2406.06025-b31b1b.svg?style=for-the-badge"
+            alt="arxiv"
+            class="img-fluid" /></a
+        ><a href="https://github.com/evalplus/repoqa"
           ><img
             src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
             alt="github"
@@ -167,9 +172,8 @@
       <div class="container-fluid d-flex flex-row flex-nowrap">
         <div class="container-fluid d-flex flex-column align-items-center">
           <p>
-            <b>🔊 The goal of RepoQA:</b> is to create a series of long-context
-            code understanding tasks to challenge chat/instruction models for
-            code:
+            RepoQA aims to create a series of long-context code understanding tasks
+            to challenge chat/instruction models for code:
           </p>
           <ul>
             <li>
@@ -299,17 +303,13 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           <h3 id="yet-another" class="text-nowrap mt-5">
             Just yet another needle test?
           </h3>
-          No. Here are some notes:
           <ul>
             <li>
-              <b>SNF != RepoQA, SNF \in RepoQA:</b> Yes, SNF is a variant of
-              needle test, but SNF != RepoQA. SNF is a start point and
-              elementary test:
+              SNF is a variant of needle test and is part of RepoQA as the elementary test:
               <b
                 >if a model can't pass SNF, don't expect it to pass more
                 challenging tasks.</b
               >
-              We will build more challenging tasks in the future.
             </li>
             <li>
               Unlike vanilla needle tests which use single test to perform fully
@@ -339,25 +339,8 @@ repoqa.search_needle_function --backend google    --model "gemini-1.5-pro-latest
           </ul>
           <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
           <p>
-            Running long-context evaluations can be costly -- we thank
-            <a href="https://deepmind.google/">Google DeepMind</a>
-            and
-            <a href="https://openai.com/form/researcher-access-program/"
-              >OpenAI Researcher Access Program</a
-            >
-            for their generous API credits!
-          </p>
-          <p>
-            Meanwhile, note that RepoQA is a transparent research project
-            started by students at UIUC. We assure the reproducibility and
-            fairness of the evaluation as well as the indenpendence of our
-            benchmark design that none of these will be optimized or compromised
-            for models from specific organizations. The outputs and results of
-            evaluated models can be found at our
-            <a
-              href="https://github.com/evalplus/repoqa/releases/tag/dev-results"
-              >GitHub release page</a
-            >.
+            Part of the compute is generously provided by <a href="https://deepmind.google/">Google DeepMind</a>
+            and <a href="https://wandb.ai/site">Weights & Biases</a>.
           </p>
         </div>
       </div>
