@@ -314,6 +314,8 @@ How to use
             );
           } else if (modelId.startsWith("gpt-4o-")) {
             linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
+          } else if (modelId.startsWith("deepseek-chat")) {
+            linkMapping.set(modelId, "https://chat.deepseek.com/")
           }
         });
       } else {
