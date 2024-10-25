@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+
 def merge_json_files():
     data_dir = Path(__file__).parent
     data_dict = {}
@@ -14,5 +15,6 @@ def merge_json_files():
     combined_results_path = data_dir / "COMBINED-RESULTS.json"
     with open(combined_results_path, "w") as f:
         json.dump(data_dict, f, indent=2)
-        
+
+
 merge_json_files()
