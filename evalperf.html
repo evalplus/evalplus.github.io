@@ -9,7 +9,9 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>EvalPerf: Evaluating Language Models for Efficient Code Generation</title>
+    <title>
+      EvalPerf: Evaluating Language Models for Efficient Code Generation
+    </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
     <link
@@ -171,9 +173,7 @@
       </div>
       <div class="container-fluid d-flex flex-row flex-nowrap">
         <div class="container-fluid d-flex flex-column align-items-center">
-          <p>
-            What is Evalperf, What is Evalperf, What is Evalperf
-          </p>
+          <p>What is Evalperf, What is Evalperf, What is Evalperf</p>
           <ul>
             <li>
               <b>emoji1 strength1:</b>
@@ -222,19 +222,12 @@ How to use
             src="assets/RepoQA-CTX.svg"
             style="width: 100%; max-width: 1000px"
           />
-          <p>
-          todo
-          </p>
-          <p>
-          todo
-          </p>
+          <p>todo</p>
+          <p>todo</p>
           <h2 id="faq" class="text-nowrap mt-5">🙋🏻‍♀️ FAQ</h2>
-          <h3 id="yet-another" class="text-nowrap mt-5">
-              no question now
-          </h3>
+          <h3 id="yet-another" class="text-nowrap mt-5">no question now</h3>
           <ul>
-            <li>
-            </li>
+            <li></li>
           </ul>
           <h3 id="non-determinism" class="text-nowrap mt-5">Non-determinism</h3>
           <p>
@@ -256,8 +249,9 @@ How to use
           </ul>
           <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
           <p>
-            Part of the compute is generously provided by <a href="https://deepmind.google/">Google DeepMind</a>
-            and <a href="https://wandb.ai/site">Weights & Biases</a>.
+            Part of the compute is generously provided by
+            <a href="https://deepmind.google/">Google DeepMind</a> and
+            <a href="https://wandb.ai/site">Weights & Biases</a>.
           </p>
         </div>
       </div>
@@ -279,8 +273,9 @@ How to use
       xhr.send();
 
       if (xhr.status === 200) {
-        var scores = JSON.parse(xhr.responseText);
-        data = new Map(Object.entries(scores));
+        var results = JSON.parse(xhr.responseText);
+        console.log(results)
+        data = new Map(Object.entries(results));
         // convert each value to Map
         data.forEach((value, modelId) => {
           data.set(modelId, new Map(Object.entries(value)));
@@ -336,8 +331,10 @@ How to use
         "DPS",
         "DPS_norm",
         "pass@1",
-        // "WinRate", // computed over the same set of passing solutions
+        "WinRate", // computed over the same set of passing solutions
       ];
+      console.log(data);
+
       const displayTable = (table) => {
         var thead = document.createElement("thead");
         var headerRow = document.createElement("tr");
@@ -351,37 +348,57 @@ How to use
         thead.appendChild(headerRow);
         table.appendChild(thead);
 
-        // TODO: sort by winrate
-        // data.sort((a, b) => winRate.get(b[0]) - winRate.get(a[0]));
+        // convert data to array of Map
+        data = Array.from(globalData);
+        data = data.map(
+          ([modelId, value]) => new Map([["modelId", modelId], ...value]),
+        )
+        data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
 
         var tbody = document.createElement("tbody");
         // add rank
         var rank = 0;
-        data.forEach((row, modelId) => {
+        var last_best = null;
+        var n_last_best = 1;
+        data.forEach((row) => {
           var dataRow = document.createElement("tr");
           // rank
           var rankCell = document.createElement("td");
           dataRow.appendChild(rankCell);
           var modelCell = document.createElement("td");
           var modelLink = document.createElement("a");
-          if (rank == 1) {
-            modelLink.textContent = "🥇 " + modelId;
-          } else if (rank == 2) {
-            modelLink.textContent = "🥈 " + modelId;
-          } else if (rank == 3) {
-            modelLink.textContent = "🥉 " + modelId;
-          } else {
-            modelLink.textContent = modelId;
+          var modelId = row.get('modelId');
+          var modelName = modelId;
+          console.log(modelId);
+          if (modelId.includes("--")) {
+            modelName = modelId.split("--")[1];
           }
-          if (linkMapping.has(modelId)) {
-            modelLink.href = linkMapping.get(modelId);
+          var cur_win_rate = row.get('win_rate').toFixed(2);
+          if (last_best != cur_win_rate) {
+            rank += n_last_best;
+            last_best = cur_win_rate;
+            rankCell.textContent = rank;
+            n_last_best = 1;
+          } else {
+            n_last_best += 1;
+          }
+          if (rank == 1) {
+            modelLink.textContent = "🥇 " + modelName;
+          } else if (rank == 2) {
+            modelLink.textContent = "🥈 " + modelName;
+          } else if (rank == 3) {
+            modelLink.textContent = "🥉 " + modelName;
+          } else {
+            modelLink.textContent = modelName;
+          }
+          if (linkMapping.has(modelName)) {
+            modelLink.href = linkMapping.get(modelName);
           }
           modelLink.classList.add("link-underline-primary");
           modelLink.classList.add("text-nowrap");
           modelCell.appendChild(modelLink);
           dataRow.appendChild(modelCell);
           dpsRow = document.createElement("td");
-          console.log(row);
           dpsRow.textContent = row.get("dps").toFixed(2);
           dataRow.appendChild(dpsRow);
           dpsNormRow = document.createElement("td");
@@ -390,9 +407,9 @@ How to use
           passRow = document.createElement("td");
           passRow.textContent = row.get("pass@1").toFixed(2);
           dataRow.appendChild(passRow);
-          // winRateRow = document.createElement("td");
-          // winRateRow.textContent = winRate.get(modelId).toFixed(2);
-          // dataRow.appendChild(winRateRow);
+          winRateRow = document.createElement("td");
+          winRateRow.textContent = row.get('win_rate').toFixed(2);
+          dataRow.appendChild(winRateRow);
           tbody.appendChild(dataRow);
         });
         table.appendChild(tbody);
@@ -402,203 +419,12 @@ How to use
         contextTable.innerHTML = "";
       };
 
-      var chartOption = {
-        grid: {
-          top: 0,
-          left: 8,
-          right: 8,
-          bottom: 20,
-        },
-        xAxis: {
-          type: "value",
-          boundaryGap: false,
-          min: 0,
-          max: 16384,
-          interval: 2048,
-          axisLabel: {
-            show: true,
-            margin: 5,
-            formatter: function (value, index) {
-              if (value == 0) {
-                return "0";
-              }
-              return value / 1024 + "k";
-            },
-            fontSize: 10,
-          },
-          splitLine: {
-            lineStyle: {
-              color: "gray",
-              type: "dashed",
-            },
-          },
-        },
-        yAxis: {
-          type: "value",
-          max: 1,
-          show: false,
-        },
-        visualMap: {
-          type: "piecewise",
-          show: false,
-          dimension: 0,
-          pieces: [],
-        },
-        series: [
-          {
-            type: "line",
-            symbol: "none",
-            lineStyle: {
-              color: correctColor + ", 0.3)",
-              width: 0,
-            },
-            markLine: {
-              symbol: ["none", "none"],
-              label: { show: false },
-            },
-            areaStyle: {},
-
-            data: [],
-          },
-          {
-            type: "bar",
-            symbol: "none",
-            lineStyle: {
-              color: incorrectColor + ", 0.3)",
-              width: 0,
-            },
-            markLine: {
-              symbol: ["none", "none"],
-              label: { show: false },
-            },
-            areaStyle: {},
-
-            data: [],
-          },
-        ],
-      };
-
-      const getChartMetaData = (results, color) => {
-        if (results.length == 0) {
-          return {
-            chartPoints: [],
-            visualMapPieces: [],
-          };
-        }
-
-        // calculate the changes
-        var changes = [];
-        for (var i = 0; i < results.length; i++) {
-          start = results[i]["position"]["token_start"];
-          end = results[i]["position"]["token_end"];
-          if (end >= changes.length) {
-            for (var j = changes.length; j <= end; j++) {
-              changes.push(0);
-            }
-          }
-          changes[start] += 1;
-          changes[end] -= 1;
-        }
-
-        // calculate the points
-        var points = [];
-        var y = 0,
-          max_y = 0;
-        for (var x = 0; x < changes.length; x++) {
-          if (changes[x] != 0) {
-            y += changes[x];
-            points.push([x, y]);
-            if (y > max_y) {
-              max_y = y;
-            }
-          }
-        }
-
-        // calculate the chart points
-        var y = 0;
-        var chartPoints = [];
-        var visualMapPieces = [];
-        for (var i = 0; i < points.length; i++) {
-          if (points[i][1] > 0 && y == 0) {
-            chartPoints.push([points[i][0], y]);
-            y = 1;
-            chartPoints.push([points[i][0], y]);
-          }
-          if (points[i][1] == 0 && y > 0) {
-            chartPoints.push([points[i][0], y]);
-            y = 0;
-            chartPoints.push([points[i][0], y]);
-          }
-          if (i > 0) {
-            visualMapPieces.push({
-              gt: points[i - 1][0],
-              lt: points[i][0],
-              // change the opacity based on the relative score
-              color: color + ", " + (0.7 + (points[i][1] / max_y) * 0.3) + ")",
-            });
-          }
-        }
-
-        return {
-          chartPoints: chartPoints,
-          visualMapPieces: visualMapPieces,
-        };
-      };
-
-      const displayChart = (chartId, results) => {
-        chart = echarts.init(document.getElementById(chartId));
-        function partition(array, isValid) {
-          return array.reduce(
-            ([pass, fail], elem) => {
-              return isValid(elem)
-                ? [[...pass, elem], fail]
-                : [pass, [...fail, elem]];
-            },
-            [[], []],
-          );
-        }
-        const [correctResults, incorrectResults] = partition(
-          results,
-          (result) =>
-            result["is_best_similar"] &&
-            result["best_similar_score"] >= scoreThresh,
-        );
-
-        chartMetaData = getChartMetaData(correctResults, correctColor);
-        incorrectChartMetaData = getChartMetaData(
-          incorrectResults,
-          incorrectColor,
-        );
-
-        chartOption.series[0].data = chartMetaData.chartPoints;
-        chartOption.series[1].data = incorrectChartMetaData.chartPoints;
-        chartOption.visualMap.pieces = chartMetaData.visualMapPieces.concat(
-          incorrectChartMetaData.visualMapPieces,
-        );
-
-        chart.setOption(chartOption);
-      };
-
       const main = () => {
         clearTable();
         displayTable(contextTable);
       };
 
       main();
-      document.addEventListener("DOMContentLoaded", function () {
-        var slider = document.getElementById("fixedPointSlider");
-        var output = document.getElementById("sliderValue");
-        slider.addEventListener("change", function () {
-          var sliderValue = this.value;
-          output.textContent = (sliderValue / 10).toFixed(1);
-          scoreThresh = (sliderValue / 10).toFixed(1);
-          main();
-        });
-        slider.addEventListener("input", function () {
-          var sliderValue = this.value;
-          output.textContent = (sliderValue / 10).toFixed(1);
-        });
-      });
     </script>
   </body>
 </html>
