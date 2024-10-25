@@ -274,7 +274,6 @@ How to use
 
       if (xhr.status === 200) {
         var results = JSON.parse(xhr.responseText);
-        console.log(results)
         data = new Map(Object.entries(results));
         // convert each value to Map
         data.forEach((value, modelId) => {
@@ -329,11 +328,10 @@ How to use
         "#", // rank
         "Model", // model name
         "DPS",
-        "DPS_norm",
+        // "DPS Norm",
         "pass@1",
         "WinRate", // computed over the same set of passing solutions
       ];
-      console.log(data);
 
       const displayTable = (table) => {
         var thead = document.createElement("thead");
@@ -369,11 +367,10 @@ How to use
           var modelLink = document.createElement("a");
           var modelId = row.get('modelId');
           var modelName = modelId;
-          console.log(modelId);
           if (modelId.includes("--")) {
             modelName = modelId.split("--")[1];
           }
-          var cur_win_rate = row.get('win_rate').toFixed(2);
+          var cur_win_rate = row.get('win_rate').toFixed(3);
           if (last_best != cur_win_rate) {
             rank += n_last_best;
             last_best = cur_win_rate;
@@ -399,16 +396,16 @@ How to use
           modelCell.appendChild(modelLink);
           dataRow.appendChild(modelCell);
           dpsRow = document.createElement("td");
-          dpsRow.textContent = row.get("dps").toFixed(2);
+          dpsRow.textContent = row.get("dps").toFixed(1);
           dataRow.appendChild(dpsRow);
-          dpsNormRow = document.createElement("td");
-          dpsNormRow.textContent = row.get("dps_norm").toFixed(2);
-          dataRow.appendChild(dpsNormRow);
+          // dpsNormRow = document.createElement("td");
+          // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
+          // dataRow.appendChild(dpsNormRow);
           passRow = document.createElement("td");
-          passRow.textContent = row.get("pass@1").toFixed(2);
+          passRow.textContent = row.get("pass@1").toFixed(1);
           dataRow.appendChild(passRow);
           winRateRow = document.createElement("td");
-          winRateRow.textContent = row.get('win_rate').toFixed(2);
+          winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
           dataRow.appendChild(winRateRow);
           tbody.appendChild(dataRow);
         });

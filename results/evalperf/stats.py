@@ -43,7 +43,7 @@ def win_rate_of_model(model_id: str, data: dict, metric: str):
         model1_wins, ties, model2_wins = model_compete(
             data[model_id]["eval"], data[other_model]["eval"], metric
         )
-        wins += model1_wins
+        wins += model1_wins + 0.5 * ties
         all_rounds += model1_wins + ties + model2_wins
     return wins / all_rounds
 
