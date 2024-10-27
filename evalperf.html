@@ -18,6 +18,7 @@
   <link href="https://cdn.jsdelivr.net/npm/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/components/prism-core.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.min.js"></script>
 
   <style>
     body {
@@ -63,9 +64,9 @@
         <div>
           🚀 Code Efficiency Evaluation requires:
           <ul>
-            <li><strong>Performance-exercising tasks & inputs</strong>
+            <li><strong>Performance-exercising tasks & inputs --</strong> "all complexities are equal when N is small"
             </li>
-            <li><strong>Meaningful compound metric:</strong>
+            <li><strong>Meaningful compound metric --</strong> avg. speedup does not fit multi-task evaluation
             </li>
           </ul>
           <p>Based on <strong>Differential Performance Evaluation</strong>, the EvalPerf dataset (current
@@ -96,6 +97,17 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" \
         <table id="leaderboard"
           class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
         </table>
+        <h2 id="sponsor" class="text-nowrap mt-5">🖊️ Citation</h2>
+        <pre style="padding-top: 0; padding-bottom: 0;">
+          <code class="language-bibtex">
+@inproceedings{evalperf,
+  title = {Evaluating Language Models for Efficient Code Generation},
+  author = {Liu, Jiawei and Xie, Songrun and Wang, Junhao and Wei, Yuxiang and Ding, Yifeng and Zhang, Lingming},
+  booktitle = {First Conference on Language Modeling},
+  year = {2024},
+  url = {https://openreview.net/forum?id=IBCBMeAhmC},
+}</code>
+          </pre>
         <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
         <p>
           We thank
