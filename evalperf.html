@@ -1,429 +1,284 @@
 <!doctype html>
 <html>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
-    rel="stylesheet"
-  />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet" />
 
-  <head>
-    <meta charset="UTF-8" />
-    <title>
-      EvalPerf: Evaluating Language Models for Efficient Code Generation
-    </title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
-    <link
-      rel="icon"
-      href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-    />
 
-    <style>
-      .slidecontainer {
-        width: 100%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    EvalPerf: Evaluating Language Models for Efficient Code Generation
+  </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+  <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
 
-      .slider {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 70%;
-        height: 15px;
-        border-radius: 5px;
-        background: #d3d3d3;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: 0.2s;
-        transition: opacity 0.2s;
-      }
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
 
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #04aa6d;
-        cursor: pointer;
-      }
+  <style>
+    body {
+      font-family: "JetBrains Mono", monospace;
+      background-color: #ffffff;
+      color: #000000;
+    }
 
-      .slider::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #04aa6d;
-        cursor: pointer;
-      }
+    th,
+    td {
+      text-align: left;
+      width: fit-content;
+      font-size: larger;
+    }
 
-      .slider-title-container {
-        margin-bottom: 10px;
-        color: #04aa6d;
-      }
+    #notes h3 {
+      margin-top: 1em;
+      font-size: 2em;
+      text-align: center;
+    }
+  </style>
+</head>
 
-      #sliderValue {
-        background-color: #dddddd; /* Just for visibility */
-        padding: 0 10px; /* Optional styling */
-        border-radius: 5px; /* Optional styling */
-      }
+<body>
+  <div id="content" class="container d-flex flex-column align-items-center gap-3">
+    <h1 class="text-nowrap mt-5" style="font-size: xx-large;">
+      <b>Evaluating LLMs for Efficient Code Generation</b>
+    </h1>
+    <div class="d-flex flex-row justify-content-center gap-3">
+      <a href="https://openreview.net/forum?id=IBCBMeAhmC"><img
+          src="https://img.shields.io/badge/Paper-COLM'24-a55fed.svg?style=for-the-badge"></a>
+      <a href="https://github.com/evalplus/evalplus"><img
+          src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+          alt="github" class="img-fluid" /></a>
+      <a href="https://pypi.org/project/evalplus"><img alt="PyPI - Version"
+          src="https://img.shields.io/pypi/v/evalplus?style=for-the-badge&labelColor=black" class="img-fluid" />
+      </a>
+    </div>
+    <div class="container d-flex flex-row flex-nowrap fs-5">
 
-      body {
-        font-family: "JetBrains Mono", monospace;
-        background-color: #ffffff;
-        color: #000000;
-      }
 
-      #content {
-        width: 60%;
-      }
-
-      th,
-      td {
-        text-align: left;
-        width: fit-content;
-        font-size: larger;
-      }
-
-      #notes {
-        font-size: 1em;
-      }
-
-      #notes h3 {
-        margin-top: 1em;
-        font-size: 2em;
-        text-align: center;
-      }
-
-      #notes li {
-        font-size: 1.2em;
-        font-weight: 300;
-        margin: 1em;
-      }
-
-      .form-select {
-        font-size: 1em;
-      }
-
-      .slider-title {
-        font-size: 1em;
-        margin: 0.5em;
-        color: gray;
-      }
-
-      @media screen and (max-width: 1400px) {
-        body {
-          font-size: 1.6vw;
-        }
-
-        #content {
-          width: 100%;
-        }
-
-        h1 {
-          font-size: 2em;
-        }
-
-        h2 {
-          font-size: 1.6em;
-        }
-
-        h3 {
-          font-size: 1.2em;
-        }
-
-        table {
-          font-size: small;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div
-      id="content"
-      class="container-fluid d-flex flex-column align-items-center gap-3"
-    >
-      <h1 class="text-nowrap mt-5">
-        <b>🚀 EvalPerf</b>
-      </h1>
-      <div id="warning">
-        🚩The <i>First</i> Benchmark for Long-Context Code Understanding.🚩<br />
-      </div>
-      <div class="d-flex flex-row justify-content-center gap-3">
-        <a href="https://arxiv.org/abs/2408.06450"
-          ><img
-            src="https://img.shields.io/badge/arXiv-2408.06450-b31b1b.svg?style=for-the-badge"
-            alt="arxiv"
-            class="img-fluid" /></a
-        ><a href="https://github.com/evalplus/evalplus"
-          ><img
-            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-            alt="github"
-            class="img-fluid" /></a
-        ><a href="https://pypi.org/project/evalplus"
-          ><img
-            alt="PyPI - Version"
-            src="https://img.shields.io/pypi/v/evalplus?style=for-the-badge&labelColor=black"
-            class="img-fluid"
-          />
-        </a>
-      </div>
-      <div class="container-fluid d-flex flex-row flex-nowrap">
-        <div class="container-fluid d-flex flex-column align-items-center">
-          <p>What is Evalperf, What is Evalperf, What is Evalperf</p>
+      <div class="container d-flex flex-column align-items-center">
+        <div>
+          🚀 Code Efficiency Evaluation requires:
           <ul>
-            <li>
-              <b>emoji1 strength1:</b>
-              power
+            <li><strong>Performance-exercising tasks & inputs</strong>
             </li>
-            <li>
-              <b>emoji2 strength2:</b>
-              super power power power
+            <li><strong>Meaningful compound metric:</strong>
             </li>
           </ul>
-          <pre>
-          <code class="language-shell">
-# Using EvalPerf is super easy
-pip install "evalplus[vllm]"
-# EvalPerf supports 5 backends
-How to use
-          </code>
-          </pre>
-          <h2 id="task-snf" class="text-nowrap mt-5">
-            <b>🔎 </b>
-          </h2>
-          <p>
-            🛠️ <b>Config:</b> The code in the prompt is fixed to 16K tokens (by
-            CodeLlama tokenizer). Yet, the required context is a bit larger than
-            16K so we extend 8K and 16K models using either
-            <a
-              href="https://www.reddit.com/r/LocalLLaMA/comments/14mrgpr/dynamically_scaled_rope_further_increases/"
-              >Dynamic RoPE Scaling</a
-            >
-            or just no scaling -- whichever is better. For example, RoPE scaling
-            makes Llama 3 models substaintially better and CodeLlama-13B slight
-            better (Credit to @abacaj for the finding!).
-          </p>
-          <br />
-          <table
-            id="16k"
-            class="table table-responsive table-striped table-bordered flex-shrink-1 border border-3"
-          ></table>
-          <h3 id="task-snf-how" class="text-nowrap mt-5">How It Works</h3>
-          <p>
-            SNF includes 500 sub-tasks from 5 languages x 10 repositories x 10
-            needles. The prompt and expected output are demonstrated in the
-            following figure:
-          </p>
-          <img
-            src="assets/RepoQA-CTX.svg"
-            style="width: 100%; max-width: 1000px"
-          />
-          <p>todo</p>
-          <p>todo</p>
-          <h2 id="faq" class="text-nowrap mt-5">🙋🏻‍♀️ FAQ</h2>
-          <h3 id="yet-another" class="text-nowrap mt-5">no question now</h3>
+          <p>Based on <strong>Differential Performance Evaluation</strong>, the EvalPerf dataset (current
+            version 20240328) includes:</p>
           <ul>
-            <li></li>
-          </ul>
-          <h3 id="non-determinism" class="text-nowrap mt-5">Non-determinism</h3>
-          <p>
-            In theory as we use greedy decoding, the results should be
-            deterministic. In practice, the results may slightly vary: (i) for
-            OpenAI/Anthropic models, they do not seem to be deterministic all
-            the time (Thanks to @scottinallcaps); and (ii) for local inference,
-            the library configuration such as tensor parallelism sizes may also
-            slightly impact reproducibility.
-          </p>
-          <h3 id="limit" class="text-nowrap mt-5">Known limitations</h3>
-          <ul>
-            <li>
-              The current description is made verbose to avoid one description
-              being mapped to multiple functions. However, in real world,
-              developers may naturally use short description for code search.
-              (Thanks @chrisgorgo for the suggestion!)
+            <li>118 performance-exercising tasks</li>
+            <li>Each task is equipped with a <i>computationally challenging test input</i> generated by the SaS
+              generator</li>
+            <li>Differential Performance Score (DPS): <i>"DPS=80"</i> means <i>"submissions can outperform 80%
+                of LLM solutions..."</i></li>
+            <li>Pairwise comparison of LLMs' code efficiency over common passing tasks to ablate correctness impact
             </li>
           </ul>
-          <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
-          <p>
-            Part of the compute is generously provided by
-            <a href="https://deepmind.google/">Google DeepMind</a> and
-            <a href="https://wandb.ai/site">Weights & Biases</a>.
-          </p>
+          Check out our <a href="https://jw-liu.xyz/assets/pdf/jiawei-colm-evalperf-poster.pdf">COLM'24 poster</a> for
+          a more detailed overview!
         </div>
+
+        <pre style="padding-top: 0; padding-bottom: 0;">
+          <code class="language-bash">
+pip install --upgrade "evalplus[perf,vllm] @ git+https://github.com/evalplus/evalplus"
+# Or `pip install "evalplus[perf,vllm]" --upgrade` for the latest stable release
+
+sudo sh -c 'echo 0 > /proc/sys/kernel/perf_event_paranoid' # Enable perf
+evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" \
+                  --backend vllm</code>
+          </pre>
+        <br />
+        <table id="leaderboard"
+          class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
+        </table>
+        <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
+        <p>
+          We thank
+          <a href="https://openai.com/form/researcher-access-program/">OpenAI Researcher Access Program</a> for
+          providing part of the compute.
+        </p>
       </div>
     </div>
+  </div>
 
-    <script>
-      const contextTable = document.getElementById("16k");
-      const linkMapping = new Map([]);
-      const hfLinkPrefix = "https://huggingface.co/";
-      const dataUrlPrefix = "results/evalperf";
-      const correctColor = "rgba(72, 200, 120",
-        incorrectColor = "rgba(200, 53, 50";
+  <script>
+    const contextTable = document.getElementById("leaderboard");
+    const linkMapping = new Map([]);
+    const hfLinkPrefix = "https://huggingface.co/";
+    const dataUrlPrefix = "results/evalperf";
 
-      // Load data
-      var data = null;
-      var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", dataUrl, false); // false makes the request synchronous
-      xhr.send();
+    // Load data
+    var data = null;
+    var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", dataUrl, false); // false makes the request synchronous
+    xhr.send();
 
-      if (xhr.status === 200) {
-        var results = JSON.parse(xhr.responseText);
-        data = new Map(Object.entries(results));
-        // convert each value to Map
-        data.forEach((value, modelId) => {
-          data.set(modelId, new Map(Object.entries(value)));
-        });
-        data.forEach((value, modelId) => {
-          // add link to model
-          if (modelId.includes("--")) {
-            modelId = modelId.split("--");
-            modelOrg = modelId[0];
-            modelId = modelId[1];
-            url = hfLinkPrefix + modelOrg + "/" + modelId;
-            linkMapping.set(modelId, url);
-          } else if (modelId.startsWith("gpt-4-")) {
-            linkMapping.set(
-              modelId,
-              "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
-            );
-          } else if (modelId.startsWith("gpt-3.5-")) {
-            linkMapping.set(
-              modelId,
-              "https://platform.openai.com/docs/models/gpt-3-5-turbo",
-            );
-          } else if (modelId.startsWith("claude-3-")) {
-            linkMapping.set(
-              modelId,
-              "https://www.anthropic.com/news/claude-3-family",
-            );
-          } else if (modelId.startsWith("gemini-1.5-pro")) {
-            linkMapping.set(
-              modelId,
-              "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note",
-            );
-          } else if (modelId.startsWith("gemini-1.5-flash")) {
-            linkMapping.set(
-              modelId,
-              "https://deepmind.google/technologies/gemini/flash/",
-            );
-          } else if (modelId.startsWith("gpt-4o-")) {
-            linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
-          } else if (modelId.startsWith("deepseek-chat")) {
-            linkMapping.set(modelId, "https://chat.deepseek.com/")
-          }
-        });
-      } else {
-        alert(
-          "Failed to load data from " + dataUrl + ". Please try again later.",
-        );
-      }
-      const globalData = data;
+    if (xhr.status === 200) {
+      var results = JSON.parse(xhr.responseText);
+      data = new Map(Object.entries(results));
+      // convert each value to Map
+      data.forEach((value, modelId) => {
+        data.set(modelId, new Map(Object.entries(value)));
+      });
+      data.forEach((value, modelId) => {
+        // add link to model
+        if (modelId.includes("--")) {
+          modelId = modelId.split("--");
+          modelOrg = modelId[0];
+          modelId = modelId[1];
+          url = hfLinkPrefix + modelOrg + "/" + modelId;
+          linkMapping.set(modelId, url);
+        } else if (modelId.startsWith("gpt-4-")) {
+          linkMapping.set(
+            modelId,
+            "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
+          );
+        } else if (modelId.startsWith("gpt-3.5-")) {
+          linkMapping.set(
+            modelId,
+            "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+          );
+        } else if (modelId.startsWith("claude-3-")) {
+          linkMapping.set(
+            modelId,
+            "https://www.anthropic.com/news/claude-3-family",
+          );
+        } else if (modelId.startsWith("gemini-1.5-pro")) {
+          linkMapping.set(
+            modelId,
+            "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note",
+          );
+        } else if (modelId.startsWith("gemini-1.5-flash")) {
+          linkMapping.set(
+            modelId,
+            "https://deepmind.google/technologies/gemini/flash/",
+          );
+        } else if (modelId.startsWith("gpt-4o-")) {
+          linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
+        } else if (modelId.startsWith("deepseek-chat")) {
+          linkMapping.set(modelId, "https://chat.deepseek.com/")
+        }
+      });
+    } else {
+      alert(
+        "Failed to load data from " + dataUrl + ". Please try again later.",
+      );
+    }
+    const globalData = data;
+    const winrate_tag = "🏆 Win Rate (%)";
 
-      // each row represents a model
-      const theaders = [
-        "#", // rank
-        "Model", // model name
-        "DPS",
-        // "DPS Norm",
-        "pass@1",
-        "WinRate", // computed over the same set of passing solutions
-      ];
+    // each row represents a model
+    const theaders = [
+      "#", // rank
+      "Model", // model name
+      "DPS",
+      // "DPS Norm",
+      "pass@1",
+      winrate_tag, // computed over the same set of passing solutions
+    ];
 
-      const displayTable = (table) => {
-        var thead = document.createElement("thead");
-        var headerRow = document.createElement("tr");
-        // headers
-        theaders.forEach(function (header) {
-          var th = document.createElement("th");
-          th.classList.add("text-nowrap");
-          th.textContent = header;
-          headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
+    const displayTable = (table) => {
+      var thead = document.createElement("thead");
+      var headerRow = document.createElement("tr");
+      // headers
+      theaders.forEach(function (header) {
+        var th = document.createElement("th");
+        th.classList.add("text-nowrap");
+        th.textContent = header;
 
-        // convert data to array of Map
-        data = Array.from(globalData);
-        data = data.map(
-          ([modelId, value]) => new Map([["modelId", modelId], ...value]),
-        )
-        data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
+        if (header == winrate_tag) {
+          th.style.backgroundColor = "#EEFFEE";
+        }
 
-        var tbody = document.createElement("tbody");
-        // add rank
-        var rank = 0;
-        var last_best = null;
-        var n_last_best = 1;
-        data.forEach((row) => {
-          var dataRow = document.createElement("tr");
-          // rank
-          var rankCell = document.createElement("td");
-          dataRow.appendChild(rankCell);
-          var modelCell = document.createElement("td");
-          var modelLink = document.createElement("a");
-          var modelId = row.get('modelId');
-          var modelName = modelId;
-          if (modelId.includes("--")) {
-            modelName = modelId.split("--")[1];
-          }
-          var cur_win_rate = row.get('win_rate').toFixed(3);
-          if (last_best != cur_win_rate) {
-            rank += n_last_best;
-            last_best = cur_win_rate;
-            rankCell.textContent = rank;
-            n_last_best = 1;
-          } else {
-            n_last_best += 1;
-          }
-          if (rank == 1) {
-            modelLink.textContent = "🥇 " + modelName;
-          } else if (rank == 2) {
-            modelLink.textContent = "🥈 " + modelName;
-          } else if (rank == 3) {
-            modelLink.textContent = "🥉 " + modelName;
-          } else {
-            modelLink.textContent = modelName;
-          }
-          if (linkMapping.has(modelName)) {
-            modelLink.href = linkMapping.get(modelName);
-          }
-          modelLink.classList.add("link-underline-primary");
-          modelLink.classList.add("text-nowrap");
-          modelCell.appendChild(modelLink);
-          dataRow.appendChild(modelCell);
-          dpsRow = document.createElement("td");
-          dpsRow.textContent = row.get("dps").toFixed(1);
-          dataRow.appendChild(dpsRow);
-          // dpsNormRow = document.createElement("td");
-          // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
-          // dataRow.appendChild(dpsNormRow);
-          passRow = document.createElement("td");
-          passRow.textContent = row.get("pass@1").toFixed(1);
-          dataRow.appendChild(passRow);
-          winRateRow = document.createElement("td");
-          winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
-          dataRow.appendChild(winRateRow);
-          tbody.appendChild(dataRow);
-        });
-        table.appendChild(tbody);
-      };
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
 
-      const clearTable = () => {
-        contextTable.innerHTML = "";
-      };
+      // convert data to array of Map
+      data = Array.from(globalData);
+      data = data.map(
+        ([modelId, value]) => new Map([["modelId", modelId], ...value]),
+      )
+      data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
 
-      const main = () => {
-        clearTable();
-        displayTable(contextTable);
-      };
+      var tbody = document.createElement("tbody");
+      // add rank
+      var rank = 0;
+      var last_best = null;
+      var n_last_best = 1;
+      data.forEach((row) => {
+        var dataRow = document.createElement("tr");
+        // rank
+        var rankCell = document.createElement("td");
+        dataRow.appendChild(rankCell);
+        var modelCell = document.createElement("td");
+        var modelLink = document.createElement("a");
+        var modelId = row.get('modelId');
+        var modelName = modelId;
+        if (modelId.includes("--")) {
+          modelName = modelId.split("--")[1];
+        }
+        var cur_win_rate = row.get('win_rate').toFixed(3);
+        if (last_best != cur_win_rate) {
+          rank += n_last_best;
+          last_best = cur_win_rate;
+          rankCell.textContent = rank;
+          n_last_best = 1;
+        } else {
+          n_last_best += 1;
+        }
+        if (rank == 1) {
+          modelLink.textContent = "🥇 " + modelName;
+        } else if (rank == 2) {
+          modelLink.textContent = "🥈 " + modelName;
+        } else if (rank == 3) {
+          modelLink.textContent = "🥉 " + modelName;
+        } else {
+          modelLink.textContent = modelName;
+        }
+        if (linkMapping.has(modelName)) {
+          modelLink.href = linkMapping.get(modelName);
+        }
+        modelLink.classList.add("link-underline-primary");
+        modelLink.classList.add("text-nowrap");
+        modelCell.appendChild(modelLink);
+        dataRow.appendChild(modelCell);
+        dpsRow = document.createElement("td");
+        dpsRow.textContent = row.get("dps").toFixed(1);
+        dataRow.appendChild(dpsRow);
+        // dpsNormRow = document.createElement("td");
+        // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
+        // dataRow.appendChild(dpsNormRow);
+        passRow = document.createElement("td");
+        passRow.textContent = row.get("pass@1").toFixed(1);
+        dataRow.appendChild(passRow);
+        winRateRow = document.createElement("td");
+        winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
+        winRateRow.style.backgroundColor = "#EEFFEE";
+        dataRow.appendChild(winRateRow);
+        tbody.appendChild(dataRow);
+      });
+      table.appendChild(tbody);
+    };
 
-      main();
-    </script>
-  </body>
+    const clearTable = () => {
+      contextTable.innerHTML = "";
+    };
+
+    const main = () => {
+      clearTable();
+      displayTable(contextTable);
+    };
+
+    main();
+  </script>
+</body>
+
 </html>
