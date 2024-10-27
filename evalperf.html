@@ -58,8 +58,6 @@
       </a>
     </div>
     <div class="container d-flex flex-row flex-nowrap fs-5">
-
-
       <div class="container d-flex flex-column align-items-center">
         <div>
           <p>🚀 LLM-oriented code efficiency evaluation requires:</p>
@@ -93,7 +91,8 @@
           a more detailed overview!
         </div>
 
-        <pre style="padding-top: 0; padding-bottom: 0;">
+        <div class="col-md-12 overflow-auto">
+          <pre style="padding-top: 0; padding-bottom: 0;">
           <code class="language-bash">
 pip install --upgrade "evalplus[perf,vllm] @ git+https://github.com/evalplus/evalplus"
 # Or `pip install "evalplus[perf,vllm]" --upgrade` for the latest stable release
@@ -102,12 +101,14 @@ sudo sh -c 'echo 0 > /proc/sys/kernel/perf_event_paranoid' # Enable perf
 evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" \
                   --backend vllm</code>
           </pre>
-        <br />
+        </div>
+
         <table id="leaderboard"
           class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
         </table>
         <h2 id="sponsor" class="text-nowrap mt-5">🖊️ Citation</h2>
-        <pre style="padding-top: 0; padding-bottom: 0;">
+        <div class="col-md-12 overflow-auto">
+          <pre style="padding-top: 0; padding-bottom: 0;">
           <code class="language-bibtex">
 @inproceedings{evalperf,
   title = {Evaluating Language Models for Efficient Code Generation},
@@ -117,6 +118,7 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" \
   url = {https://openreview.net/forum?id=IBCBMeAhmC},
 }</code>
           </pre>
+        </div>
         <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
         <p>
           We thank
