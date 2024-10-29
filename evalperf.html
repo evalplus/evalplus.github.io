@@ -39,6 +39,24 @@
       font-size: 2em;
       text-align: center;
     }
+
+    .form-check {
+      padding-right: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-check-label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0.875rem;
+    }
+
+    #xAxisSelectors,
+    #yAxisSelectors {
+      min-width: min-content;
+    }
+
   </style>
 </head>
 
@@ -100,6 +118,44 @@ pip install --upgrade "evalplus[perf,vllm] @ git+https://github.com/evalplus/eva
 sudo sh -c 'echo 0 > /proc/sys/kernel/perf_event_paranoid' # Enable perf
 evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
           </pre>
+        </div>
+
+        <div class="container d-flex flex-column align-items-center gap-3 mt-5">
+          <h2>Model Performance Comparison</h2>
+          <div class="row w-100">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h5 class="mb-0">Model Selection</h5>
+                </div>
+                <div class="card-body p-0">
+                  <div class="overflow-auto" style="max-height: 250px;">
+                    <div class="row mx-0">
+                      <div class="col-6 border-end">
+                        <div class="p-2">
+                          <label class="form-label">X-Axis Models:</label>
+                          <div id="xAxisSelectors" class="d-flex flex-column gap-2">
+                            <!-- Checkboxes will be inserted here by JavaScript -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-2">
+                          <label class="form-label">Y-Axis Models:</label>
+                          <div id="yAxisSelectors" class="d-flex flex-column gap-2">
+                            <!-- Checkboxes will be inserted here by JavaScript -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="heatmapChart" style="width: 100%; height: 500px;"></div>
+            </div>
+          </div>
         </div>
 
         <table id="leaderboard"
@@ -300,6 +356,190 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
     };
 
     main();
+
+    initializeHeatmap();
+
+  function initializeHeatmap() {
+    const heatmapChart = echarts.init(document.getElementById('heatmapChart'));
+    const xAxisSelectors = document.getElementById('xAxisSelectors');
+    const yAxisSelectors = document.getElementById('yAxisSelectors');
+    
+    const modelData = Array.from(globalData).map(([modelId, value]) => ({
+      id: modelId,
+      name: modelId.includes('--') ? modelId.split('--')[1] : modelId,
+      dps: parseFloat(value.get('dps'))
+    }));
+
+    modelData.sort((a, b) => b.dps - a.dps);
+
+    let selectedXModels = modelData.slice(0, 5).map(m => m.id);
+    let selectedYModels = modelData.slice(0, 5).map(m => m.id);
+
+    function createCheckboxes() {
+      xAxisSelectors.innerHTML = '';
+      yAxisSelectors.innerHTML = '';
+      
+      modelData.forEach(model => {
+        const xDiv = document.createElement('div');
+        xDiv.className = 'form-check';
+        xDiv.innerHTML = `
+          <div class="d-flex align-items-center" style="min-width: 0;">
+            <input class="form-check-input flex-shrink-0" type="checkbox" id="x-${model.id}" 
+                  ${selectedXModels.includes(model.id) ? 'checked' : ''} 
+                  ${!selectedXModels.includes(model.id) && selectedXModels.length >= 5 ? 'disabled' : ''}>
+            <label class="form-check-label flex-grow-1" for="x-${model.id}" title="${model.name}">
+              ${model.name}
+            </label>
+          </div>
+        `;
+        xAxisSelectors.appendChild(xDiv);
+
+        const yDiv = document.createElement('div');
+        yDiv.className = 'form-check';
+        yDiv.innerHTML = `
+          <div class="d-flex align-items-center" style="min-width: 0;">
+            <input class="form-check-input flex-shrink-0" type="checkbox" id="y-${model.id}"
+                  ${selectedYModels.includes(model.id) ? 'checked' : ''}
+                  ${!selectedYModels.includes(model.id) && selectedYModels.length >= 5 ? 'disabled' : ''}>
+            <label class="form-check-label flex-grow-1" for="y-${model.id}" title="${model.name}">
+              ${model.name}
+            </label>
+          </div>
+        `;
+        yAxisSelectors.appendChild(yDiv);
+      });
+
+      document.querySelectorAll('#xAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          const modelId = this.id.slice(2);
+          if (this.checked) {
+            if (selectedXModels.length < 5) {
+              selectedXModels.push(modelId);
+            } else {
+              this.checked = false;
+              return;
+            }
+          } else {
+            selectedXModels = selectedXModels.filter(id => id !== modelId);
+          }
+          updateCheckboxStates();
+          updateHeatmap();
+        });
+      });
+
+      document.querySelectorAll('#yAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          const modelId = this.id.slice(2);
+          if (this.checked) {
+            if (selectedYModels.length < 5) {
+              selectedYModels.push(modelId);
+            } else {
+              this.checked = false;
+              return;
+            }
+          } else {
+            selectedYModels = selectedYModels.filter(id => id !== modelId);
+          }
+          updateCheckboxStates();
+          updateHeatmap();
+        });
+      });
+    }
+
+    function updateCheckboxStates() {
+      document.querySelectorAll('#xAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+        const modelId = checkbox.id.slice(2);
+        checkbox.disabled = !checkbox.checked && selectedXModels.length >= 5;
+      });
+
+      document.querySelectorAll('#yAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+        const modelId = checkbox.id.slice(2);
+        checkbox.disabled = !checkbox.checked && selectedYModels.length >= 5;
+      });
+    }
+
+    function updateHeatmap() {
+      const xModels = modelData.filter(m => selectedXModels.includes(m.id));
+      const yModels = modelData.filter(m => selectedYModels.includes(m.id));
+
+      const heatmapData = [];
+      yModels.forEach((model1, i) => {
+        xModels.forEach((model2, j) => {
+          const diff = model1.dps - model2.dps;
+          heatmapData.push([j, i, parseFloat(diff.toFixed(1))]);
+        });
+      });
+
+      const option = {
+        tooltip: {
+          position: 'top',
+          formatter: function(params) {
+            const model1 = yModels[params.data[1]].name;
+            const model2 = xModels[params.data[0]].name;
+            const diff = params.data[2];
+            return `${model1} vs ${model2}<br>DPS Difference: ${diff}`;
+          }
+        },
+        grid: {
+          top: '15%',
+          bottom: '15%',
+          left: '15%',
+          right: '5%'
+        },
+        xAxis: {
+          type: 'category',
+          data: xModels.map(m => m.name),
+          splitArea: { show: true },
+          axisLabel: {
+            rotate: 45,
+            interval: 0
+          }
+        },
+        yAxis: {
+          type: 'category',
+          data: yModels.map(m => m.name),
+          splitArea: { show: true }
+        },
+        visualMap: {
+          min: -10,
+          max: 10,
+          calculable: true,
+          orient: 'horizontal',
+          left: 'center',
+          top: 0,
+          inRange: {
+            color: ['#d73027', '#f46d43', '#fdae61', '#fee090', '#ffffbf', '#e0f3f8', '#abd9e9', '#74add1', '#4575b4']
+          }
+        },
+        series: [{
+          name: 'DPS Difference',
+          type: 'heatmap',
+          data: heatmapData,
+          label: {
+            show: true,
+            formatter: function(params) {
+              return params.data[2];
+            }
+          },
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }]
+      };
+
+      heatmapChart.setOption(option);
+    }
+
+    createCheckboxes();
+    updateHeatmap();
+
+    window.addEventListener('resize', function() {
+      heatmapChart.resize();
+    });
+  }
   </script>
 </body>
 
