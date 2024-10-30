@@ -1,0 +1,71 @@
+name: Sync Results
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  evalperf-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v4
+
+      - name: Setup Python Version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Sync EvalPerf Results
+        run: |
+          python results/evalperf/stats.py
+      - name: Check Whether Changes Exist
+        id: changes
+        run: |
+          changes=$(git status --porcelain)
+          echo "changes=$changes" >> $GITHUB_OUTPUT
+      - name: Setup sync branch name
+        id: vars
+        run: |
+          branch_name="sync-$(date +'%Y-%m-%d-%H-%M-%S')"
+          echo "branch_name=$branch_name" >> $GITHUB_ENV
+      - name: Create Pull Request
+        if: steps.changes.outputs.changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: ${{ env.branch_name }}
+          title: "[Sync Bot] sync evalperf results"
+          body: "Automatically sync EvaPerf results"
+          base: "${{ github.ref_name }}"
+
+  repoqa-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v4
+
+      - name: Setup Python Version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Sync EvalPerf Results
+        run: |
+          python -m pip install -r results/repoqa/requirements.txt
+          python results/repoqa/fetch_results.py
+      - name: Check Whether Changes Exist
+        id: changes
+        run: |
+          changes=$(git status --porcelain)
+          echo "changes=$changes" >> $GITHUB_OUTPUT
+      - name: Setup sync branch name
+        id: vars
+        run: |
+          branch_name="sync-$(date +'%Y-%m-%d-%H-%M-%S')"
+          echo "branch_name=$branch_name" >> $GITHUB_ENV
+      - name: Create Pull Request
+        if: steps.changes.outputs.changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: ${{ env.branch_name }}
+          title: "[Sync Bot] sync repoqa results"
+          body: "Automatically sync repoqa results"
+          base: "${{ github.ref_name }}"
