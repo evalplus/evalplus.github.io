@@ -32,7 +32,7 @@ def main():
                         combined_results[eval_name] = data[eval_name]
 
     with open(os.path.join(OUTPUT_PATH, "COMBINED-RESULTS.json"), "w") as f_out:
-        json.dump(combined_results, f_out)
+        json.dump(combined_results, f_out, indent=4)
 
 
 if __name__ == "__main__":
