@@ -188,6 +188,7 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 
     // Load data
     var data = null;
+    var heatmapTable = null;
     var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
     var xhr = new XMLHttpRequest();
     xhr.open("GET", dataUrl, false); // false makes the request synchronous
@@ -237,6 +238,9 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
           linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
         } else if (modelId.startsWith("deepseek-chat")) {
           linkMapping.set(modelId, "https://chat.deepseek.com/")
+        } else if (modelId == "heatmap_data") {
+          heatmapTable = value;
+          data.delete(modelId);
         }
       });
     } else {
@@ -245,6 +249,7 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
       );
     }
     const globalData = data;
+    const HeatmapTable = heatmapTable;
     const winrate_tag = "🏆 Win Rate (%)";
 
     // each row represents a model
@@ -444,7 +449,7 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
       const heatmapData = [];
       yModels.forEach((model1, i) => {
         xModels.forEach((model2, j) => {
-          const diff = model1.dps - model2.dps;
+          const diff = HeatmapTable.get(model1.id)[model2.id];
           heatmapData.push([j, i, model1.id !== model2.id ? parseFloat(diff.toFixed(1)) : '']);
         });
       });
