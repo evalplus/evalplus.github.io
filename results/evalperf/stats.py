@@ -55,6 +55,23 @@ def compute_win_rates(data: dict, metric: str):
     return win_rates
 
 
+def compute_aligned_dps_pair(data: dict, model1: str, model2: str):
+    model1_pass_tasks = set(
+        task
+        for task, result in data[model1]["eval"].items()
+        if result["dps"] is not None
+    )
+    model2_pass_tasks = set(
+        task
+        for task, result in data[model2]["eval"].items()
+        if result["dps"] is not None
+    )
+    common_tasks = model1_pass_tasks & model2_pass_tasks
+    return sum(data[model1]["eval"][t]["dps"] for t in common_tasks) / len(
+        common_tasks
+    ), sum(data[model2]["eval"][t]["dps"] for t in common_tasks) / len(common_tasks)
+
+
 if __name__ == "__main__":
     import argparse
 
@@ -69,5 +86,20 @@ if __name__ == "__main__":
     for model_id in data.keys():
         stats[model_id] = data[model_id]["summary"]
         stats[model_id]["win_rate"] = win_rates[model_id]
+
+    dps_pairs = defaultdict(dict)
+    for model_id in data.keys():
+        for other_model_id in data.keys():
+            if dps_pairs[other_model_id].get(model_id, None) is not None:
+                dps_pairs[model_id][other_model_id] = (
+                    dps_pairs[other_model_id][model_id][1],
+                    dps_pairs[other_model_id][model_id][0],
+                )
+            else:
+                dps_pairs[model_id][other_model_id] = compute_aligned_dps_pair(
+                    data, model_id, other_model_id
+                )
+    stats["heatmap_data"] = dps_pairs
+
     with open(DST_PATH, "w") as f:
         json.dump(stats, f, indent=4)
