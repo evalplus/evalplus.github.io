@@ -55,6 +55,26 @@ def compute_win_rates(data: dict, metric: str):
     return win_rates
 
 
+def compute_dps_diff(data: dict, model1: str, model2: str):
+    model1_pass_tasks = set(
+        task
+        for task, result in data[model1]["eval"].items()
+        if result["dps"] is not None
+    )
+    model2_pass_tasks = set(
+        task
+        for task, result in data[model2]["eval"].items()
+        if result["dps"] is not None
+    )
+    common_tasks = model1_pass_tasks & model2_pass_tasks
+    dps_diff = 0
+    for task in common_tasks:
+        dps_diff += (
+            data[model1]["eval"][task]["dps"] - data[model2]["eval"][task]["dps"]
+        )
+    return dps_diff / len(common_tasks)
+
+
 if __name__ == "__main__":
     import argparse
 
@@ -69,5 +89,16 @@ if __name__ == "__main__":
     for model_id in data.keys():
         stats[model_id] = data[model_id]["summary"]
         stats[model_id]["win_rate"] = win_rates[model_id]
+
+    dps_diff = defaultdict(dict)
+    for model_id in data.keys():
+        for other_model_id in data.keys():
+            if model_id == other_model_id:
+                dps_diff[model_id][other_model_id] = 0
+            if dps_diff[other_model_id].get(model_id, None) is not None:
+                dps_diff[model_id][other_model_id] = dps_diff[other_model_id][model_id]
+            dps_diff[model_id][other_model_id] = compute_dps_diff(data, model_id, other_model_id)
+    stats["heatmap_data"] = dps_diff
+
     with open(DST_PATH, "w") as f:
         json.dump(stats, f, indent=4)
