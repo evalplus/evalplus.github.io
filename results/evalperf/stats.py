@@ -94,10 +94,11 @@ if __name__ == "__main__":
     for model_id in data.keys():
         for other_model_id in data.keys():
             if model_id == other_model_id:
-                dps_diff[model_id][other_model_id] = 0
-            if dps_diff[other_model_id].get(model_id, None) is not None:
-                dps_diff[model_id][other_model_id] = dps_diff[other_model_id][model_id]
-            dps_diff[model_id][other_model_id] = compute_dps_diff(data, model_id, other_model_id)
+                dps_diff[model_id][other_model_id] = 0.0
+            elif dps_diff[other_model_id].get(model_id, None) is not None:
+                dps_diff[model_id][other_model_id] = -1 * dps_diff[other_model_id][model_id]
+            else:
+                dps_diff[model_id][other_model_id] = compute_dps_diff(data, model_id, other_model_id)
     stats["heatmap_data"] = dps_diff
 
     with open(DST_PATH, "w") as f:
