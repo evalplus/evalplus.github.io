@@ -50,7 +50,6 @@
     #yAxisSelectors {
       min-width: min-content;
     }
-
   </style>
 </head>
 
@@ -114,10 +113,21 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
           </pre>
         </div>
 
+        <div>
+          <b>Recommended comparison format:</b>
+          <ul>
+            <li>📊 <a href="#leaderboard">Win-rate ranking</a> -- <i>Each race round compares two models' DPS
+                based on common passing tasks</i>
+            </li>
+            <li>🔥 <a href="#heatmapChart">Pairwise DPS in a Heatmap</a> -- <i>Computing DPS for 2 compared
+                models on their common passing tasks</i></li>
+          </ul>
+        </div>
+
         <div class="container d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Win-rate Leaderboard</h3>
           <table id="leaderboard"
-          class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
+            class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
           </table>
 
           <h3>Heatmap of Pairwise DPS Comparison</h3>
@@ -152,14 +162,28 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
               </div>
             </div>
             <div class="col-12">
+              <center>
+                💡 Tips: float the mouse over the heatmap to see detailed DPS of the compared two models.
+              </center>
               <div id="heatmapChart" style="width: 100%; height: 500px;"></div>
             </div>
           </div>
-        </div>
 
-        <h2 id="sponsor" class="text-nowrap mt-5">🖊️ Citation</h2>
-        <div class="col-md-12 overflow-auto">
-          <pre style="padding-top: 0; padding-bottom: 0;">
+          <h3>Adding and visualizing new model results?</h3>
+          <div class="col overflow-auto">
+            <pre><code class="language-bash">
+git clone git@github.com:evalplus/evalplus.github.io.git
+cd evalplus.github.io.git && git pull
+cp ${PATH_TO}/${MODEL}_temp_1.0_evalperf_results.brief.json results/evalperf
+python results/evalperf/stats.py && python -m SimpleHTTPServer 8000
+# Open http://localhost:8000/evalperf.html in your browser
+</code>
+</pre>
+          </div>
+
+          <h2 id="sponsor" class="text-nowrap mt-5">🖊️ Citation</h2>
+          <div class="col-md-12 overflow-auto">
+            <pre style="padding-top: 0; padding-bottom: 0;">
           <code class="language-bibtex">
 @inproceedings{evalperf,
   title = {Evaluating Language Models for Efficient Code Generation},
@@ -169,225 +193,224 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
   url = {https://openreview.net/forum?id=IBCBMeAhmC},
 }</code>
           </pre>
+          </div>
+          <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
+          <p>
+            We thank
+            <a href="https://openai.com/form/researcher-access-program/">OpenAI Researcher Access Program</a> for
+            providing part of the compute.
+          </p>
         </div>
-        <h2 id="sponsor" class="text-nowrap mt-5">🤗 Acknowledgment</h2>
-        <p>
-          We thank
-          <a href="https://openai.com/form/researcher-access-program/">OpenAI Researcher Access Program</a> for
-          providing part of the compute.
-        </p>
       </div>
     </div>
-  </div>
 
-  <script>
-    const contextTable = document.getElementById("leaderboard");
-    const linkMapping = new Map([]);
-    const hfLinkPrefix = "https://huggingface.co/";
-    const dataUrlPrefix = "results/evalperf";
+    <script>
+      const contextTable = document.getElementById("leaderboard");
+      const linkMapping = new Map([]);
+      const hfLinkPrefix = "https://huggingface.co/";
+      const dataUrlPrefix = "results/evalperf";
 
-    // Load data
-    var data = null;
-    var heatmapTable = null;
-    var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", dataUrl, false); // false makes the request synchronous
-    xhr.send();
+      // Load data
+      var data = null;
+      var heatmapTable = null;
+      var dataUrl = dataUrlPrefix + "/COMBINED-RESULTS.json";
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", dataUrl, false); // false makes the request synchronous
+      xhr.send();
 
-    if (xhr.status === 200) {
-      var results = JSON.parse(xhr.responseText);
-      data = new Map(Object.entries(results));
-      // convert each value to Map
-      data.forEach((value, modelId) => {
-        data.set(modelId, new Map(Object.entries(value)));
-      });
-      data.forEach((value, modelId) => {
-        // add link to model
-        if (modelId.includes("--")) {
-          modelId = modelId.split("--");
-          modelOrg = modelId[0];
-          modelId = modelId[1];
-          url = hfLinkPrefix + modelOrg + "/" + modelId;
-          linkMapping.set(modelId, url);
-        } else if (modelId.startsWith("gpt-4-")) {
-          linkMapping.set(
-            modelId,
-            "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
-          );
-        } else if (modelId.startsWith("gpt-3.5-")) {
-          linkMapping.set(
-            modelId,
-            "https://platform.openai.com/docs/models/gpt-3-5-turbo",
-          );
-        } else if (modelId.startsWith("claude-3-")) {
-          linkMapping.set(
-            modelId,
-            "https://www.anthropic.com/news/claude-3-family",
-          );
-        } else if (modelId.startsWith("gemini-1.5-pro")) {
-          linkMapping.set(
-            modelId,
-            "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note",
-          );
-        } else if (modelId.startsWith("gemini-1.5-flash")) {
-          linkMapping.set(
-            modelId,
-            "https://deepmind.google/technologies/gemini/flash/",
-          );
-        } else if (modelId.startsWith("gpt-4o-")) {
-          linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
-        } else if (modelId.startsWith("deepseek-chat")) {
-          linkMapping.set(modelId, "https://chat.deepseek.com/")
-        } else if (modelId == "heatmap_data") {
-          heatmapTable = value;
-          data.delete(modelId);
-        }
-      });
-    } else {
-      alert(
-        "Failed to load data from " + dataUrl + ". Please try again later.",
-      );
-    }
-    const globalData = data;
-    const HeatmapTable = heatmapTable;
-    const winrate_tag = "🏆 Win Rate (%)";
+      if (xhr.status === 200) {
+        var results = JSON.parse(xhr.responseText);
+        data = new Map(Object.entries(results));
+        // convert each value to Map
+        data.forEach((value, modelId) => {
+          data.set(modelId, new Map(Object.entries(value)));
+        });
+        data.forEach((value, modelId) => {
+          // add link to model
+          if (modelId.includes("--")) {
+            modelId = modelId.split("--");
+            modelOrg = modelId[0];
+            modelId = modelId[1];
+            url = hfLinkPrefix + modelOrg + "/" + modelId;
+            linkMapping.set(modelId, url);
+          } else if (modelId.startsWith("gpt-4-")) {
+            linkMapping.set(
+              modelId,
+              "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
+            );
+          } else if (modelId.startsWith("gpt-3.5-")) {
+            linkMapping.set(
+              modelId,
+              "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+            );
+          } else if (modelId.startsWith("claude-3-")) {
+            linkMapping.set(
+              modelId,
+              "https://www.anthropic.com/news/claude-3-family",
+            );
+          } else if (modelId.startsWith("gemini-1.5-pro")) {
+            linkMapping.set(
+              modelId,
+              "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note",
+            );
+          } else if (modelId.startsWith("gemini-1.5-flash")) {
+            linkMapping.set(
+              modelId,
+              "https://deepmind.google/technologies/gemini/flash/",
+            );
+          } else if (modelId.startsWith("gpt-4o-")) {
+            linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
+          } else if (modelId.startsWith("deepseek-chat")) {
+            linkMapping.set(modelId, "https://chat.deepseek.com/")
+          } else if (modelId == "heatmap_data") {
+            heatmapTable = value;
+            data.delete(modelId);
+          }
+        });
+      } else {
+        alert(
+          "Failed to load data from " + dataUrl + ". Please try again later.",
+        );
+      }
+      const globalData = data;
+      const HeatmapTable = heatmapTable;
+      const winrate_tag = "🏆 Win Rate (%)";
 
-    // each row represents a model
-    const theaders = [
-      "#", // rank
-      "Model", // model name
-      "DPS",
-      // "DPS Norm",
-      "pass@1",
-      winrate_tag, // computed over the same set of passing solutions
-    ];
+      // each row represents a model
+      const theaders = [
+        "#", // rank
+        "Model", // model name
+        "DPS",
+        // "DPS Norm",
+        "pass@1",
+        winrate_tag, // computed over the same set of passing solutions
+      ];
 
-    const displayTable = (table) => {
-      var thead = document.createElement("thead");
-      var headerRow = document.createElement("tr");
-      // headers
-      theaders.forEach(function (header) {
-        var th = document.createElement("th");
-        th.classList.add("text-nowrap");
-        th.textContent = header;
+      const displayTable = (table) => {
+        var thead = document.createElement("thead");
+        var headerRow = document.createElement("tr");
+        // headers
+        theaders.forEach(function (header) {
+          var th = document.createElement("th");
+          th.classList.add("text-nowrap");
+          th.textContent = header;
 
-        if (header == winrate_tag) {
-          th.style.backgroundColor = "#EEFFEE";
-        }
+          if (header == winrate_tag) {
+            th.style.backgroundColor = "#EEFFEE";
+          }
 
-        headerRow.appendChild(th);
-      });
-      thead.appendChild(headerRow);
-      table.appendChild(thead);
+          headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
 
-      // convert data to array of Map
-      data = Array.from(globalData);
-      data = data.map(
-        ([modelId, value]) => new Map([["modelId", modelId], ...value]),
-      )
-      data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
+        // convert data to array of Map
+        data = Array.from(globalData);
+        data = data.map(
+          ([modelId, value]) => new Map([["modelId", modelId], ...value]),
+        )
+        data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
 
-      var tbody = document.createElement("tbody");
-      // add rank
-      var rank = 0;
-      var last_best = null;
-      var n_last_best = 1;
-      data.forEach((row) => {
-        var dataRow = document.createElement("tr");
-        // rank
-        var rankCell = document.createElement("td");
-        dataRow.appendChild(rankCell);
-        var modelCell = document.createElement("td");
-        var modelLink = document.createElement("a");
-        var modelId = row.get('modelId');
-        var modelName = modelId;
-        if (modelId.includes("--")) {
-          modelName = modelId.split("--")[1];
-        }
-        var cur_win_rate = row.get('win_rate').toFixed(3);
-        if (last_best != cur_win_rate) {
-          rank += n_last_best;
-          last_best = cur_win_rate;
-          rankCell.textContent = rank;
-          n_last_best = 1;
-        } else {
-          n_last_best += 1;
-        }
-        if (rank == 1) {
-          modelLink.textContent = "🥇 " + modelName;
-        } else if (rank == 2) {
-          modelLink.textContent = "🥈 " + modelName;
-        } else if (rank == 3) {
-          modelLink.textContent = "🥉 " + modelName;
-        } else {
-          modelLink.textContent = modelName;
-        }
-        if (linkMapping.has(modelName)) {
-          modelLink.href = linkMapping.get(modelName);
-        }
-        modelLink.classList.add("link-underline-primary");
-        modelLink.classList.add("text-nowrap");
-        modelCell.appendChild(modelLink);
-        dataRow.appendChild(modelCell);
-        dpsRow = document.createElement("td");
-        dpsRow.textContent = row.get("dps").toFixed(1);
-        dataRow.appendChild(dpsRow);
-        // dpsNormRow = document.createElement("td");
-        // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
-        // dataRow.appendChild(dpsNormRow);
-        passRow = document.createElement("td");
-        passRow.textContent = row.get("pass@1").toFixed(1);
-        dataRow.appendChild(passRow);
-        winRateRow = document.createElement("td");
-        winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
-        winRateRow.style.backgroundColor = "#EEFFEE";
-        dataRow.appendChild(winRateRow);
-        tbody.appendChild(dataRow);
-      });
-      table.appendChild(tbody);
-    };
+        var tbody = document.createElement("tbody");
+        // add rank
+        var rank = 0;
+        var last_best = null;
+        var n_last_best = 1;
+        data.forEach((row) => {
+          var dataRow = document.createElement("tr");
+          // rank
+          var rankCell = document.createElement("td");
+          dataRow.appendChild(rankCell);
+          var modelCell = document.createElement("td");
+          var modelLink = document.createElement("a");
+          var modelId = row.get('modelId');
+          var modelName = modelId;
+          if (modelId.includes("--")) {
+            modelName = modelId.split("--")[1];
+          }
+          var cur_win_rate = row.get('win_rate').toFixed(3);
+          if (last_best != cur_win_rate) {
+            rank += n_last_best;
+            last_best = cur_win_rate;
+            rankCell.textContent = rank;
+            n_last_best = 1;
+          } else {
+            n_last_best += 1;
+          }
+          if (rank == 1) {
+            modelLink.textContent = "🥇 " + modelName;
+          } else if (rank == 2) {
+            modelLink.textContent = "🥈 " + modelName;
+          } else if (rank == 3) {
+            modelLink.textContent = "🥉 " + modelName;
+          } else {
+            modelLink.textContent = modelName;
+          }
+          if (linkMapping.has(modelName)) {
+            modelLink.href = linkMapping.get(modelName);
+          }
+          modelLink.classList.add("link-underline-primary");
+          modelLink.classList.add("text-nowrap");
+          modelCell.appendChild(modelLink);
+          dataRow.appendChild(modelCell);
+          dpsRow = document.createElement("td");
+          dpsRow.textContent = row.get("dps").toFixed(1);
+          dataRow.appendChild(dpsRow);
+          // dpsNormRow = document.createElement("td");
+          // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
+          // dataRow.appendChild(dpsNormRow);
+          passRow = document.createElement("td");
+          passRow.textContent = row.get("pass@1").toFixed(1);
+          dataRow.appendChild(passRow);
+          winRateRow = document.createElement("td");
+          winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
+          winRateRow.style.backgroundColor = "#EEFFEE";
+          dataRow.appendChild(winRateRow);
+          tbody.appendChild(dataRow);
+        });
+        table.appendChild(tbody);
+      };
 
-    const clearTable = () => {
-      contextTable.innerHTML = "";
-    };
+      const clearTable = () => {
+        contextTable.innerHTML = "";
+      };
 
-    const main = () => {
-      clearTable();
-      displayTable(contextTable);
-    };
+      const main = () => {
+        clearTable();
+        displayTable(contextTable);
+      };
 
-    main();
+      main();
 
-    initializeHeatmap();
+      initializeHeatmap();
 
-  function initializeHeatmap() {
-    const heatmapChart = echarts.init(document.getElementById('heatmapChart'));
-    const xAxisSelectors = document.getElementById('xAxisSelectors');
-    const yAxisSelectors = document.getElementById('yAxisSelectors');
+      function initializeHeatmap() {
+        const heatmapChart = echarts.init(document.getElementById('heatmapChart'));
+        const xAxisSelectors = document.getElementById('xAxisSelectors');
+        const yAxisSelectors = document.getElementById('yAxisSelectors');
 
-    const modelData = Array.from(globalData).map(([modelId, value]) => ({
-      id: modelId,
-      name: modelId.includes('--') ? modelId.split('--')[1] : modelId,
-      dps: parseFloat(value.get('dps')),
-      winrate: parseFloat(value.get('win_rate')),
-    }));
+        const modelData = Array.from(globalData).map(([modelId, value]) => ({
+          id: modelId,
+          name: modelId.includes('--') ? modelId.split('--')[1] : modelId,
+          winrate: parseFloat(value.get('win_rate')),
+        }));
 
-    // sort by general winrate
-    modelData.sort((a, b) => b.winrate - a.winrate);
+        // sort by general winrate
+        modelData.sort((a, b) => b.winrate - a.winrate);
 
-    const defaultDisplayNum = 6;
+        const defaultDisplayNum = 6;
 
-    let selectedXModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);
-    let selectedYModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);
+        let selectedXModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);
+        let selectedYModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);
 
-    function createCheckboxes() {
-      xAxisSelectors.innerHTML = '';
-      yAxisSelectors.innerHTML = '';
+        function createCheckboxes() {
+          xAxisSelectors.innerHTML = '';
+          yAxisSelectors.innerHTML = '';
 
-      modelData.forEach(model => {
-        const xDiv = document.createElement('div');
-        xDiv.className = 'form-check';
-        xDiv.innerHTML = `
+          modelData.forEach(model => {
+            const xDiv = document.createElement('div');
+            xDiv.className = 'form-check';
+            xDiv.innerHTML = `
           <div class="d-flex align-items-center" style="min-width: 0;">
             <input class="form-check-input flex-shrink-0" type="checkbox" id="x-${model.id}"
                   ${selectedXModels.includes(model.id) ? 'checked' : ''} >
@@ -396,11 +419,11 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
             </label>
           </div>
         `;
-        xAxisSelectors.appendChild(xDiv);
+            xAxisSelectors.appendChild(xDiv);
 
-        const yDiv = document.createElement('div');
-        yDiv.className = 'form-check';
-        yDiv.innerHTML = `
+            const yDiv = document.createElement('div');
+            yDiv.className = 'form-check';
+            yDiv.innerHTML = `
           <div class="d-flex align-items-center" style="min-width: 0;">
             <input class="form-check-input flex-shrink-0" type="checkbox" id="y-${model.id}"
                   ${selectedYModels.includes(model.id) ? 'checked' : ''} >
@@ -409,133 +432,150 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
             </label>
           </div>
         `;
-        yAxisSelectors.appendChild(yDiv);
-      });
+            yAxisSelectors.appendChild(yDiv);
+          });
 
-      document.querySelectorAll('#xAxisSelectors input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-          const modelId = this.id.slice(2);
-          if (this.checked) {
-            selectedXModels.push(modelId);
-          } else {
-            selectedXModels = selectedXModels.filter(id => id !== modelId);
-          }
-          updateCheckboxStates();
-          updateHeatmap();
-        });
-      });
+          document.querySelectorAll('#xAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+              const modelId = this.id.slice(2);
+              if (this.checked) {
+                selectedXModels.push(modelId);
+              } else {
+                selectedXModels = selectedXModels.filter(id => id !== modelId);
+              }
+              updateCheckboxStates();
+              updateHeatmap();
+            });
+          });
 
-      document.querySelectorAll('#yAxisSelectors input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-          const modelId = this.id.slice(2);
-          if (this.checked) {
-            selectedYModels.push(modelId);
-          } else {
-            selectedYModels = selectedYModels.filter(id => id !== modelId);
-          }
-          updateCheckboxStates();
-          updateHeatmap();
-        });
-      });
-    }
+          document.querySelectorAll('#yAxisSelectors input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+              const modelId = this.id.slice(2);
+              if (this.checked) {
+                selectedYModels.push(modelId);
+              } else {
+                selectedYModels = selectedYModels.filter(id => id !== modelId);
+              }
+              updateCheckboxStates();
+              updateHeatmap();
+            });
+          });
+        }
 
-    function updateCheckboxStates() {
-    }
+        function updateCheckboxStates() {
+        }
 
-    function updateHeatmap() {
-      const xModels = modelData.filter(m => selectedXModels.includes(m.id));
-      const yModels = modelData.filter(m => selectedYModels.includes(m.id)).reverse();
+        function updateHeatmap() {
+          const xModels = modelData.filter(m => selectedXModels.includes(m.id));
+          const yModels = modelData.filter(m => selectedYModels.includes(m.id)).reverse();
 
-      const heatmapData = [];
-      yModels.forEach((model1, i) => {
-        xModels.forEach((model2, j) => {
-          const diff = HeatmapTable.get(model1.id)[model2.id];
-          heatmapData.push([j, i, model1.id !== model2.id ? parseFloat(diff.toFixed(1)) : '']);
-        });
-      });
+          const heatmapData = [];
+          yModels.forEach((model1, i) => {
+            xModels.forEach((model2, j) => {
+              const dps_pair = HeatmapTable.get(model1.id)[model2.id];
+              const sc1 = parseFloat(dps_pair[0]).toFixed(1);
+              const sc2 = parseFloat(dps_pair[1]).toFixed(1);
+              heatmapData.push([j, i, sc1, sc2, model1.id !== model2.id ? parseFloat((sc1 - sc2).toFixed(1)) : '']);
+            });
+          });
 
-      const option = {
-        tooltip: {
-          position: 'top',
-          formatter: function(params) {
-            const model1 = yModels[params.data[1]].name;
-            const model2 = xModels[params.data[0]].name;
-            const diff = params.data[2];
-            return `${model1} vs ${model2}<br>DPS Difference: ${diff}`;
-          }
-        },
-        grid: {
-          top: '10%',
-          bottom: '20%',
-          left: '25%',
-          right: '0%'
-        },
-        xAxis: {
-          type: 'category',
-          data: xModels.map(m => m.name),
-          splitArea: { show: true },
-          axisLabel: {
-            rotate: 25,
-            interval: 0,
-          },
-          axisTick: {
-            alignWithLabel: true,
-          },
-        },
-        yAxis: {
-          type: 'category',
-          data: yModels.map(m => m.name),
-          splitArea: { show: true },
-          axisLabel: {
-            fontWeight: 'bold',
-          },
-        },
-        visualMap: {
-          type: 'continuous',
-          min: -15,
-          max: 15,
-          calculable: true,
-          orient: 'horizontal',
-          left: 'center',
-          top: 0,
-          itemHeight: '350',
-          inRange: {
-            color: ['#d73027', '#f46d43', '#fdae61', '#fee090', '#f8f8f8', '#e0f3f8', '#abd9e9', '#74add1', '#4575b4'],
-          },
-        },
-        series: [{
-          name: 'DPS Difference',
-          type: 'heatmap',
-          data: heatmapData,
-          label: {
-            show: true,
-            formatter: function(params) {
-              return params.data[2] > 0 ? '+' + params.data[2] : params.data[2];
+          const option = {
+            tooltip: {
+              position: 'top',
+              formatter: function (params) {
+                const model1 = yModels[params.data[1]].name;
+                const model2 = xModels[params.data[0]].name;
+                const sc1 = params.data[2];
+                const sc2 = params.data[3];
+
+                winstyle = "color:Green;"
+                losestyle = "color:Tomato;"
+                if (sc1 > sc2) {
+                  style1 = winstyle;
+                  style2 = losestyle;
+                } else if (sc2 > sc1) {
+                  style1 = losestyle;
+                  style2 = winstyle;
+                }
+                return `DPS over <u>common passing tasks</u>:<br>` +
+                  `<span style="${style1}">${model1} (left): ${sc1}</span><br>` +
+                  `<span style="${style2}">${model2} (bottom): ${sc2}</span>`;
+                // return `${model1} vs ${model2}<br>DPS Difference: ${diff}`;
+              }
             },
-            textStyle: {
-              fontSize: 16,
-            }
-          },
-          emphasis: {
-            itemStyle: {
-              shadowBlur: 10,
-              shadowColor: 'rgba(0, 0, 0, 0.5)'
-            }
-          }
-        }]
-      };
+            grid: {
+              top: '10%',
+              bottom: '20%',
+              left: '25%',
+              right: '0%'
+            },
+            xAxis: {
+              type: 'category',
+              data: xModels.map(m => m.name),
+              splitArea: { show: true },
+              axisLabel: {
+                rotate: 25,
+                interval: 0,
+              },
+              axisTick: {
+                alignWithLabel: true,
+              },
+            },
+            yAxis: {
+              type: 'category',
+              data: yModels.map(m => m.name),
+              splitArea: { show: true },
+              axisLabel: {
+                fontWeight: 'bold',
+              },
+            },
+            visualMap: {
+              type: 'continuous',
+              min: -15,
+              max: 15,
+              calculable: true,
+              orient: 'horizontal',
+              left: 'center',
+              top: 0,
+              itemHeight: '350',
+              inRange: {
+                color: ['#d73027', '#f46d43', '#fdae61', '#fee090', '#f8f8f8', '#e0f3f8', '#abd9e9', '#74add1', '#4575b4'],
+              },
+            },
+            series: [{
+              name: 'DPS Difference',
+              type: 'heatmap',
+              data: heatmapData,
+              label: {
+                show: true,
+                formatter: function (params) {
+                  const val = params.data[params.data.length - 1];
+                  return val > 0 ? '+' + val : val;
+                },
+                textStyle: {
+                  fontSize: 16,
+                }
+              },
+              emphasis: {
+                itemStyle: {
+                  shadowBlur: 10,
+                  shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+              }
+            }]
+          };
 
-      heatmapChart.setOption(option);
-    }
+          heatmapChart.setOption(option);
+        }
 
-    createCheckboxes();
-    updateHeatmap();
+        createCheckboxes();
+        updateHeatmap();
 
-    window.addEventListener('resize', function() {
-      heatmapChart.resize();
-    });
-  }
-  </script>
+        window.addEventListener('resize', function () {
+          heatmapChart.resize();
+        });
+      }
+    </script>
 </body>
 
 </html>
