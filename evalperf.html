@@ -126,6 +126,9 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 
         <div class="container d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Win-rate Leaderboard</h3>
+          <p>📝 Notes: the default prompt does not emphasize efficiency requirements as our work shows such emphasis
+            might degrade both efficiency and correctness for some weak models. Yet, "(🔥)" marks models using
+            performance-encouraging prompts as they might be able to accurately understand such needs.</p>
           <table id="leaderboard"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
           </table>
@@ -233,15 +236,10 @@ python results/evalperf/stats.py && python -m http.server 8000
             modelId = modelId[1];
             url = hfLinkPrefix + modelOrg + "/" + modelId;
             linkMapping.set(modelId, url);
-          } else if (modelId.startsWith("gpt-4-")) {
+          } else if (modelId.startsWith("o1-") || modelId.startsWith("gpt-")) {
             linkMapping.set(
               modelId,
-              "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
-            );
-          } else if (modelId.startsWith("gpt-3.5-")) {
-            linkMapping.set(
-              modelId,
-              "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+              "https://platform.openai.com/docs/models",
             );
           } else if (modelId.startsWith("claude-3-")) {
             linkMapping.set(
@@ -258,8 +256,6 @@ python results/evalperf/stats.py && python -m http.server 8000
               modelId,
               "https://deepmind.google/technologies/gemini/flash/",
             );
-          } else if (modelId.startsWith("gpt-4o-")) {
-            linkMapping.set(modelId, "https://openai.com/index/hello-gpt-4o/");
           } else if (modelId.startsWith("deepseek-chat")) {
             linkMapping.set(modelId, "https://chat.deepseek.com/")
           } else if (modelId == "heatmap_data") {

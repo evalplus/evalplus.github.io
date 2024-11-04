@@ -14,6 +14,8 @@ def read_json_files():
         with open(path, "r") as f:
             data = json.load(f)
             model_id = path.name.split("_")[0]
+            if "-perf-instruct_" in path.name:
+                model_id = model_id + " (🔥)"
             data_dict[model_id] = data
     return data_dict
 
