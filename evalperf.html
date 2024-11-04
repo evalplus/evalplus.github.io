@@ -175,8 +175,8 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 git clone git@github.com:evalplus/evalplus.github.io.git
 cd evalplus.github.io && git pull
 cp ${PATH_TO}/${MODEL}_temp_1.0_evalperf_results.brief.json results/evalperf
-python results/evalperf/stats.py && python -m SimpleHTTPServer 8000
-# Open http://localhost:8000/evalperf.html in your browser
+python results/evalperf/stats.py && python -m http.server 8000
+# Open the displayed address in your browser
 </code>
 </pre>
           </div>
