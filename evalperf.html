@@ -126,6 +126,7 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 
         <div class="container d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Win-rate Leaderboard</h3>
+          <p>📊 Ranking metrics: WR (Win-Rate; %) based on task- and model-wise competiton (i.e., pairwise DPS).</p>
           <p>📝 Notes: the default prompt does not emphasize efficiency requirements as our work shows such emphasis
             might degrade both efficiency and correctness for some weak models. Yet, "(⏩)" marks models using
             performance-encouraging prompts as they might be able to accurately understand such needs.</p>
@@ -275,15 +276,15 @@ python results/evalperf/stats.py && python -m http.server 8000
       }
       const globalData = data;
       const HeatmapTable = heatmapTable;
-      const winrate_tag = "🏆 Win Rate (%)";
+      const winrate_tag = "🏆 Model WR";
 
       // each row represents a model
       const theaders = [
         "#", // rank
         "Model", // model name
-        "DPS",
-        // "DPS Norm",
-        "pass@1",
+        // "DPS",
+        // "pass@1",
+        "Task WR", // task winrate
         winrate_tag, // computed over the same set of passing solutions
       ];
 
@@ -310,7 +311,7 @@ python results/evalperf/stats.py && python -m http.server 8000
         data = data.map(
           ([modelId, value]) => new Map([["modelId", modelId], ...value]),
         )
-        data.sort((a, b) => b.get("win_rate") - a.get("win_rate"));
+        data.sort((a, b) => b.get("model_win_rate") - a.get("model_win_rate"));
 
         var tbody = document.createElement("tbody");
         // add rank
@@ -329,10 +330,10 @@ python results/evalperf/stats.py && python -m http.server 8000
           if (modelId.includes("--")) {
             modelName = modelId.split("--")[1];
           }
-          var cur_win_rate = row.get('win_rate').toFixed(3);
-          if (last_best != cur_win_rate) {
+          var cur_model_wr = row.get('model_win_rate').toFixed(3);
+          if (last_best != cur_model_wr) {
             rank += n_last_best;
-            last_best = cur_win_rate;
+            last_best = cur_model_wr;
             rankCell.textContent = rank;
             n_last_best = 1;
           } else {
@@ -354,19 +355,23 @@ python results/evalperf/stats.py && python -m http.server 8000
           modelLink.classList.add("text-nowrap");
           modelCell.appendChild(modelLink);
           dataRow.appendChild(modelCell);
-          dpsRow = document.createElement("td");
-          dpsRow.textContent = row.get("dps").toFixed(1);
-          dataRow.appendChild(dpsRow);
-          // dpsNormRow = document.createElement("td");
-          // dpsNormRow.textContent = row.get("dps_norm").toFixed(1);
-          // dataRow.appendChild(dpsNormRow);
-          passRow = document.createElement("td");
-          passRow.textContent = row.get("pass@1").toFixed(1);
-          dataRow.appendChild(passRow);
-          winRateRow = document.createElement("td");
-          winRateRow.textContent = (row.get('win_rate') * 100).toFixed(1);
-          winRateRow.style.backgroundColor = "#EEFFEE";
-          dataRow.appendChild(winRateRow);
+
+          // dpsRow = document.createElement("td");
+          // dpsRow.textContent = row.get("dps").toFixed(1);
+          // dataRow.appendChild(dpsRow);
+          // passRow = document.createElement("td");
+          // passRow.textContent = row.get("pass@1").toFixed(1);
+          // dataRow.appendChild(passRow);
+
+          taskWinRateRow = document.createElement("td");
+          taskWinRateRow.textContent = (row.get('task_win_rate') * 100).toFixed(1);
+          dataRow.appendChild(taskWinRateRow);
+
+
+          modelWinRateRow = document.createElement("td");
+          modelWinRateRow.textContent = (row.get('model_win_rate') * 100).toFixed(1);
+          modelWinRateRow.style.backgroundColor = "#EEFFEE";
+          dataRow.appendChild(modelWinRateRow);
           tbody.appendChild(dataRow);
         });
         table.appendChild(tbody);
@@ -393,13 +398,13 @@ python results/evalperf/stats.py && python -m http.server 8000
         const modelData = Array.from(globalData).map(([modelId, value]) => ({
           id: modelId,
           name: modelId.includes('--') ? modelId.split('--')[1] : modelId,
-          winrate: parseFloat(value.get('win_rate')),
+          winrate: parseFloat(value.get('model_win_rate')),
         }));
 
         // sort by general winrate
         modelData.sort((a, b) => b.winrate - a.winrate);
 
-        const defaultDisplayNum = 6;
+        const defaultDisplayNum = 7;
 
         let selectedXModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);
         let selectedYModels = modelData.slice(0, defaultDisplayNum).map(m => m.id);

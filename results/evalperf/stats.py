@@ -36,24 +36,53 @@ def model_compete(model1: dict, model2: dict, metric: str):
     return model1_wins, ties, model2_wins
 
 
-def win_rate_of_model(model_id: str, data: dict, metric: str):
+def modelwise_winrate(model_id: str, data: dict, metric: str):
     all_models = list(data.keys())
     other_models = [model for model in all_models if model != model_id]
-    wins = 0
+    all_wins = 0
+    all_ties = 0
+    all_rounds = len(other_models)
+    for other_model in other_models:
+        ldps, rdps = compute_aligned_dps_pair(data, model_id, other_model)
+
+        if ldps > rdps:
+            all_wins += 1
+        elif ldps == rdps:
+            all_ties += 1
+
+    all_adj_win = all_wins + all_ties / 2
+    return all_adj_win / all_rounds
+
+
+def taskwise_winrate(model_id: str, data: dict, metric: str):
+    all_models = list(data.keys())
+    other_models = [model for model in all_models if model != model_id]
+    all_wins = 0
+    all_ties = 0
     all_rounds = 0
     for other_model in other_models:
         model1_wins, ties, model2_wins = model_compete(
             data[model_id]["eval"], data[other_model]["eval"], metric
         )
-        wins += model1_wins + 0.5 * ties
+        all_wins += model1_wins
+        all_ties += ties
         all_rounds += model1_wins + ties + model2_wins
-    return wins / all_rounds
+
+    all_adj_win = all_wins + all_ties / 2
+    return all_adj_win / all_rounds
 
 
-def compute_win_rates(data: dict, metric: str):
+def compute_modelwise_winrates(data: dict, metric: str):
     win_rates = {}
     for model_id in data.keys():
-        win_rates[model_id] = win_rate_of_model(model_id, data, metric)
+        win_rates[model_id] = modelwise_winrate(model_id, data, metric)
+    return win_rates
+
+
+def compute_taskwise_winrates(data: dict, metric: str):
+    win_rates = {}
+    for model_id in data.keys():
+        win_rates[model_id] = taskwise_winrate(model_id, data, metric)
     return win_rates
 
 
@@ -83,11 +112,13 @@ if __name__ == "__main__":
     )
     args = argparser.parse_args()
     data = read_json_files()
-    win_rates = compute_win_rates(data, args.win_metric)
+    model_winrates = compute_modelwise_winrates(data, args.win_metric)
+    task_winrates = compute_taskwise_winrates(data, args.win_metric)
     stats = {}
     for model_id in data.keys():
         stats[model_id] = data[model_id]["summary"]
-        stats[model_id]["win_rate"] = win_rates[model_id]
+        stats[model_id]["model_win_rate"] = model_winrates[model_id]
+        stats[model_id]["task_win_rate"] = task_winrates[model_id]
 
     dps_pairs = defaultdict(dict)
     for model_id in data.keys():
