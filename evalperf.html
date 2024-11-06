@@ -29,7 +29,7 @@
 
     th,
     td {
-      text-align: center;
+      text-align: left;
       width: fit-content;
       font-size: larger;
     }
@@ -218,7 +218,7 @@ python results/evalperf/stats.py && python -m http.server 8000
     </div>
 
     <script>
-      const contextTable = document.getElementById("leaderboard");
+      const metricTable = document.getElementById("leaderboard");
       const linkMapping = new Map([]);
       const hfLinkPrefix = "https://huggingface.co/";
       const dataUrlPrefix = "results/evalperf";
@@ -369,12 +369,16 @@ python results/evalperf/stats.py && python -m http.server 8000
 
           taskWinRateRow = document.createElement("td");
           taskWinRateRow.textContent = (row.get('task_win_rate') * 100).toFixed(1);
+          // center-align
+          taskWinRateRow.style.textAlign = "center";
           dataRow.appendChild(taskWinRateRow);
 
 
           modelWinRateRow = document.createElement("td");
           modelWinRateRow.textContent = (row.get('model_win_rate') * 100).toFixed(1);
           modelWinRateRow.style.backgroundColor = "#EEFFEE";
+          // center-align
+          modelWinRateRow.style.textAlign = "center";
           dataRow.appendChild(modelWinRateRow);
           tbody.appendChild(dataRow);
         });
@@ -382,12 +386,12 @@ python results/evalperf/stats.py && python -m http.server 8000
       };
 
       const clearTable = () => {
-        contextTable.innerHTML = "";
+        metricTable.innerHTML = "";
       };
 
       const main = () => {
         clearTable();
-        displayTable(contextTable);
+        displayTable(metricTable);
       };
 
       main();
