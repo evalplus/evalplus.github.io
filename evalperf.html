@@ -29,7 +29,7 @@
 
     th,
     td {
-      text-align: left;
+      text-align: center;
       width: fit-content;
       font-size: larger;
     }
@@ -127,16 +127,30 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 
         <div class="container d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Win-rate Leaderboard</h3>
-          <p>📊 Ranking metrics: WR (Win-Rate; %) based on task- and model-wise competiton (i.e., pairwise DPS).</p>
-          <p>📝 Notes: the default prompt does not emphasize efficiency requirements as our work shows such emphasis
+          <p class="align-self-start">📊 Ranking metrics: WR (Win-Rate; %) based on task- and model-wise competiton
+            (i.e., pairwise DPS).</p>
+          <p class="align-self-start">📝 Notes: the default prompt does not emphasize efficiency requirements as our
+            work shows such emphasis
             might degrade both efficiency and correctness for some weak models. Yet, "(⏩)" marks models using
             performance-encouraging prompts as they might be able to accurately understand such needs.</p>
+          <div class="align-self-start d-inline-flex gap-3">
+            <p>📐 Show more metrics: </p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="passAt1Checkbox">
+              <label class="form-check-label fs-5" for="passAt1Checkbox">pass@1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="dpsCheckbox">
+              <label class="form-check-label fs-5" for="dpsCheckbox">DPS</label>
+            </div>
+          </div>
           <table id="leaderboard"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-5">
           </table>
-          <p>🏪 The detailed model generation data and results are available at our page <a
+          <p class="align-self-start">🏪 The detailed model generation data and results are available at our page <a
               href="https://github.com/evalplus/evalplus.github.io/tree/main/results/evalperf">repository</a>.</p>
-          <p>💸 We use 50 samples (half) for o1 model series for cost saving; also because it's easy to sample desired
+          <p class="align-self-start">💸 We use 50 samples (half) for o1 model series for cost saving; also because it's
+            easy to sample desired
             amount of correct samples from strong models using less tries.</p>
 
           <br>
@@ -218,10 +232,12 @@ python results/evalperf/stats.py && python -m http.server 8000
     </div>
 
     <script>
-      const contextTable = document.getElementById("leaderboard");
+      const metricTable = document.getElementById("leaderboard");
       const linkMapping = new Map([]);
       const hfLinkPrefix = "https://huggingface.co/";
       const dataUrlPrefix = "results/evalperf";
+      const passCheckBox = document.getElementById("passAt1Checkbox");
+      const dpsCheckBox = document.getElementById("dpsCheckbox");
 
       // Load data
       var data = null;
@@ -286,8 +302,8 @@ python results/evalperf/stats.py && python -m http.server 8000
       const theaders = [
         "#", // rank
         "Model", // model name
-        // "DPS",
-        // "pass@1",
+        "DPS",
+        "pass@1",
         "Task WR", // task winrate
         winrate_tag, // computed over the same set of passing solutions
       ];
@@ -297,8 +313,17 @@ python results/evalperf/stats.py && python -m http.server 8000
         var headerRow = document.createElement("tr");
         // headers
         theaders.forEach(function (header) {
+          if (header == "DPS" && !dpsCheckBox.checked) {
+            return;
+          }
+          if (header == "pass@1" && !passCheckBox.checked) {
+            return;
+          }
           var th = document.createElement("th");
           th.classList.add("text-nowrap");
+          if (header == "Model") {
+            th.style.textAlign = "left";
+          }
           th.textContent = header;
 
           if (header == winrate_tag) {
@@ -358,23 +383,30 @@ python results/evalperf/stats.py && python -m http.server 8000
           modelLink.classList.add("link-underline-primary");
           modelLink.classList.add("text-nowrap");
           modelCell.appendChild(modelLink);
+          modelCell.style.textAlign = "left";
           dataRow.appendChild(modelCell);
 
-          // dpsRow = document.createElement("td");
-          // dpsRow.textContent = row.get("dps").toFixed(1);
-          // dataRow.appendChild(dpsRow);
-          // passRow = document.createElement("td");
-          // passRow.textContent = row.get("pass@1").toFixed(1);
-          // dataRow.appendChild(passRow);
+          if (dpsCheckBox.checked) {
+            dpsRow = document.createElement("td");
+            dpsRow.textContent = row.get("dps").toFixed(1);
+            dataRow.appendChild(dpsRow);
+          }
+          if (passCheckBox.checked) {
+            passRow = document.createElement("td");
+            passRow.textContent = row.get("pass@1").toFixed(1);
+            dataRow.appendChild(passRow);
+          }
 
           taskWinRateRow = document.createElement("td");
           taskWinRateRow.textContent = (row.get('task_win_rate') * 100).toFixed(1);
+          // center-align
           dataRow.appendChild(taskWinRateRow);
 
 
           modelWinRateRow = document.createElement("td");
           modelWinRateRow.textContent = (row.get('model_win_rate') * 100).toFixed(1);
           modelWinRateRow.style.backgroundColor = "#EEFFEE";
+          // center-align
           dataRow.appendChild(modelWinRateRow);
           tbody.appendChild(dataRow);
         });
@@ -382,13 +414,16 @@ python results/evalperf/stats.py && python -m http.server 8000
       };
 
       const clearTable = () => {
-        contextTable.innerHTML = "";
+        metricTable.innerHTML = "";
       };
 
       const main = () => {
         clearTable();
-        displayTable(contextTable);
+        displayTable(metricTable);
       };
+
+      passCheckBox.addEventListener("change", main);
+      dpsCheckBox.addEventListener("change", main);
 
       main();
 
