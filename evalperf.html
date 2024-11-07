@@ -127,12 +127,14 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
 
         <div class="container d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Win-rate Leaderboard</h3>
-          <p class="align-self-start">📊 Ranking metrics: WR (Win-Rate; %) based on task- and model-wise competiton (i.e., pairwise DPS).</p>
-          <p class="align-self-start">📝 Notes: the default prompt does not emphasize efficiency requirements as our work shows such emphasis
+          <p class="align-self-start">📊 Ranking metrics: WR (Win-Rate; %) based on task- and model-wise competiton
+            (i.e., pairwise DPS).</p>
+          <p class="align-self-start">📝 Notes: the default prompt does not emphasize efficiency requirements as our
+            work shows such emphasis
             might degrade both efficiency and correctness for some weak models. Yet, "(⏩)" marks models using
             performance-encouraging prompts as they might be able to accurately understand such needs.</p>
           <div class="align-self-start d-inline-flex gap-3">
-            <p>🤔 Display More Metrics? </p>
+            <p>📐 Show more metrics: </p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="passAt1Checkbox">
               <label class="form-check-label fs-5" for="passAt1Checkbox">pass@1</label>
@@ -147,7 +149,8 @@ evalplus.evalperf --model "ise-uiuc/Magicoder-S-DS-6.7B" --backend vllm</code>
           </table>
           <p class="align-self-start">🏪 The detailed model generation data and results are available at our page <a
               href="https://github.com/evalplus/evalplus.github.io/tree/main/results/evalperf">repository</a>.</p>
-          <p class="align-self-start">💸 We use 50 samples (half) for o1 model series for cost saving; also because it's easy to sample desired
+          <p class="align-self-start">💸 We use 50 samples (half) for o1 model series for cost saving; also because it's
+            easy to sample desired
             amount of correct samples from strong models using less tries.</p>
 
           <br>
