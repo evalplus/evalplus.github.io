@@ -371,6 +371,42 @@
     "prompted": true,
     "size": 7.0
   },
+  "O1 Mini (Sept 2024)": {
+    "link": "https://platform.openai.com/docs/models/",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 96.3,
+      "humaneval+": 89.0,
+      "mbpp": 93.1,
+      "mbpp+": 78.8
+    },
+    "prompted": true,
+    "size": null
+  },
+  "GPT 4o (Aug 2024)": {
+    "link": "https://platform.openai.com/docs/models/",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 92.7,
+      "humaneval+": 87.2,
+      "mbpp": 87.6,
+      "mbpp+": 72.2
+    },
+    "prompted": true,
+    "size": null
+  },
+  "GPT 4o Mini (July 2024)": {
+    "link": "https://platform.openai.com/docs/models/",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 88.4,
+      "humaneval+": 83.5,
+      "mbpp": 85.4,
+      "mbpp+": 72.2
+    },
+    "prompted": true,
+    "size": null
+  },
   "GPT-3.5 (May 2023)": {
     "link": "https://openai.com/blog/chatgpt",
     "open-data": "NONE",
@@ -533,8 +569,8 @@
     "pass@1": {
       "humaneval": 69.5,
       "humaneval+": 62.8,
-      "mbpp": 66.4,
-      "mbpp+": 54.0
+      "mbpp": 68.3,
+      "mbpp+": 55.6
     },
     "prompted": true,
     "size": 8.0
@@ -545,8 +581,8 @@
     "pass@1": {
       "humaneval": 61.6,
       "humaneval+": 56.7,
-      "mbpp": 70.1,
-      "mbpp+": 59.3
+      "mbpp": 64.6,
+      "mbpp+": 54.8
     },
     "prompted": true,
     "size": 8.0
