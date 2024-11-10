@@ -371,6 +371,42 @@
     "prompted": true,
     "size": 7.0
   },
+  "Claude Sonnet 3.5 (June 2024)": {
+    "link": "https://platform.openai.com/docs/models/",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 87.2,
+      "humaneval+": 81.7,
+      "mbpp": 89.4,
+      "mbpp+": 74.3
+    },
+    "prompted": true,
+    "size": null
+  },
+  "Grok Beta": {
+    "link": "https://x.ai/blog/grok-2",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 88.4,
+      "humaneval+": 80.5,
+      "mbpp": 86.0,
+      "mbpp+": 65.6
+    },
+    "prompted": true,
+    "size": null
+  },
+  "O1 Preview (Sept 2024)": {
+    "link": "https://platform.openai.com/docs/models/",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 96.3,
+      "humaneval+": 89.0,
+      "mbpp": 95.5,
+      "mbpp+": 80.2
+    },
+    "prompted": true,
+    "size": null
+  },
   "O1 Mini (Sept 2024)": {
     "link": "https://platform.openai.com/docs/models/",
     "open-data": "NONE",
