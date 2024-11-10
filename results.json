@@ -527,6 +527,18 @@
     "prompted": false,
     "size": 8.0
   },
+  "Llama3.1-8B-instruct": {
+    "link": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 69.5,
+      "humaneval+": 62.8,
+      "mbpp": 66.4,
+      "mbpp+": 54.0
+    },
+    "prompted": true,
+    "size": 8.0
+  },
   "Llama3-8B-instruct": {
     "link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
     "open-data": "NONE",
