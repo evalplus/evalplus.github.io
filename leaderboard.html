@@ -490,6 +490,7 @@
     };
 
     const displayChart = (score) => {
+      const maxMarkLineModels = 8;
       // sort first
       const data = globalData
         .filter((model) => {
@@ -514,25 +515,28 @@
         1 + Math.max(...data.map((model) => model["pass@1"][score]));
 
       const nonPromptedModels = data.filter(
-        (model) => model["prompted"] == false,
+        (model) => model["prompted"] == false && model["size"] != null,
       );
       const promptedModels = data.filter(
-        (model) => model["prompted"] == true,
+        (model) => model["prompted"] == true && model["size"] != null,
       );
+      const nonSizeModels = data.filter(
+        model => model.size === null
+      ).slice(0, maxMarkLineModels);
+
+      nonSizeModels.forEach((model) => {
+        chartOption.series[1].markLine.data.push({
+          name: model["Model"],
+          yAxis: model["pass@1"][score],
+        });
+      });
 
       [nonPromptedModels, promptedModels].forEach((series, idx) => {
         series.forEach((model) => {
-          if (model["size"] == null) {
-            chartOption.series[idx].markLine.data.push({
-              name: model["Model"],
-              yAxis: model["pass@1"][score],
-            });
-          } else {
-            chartOption.series[idx].data.push({
-              name: model["Model"],
-              value: [`${Math.round(model["size"])}`, model["pass@1"][score]],
-            });
-          }
+          chartOption.series[idx].data.push({
+            name: model["Model"],
+            value: [`${Math.round(model["size"])}`, model["pass@1"][score]],
+          });
         });
       });
 
