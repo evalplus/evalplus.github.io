@@ -203,6 +203,18 @@
     "prompted": false,
     "size": 7.0
   },
+  "Qwen2.5-Coder-32B-Instruct": {
+    "link": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 92.1,
+      "humaneval+": 87.2,
+      "mbpp": 90.5,
+      "mbpp+": 77.0
+    },
+    "prompted": true,
+    "size": 32
+  },
   "CodeQwen1.5-7B": {
     "link": "https://huggingface.co/Qwen/CodeQwen1.5-7B",
     "open-data": "NONE",
