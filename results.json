@@ -299,6 +299,18 @@
     "prompted": true,
     "size": 104
   },
+  "DeepSeek-V3 (Nov 2024)": {
+    "link": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 91.5,
+      "humaneval+": 86.6,
+      "mbpp": 87.6,
+      "mbpp+": 73.0
+    },
+    "prompted": true,
+    "size": 37
+  },
   "DeepSeek-V2.5 (Nov 2024)": {
     "link": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
     "open-data": "NONE",
