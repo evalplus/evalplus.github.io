@@ -1498,5 +1498,17 @@
     },
     "prompted": true,
     "size": 1.0
+  },
+  "Aletheia": {
+    "link": "https://github.com/shaneraphel/aletheia",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 98.2,
+      "humaneval+": 93.9,
+      "mbpp": 100.0,
+      "mbpp+": 87.0
+    },
+    "prompted": true,
+    "size": null
   }
 }
