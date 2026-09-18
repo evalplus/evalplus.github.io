@@ -1498,5 +1498,15 @@
     },
     "prompted": true,
     "size": 1.0
+  },
+  "Jesse / Weightless (Zero-Weight)": {
+    "link": "https://github.com/m0at/jesse-humaneval-plus",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 100.0,
+      "humaneval+": 99.4
+    },
+    "prompted": false,
+    "size": null
   }
 }
