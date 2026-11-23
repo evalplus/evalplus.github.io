@@ -1498,5 +1498,15 @@
     },
     "prompted": true,
     "size": 1.0
+  },
+  "Alenchos (gemini-3.1-flash-lite)": {
+    "link": "https://github.com/uzair-03/alenchos",
+    "open-data": "NONE",
+    "pass@1": {
+      "humaneval": 83.3,
+      "humaneval+": 79.5
+    },
+    "prompted": true,
+    "size": 0.0
   }
 }
